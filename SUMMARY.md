@@ -2,26 +2,20 @@
 
 * [Welcome](README.md)
 
-## Community <a id="community-1"></a>
+## Getting Started
 
-* [Forums](https://forum.balancer.finance/)
-* [Discord](https://discord.com/invite/ARJWaeF)
-
-## FAQs <a id="faqs-1"></a>
-
-* [Introduction](faqs-1/introduction.md)
-* [Swaps](faqs-1/swaps.md)
-* [Liquidity Provision](faqs-1/liquidity-provision.md)
-* [Governance](faqs-1/governance.md)
-* [Staking](faqs-1/staking.md)
-* [Risks](faqs-1/risks.md)
-* [Troubleshooting](faqs-1/troubleshooting.md)
-
-## Tutorials <a id="tutorials-1"></a>
-
-* [Swapping](tutorials-1/swapping.md)
-* [Providing Liquidity](tutorials-1/providing-liquidity.md)
-* [Governance Distributions](tutorials-1/governance-distributions.md)
+* [FAQs](getting-started/faqs/README.md)
+  * [Introduction](getting-started/faqs/introduction.md)
+  * [Swaps](getting-started/faqs/swaps.md)
+  * [Liquidity Provision](getting-started/faqs/liquidity-provision.md)
+  * [Governance](getting-started/faqs/governance.md)
+  * [Staking](getting-started/faqs/staking.md)
+  * [Troubleshooting](getting-started/faqs/troubleshooting.md)
+  * [Risks](getting-started/faqs/risks.md)
+* [Tutorials](getting-started/tutorials/README.md)
+  * [Swapping](getting-started/tutorials/swapping.md)
+  * [Providing Liquidity](getting-started/tutorials/providing-liquidity.md)
+  * [Governance Distributions](getting-started/tutorials/governance-distributions.md)
 
 ## Core Concepts <a id="core-concepts-1"></a>
 
@@ -40,6 +34,11 @@
 * [Security](core-concepts-1/security/README.md)
   * [Audits](core-concepts-1/security/audits.md)
   * [Bug Bounties](core-concepts-1/security/bug-bounties.md)
+
+## Community <a id="community-1"></a>
+
+* [Forums](https://forum.balancer.finance/)
+* [Discord](https://discord.com/invite/ARJWaeF)
 
 ## Developers <a id="developers-1"></a>
 

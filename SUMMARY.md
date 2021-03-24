@@ -5,7 +5,6 @@
 ## Getting Started
 
 * [FAQs](getting-started/faqs/README.md)
-  * [Introduction](getting-started/faqs/introduction.md)
   * [Swaps](getting-started/faqs/swaps.md)
   * [Liquidity Provision](getting-started/faqs/liquidity-provision.md)
   * [Governance](getting-started/faqs/governance.md)
@@ -42,5 +41,13 @@
 
 ## Developers <a id="developers-1"></a>
 
-* [Untitled](developers-1/untitled.md)
+* [GitHub Repos](developers-1/github-repos.md)
+* [Smart Contracts](developers-1/smart-contracts/README.md)
+  * [Interfaces](developers-1/smart-contracts/interfaces.md)
+  * [APIs](developers-1/smart-contracts/apis/README.md)
+    * [Vault](developers-1/smart-contracts/apis/vault.md)
+    * [Swaps](developers-1/smart-contracts/apis/swaps.md)
+  * [Deployment Addresses](developers-1/smart-contracts/deployment-addresses.md)
+* [Samples](developers-1/untitled.md)
+* [Testnet](developers-1/testnet.md)
 

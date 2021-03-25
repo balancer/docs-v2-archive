@@ -48,8 +48,11 @@
     * [Vault](developers-1/smart-contracts/apis/vault.md)
     * [Swaps](developers-1/smart-contracts/apis/swaps.md)
   * [Deployment Addresses](developers-1/smart-contracts/deployment-addresses.md)
+* [Front End Devs](developers-1/front-end-devs.md)
 * [Samples](developers-1/untitled.md)
 * [Error Codes](developers-1/error-codes.md)
 * [Testnet](developers-1/testnet.md)
+* [Smart Order Router](developers-1/smart-order-router.md)
+* [Subgraph](developers-1/subgraph.md)
 * [GitHub](https://github.com/balancer-labs/)
 

@@ -36,12 +36,12 @@
 
 ## Community <a id="community-1"></a>
 
-* [Forums](https://forum.balancer.finance/)
 * [Discord](https://discord.com/invite/ARJWaeF)
+* [Forums](https://forum.balancer.finance/)
+* [Medium](https://medium.com/balancer-protocol)
 
 ## Developers <a id="developers-1"></a>
 
-* [GitHub Repos](developers-1/github-repos.md)
 * [Smart Contracts](developers-1/smart-contracts/README.md)
   * [Interfaces](developers-1/smart-contracts/interfaces.md)
   * [APIs](developers-1/smart-contracts/apis/README.md)
@@ -49,5 +49,7 @@
     * [Swaps](developers-1/smart-contracts/apis/swaps.md)
   * [Deployment Addresses](developers-1/smart-contracts/deployment-addresses.md)
 * [Samples](developers-1/untitled.md)
+* [Error Codes](developers-1/error-codes.md)
 * [Testnet](developers-1/testnet.md)
+* [GitHub](https://github.com/balancer-labs/)
 

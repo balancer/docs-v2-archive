@@ -19,12 +19,11 @@
 ## Core Concepts <a id="core-concepts-1"></a>
 
 * [Protocol](core-concepts-1/protocol/README.md)
-  * [Overview](core-concepts-1/protocol/overview.md)
   * [Vault](core-concepts-1/protocol/vault.md)
   * [Pools](core-concepts-1/protocol/pools.md)
-  * [Fees](core-concepts-1/protocol/fees.md)
   * [Asset Managers](core-concepts-1/protocol/asset-managers.md)
   * [Flash Loans](core-concepts-1/protocol/flash-loans.md)
+  * [Fees](core-concepts-1/protocol/fees.md)
 * [Governance](core-concepts-1/governance/README.md)
   * [BAL Token](core-concepts-1/governance/bal-token.md)
   * [Staking](core-concepts-1/governance/staking.md)

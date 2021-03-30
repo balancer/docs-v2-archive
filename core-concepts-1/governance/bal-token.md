@@ -14,6 +14,10 @@ Liquidity Providers \(LPs\) are the cornerstone of the Balancer Protocol. Liquid
 
 Early LPs take on more risk and opportunity cost including contract risk and low initial pool profitability. We believe that these protocol users should get to participate early on in deciding how the protocol evolves. To this end, Balancer Labs proposed and implemented the Liquidity Mining program, in which Balancer governance tokens are distributed to LPs.
 
+#### Claiming
+
+!! TODO !! : claiming system for v2 rewards
+
 ## BAL Token Supply and Distribution
 
 ### Supply

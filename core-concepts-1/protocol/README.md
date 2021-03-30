@@ -30,5 +30,5 @@ Another way to increase capital efficiency for liquidity providers is offering F
 
 Trading fees and flash loan fees collected from traders and borrowers are separated into two categories: Liquidity Provider Fees and Protocol Fees. Protocol Fees are turned off by default but can be turned on by governance vote. 
 
-{% page-ref page="fees.md" %}
+{% page-ref page="governable-protocol-fees.md" %}
 

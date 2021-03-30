@@ -23,7 +23,7 @@
   * [Pools](core-concepts-1/protocol/pools.md)
   * [Asset Managers](core-concepts-1/protocol/asset-managers.md)
   * [Flash Loans](core-concepts-1/protocol/flash-loans.md)
-  * [Fees](core-concepts-1/protocol/fees.md)
+  * [Governable Protocol Fees](core-concepts-1/protocol/governable-protocol-fees.md)
 * [Governance](core-concepts-1/governance/README.md)
   * [BAL Token](core-concepts-1/governance/bal-token.md)
   * [Staking](core-concepts-1/governance/staking.md)

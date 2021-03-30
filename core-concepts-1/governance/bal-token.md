@@ -31,7 +31,7 @@ This chart outlines the allocation amounts. More details below.
 | BAL Recipient/Fund | BAL Amounts |
 | :--- | :--- |
 | Liquidity Providers | \(Up to\) 65M |
-| Founders, Advisors, Investors, Options | 25M |
+| Founders, Options, Advisors, Investors | 25M |
 | Ecosystem Fund | 5M |
 | Fundraising Fund | 5M |
 
@@ -41,9 +41,9 @@ This chart outlines the allocation amounts. More details below.
 
 Every week 145,000 BAL tokens, or approximately 7.5M per year, are distributed to Liquidity Providers. At this rate, it would take a total of 8.666 years to distribute the remaining 65M BAL before reaching the 100M cap.
 
-#### Founders, Advisors, Investors, Options
+#### Founders, Options, Advisors, Investors
 
-25M tokens were allocated to founders, stock options, advisors and investors, all subject to vesting periods.
+25M tokens were allocated to founders, stock options, advisors, and investors, all subject to vesting periods.
 
 #### Ecosystem Fund
 

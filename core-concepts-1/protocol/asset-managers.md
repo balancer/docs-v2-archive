@@ -15,9 +15,9 @@ Capital efficiency is very important to liquidity providers, and by leveraging A
 
 When tokens are under control of the Asset Manager, the pool still needs to keep track of how many of each token are owned by the pool. Asset Managers need to periodically communicate to the pool how much it has under management, since the balances will change \(grow!\), and balances directly affect token prices.
 
-## But what about...
+## But what if...
 
-#### ...if the pool runs out of tokens?
+#### ...the pool runs out of tokens?
 
 If the balances of pool tokens have shifted due to a price change, the pool will need to replenish its stores. The pool can call tokens back from the Asset Manager to make sure it doesn't run out. By using a safety buffer, the pool can ensure that it has enough tokens before it gets too close to running out.
 

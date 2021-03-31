@@ -18,7 +18,7 @@ Upon launch, Balancer V2's **Protocol Fees for trades turned off be default**. T
 
 Another source of Protocol Fees is from interest on Flash Loans. For the sake of preventing Flash Loan abuse, **Protocol Fees for Flash Loans will be turned on by default**. Further reading for Flash Loans on Balancer:
 
-{% page-ref page="flash-loans.md" %}
+{% page-ref page="../protocol/flash-loans.md" %}
 
 ## Uses
 

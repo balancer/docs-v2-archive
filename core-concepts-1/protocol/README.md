@@ -30,5 +30,5 @@ Flash Loans are uncollateralized loans that must be repaid \(with interest\) in 
 
 Trading fees and flash loan fees collected from traders and borrowers are separated into two categories: Liquidity Provider Fees and Protocol Fees. Protocol Fees are turned off by default but can be turned on by governance vote. 
 
-{% page-ref page="governable-protocol-fees.md" %}
+{% page-ref page="../governance/governable-protocol-fees.md" %}
 

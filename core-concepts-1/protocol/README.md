@@ -22,7 +22,7 @@ Asset Managers improve the capital efficiency of trading pools by reinvesting id
 
 #### Flash Loans
 
-Another way to increase capital efficiency for liquidity providers is offering Flash Loans. Tokens that are already in the Vault can be lent and repaid in a single transaction to earn interest.
+Flash Loans are uncollateralized loans that must be repaid \(with interest\) in the same transaction that they are borrowed. Consolidating multiple pools' tokens in the Vault, otherwise fragmented liquidity can be lent in a flash.
 
 {% page-ref page="flash-loans.md" %}
 

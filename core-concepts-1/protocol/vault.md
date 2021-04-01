@@ -1,7 +1,3 @@
----
-description: 'todo: add vault contract address: 0xba100000000000vaultaddress'
----
-
 # Vault
 
 ## Overview
@@ -9,6 +5,8 @@ description: 'todo: add vault contract address: 0xba100000000000vaultaddress'
 The Vault is the primary architectural change that distinguishes Balancer V2 both from its predecessor, and other current Decentralized Exchanges \(DEXs\). Instead of each pool holding its tokens, Balancer V2 is built on a single Vault that holds and manages the assets of all Balancer pools.
 
 The Vault introduces many advantages over the traditional DEX architecture; it enables abstraction of pool logic, significantly cheaper multi-hop trades, high frequency trading, and more.
+
+The Vault represents pools and complex balances \(cash + externally managed-assets\) as data structures inside a single contract. Pools are separate contracts, containing the price calculation and pool participation logic, registered with the vault and assigned Pool IDs. Asset manager contracts can remove tokens for investment or other purposes. Flash Loan provider contracts can "borrow" funds up to the entire TVL - as long as the funds are returned by the end of the transaction.
 
 ## Pool Abstraction
 
@@ -23,7 +21,7 @@ From launch, the official Balancer V2 pool options are:
 * Weighted Pools
 * Stable Pools
 
-With Configurable Rights Pools, Liquidity Bootstrapping Pools, and Smart Pools not far behind. 
+Liquidity Bootstrapping Pools and general Smart Pools are not far behind. 
 
 More new pool types will be added by the Balancer Labs team as well as the broader Balancer Community.
 

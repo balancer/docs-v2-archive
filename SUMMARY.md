@@ -5,6 +5,7 @@
 ## Getting Started
 
 * [FAQs](getting-started/faqs/README.md)
+  * [V1 -&gt; V2 Migration](getting-started/faqs/v1-greater-than-v2-migration.md)
   * [Swaps](getting-started/faqs/swaps.md)
   * [Liquidity Provision](getting-started/faqs/liquidity-provision.md)
   * [Governance](getting-started/faqs/governance.md)
@@ -45,7 +46,8 @@
   * [Interfaces](developers-1/smart-contracts/interfaces.md)
   * [APIs](developers-1/smart-contracts/apis/README.md)
     * [Vault](developers-1/smart-contracts/apis/vault.md)
-    * [Swaps](developers-1/smart-contracts/apis/swaps.md)
+    * [Pools](developers-1/smart-contracts/apis/pools.md)
+    * [Asset Managers](developers-1/smart-contracts/apis/asset-managers.md)
   * [Deployment Addresses](developers-1/smart-contracts/deployment-addresses.md)
 * [Front End Devs](developers-1/front-end-devs.md)
 * [Samples](developers-1/untitled.md)

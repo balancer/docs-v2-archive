@@ -58,5 +58,5 @@ This can only be called by the asset manager of a token in a pool.
 
 **managePoolBalance**\(bytes32 poolId, AssetManagerOpKind kind, AssetManagerTransfer\[\] transfers\) - deposit or withdraw funds from the pool \(i.e., move funds between _cash_ and _managed_ balances\), or update the total balance \(i.e., reporting a gain or loss from management activities\).
 
-**flashLoan**\(IFlashLoanReceiver receiver, IERC20\[\] tokens, uint256\[\] amounts, bytes receiverData\) - execute a flash loan. This sends the given token amounts to the flash loan receiver contract; funds must be returned to the vault in the same transaction, or it will revert
+**flashLoan**\(IFlashLoanReceiver receiver, IERC20\[\] tokens, uint256\[\] amounts, bytes receiverData\) - execute a flash loan. This sends the given token amounts to the flash loan receiver contract; all borrowed funds - plus the protocol flash loan fee - must be returned to the vault in the same transaction, or it will revert
 

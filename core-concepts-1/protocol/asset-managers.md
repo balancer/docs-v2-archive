@@ -25,5 +25,3 @@ If the balances of pool tokens have shifted due to a price change, the pool will
 
 This is possible. Asset Managers are permissionless, and anyone can create one. It's possible that some have sub-optimal investment strategies, and it's also possible some bad actor could create a malicious Asset Manager. It's important to research any Asset Manager you might be using, and to verify the contract addresses in the event that a malicious Asset Manager is posing as a credible one. 
 
-
-

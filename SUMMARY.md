@@ -6,8 +6,8 @@
 
 * [FAQs](getting-started/faqs/README.md)
   * [V1 -&gt; V2 Migration](getting-started/faqs/v1-greater-than-v2-migration.md)
-  * [Swaps](getting-started/faqs/swaps.md)
-  * [Liquidity Provision](getting-started/faqs/liquidity-provision.md)
+  * [Swap](getting-started/faqs/swap.md)
+  * [Invest](getting-started/faqs/invest.md)
   * [Governance](getting-started/faqs/governance.md)
   * [Staking](getting-started/faqs/staking.md)
   * [Troubleshooting](getting-started/faqs/troubleshooting.md)

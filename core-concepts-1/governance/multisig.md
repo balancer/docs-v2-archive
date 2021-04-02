@@ -35,7 +35,7 @@ Balancer V1 contracts are immutable, so up to now there were no core protocol pa
 
 Balancer V2 contracts, on the other hand, are not totally immutable and do allow for some tweaking of the core protocol operation, for instance, in turning on protocol fees. As a placeholder for a future onchain DAO, such limited admin powers will be initially granted to a multisig.
 
-#### The Multisig
+## The Multisig
 
 First of all, a very important point: the multisig does NOT have decision making power, as its role is to simply enact on-chain the decisions BAL holders make via off-chain voting.
 
@@ -61,7 +61,7 @@ During its lifecycle, the operation of the multisig is expected to gradually evo
 
 In the long run, BAL holders are expected to retire the multisig in favor of a full-fledged Balancer DAO.
 
-#### Signer Duties
+## Signer Duties
 
 All signers are expected to create an Ethereum transaction ratifying each decision made by BAL holders through snapshot votes. This signature is expected to be done within the two weeks after the snapshot vote was concluded. Even after quorum is reached \(by n signers\), the remaining signers are also expected to sign before a multisig action is executed. This procedure aims to regularly confirm each signers’ conformity to the off-chain votes and also to serve as recent proof of their ability to sign.
 
@@ -70,14 +70,14 @@ A signer shall lose his/her role \(by action of the remaining multisig signers e
 * acts against BAL token holders’ off-chain voting;
 * goes through 3 months or 2 votes \(whichever takes longer\) without performing any of their signer duties.
 
-#### Multisig Powers in V2
+## Multisig Powers
 
 V2 smart contracts can grant some specific powers to an “admin” address, which will initially point to the multisig’s address.
 
 These powers are:
 
 * set a share of swap fees to be diverted to the protocol \(hard capped at 50% of the swap fee\)
-* set a flashloan fee
+* set a flash loan fee
 * set a withdrawal fee to be charged by the protocol when an LP extracts tokens from the vault outside of a swap or when internal balances are withdrawn from the vault \(the maximum withdrawal fee possible is 0.5% or 50 bps\)
 * extract from the vault collected protocol fees and/or excess balances \(e.g. airdrops\), to any destination
 * set the address of the oracle implementation

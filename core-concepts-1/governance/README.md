@@ -16,5 +16,5 @@ The three sources of voting power are
 
 ## When are votes?
 
-Votes happen when there is a proposal to vote on, they are not regularly scheduled. When they are active, votes typically occur over the weekend. They are announced on Discord and Twitter. \(TODO: other places votes are announced?\)
+Votes happen when there is a proposal to vote on; they are not regularly scheduled. When they are active, votes typically occur over the weekend. They are announced on Discord and Twitter. \(TODO: other places votes are announced?\)
 

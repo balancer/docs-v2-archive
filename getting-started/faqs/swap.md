@@ -34,7 +34,9 @@ To start using and trading with Internal Balances, click \(TODO: here\).
 
 Slippage is how much the price of an asset changes during a trade. To make sure you get within the price range you expect, trades have Slippage Tolerances. You can override this tolerance by \(TODO: explain how to change tolerance in UI\)
 
-## 
+## Is it cheaper to trade with ETH or WETH?
+
+WETH is slightly cheaper. When making a trade with ETH, it will be wrapped into WETH first, which has a small gas fee associated with it.
 
 
 

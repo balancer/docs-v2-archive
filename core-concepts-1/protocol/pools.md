@@ -24,7 +24,7 @@ As the price of each token changes, arbitrageurs rebalance the pool by making tr
 
 ### Stable Pools
 
-For certain assets which are expected to consistently trade at near parity \(e.g. different varieties of stablecoins or synthetics\) a more efficient design is the StableSwap AMM as popularized by Curve. These pools allow for larger trades of these assets before encountering significant price impact.
+For certain assets that are expected to consistently trade at near parity \(e.g. different varieties of stablecoins or synthetics\) a more efficient design is the StableSwap AMM as popularized by Curve. These pools allow for larger trades of these assets before encountering significant price impact.
 
 ## Custom Pools
 

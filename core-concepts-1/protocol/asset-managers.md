@@ -2,7 +2,7 @@
 
 ## Overview
 
-Capital efficiency is very important to liquidity providers, and by leveraging Asset Managers, they achieve much more productive portfolios. Normally in trading pools, only a small percentage of assets are actually used to facilitate trades. While deep liquidity results in smaller price impacts on trades, it also needlessly locks vast amounts of capital in pools. That's where Asset Managers come in; instead of holding idle assets, pools can send these tokens to Asset Managers for them to be invested elsewhere while internally maintaining the balances and facilitating trades as if the assets were there. 
+Capital efficiency is very important to liquidity providers, and by leveraging Asset Managers,  portfolios can become much more productive. Normally in trading pools, only a small percentage of assets are actually used to facilitate trades. While deep liquidity results in smaller price impacts on trades, it also needlessly locks vast amounts of capital in pools. That's where Asset Managers come in; instead of holding idle assets, pools can send these tokens to Asset Managers for them to be invested elsewhere while internally maintaining the balances and facilitating trades as if the assets were there. 
 
 ![A pool separated into its Cash Amount and the Invested Amount](../../.gitbook/assets/asset_manager.gif)
 
@@ -13,7 +13,7 @@ Capital efficiency is very important to liquidity providers, and by leveraging A
 
 ## How do Asset Managers affect prices in the pool?
 
-When tokens are under control of the Asset Manager, the pool still needs to keep track of how many of each token are owned by the pool. Asset Managers need to periodically communicate to the pool how much it has under management, since the balances will change \(grow!\), and balances directly affect token prices.
+When tokens are under control of the Asset Manager, the pool still needs to keep track of how many of each token are owned by the pool. Asset Managers need to periodically communicate to the pool how much it has under management, since the balances will change, and balances directly affect token prices.
 
 ## But what if...
 
@@ -23,5 +23,5 @@ If the balances of pool tokens have shifted due to a price change, the pool will
 
 #### ...the Asset Manager makes a bad investment?
 
-This is possible. Asset Managers are permissionless, and anyone can create one. It's possible that some have sub-optimal investment strategies, and it's also possible some bad actor could create a malicious Asset Manager. In order to prevent loss of funds, Asset Managers must be approved both by Balancer Governance and by the user. It's important to research any Asset Manager you might consider using, and to understand the risks involved.
+This is possible. Asset Managers are permissionless, and anyone can create one. It's possible that some have sub-optimal investment strategies, and it's also possible some bad actor could create a malicious Asset Manager. In order to prevent loss of funds, Asset Managers must be approved both by Balancer Governance and by the liquidity provider. It's important to research any Asset Manager you might consider using and to understand the risks involved.
 

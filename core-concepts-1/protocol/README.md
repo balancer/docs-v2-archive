@@ -22,7 +22,7 @@ Asset Managers improve the capital efficiency of trading pools by reinvesting id
 
 #### Flash Loans
 
-Flash Loans are uncollateralized loans that must be repaid \(with interest\) in the same transaction that they are borrowed. Consolidating multiple pools' tokens in the Vault, otherwise fragmented liquidity can be lent in a flash.
+Flash Loans are uncollateralized loans that must be repaid \(with interest\) in the same transaction that they are borrowed. By consolidating multiple pools' tokens in the Vault, otherwise fragmented liquidity can be lent in a flash.
 
 {% page-ref page="flash-loans.md" %}
 

@@ -18,3 +18,7 @@ The three sources of voting power are
 
 Votes happen when there is a proposal to vote on; they are not regularly scheduled. When they are active, votes typically occur over the weekend. They are announced on Discord and Twitter. \(TODO: other places votes are announced?\)
 
+## Is BAL on Tron?
+
+No, there is no token on Tron affiliated with Balancer. The token in question is affiliated with a phishing site. 
+

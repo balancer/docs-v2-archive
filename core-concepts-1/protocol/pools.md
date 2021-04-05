@@ -12,25 +12,31 @@ Balancer V2 will launch with two officially supported pool types:
 
 ### Weighted Pools
 
-Weighted Pools are a generalisation of the standard constant product AMM popularised by Uniswap. Each pool can contain up to 8 different tokens and each token is assigned a weight defining what fraction of the pool is made up by each asset. 
+Weighted Pools are a generalization of the standard constant product AMM popularized by Uniswap. Each pool can contain up to 8 \(**TODO**: this should be 16 for v2, correct? Or did this change?\) different tokens and each token is assigned a weight defining what fraction of the pool is made up by each asset. Balancer's weighted pool equation is a generalization of the x\*y=k by accounting for uneven weights and more assets:
 
-As the prices of each constituent token changes, the pool will automatically rebalance the pool's balances to maintain the desired weighting of the value held of each token whilst collecting trading fees from the traders performing this rebalancing.
+$$
+V = \prod_t B_t^{W_t}
+$$
+
+where V is constant, B is an asset's balance, and W is an asset's weight in the pool.
+
+As the price of each token changes, arbitrageurs rebalance the pool by making trades. This maintains the desired weighting of the value held by each token whilst collecting trading fees from the traders.
 
 ### Stable Pools
 
-For certain assets which are expected to consistently trade at near parity \(e.g. different varieties of stablecoins or synthetics\) a more efficient design is the StableSwap AMM as used by Curve. These pools allow for larger trades of these assets before encountering significant price impact.
+For certain assets which are expected to consistently trade at near parity \(e.g. different varieties of stablecoins or synthetics\) a more efficient design is the StableSwap AMM as popularized by Curve. These pools allow for larger trades of these assets before encountering significant price impact.
 
 ## Custom Pools
 
-Due to Balancer's abstracted pool architecture, it's very easy to implement new price curves for new AMM designs and integrate them into the protocol. New pool types will be added by the Balancer Labs team as well as the broader Balancer Community due to the permission-less nature of the Balancer protocol.
+Due to Balancer's abstracted pool architecture, it's very easy to implement new price curves for new AMM designs and integrate them into the protocol. New pool types will be added by the Balancer Community.
 
 ## Smart Pools
 
 The flexibility introduced doesn't just extend to control over the pricing curve used by the pool but can affect any aspect of the pool.
 
-Balancer V1 introduced the concept of smart pools where parameters can change over time, in V2 these features can be integrated directly into the pools themselves. Due to Balancer's modular architecture, any of the smart contracts defining the behaviour of a pool can be replaced as long as it maintains the common interface with the Vault.
+Balancer V1 introduced the concept of smart pools where parameters can change by external contracts, and in V2 these features can be integrated directly into the pools themselves. Due to Balancer's modular architecture, any of the smart contracts defining the behavior of a pool can be replaced as long as it maintains the common interface with the Vault.
 
-The first smart pool will be the Liquidity Bootstrapping Pool, designed to support V2 LBPs. It is a specialized 2-token WeightedPool, which restricts liquidity provision to the pool creator, and supports pausing trading, setting the swap fee, and changing weights gradually, as in V1.
+The first smart pool will be the Liquidity Bootstrapping Pool \(TODO: is it? or the CPR? I'm not sure\), designed to support V2 LBPs. It is a specialized 2-token WeightedPool, which restricts liquidity provision to the pool creator, and supports pausing trading, setting the swap fee, and changing weights gradually, as in V1.
 
 However, there are significant differences:
 

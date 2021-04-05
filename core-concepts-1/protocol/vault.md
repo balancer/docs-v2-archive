@@ -16,14 +16,9 @@ It's crucial to note that the Vault has been designed to keep pool balances stri
 
 ![The Vault holds all pool tokens while logic is handled by pool contracts](../../.gitbook/assets/vault.png)
 
-From launch, the official Balancer V2 pool options are:
+For more on pools, check out the Pools page:
 
-* Weighted Pools
-* Stable Pools
-
-Liquidity Bootstrapping Pools and general Smart Pools are not far behind. 
-
-More new pool types will be added by the Balancer Labs team as well as the broader Balancer Community.
+{% page-ref page="pools.md" %}
 
 ## Gas Efficiency
 

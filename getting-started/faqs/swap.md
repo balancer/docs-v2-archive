@@ -2,7 +2,7 @@
 
 ## How do I make my first swap?
 
-First time here? We recommend checking out \(TODO: this tutorial\) for a walkthrough on how to make your first trade. 
+First time here? Check out \(TODO: this tutorial\) for a walkthrough on how to make your first trade. 
 
 In a nutshell though, you'll need:
 

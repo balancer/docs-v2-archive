@@ -6,6 +6,8 @@ description: >-
 
 # Error Codes
 
+Error codes are defined in the [`BalancerErrors`](https://github.com/balancer-labs/balancer-core-v2/blob/master/contracts/lib/helpers/BalancerErrors.sol) contract
+
 | Code | Error |
 | :--- | :--- |
 | 0 | ADD\_OVERFLOW |

@@ -33,9 +33,8 @@ Error codes are defined in the [`BalancerErrors`](https://github.com/balancer-la
 | 205 | UNINITIALIZED |
 | 206 | BPT\_IN\_MAX\_AMOUNT |
 | 207 | BPT\_OUT\_MIN\_AMOUNT |
-| 208 | ERR\_AMOUNTS\_IN\_LENGTH |
-| 209 | UNHANDLED\_JOIN\_KIND |
-| 210 | UNHANDLED\_EXIT\_KIND |
+| 208 | UNHANDLED\_JOIN\_KIND |
+| 209 | UNHANDLED\_EXIT\_KIND |
 | 300 | MIN\_AMP |
 | 301 | MAX\_AMP |
 | 302 | MIN\_WEIGHT |

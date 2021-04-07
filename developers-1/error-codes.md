@@ -28,13 +28,14 @@ Error codes are defined in the [`BalancerErrors`](https://github.com/balancer-la
 | 200 | MIN\_TOKENS |
 | 201 | MAX\_TOKENS |
 | 202 | MAX\_SWAP\_FEE |
-| 203 | MINIMUM\_BPT |
-| 204 | CALLER\_NOT\_VAULT |
-| 205 | UNINITIALIZED |
-| 206 | BPT\_IN\_MAX\_AMOUNT |
-| 207 | BPT\_OUT\_MIN\_AMOUNT |
-| 208 | UNHANDLED\_JOIN\_KIND |
-| 209 | UNHANDLED\_EXIT\_KIND |
+| 203 | MIN\_SWAP\_FEE |
+| 204 | MINIMUM\_BPT |
+| 205 | CALLER\_NOT\_VAULT |
+| 206 | UNINITIALIZED |
+| 207 | BPT\_IN\_MAX\_AMOUNT |
+| 208 | BPT\_OUT\_MIN\_AMOUNT |
+| 209 | UNHANDLED\_JOIN\_KIND |
+| 210 | UNHANDLED\_EXIT\_KIND |
 | 300 | MIN\_AMP |
 | 301 | MAX\_AMP |
 | 302 | MIN\_WEIGHT |
@@ -87,6 +88,7 @@ Error codes are defined in the [`BalancerErrors`](https://github.com/balancer-la
 | 541 | REVOKE\_SENDER\_NOT\_ADMIN |
 | 542 | RENOUNCE\_SENDER\_NOT\_ALLOWED |
 | 543 | ENUMERABLE\_NON\_EXISTENT\_KEY |
+| 544 | SET\_ROLE\_SENDER\_NOT\_ADMIN |
 | 600 | INVALID\_POOL\_ID |
 | 601 | CALLER\_NOT\_POOL |
 | 602 | EXIT\_BELOW\_MIN |
@@ -113,6 +115,7 @@ Error codes are defined in the [`BalancerErrors`](https://github.com/balancer-la
 | 623 | NONZERO\_TOKEN\_BALANCE |
 | 624 | BALANCE\_TOTAL\_OVERFLOW |
 | 625 | TOKENS\_LENGTH\_MUST\_BE\_2 |
+| 626 | CANNOT\_USE\_ETH\_SENTINEL |
 | 700 | SWAP\_FEE\_TOO\_HIGH |
 | 701 | FLASH\_LOAN\_FEE\_TOO\_HIGH |
 | 702 | INSUFFICIENT\_COLLECTED\_FEES |

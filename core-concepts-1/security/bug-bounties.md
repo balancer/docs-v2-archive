@@ -6,11 +6,11 @@ Balancer has completed smart contract audits with Trail of Bits and Open Zeppeli
 
 ## Scope
 
-The bug bounty covers any of the core smart contracts deployed on Mainnet. The code can be found at: [https://github.com/balancer-labs/balancer-core](https://github.com/balancer-labs/balancer-core)
+The bug bounty covers any of the core smart contracts deployed on Mainnet. The code can be found at: [https://github.com/balancer-labs/balancer-core](https://github.com/balancer-labs/balancer-core) TODO: update this
 
-Submissions should be based off commit hash: [https://github.com/balancer-labs/balancer-core/tree/2d88257fb27ad3c84b5166304a342e66055a81b3](https://github.com/balancer-labs/balancer-core/tree/2d88257fb27ad3c84b5166304a342e66055a81b3)
+Submissions should be based off commit hash: [https://github.com/balancer-labs/balancer-core/tree/2d88257fb27ad3c84b5166304a342e66055a81b3](https://github.com/balancer-labs/balancer-core/tree/2d88257fb27ad3c84b5166304a342e66055a81b3) TODO: update this
 
-Mainnet BFactory can be found at: [https://etherscan.io/address/0x9424b1412450d0f8fc2255faf6046b98213b76bd](https://etherscan.io/address/0x9424b1412450d0f8fc2255faf6046b98213b76bd)
+Mainnet BFactory can be found at: [https://etherscan.io/address/0x9424b1412450d0f8fc2255faf6046b98213b76bd](https://etherscan.io/address/0x9424b1412450d0f8fc2255faf6046b98213b76bd) TODO: update this
 
 _Additional second layer contracts, such as the exchange proxy or individual smart pool contracts, may be added at a further date._
 
@@ -28,7 +28,7 @@ The bounty program will pay out rewards according to the severity of a vulnerabi
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><b>$20,000 - $50,000</b>
+      <td style="text-align:left"><b>$20,000 - $50,000 TODO: update amounts</b>
       </td>
       <td style="text-align:left">Critical</td>
       <td style="text-align:left">
@@ -39,7 +39,7 @@ The bounty program will pay out rewards according to the severity of a vulnerabi
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>$10,000 - $20,000</b>
+      <td style="text-align:left"><b>$10,000 - $20,000 TODO: update amounts</b>
       </td>
       <td style="text-align:left">High</td>
       <td style="text-align:left">
@@ -51,7 +51,7 @@ The bounty program will pay out rewards according to the severity of a vulnerabi
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>$2,000 - $5,000</b>
+      <td style="text-align:left"><b>$2,000 - $5,000 TODO: update amounts</b>
       </td>
       <td style="text-align:left">Medium</td>
       <td style="text-align:left">
@@ -62,7 +62,7 @@ The bounty program will pay out rewards according to the severity of a vulnerabi
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>$0 - $2,000</b>
+      <td style="text-align:left"><b>$0 - $2,000 TODO: update amounts</b>
       </td>
       <td style="text-align:left">Low</td>
       <td style="text-align:left">

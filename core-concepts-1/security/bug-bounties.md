@@ -1,10 +1,10 @@
 # Bug Bounties
 
-### Overview
+## Overview
 
 Balancer has completed smart contract audits with Trail of Bits and Open Zeppelin. We also will run a continuous bug bounty program for the bronze release of Balancer core.
 
-### Scope
+## Scope
 
 The bug bounty covers any of the core smart contracts deployed on Mainnet. The code can be found at: [https://github.com/balancer-labs/balancer-core](https://github.com/balancer-labs/balancer-core)
 
@@ -14,7 +14,7 @@ Mainnet BFactory can be found at: [https://etherscan.io/address/0x9424b1412450d0
 
 _Additional second layer contracts, such as the exchange proxy or individual smart pool contracts, may be added at a further date._
 
-### Rewards
+## Rewards
 
 The bounty program will pay out rewards according to the severity of a vulnerability. The final reward amount is at the sole discretion of Balancer Labs. See eligibility section below for more details.
 
@@ -74,11 +74,11 @@ The bounty program will pay out rewards according to the severity of a vulnerabi
   </tbody>
 </table>
 
-### Reporting / Disclosures
+## Reporting / Disclosures
 
 Please report any findings to [security@balancer.finance](mailto:security@balancer.finance), with full details about any vulnerability and steps / code to reproduce. Allow us time to review and remediate any findings before public disclosure.
 
-### Ineligible Findings
+## Ineligible Findings
 
 * Duplicate vulnerabilities. Only the first reporter will be rewarded.
 * Findings already known as part of a formal audit.

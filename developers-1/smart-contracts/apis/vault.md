@@ -194,7 +194,7 @@ Since we don’t know the amount of B when constructing the multihop, we initial
 | Swap Kind | Given In | Given In |
 | Tokens In/Out | A / B | B / C |
 
-Say we get 5 B from the first swap. The amount of the second swap is then set to 5 in the Vault logic, and the second “Given In” swap produces some output amount of C. \(The caller would then validate the overall swap by  comparing this value to the minimum amountOut of C.\)
+Say we get 5 B from the first swap. The amount of the second swap is then set to 5 in the Vault logic, and the second “Given In” swap produces some output amount of C. \(The caller would then validate the overall swap by comparing this value to the minimum amountOut of C.\)
 
 The second case is a “Given Out” Swap: say we want 20 C, and want to know how much A that will cost. Here we need to do the swaps “backwards,” first trading C for B, then B for A.
 

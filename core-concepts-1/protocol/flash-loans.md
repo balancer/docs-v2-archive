@@ -13,8 +13,8 @@ What does a typical Flash Loan transaction look like? A simplified workflow migh
   * This could be an arbitrage trade, for example
 * Phase 3: Profit \(?\)
   * Check if `final_amount >= X * (1 + interest_rate)`
-    * If successful, repay `X * (1 + interest_rate)` of TokenA
-    * If unsuccessful, revert transaction
+    * If successful, repay `X * (1 + interest_rate)` of TokenA and keep profit
+    * If unsuccessful, revert transaction and lose gas fee
 
 ## Flash Swaps
 

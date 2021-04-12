@@ -53,7 +53,7 @@
 * [Samples](developers-1/untitled.md)
 * [Error Codes](developers-1/error-codes.md)
 * [Testnet](developers-1/testnet.md)
-* [Smart Order Router](developers-1/smart-order-router.md)
+* [Smart Order Router V2](developers-1/smart-order-router.md)
 * [Subgraph](developers-1/subgraph.md)
 * [GitHub](https://github.com/balancer-labs/)
 

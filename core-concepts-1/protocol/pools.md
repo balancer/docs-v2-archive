@@ -12,7 +12,7 @@ Balancer V2 will launch with two officially supported pool types:
 
 ### Weighted Pools
 
-Weighted Pools are a generalization of the standard constant product AMM popularized by Uniswap. Each pool can contain up to 8 different tokens and each token is assigned a weight defining what fraction of the pool is made up by each asset. Balancer's weighted pool equation is a generalization of the x\*y=k by accounting for uneven weights and more assets:
+Weighted Pools are a generalization of the standard constant product AMM popularized by Uniswap. Each pool can contain up to 8 \(TODO: 16?\) different tokens and each token is assigned a weight defining what fraction of the pool is made up by each asset. Balancer's weighted pool equation is a generalization of the x\*y=k by accounting for uneven weights and more assets:
 
 $$
 V = \prod_t B_t^{W_t}

@@ -8,9 +8,9 @@ The first case is a “Given In” Swap: say we have 10 A and want to know how m
 
 Since we know the starting amount of A, the first swap is “Given In,” with an amount of 10.
 
-The first swap will produce some amount of B, but we don’t know in advance how much. Since the amount of B \*will\* be known when the second swap executes, the second swap in the batch is also “Given In.”
+The first swap will produce some amount of B, but we don’t know in advance how much. Since the amount of B **will** be known when the second swap executes, the second swap in the batch is also “Given In.”
 
-Since we don’t know the amount of B when constructing the multihop, we initialize the amount in the second swap to 0, which instructs the multi-hop logic to use the calculated output amount from the first swap as input to the second.
+Since we don’t know the amount of B when constructing the multi-hop, we initialize the amount in the second swap to 0, which instructs the multi-hop logic to use the calculated output amount from the first swap as input to the second.
 
 | Parameter | Swap 1 | Swap 2 |
 | :--- | :--- | :--- |

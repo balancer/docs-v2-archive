@@ -34,9 +34,9 @@ Due to Balancer's abstracted pool architecture, it's very easy to implement new 
 
 The flexibility introduced doesn't just extend to control over the pricing curve used by the pool but can affect any aspect of the pool.
 
-Balancer V1 introduced the concept of smart pools where parameters can change by external contracts, and in V2 these features can be integrated directly into the pools themselves. Due to Balancer's modular architecture, any of the smart contracts defining the behavior of a pool can be replaced as long as it maintains the common interface with the Vault.
+Balancer V1 introduced smart pools, which give external contracts control over parameters, and in V2 these features are integrated directly into the pools themselves. Thanks to Balancer's modular architecture, any of the smart contracts defining the behavior of a pool can be replaced as long as it maintains the common interface with the Vault.
 
-The first smart pool will be the Liquidity Bootstrapping Pool \(TODO: is it? or the CPR? I'm not sure\), designed to support V2 LBPs. It is a specialized 2-token WeightedPool, which restricts liquidity provision to the pool creator, and supports pausing trading, setting the swap fee, and changing weights gradually, as in V1.
+The first smart pool will be the Liquidity Bootstrapping Pool. It is a specialized 2-token WeightedPool, which restricts liquidity provision to the pool creator, and supports pausing trading, setting the swap fee, and changing weights gradually.
 
 However, there are significant differences:
 

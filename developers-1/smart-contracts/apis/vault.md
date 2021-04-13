@@ -48,7 +48,7 @@ getInternalBalance(
 returns (uint256[])
 ```
 
- Get a user's internal "wallet" balances. This is called the UserBalance in external interfaces, and "internal balance" in the internal functions. Implemented in `UserBalance`.
+Get a user's internal "wallet" balances. This is called the UserBalance in external interfaces, and "internal balance" in the internal functions. Implemented in `UserBalance`.
 
 ### `manageUserBalance`
 
@@ -56,7 +56,7 @@ returns (uint256[])
 manageUserBalance(UserBalanceOp[] ops)
 ```
 
-There are four possible operations in `manageUserBalance`: each designate the a sender/receiver, asset, and amount. The asset is either a token address, or the zero address \(meaning ETH\). The Vault does not store ETH, but you can use ETH when interacting with internal balances; the Vault will do any necessary wrapping/unwrapping.
+There are four possible operations in `manageUserBalance`: each designates a sender/receiver, asset, and amount. The asset is either a token address, or the zero address \(meaning ETH\). The Vault does not store ETH, but you can use ETH when interacting with internal balances; the Vault will do any necessary wrapping/unwrapping.
 
 You can deposit, withdraw, or transfer internal balance. There is also an external transfer, which allows a relayer to transfer between external accounts, using the Vault's token allowance. Implemented in `UserBalance`.
 
@@ -67,7 +67,7 @@ registerPool(PoolSpecialization specialization)
 returns(bytes32)
 ```
 
- Called from the pool contract to generate a  Pool ID, and enter it in the Vault's pool data structures. Implemented in `PoolAssets`.
+Called from the pool contract to generate a  Pool ID, and enter it in the Vault's pool data structures. Implemented in `PoolAssets`.
 
 ### **`getPool`**
 

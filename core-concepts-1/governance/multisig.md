@@ -4,10 +4,10 @@
 
 Since its inception, the long term vision for the Balancer Protocol is to be fully governed by BAL token holders, while token ownership is aimed to be widely spread across the Balancer community.
 
-But getting to that ideal, long-term vision of an actually decentralized and effective governance is no easy task. Protocol governance is a highly complex and rapidly evolving topic. The whole crypto ecosystem is still in the very early days of trying to figure out:
+But getting to that ideal, long-term vision of a truly decentralized and effective governance is no easy task. Protocol governance is a highly complex and rapidly evolving topic. The whole crypto ecosystem is still in the very early days of trying to figure out:
 
 * which mechanisms and processes work best
-* the necessary infrastructure, tooling and user interfaces that go with them
+* the necessary infrastructure, tooling, and user interfaces
 * the risks and concerns associated with each approach
 
 Experimentation has been running wild in all directions:
@@ -21,7 +21,7 @@ Experimentation has been running wild in all directions:
 * on-chain actions from off-chain voting by way of oracles
 * upgradeable smart contracts
 * time delays on sensitive actions
-* emergency actions via multisig \(e.g. pause, shutdown\)
+* emergency actions via Multisig \(e.g. pause, shutdown\)
 * legal entities \(e.g. foundation\) providing support for the DAO
 * tools for DAO treasury management
 * token issuance to cover protocol expenses
@@ -31,9 +31,9 @@ Experimentation has been running wild in all directions:
 
 While also actively experimenting with governance-related initiatives, the Balancer community has leaned towards the more cautious and thoughtful approach of not trying to rush the path to full decentralization, so each step towards a mature on-chain governance will be taken with due care, having learned from others’ experiences.
 
-Balancer V1 contracts are immutable, so up to now there were no core protocol parameters to tweak/change. Instead, our governance has focused on a fair, inclusive BAL token distribution, which is carried out mainly through the protocol’s liquidity mining. BAL holders have tweaked liquidity mining via off-chain voting. And to make that possible, BalancerLabs proudly developed in-house an open-source tool called Snapshot, which became the widely popular gold standard for off-chain voting in blockchain land. Snapshot was so successful that it’s being spun off as its own initiative so that it can keep up with the improvements required by all its users.
+Balancer V1 contracts are immutable, so up until now, there have been no core protocol parameters to tweak/change. Instead, our governance has focused on a fair, inclusive BAL token distribution, which is carried out mainly through the protocol’s liquidity mining. BAL holders have tweaked liquidity mining via off-chain voting. And to make that possible, BalancerLabs proudly developed in-house an open-source tool called Snapshot, which became the widely popular gold standard for off-chain voting in blockchain land. Snapshot was so successful that it’s being spun off as its own initiative so that it can keep up with the improvements required by all its users.
 
-Balancer V2 contracts, on the other hand, are not totally immutable and do allow for some tweaking of the core protocol operation, for instance, in turning on protocol fees. As a placeholder for a future onchain DAO, such limited admin powers will be initially granted to a multisig.
+Balancer V2 contracts, on the other hand, do allow for some tweaking of core protocol parameters, for instance, in turning on protocol fees. As a placeholder for a future on-chain DAO, such limited admin powers will be initially granted to a Multisig.
 
 ## The Multisig
 

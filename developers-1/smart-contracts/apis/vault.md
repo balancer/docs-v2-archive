@@ -242,10 +242,10 @@ returns (ProtocolFeesCollector)
 
 The external contract authorized to collect protocol fees. Implemented by `Fees`.
 
-### **`setEmergencySwitch`** 
+### **`setPaused`** 
 
 ```text
-setEmergencySwitch(bool active)  
+setPaused(bool paused)  
 ```
 
 Safety mechanism to halt most Vault operations in the event of an emergency. The only functions allowed involve withdrawing funds \(e.g., from internal balances, or proportional pool exits\). Implemented by `Vault`.

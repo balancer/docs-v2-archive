@@ -39,6 +39,7 @@
 * [Discord](https://discord.com/invite/ARJWaeF)
 * [Forums](https://forum.balancer.finance/)
 * [Medium](https://medium.com/balancer-protocol)
+* [Dune Analytics](https://duneanalytics.com/projects/balancer)
 
 ## Developers <a id="developers-1"></a>
 

@@ -43,19 +43,17 @@
 ## Developers <a id="developers-1"></a>
 
 * [Smart Contracts](developers-1/smart-contracts/README.md)
-  * [Interfaces](developers-1/smart-contracts/interfaces.md)
   * [APIs](developers-1/smart-contracts/apis/README.md)
     * [Vault](developers-1/smart-contracts/apis/vault.md)
     * [Pools](developers-1/smart-contracts/apis/pools.md)
     * [Asset Managers](developers-1/smart-contracts/apis/asset-managers.md)
   * [Deployment Addresses](developers-1/smart-contracts/deployment-addresses.md)
-* [Front End Devs](developers-1/front-end-devs.md)
 * [Guides](developers-1/guides/README.md)
   * [Single Swaps](developers-1/guides/single-swaps.md)
   * [Batch Swaps](developers-1/guides/batch-swaps.md)
+* [Subgraph](developers-1/subgraph.md)
+* [Smart Order Router V2](developers-1/smart-order-router.md)
 * [Error Codes](developers-1/error-codes.md)
 * [Testnet](developers-1/testnet.md)
-* [Smart Order Router V2](developers-1/smart-order-router.md)
-* [Subgraph](developers-1/subgraph.md)
 * [GitHub](https://github.com/balancer-labs/)
 

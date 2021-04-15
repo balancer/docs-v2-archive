@@ -30,16 +30,16 @@ returns(bool)
 
  Returns true if `user` has allowed `relayer` to act as a relayer for them.  Implemented in `VaultAuthorization`
 
-### `changeRelayerAllowance`
+### `setRelayerApproval`
 
 ```text
-changeRelayerAllowance(
+setRelayerApproval(
     address sender, 
     address relayer,
-    bool allowed)
+    bool approved)
 ```
 
- Returns true if `user` has allowed `relayer` to act as a relayer for them.  Implemented in `VaultAuthorization`
+ Grants or revokes approval for the given `relayer` to call Authorizer-approved functions on behalf of `user`.  Implemented in `VaultAuthorization`
 
 ### **`getInternalBalance`**
 
@@ -109,7 +109,7 @@ Remove tokens from the pool \(must have zero balance\). Implemented in `PoolAsse
 getPoolTokens(bytes32 poolId)
 returns (IERC20[] tokens, 
     uint256[] balances,
-    uint256 maxBlockNumber)
+    uint256 lastChangeBlock)
 ```
 
 Returns a Pool's registered tokens, the total balance for each, and the most recent block in which any of the tokens were updated. Implemented by PoolAssets. Implemented in `PoolAssets`.

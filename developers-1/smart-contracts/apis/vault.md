@@ -226,12 +226,10 @@ This can only be called by the asset manager of a token in a pool.
 
 ```text
 managePoolBalance(
-    bytes32 poolId, 
-    AssetManagerOpKind kind, 
-    AssetManagerTransfer[] transfers)
+    PoolBalanceOp[] ops)
 ```
 
- Deposit or withdraw funds from the pool \(i.e., move funds between _cash_ and _managed_ balances\), or update the total balance \(i.e., reporting a gain or loss from management activities\). Implemented in `PoolAssets`.
+ Deposit or withdraw funds from the pool \(i.e., move funds between _cash_ and _managed_ balances\), or update the total balance \(i.e., reporting a gain or loss from management activities\). Implemented in `PoolAssets`. Each `PoolBalanceOp` describes the type of operation \(deposit/withdraw/update\), the pool ID, the token, and the amount.
 
 ### **`getProtocolFeesCollector`** 
 

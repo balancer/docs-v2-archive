@@ -1,5 +1,31 @@
 # Batch Swaps
 
+```text
+enum SwapKind { GIVEN_IN, GIVEN_OUT }
+
+struct BatchSwapStep {
+    bytes32 poolId;
+    uint256 assetInIndex;
+    uint256 assetOutIndex;
+    uint256 amount;
+    bytes userData;
+}
+
+struct FundManagement {
+    address sender;
+    bool fromInternalBalance;
+    address payable recipient;
+    bool toInternalBalance;
+}
+        
+batchSwap(SwapKind kind,
+          BatchSwapStep[] swaps,
+          IAsset[] assets,
+          FundManagement funds,
+          int256[] limits,
+          uint256 deadline) returns (int256[] assetDeltas)
+```
+
 "Given In" means the caller knows the exact amount of the incoming token, and is asking the pool to calculate the tokenOut amount. The opposite is true of "Given Out." 
 
 In these examples, we’re trading token A for token C, through the intermediate token B. A, B, and C token could be in different pools, or in the same pool.

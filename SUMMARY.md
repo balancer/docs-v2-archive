@@ -52,6 +52,7 @@
   * [Deployment Addresses](developers-1/smart-contracts/deployment-addresses.md)
 * [Front End Devs](developers-1/front-end-devs.md)
 * [Guides](developers-1/guides/README.md)
+  * [Single Swaps](developers-1/guides/single-swaps.md)
   * [Batch Swaps](developers-1/guides/batch-swaps.md)
 * [Error Codes](developers-1/error-codes.md)
 * [Testnet](developers-1/testnet.md)

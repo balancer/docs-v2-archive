@@ -1,5 +1,7 @@
 # Vault
 
+![Vault Overview](../../../.gitbook/assets/v2-partners.png)
+
 ### `getAuthorizer`
 
 ```

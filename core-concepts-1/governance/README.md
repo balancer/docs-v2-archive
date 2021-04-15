@@ -12,12 +12,6 @@ Balancer Governors have the power to enable and modify Governable Protocol Fees.
 
 {% page-ref page="governable-protocol-fees.md" %}
 
-## Staking
-
-TODO: do we need/want a staking page?
-
-{% page-ref page="staking.md" %}
-
 ## Snapshot
 
 Snapshot, a spinoff of Balancer, is an off-chain gasless multi-governance client with easy to verify and hard to contest results. Balancer Governance Votes take place on Snapshot.

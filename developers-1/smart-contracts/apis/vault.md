@@ -19,10 +19,10 @@ getAuthorizer(IAuthorizer newAuthorizer)
 
 Sets a new Authorizer for the Vault. The caller must be allowed by the current Authorizer to do this. Implemented in `VaultAuthorization`
 
-### `hasAllowedRelayer`
+### `hasApprovedRelayer`
 
 ```text
-hasAllowedRelayer(
+hasApprovedRelayer(
     address user, 
     address relayer) 
 returns(bool)

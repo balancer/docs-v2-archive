@@ -2,6 +2,8 @@
 
 ![Vault Overview](../../../.gitbook/assets/v2-partners.png)
 
+## Authorization
+
 ### `getAuthorizer`
 
 ```
@@ -41,6 +43,8 @@ setRelayerApproval(
 
  Grants or revokes approval for the given `relayer` to call Authorizer-approved functions on behalf of `user`.  Implemented in `VaultAuthorization`
 
+## Internal Balances
+
 ### **`getInternalBalance`**
 
 ```text
@@ -61,6 +65,8 @@ manageUserBalance(UserBalanceOp[] ops)
 There are four possible operations in `manageUserBalance`: each designates a sender/receiver, asset, and amount. The asset is either a token address, or the zero address \(meaning ETH\). The Vault does not store ETH, but you can use ETH when interacting with internal balances; the Vault will do any necessary wrapping/unwrapping.
 
 You can deposit, withdraw, or transfer internal balance. There is also an external transfer, which allows a relayer to transfer between external accounts, using the Vault's token allowance. Implemented in `UserBalance`.
+
+## Pools
 
 ### **`registerPool`**
 
@@ -206,7 +212,7 @@ The `queryBatchSwap` method executes the exact same code as `batchSwap` - but re
 
 Implemented in `Swaps.`
 
-## Flash Loan
+## Flash Loans
 
 ### **`flashLoan`**
 
@@ -232,6 +238,8 @@ managePoolBalance(
 ```
 
  Deposit or withdraw funds from the pool \(i.e., move funds between _cash_ and _managed_ balances\), or update the total balance \(i.e., reporting a gain or loss from management activities\). Implemented in `PoolAssets`. Each `PoolBalanceOp` describes the type of operation \(deposit/withdraw/update\), the pool ID, the token, and the amount.
+
+## Miscellaneous
 
 ### **`getProtocolFeesCollector`** 
 

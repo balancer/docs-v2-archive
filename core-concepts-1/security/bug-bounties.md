@@ -79,5 +79,5 @@ Please report any findings to [security@balancer.finance](mailto:security@balanc
 
 * Duplicate vulnerabilities. Only the first reporter will be rewarded.
 * Findings already known as part of a formal audit.
-* Findings related to known-incompatible tokens might be ineligible as many vulnerabilities might be inserted in non-standard ERC20 tokens on purpose to apply for this bug bounty. A compatible ERC20 token is one that conforms to all EIP-20 interfaces _and_ exhibits expected behavior in its implementation; i.e., a token that transfers exactly N tokens from sender to recipient when asked, and whose balances do not change by any means other than transfers.
+* Findings related to non-standard ERC20 tokens might be ineligible as many vulnerabilities might be inserted in non-standard ERC20 tokens on purpose to apply for this bug bounty. A standard ERC20 token is one that conforms to all EIP-20 interfaces _and_ exhibits expected behavior in its implementation; i.e., a token that transfers exactly N tokens from sender to recipient when commanded, and whose balances do not change by any means other than transfers.
 

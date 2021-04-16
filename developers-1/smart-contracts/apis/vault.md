@@ -1,6 +1,6 @@
 # Vault
 
-![Vault Overview](../../../.gitbook/assets/v2-partners.png)
+![Use Case Diagram for the Vault](../../../.gitbook/assets/vault-use-case.png)
 
 ## Authorization
 

@@ -1,5 +1,11 @@
 # Bug Bounties
 
+{% hint style="warning" %}
+The bug bounties on this page apply only to the Balancer **smart contracts** which secure protocol funds on the Ethereum mainnet. Bug reports pertaining to Balancer's web interfaces, both in terms of UI/UX or servers/infrastructure, are not eligible. Only the first reporter of a given contract vulnerability will be rewarded, and findings already discovered as part of a formal audit are ineligible.  
+  
+Vulnerabilities involving non-standard ERC-20 tokens are also ineligible, as it would be trivial to insert an exploit into a token for the sake of applying to this bug bounty. A standard, Balancer-compatible ERC-20 token is one that conforms to all [EIP-20 interfaces](https://eips.ethereum.org/EIPS/eip-20) _and_ exhibits expected behavior in implementation; i.e., transfers move exactly N tokens from sender to recipient, and balances do not change by any means other than transfers. Notably, tokens with transfer fees, rebasing supplies, or streaming mechanics are not compatible with Balancer, but that list is not exhaustive.
+{% endhint %}
+
 ## Overview
 
 Balancer has completed smart contract audits with Trail of Bits, Open Zeppelin, and Certora. We also will run a continuous bug bounty program for the V2 release of the Balancer core contracts.
@@ -74,10 +80,4 @@ The bounty program will pay out rewards according to the severity of a vulnerabi
 ## Reporting / Disclosures
 
 Please report any findings to [security@balancer.finance](mailto:security@balancer.finance), with full details about any vulnerability and steps/code to reproduce. Allow us time to review and remediate any findings before public disclosure.
-
-## Ineligible Findings
-
-* Duplicate vulnerabilities. Only the first reporter will be rewarded.
-* Findings already known as part of a formal audit.
-* Findings related to non-standard ERC20 tokens might be ineligible as many vulnerabilities might be inserted in non-standard ERC20 tokens on purpose to apply for this bug bounty. A standard ERC20 token is one that conforms to all EIP-20 interfaces _and_ exhibits expected behavior in its implementation; i.e., a token that transfers exactly N tokens from sender to recipient when commanded, and whose balances do not change by any means other than transfers.
 

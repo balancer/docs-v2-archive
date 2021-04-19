@@ -69,11 +69,11 @@ Step 2.3\) finds the `swapAmounts` that will maximize the returns given an initi
 
 `iterateSwapAmountsApproximation()` takes as inputs `swapAmounts` and `bestPathIds` and is expected to find new `swapAmounts` that have spot prices after swap as close as possible.
 
-To help illustrate this, let's start with two paths \(1 and 2\) and initial `swapAmounts` equal to $A\_1$ and $A\_2$ . Remember that always the sum of the individual amounts is `targetAmountSwap`. 
+To help illustrate this, let's start with two paths \(1 and 2\) and initial `swapAmounts` equal to $$A_i$$ and $$A_2$$ . Remember that always the sum of the individual amounts is `targetAmountSwap`. 
 
 ![](../.gitbook/assets/image%20%282%29.png)
 
-The objective is to find a target spot price \(`targetSP`\) and $A\_1'$ and $A\_2'$. such that:
+The objective is to find a target spot price \(`targetSP`\) and $$A'_1$$ and $$A'_2$$ . such that:
 
 $$
 SPaA_1(A_1) =SPaA_2(A_2)= targetSP \\
@@ -84,7 +84,7 @@ To help the visualization, this is what we are looking to achieve:
 
 ![](../.gitbook/assets/image%20%283%29.png)
 
-To calculate a candidate for `targetSP` we need to use the derivatives of $SPaS\_1$ and $SPaS\_2$ at $A\_1$ and $A\_2$ respectively:
+To calculate a candidate for `targetSP` we need to use the derivatives of $$SPaS_1$$ and $$SPaS_2$$ at $$A_1$$ and $$A_2$$ respectively:
 
 ![](../.gitbook/assets/image%20%281%29.png)
 
@@ -101,13 +101,13 @@ $$
 targetSP = \frac{\frac{SPaS_1(A_1)}{SPaS_1'(A_1)}+\frac{SPaS_2(A_2)}{SPaS_2'(A_2)}}{\frac{1}{SPaS_1'(A_1)}+\frac{1}{SPaS_1'(A_1)}}
 $$
 
-In other words, the target spot price is the average of the spot prices after swap weighted by the inverse of their derivatives. The derivatives of SPaS can be seen as the slippage of that path. Generalizing for any number of paths we have:
+In other words, the target spot price is the average of the spot prices after swap weighted by the inverse of their derivatives. The derivatives of $$SPaS$$ can be seen as the slippage of that path. Generalizing for any number of paths we have:
 
 $$
 targetSP = \frac{\sum_i{\frac{SPaS_i(A_i)}{SPaS'_i(A_i)}}} {\sum_i{\frac{1}{SPaS'_i(A_i)}}}
 $$
 
-After calculating `targetSP` it's easy to replace it in the equations above to find each $A'\_i$:
+After calculating `targetSP` it's easy to replace it in the equations above to find each $$A'_i$$ :
 
 $$
 A'_i = \frac{SPaS_i(Ai) - targetSP}{SPaS'_i(Ai)}+A_i
@@ -117,7 +117,7 @@ Notice that the paths have limits in the amounts they can be used to swap. The l
 
 ### redistributeInputAmounts\(\)
 
-If after the calculations done in `iterateSwapAmountsApproximation()` above we end up with $A'\_i$ that is negative or above the limit of path $i$, then we have to set it to 0 or $A\_{limit\_i}$respectively. The excesses have to be 'redistributed' to the other viable paths \(i.e. paths that do not have swap amounts below zero or above the path limit\), otherwise the sum of $A\_i$ for all paths $i$ is not going to be equal to `targetAmountSwap` as it should.
+If after the calculations done in `iterateSwapAmountsApproximation()` above we end up with $$A'_i$$ that is negative or above the limit of path $$i$$ , then we have to set it to 0 or $$A_{limit_i}$$ respectively. The excesses have to be 'redistributed' to the other viable paths \(i.e. paths that do not have swap amounts below zero or above the path limit\), otherwise the sum of $$A_i$$ for all paths $$i$$ is not going to be equal to `targetAmountSwap` as it should.
 
 Function `redistributeInputAmounts()` might need to be calculated several times in a row because as the excesses are redistributed to paths that are viable, their swap amounts might go below zero or beyond the limit. We call `redistributeInputAmounts()` iteratively until all swap amounts are above or equal to zero **and** below or equal to their path limit amounts.
 

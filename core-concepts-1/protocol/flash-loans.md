@@ -9,9 +9,11 @@ As discussed in the Vault section, the consolidated liquidity in the Vault does 
 What does a typical Flash Loan transaction look like? A simplified workflow might look like:
 
 * Phase 1: Borrow X amount of TokenA
-* Phase 2: ???
-  * This could be an arbitrage trade, for example
-* Phase 3: Profit \(?\)
+* Phase 2: Do something with TokenA
+  * Examples
+    * Arbitrage trade
+    * Paying off one loan and taking out another \(collateral swap\)
+* Phase 3: Repay the loan
   * Check if `final_amount >= X * (1 + interest_rate)`
     * If successful, repay `X * (1 + interest_rate)` of TokenA and keep profit
     * If unsuccessful, revert transaction and lose gas fee

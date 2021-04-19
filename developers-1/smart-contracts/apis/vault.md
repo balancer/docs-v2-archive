@@ -18,8 +18,7 @@ Returns the Vault's Authorizer \(Balancer governance contract\). Implemented in 
 ```
 getAuthorizer(IAuthorizer newAuthorizer)
 
-emits AuthorizerChanged(IAuthorizer indexed oldAuthorizer,
-                        IAuthorizer indexed newAuthorizer)
+emits AuthorizerSet(IAuthorizer indexed newAuthorizer)
 ```
 
 Sets a new Authorizer for the Vault. The caller must be allowed by the current Authorizer to do this. Implemented in `VaultAuthorization`

@@ -47,6 +47,7 @@
     * [Vault](developers-1/smart-contracts/apis/vault.md)
     * [Pools](developers-1/smart-contracts/apis/pools.md)
     * [Asset Managers](developers-1/smart-contracts/apis/asset-managers.md)
+  * [Events](developers-1/smart-contracts/events.md)
   * [Deployment Addresses](developers-1/smart-contracts/deployment-addresses.md)
 * [Guides](developers-1/guides/README.md)
   * [Single Swaps](developers-1/guides/single-swaps.md)

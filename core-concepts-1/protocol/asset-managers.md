@@ -24,5 +24,5 @@ If the balances of pool tokens have shifted due to a price change, the pool will
 
 #### ...the Asset Manager makes a bad investment?
 
-This is possible. Asset Managers are permissionless, and anyone can create one. It's possible that some have sub-optimal investment strategies, and it's also possible some bad actor could create a malicious Asset Manager. In order to prevent loss of funds, Asset Managers must be approved both by Balancer Governance and by the liquidity provider. It's important to research any Asset Manager you might consider using and to understand the risks involved.
+This is possible. Asset Managers are permissionless, and anyone can create one. It's possible that some have sub-optimal investment strategies, and it's also possible some bad actor could create a malicious Asset Manager. In order to prevent loss of funds, it's important to research any Asset Manager you might consider using and to understand the risks involved. To mitigate this risk, the default pool factories create pools which do not make use of Asset Managers such that this feature is opt-in.
 

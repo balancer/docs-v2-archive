@@ -134,5 +134,5 @@ All error codes for the Balancer V2 core contracts are defined in the [`Balancer
 | :--- | :--- | :--- |
 | 600 | SWAP\_FEE\_PERCENTAGE\_TOO\_HIGH |  |
 | 601 | FLASH\_LOAN\_FEE\_PERCENTAGE\_TOO\_HIGH |  |
-| 602 | INSUFFICIENT\_FLASH\_LOAN\_FEES |  |
+| 602 | INSUFFICIENT\_FLASH\_LOAN\_FEE\_AMOUNT |  |
 

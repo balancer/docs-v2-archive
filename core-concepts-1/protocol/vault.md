@@ -32,3 +32,7 @@ While the consolidated liquidity in the Vault does not improve price impact on a
 
 Further, anyone who identifies a price discrepancy in two Balancer Pools can execute a **Flash Swap**. ****An arbitrageur who makes a flash swap does not need to hold any of the input tokens that one would normally need to make a trade. Instead, the trader identifies the imbalance, tells the Vault to make the swap, and is rewarded with the profit.
 
+For more on flash loans, check out the Flash Loans page:
+
+{% page-ref page="flash-loans.md" %}
+

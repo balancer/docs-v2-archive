@@ -12,7 +12,7 @@ The obvious source of Protocol Fees is from trading. Balancer traders already pa
 
 The Protocol Fees for trades will be collected as a percentage of the trade fees already being collected \(a fraction of a fraction\). From the traders' perspective, there will be no price increase. 
 
-Upon launch, Balancer V2's **Protocol Fees for trades turned off be default**. They can be turned on only by a vote of the Balancer Governors \(BAL token holders\). The governors will have the power to activate, and determine the amount of these fees.
+Upon launch, Balancer V2's **Protocol Fees for trades are turned off by default**. They can be turned on only by a vote of the Balancer Governors \(BAL token holders\). The governors will have the power to activate, and determine the amount of, these fees.
 
 ### Flash Loan Fees
 
@@ -29,10 +29,10 @@ We invite you to join our Discord and Forums to take part in the discussion over
 #### Possible Uses of Balancer Protocol Fees
 
 * Put them into a Balancer Pool
-* Fund Gitcoin Grants for improvements
+* Fund Gitcoin Grants for protocol improvements
 * Fund advertising campaigns
-* Grants to attract strategic partnerships
+* Fund grants to attract strategic partnerships
 * Buy a decentralized insurance policy
 * Lend them on an external protocol
-* Payouts to Balancer Governors
+* Pay them directly to Balancer Governors
 

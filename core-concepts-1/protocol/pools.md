@@ -40,10 +40,10 @@ The first smart pool will be the Liquidity Bootstrapping Pool \(LBP\). It is a s
 
 There are significant differences in the V2 LBPs:
 
-* Weights change automatically; no triggering \(pokeWeights\(\)\) necessary
+* Weights change automatically; no triggering \(`pokeWeights()`\) necessary
 * Pools can launch in a paused state
 * Rights are revocable - pool owners can revoke any of the three available rights, making the pool more trustless \(e.g. revoke pausing and weight change to transition from an LBP to a smart treasury\)
 * Pool owners can cleanly renounce ownership entirely, which allows public LPs, and effectively creates a WeightedPool \(though slightly less gas-efficient than a "native" WeightedPool\).
 
-Likewise, there are two versions of the general Smart Pool \(for Weighted and Stable pools\).These have very similar rights to V1 smart pools - except they are individually revocable. In addition, Weighted Pools may support a "circuit breaker", to halt trading for a token if the pool becomes "unbalanced" \(e.g., if a malicious or buggy token contract allows infinite minting, or otherwise breaks the pricing algorithm of the pool\).
+Likewise, there are two versions of the general Smart Pool \(for Weighted and Stable pools\). These have very similar rights to V1 smart pools - except they are individually revocable. In addition, Weighted Pools may support a "circuit breaker", to halt trading for a token if the pool becomes "unbalanced" \(e.g., if a malicious or buggy token contract allows infinite minting, or otherwise breaks the pricing algorithm of the pool\).
 

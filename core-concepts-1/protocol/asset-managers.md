@@ -9,6 +9,7 @@ Capital efficiency is very important to liquidity providers, and by leveraging A
 ## Example Applications
 
 * Lend assets on Aave to earn interest
+* Invest into Yearn Vaults
 * Provide liquidity on a Layer 2 DEX
 
 ## How do Asset Managers affect prices in the pool?

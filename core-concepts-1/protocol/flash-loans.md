@@ -2,7 +2,7 @@
 
 ## Overview
 
-As discussed in the Vault section, the consolidated liquidity in the Vault does not improve price impact on a per-pool basis, but it does enable Balancer Protocol to leverage that combined liquidity by offering Flash Loans. A Flash Loan is an uncollateralized loan that must be repaid \(plus interest\) in the same transaction as it is borrowed. If a strategy is unable to repay the loan, the entire transaction is reverted, returning all borrowed tokens to the Vault.
+As discussed in the Vault section, the consolidated liquidity in the Vault does not improve price impact on a per-pool basis, but it does enable Balancer Protocol to leverage that combined liquidity by offering Flash Loans. Flash Loans, [originally created by Aave](https://aave.com/flash-loans/), are uncollateralized loans that must be repaid \(plus interest\) in the same transaction as they is borrowed. If a strategy is unable to repay the loan, the entire transaction is reverted, returning all borrowed tokens to the Vault.
 
 ## Workflow
 

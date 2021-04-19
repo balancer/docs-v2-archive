@@ -117,7 +117,7 @@ registerTokens(
     IERC20[] tokens, 
     address[] assetManagers)
     
-emits TokensRegistered(bytes32 poolId,
+emits TokensRegistered(indexed bytes32 poolId,
                        IERC20[] tokens,
                        address[] assetManagers)
 ```
@@ -131,7 +131,7 @@ deregisterTokens(
     bytes32 poolId, 
     IERC20[] tokens)
     
-emits TokensDeregistered(bytes32 poolId, IERC20[] tokens)
+emits TokensDeregistered(indexed bytes32 poolId, IERC20[] tokens)
 ```
 
 Remove tokens from the pool \(must have zero balance\). Implemented in `PoolAssets`.

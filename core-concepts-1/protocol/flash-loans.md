@@ -6,16 +6,21 @@ As discussed in the Vault section, the consolidated liquidity in the Vault does 
 
 ## Workflow
 
-What does a typical Flash Loan transaction look like? A simplified workflow might look like:
+What does a sample Flash Loan transaction look like? A simplified workflow might look like:
 
-* Phase 1: Borrow X amount of TokenA
-* Phase 2: Do something with TokenA
+* Phase 1: Borrow X amount of DAI
+* Phase 2: Do something with DAI
   * Examples
-    * Arbitrage trade
-    * Paying off one loan and taking out another \(collateral swap\)
+    * Arbitrage Trade
+      * Trade DAI for TokenA on one DEX
+      * Trade TokenA for DAI on another DEX
+    * Collateral Swap
+      * Pay off DAI loan for collateral
+      * Trade collateral for TokenA
+      * Take out another DAI loan with TokenA as collateral
 * Phase 3: Repay the loan
   * Check if `final_amount >= X * (1 + interest_rate)`
-    * If successful, repay `X * (1 + interest_rate)` of TokenA and keep profit
+    * If successful, repay `X * (1 + interest_rate)` of DAI and keep profit \(if any\)
     * If unsuccessful, revert transaction and lose gas fee
 
 ## Flash Swaps

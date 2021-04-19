@@ -8,7 +8,7 @@ With the introduction of the Vault, Balancer Pools are now contracts that only n
 
 ## Standard Pools
 
-Balancer V2 will launch with two officially supported pool types:
+Balancer V2 will launch with Weighted Pools:
 
 ### Weighted Pools
 
@@ -22,7 +22,7 @@ where V is constant, B is an asset's balance, and W is an asset's weight in the 
 
 As the price of each token changes, arbitrageurs rebalance the pool by making trades. This maintains the desired weighting of the value held by each token whilst collecting trading fees from the traders.
 
-### Stable Pools
+### Coming Soon: Stable Pools
 
 For certain assets that are expected to consistently trade at near parity \(e.g. different varieties of stablecoins or synthetics\) a more efficient design is the StableSwap AMM as popularized by Curve. These pools allow for larger trades of these assets before encountering significant price impact.
 
@@ -30,7 +30,7 @@ For certain assets that are expected to consistently trade at near parity \(e.g.
 
 Due to Balancer's abstracted pool architecture, it's very easy to implement new price curves for new AMM designs and integrate them into the protocol. New pool types will be added by the Balancer Community.
 
-## Smart Pools
+## Coming Soon: Smart Pools
 
 The flexibility introduced doesn't just extend to control over the pricing curve used by the pool but can affect any aspect of the pool.
 

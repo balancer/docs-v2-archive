@@ -2,5 +2,9 @@
 
 Balancer has completed full audits with Consensys Diligence, Trail of Bits, and Open Zeppelin. Links to the audit reports can be found below.
 
-TODO: ADD AUDIT PDFS
+{% file src="../../.gitbook/assets/2021-03-15.pdf" caption="OpenZeppelin \(2021/03/15\)" %}
+
+{% file src="../../.gitbook/assets/2021-04-05.pdf" caption="Trail of Bits \(2021/04/05\)" %}
+
+These audit reports are also stored in the [Balancer V2 Core repository](https://github.com/balancer-labs/balancer-core-v2/tree/master/audits).
 

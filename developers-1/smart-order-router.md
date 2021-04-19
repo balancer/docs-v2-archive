@@ -25,7 +25,9 @@ The final objective of SOR is to find a trade that maximizes the return for the 
 * `returnToken`: is the token whose amount is unknown for the swap and SOR is calculating. Simply put, if `swapType` is `'swapExactIn'` the user is inputting how much they want to **sell** \(`targetAmountSwap` is in `tokenIn`\) and will get from SOR a `returnAmount` which is how much they will get back in `tokenOut`. Conversely, if `swapType` is `'swapExactOut'`, then the user is inputting how much they want to **buy** \(`targetAmountSwap` is in `tokenOut`\) and will get from SOR a `returnAmount` which is how much they have to pay in `tokenIn`.
 * `costReturnToken`: is how much an additional swap would add in gas costs in terms of `returnToken`. For example, for a `'swapExactIn'` swap of DAI for BAL, `costReturnToken` could be 0.1 BAL \(BAL is the `returnToken`\). This is simply calculated by:
 
-$$costReturnToken =\frac{gasPrice\cdot gasAddSwap}{priceReturnTokenInETH} $$
+$$
+costReturnToken = \frac{gasPrice \cdot gasAddSwap}{priceReturnTokenInETH}
+$$
 
 ## Basic algorithm
 
@@ -73,8 +75,10 @@ To help illustrate this, let's start with two paths \(1 and 2\) and initial `swa
 
 The objective is to find a target spot price \(`targetSP`\) and $A\_1'$ and $A\_2'$. such that:
 
-* $SPaA\_1\(A\_1\) =SPaA\_2\(A\_2\)= targetSP$
-* $A\_1'+A\_2' = A\_1+A\_2 = A\_T$
+$$
+SPaA_1(A_1) =SPaA_2(A_2)= targetSP \\
+A_1'+A_2' = A_1+A_2 = A_T
+$$
 
 To help the visualization, this is what we are looking to achieve:
 
@@ -86,26 +90,34 @@ To calculate a candidate for `targetSP` we need to use the derivatives of $SPaS\
 
 Using simple trigonometry we can say that:
 
-* $SPaS\_1\(A\_1\)-targetSP = SPaS\_1'\(A\_1\)\cdot\(A\_1'-A\_1\)$
-* $SPaS\_2\(A\_2\)-targetSP = SPaS\_2'\(A\_2\)\cdot\(A\_2'-A\_2\)$
+$$
+SPaS_1(A_1)-targetSP = SPaS_1'(A_1)\cdot(A_1'-A_1)\\
+SPaS_2(A_2)-targetSP = SPaS_2'(A_2)\cdot(A_2'-A_2)
+$$
 
 The solution for this system of equations is:
 
-$$targetSP = \frac{\frac{SPaS\_1\(A\_1\)}{SPaS\_1'\(A\_1\)}+\frac{SPaS\_2\(A\_2\)}{SPaS\_2'\(A\_2\)}}{\frac{1}{SPaS\_1'\(A\_1\)}+\frac{1}{SPaS\_1'\(A\_1\)}} $$
+$$
+targetSP = \frac{\frac{SPaS_1(A_1)}{SPaS_1'(A_1)}+\frac{SPaS_2(A_2)}{SPaS_2'(A_2)}}{\frac{1}{SPaS_1'(A_1)}+\frac{1}{SPaS_1'(A_1)}}
+$$
 
 In other words, the target spot price is the average of the spot prices after swap weighted by the inverse of their derivatives. The derivatives of SPaS can be seen as the slippage of that path. Generalizing for any number of paths we have:
 
-$$targetSP = \frac{\sum\_i{\frac{SPaS\_i\(A\_i\)}{SPaS\_i'\(A\_i\)}}} {\sum\_i{\frac{1}{SPaS\_i'\(A\_i\)}}} $$
+$$
+targetSP = \frac{\sum_i{\frac{SPaS_i(A_i)}{SPaS'_i(A_i)}}} {\sum_i{\frac{1}{SPaS'_i(A_i)}}}
+$$
 
-After calculating `targetSP` it's easy to replace it in the equations above to find each $A\_i'$:
+After calculating `targetSP` it's easy to replace it in the equations above to find each $A'\_i$:
 
-$$A\_i' = \frac{SPaS\_i\(Ai\) - targetSP}{SPaS\_i'\(Ai\)}+A\_i $$
+$$
+A'_i = \frac{SPaS_i(Ai) - targetSP}{SPaS'_i(Ai)}+A_i
+$$
 
 Notice that the paths have limits in the amounts they can be used to swap. The lower boundary is always zero, since you cannot swap a negative number. The upper boundary is usually defined by 50% of the balance a pool has in the token being swapped. These limits have to be taken into account and respected in the choice of `swapAmounts`. Function `redistributeInputAmounts()` does exactly that. Let's take a look at it into more detail below.
 
 ### redistributeInputAmounts\(\)
 
-If after the calculations done in `iterateSwapAmountsApproximation()` above we end up with $A\_i'$ that is negative or above the limit of path $i$, then we have to set it to 0 or $A\_{limit\_i}$respectively. The excesses have to be 'redistributed' to the other viable paths \(i.e. paths that do not have swap amounts below zero or above the path limit\), otherwise the sum of $A\_i$ for all paths $i$ is not going to be equal to `targetAmountSwap` as it should.
+If after the calculations done in `iterateSwapAmountsApproximation()` above we end up with $A'\_i$ that is negative or above the limit of path $i$, then we have to set it to 0 or $A\_{limit\_i}$respectively. The excesses have to be 'redistributed' to the other viable paths \(i.e. paths that do not have swap amounts below zero or above the path limit\), otherwise the sum of $A\_i$ for all paths $i$ is not going to be equal to `targetAmountSwap` as it should.
 
 Function `redistributeInputAmounts()` might need to be calculated several times in a row because as the excesses are redistributed to paths that are viable, their swap amounts might go below zero or beyond the limit. We call `redistributeInputAmounts()` iteratively until all swap amounts are above or equal to zero **and** below or equal to their path limit amounts.
 

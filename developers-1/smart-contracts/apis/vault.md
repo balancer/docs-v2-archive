@@ -92,7 +92,9 @@ You can deposit, withdraw, or transfer internal balance. There is also an extern
 registerPool(PoolSpecialization specialization) 
 returns(bytes32)
 
-emits PoolRegistered(bytes32 poolId)
+emits PoolRegistered(bytes32 indexed poolId,
+                     address indexed poolAddress,
+                     PoolSpecialization specialization)
 ```
 
 Called from the pool contract to generate a  Pool ID, and enter it in the Vault's pool data structures. Implemented in `PoolAssets`.
@@ -267,6 +269,11 @@ flashLoan(
     IERC20[] tokens, 
     uint256[] amounts, 
     bytes receiverData)
+    
+emits FlashLoan(IFlashLoanRecipient indexed recipient,
+                IERC20 indexed token,
+                uint256 amount,
+                uint256 feeAmount)
 ```
 
 Execute a flash loan. This sends the given token amounts to the flash loan receiver contract; all borrowed funds - plus the protocol flash loan fee - must be returned to the vault in the same transaction, or it will revert. Implemented by a `FlashLoanProvider` subclass.

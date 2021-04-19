@@ -1,6 +1,6 @@
 # Audits
 
-Balancer has completed full audits with Consensys Diligence, Trail of Bits, and Open Zeppelin. Links to the audit reports can be found below.
+Balancer has completed full audits with Trail of Bits, Open Zeppelin, and Certora. Links to the audit reports can be found below.
 
 {% file src="../../.gitbook/assets/2021-03-15.pdf" caption="OpenZeppelin \(2021/03/15\)" %}
 

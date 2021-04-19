@@ -16,7 +16,10 @@ Returns the Vault's Authorizer \(Balancer governance contract\). Implemented in 
 ### `changeAuthorizer`
 
 ```
-getAuthorizer(IAuthorizer newAuthorizer) 
+getAuthorizer(IAuthorizer newAuthorizer)
+
+emits AuthorizerChanged(IAuthorizer indexed oldAuthorizer,
+                        IAuthorizer indexed newAuthorizer)
 ```
 
 Sets a new Authorizer for the Vault. The caller must be allowed by the current Authorizer to do this. Implemented in `VaultAuthorization`
@@ -39,6 +42,10 @@ setRelayerApproval(
     address sender, 
     address relayer,
     bool approved)
+    
+emits RelayerApprovalChanged(address indexed relayer,
+                             address indexed sender,
+                             bool approved)
 ```
 
  Grants or revokes approval for the given `relayer` to call Authorizer-approved functions on behalf of `user`.  Implemented in `VaultAuthorization`
@@ -60,6 +67,17 @@ Get a user's internal "wallet" balances. This is called the UserBalance in exter
 
 ```text
 manageUserBalance(UserBalanceOp[] ops)
+
+emits one of:
+
+InternalBalanceChanged(address indexed user,
+                       IERC20 indexed token,
+                       int256 delta)
+                       
+ExternalBalanceTransfer(IERC20 indexed token,
+                        address indexed sender,
+                        address recipient,
+                        uint256 amount)
 ```
 
 There are four possible operations in `manageUserBalance`: each designates a sender/receiver, asset, and amount. The asset is either a token address, or the zero address \(meaning ETH\). The Vault does not store ETH, but you can use ETH when interacting with internal balances; the Vault will do any necessary wrapping/unwrapping.
@@ -73,6 +91,8 @@ You can deposit, withdraw, or transfer internal balance. There is also an extern
 ```text
 registerPool(PoolSpecialization specialization) 
 returns(bytes32)
+
+emits PoolRegistered(bytes32 poolId)
 ```
 
 Called from the pool contract to generate a  Pool ID, and enter it in the Vault's pool data structures. Implemented in `PoolAssets`.
@@ -81,8 +101,7 @@ Called from the pool contract to generate a  Pool ID, and enter it in the Vault'
 
 ```text
 getPool(bytes32 poolId) 
-returns (
-    address, 
+returns (address, 
     PoolSpecialization)
 ```
 
@@ -95,6 +114,10 @@ registerTokens(
     bytes32 poolId, 
     IERC20[] tokens, 
     address[] assetManagers)
+    
+emits TokensRegistered(bytes32 poolId,
+                       IERC20[] tokens,
+                       address[] assetManagers)
 ```
 
 Called from the pool contract to tell the Vault which tokens are valid for this pool \(i.e., which can be used to swap, join, or exit\). An asset manager can also be assigned to each token at this step, which is thereafter immutable \(unless you deregister and register again\). Implemented in `PoolAssets`.
@@ -105,20 +128,11 @@ Called from the pool contract to tell the Vault which tokens are valid for this 
 deregisterTokens(
     bytes32 poolId, 
     IERC20[] tokens)
+    
+emits TokensDeregistered(bytes32 poolId, IERC20[] tokens)
 ```
 
 Remove tokens from the pool \(must have zero balance\). Implemented in `PoolAssets`.
-
-### `getPoolTokens`
-
-```text
-getPoolTokens(bytes32 poolId)
-returns (IERC20[] tokens, 
-    uint256[] balances,
-    uint256 lastChangeBlock)
-```
-
-Returns a Pool's registered tokens, the total balance for each, and the most recent block in which any of the tokens were updated. Implemented by PoolAssets. Implemented in `PoolAssets`.
 
 ### **`getPoolTokenInfo`**
 
@@ -132,6 +146,17 @@ returns (uint256 cash,
 ```
 
 Return details of a particular token. While `getPoolTokens` gives the total balance, `getPoolTokenInfo` returns each component of the balance, as well as the time \(block\) it was last modified, and the asset manager. Implemented in `PoolAssets`.
+
+### `getPoolTokens`
+
+```text
+getPoolTokens(bytes32 poolId)
+returns (IERC20[] tokens, 
+    uint256[] balances,
+    uint256 lastChangeBlock)
+```
+
+Returns a Pool's registered tokens, the total balance for each, and the most recent block in which any of the tokens were updated. Implemented by PoolAssets. Implemented in `PoolAssets`.
 
 ## Joins and Exits
 
@@ -160,6 +185,17 @@ exitPool(
 ```
 
 ExitPoolRequest takes a userData argument, which specifies exactly how the pool should be exited \(e.g., the token addresses and balances transferred from the Vault, and expected number of pool tokens to be burned\). Implemented by `PoolAssets`.
+
+Both joins and exits emit the `PoolBalanceChanged` event.
+
+```text
+emits PoolBalanceChanged(
+        bytes32 indexed poolId,
+        address indexed liquidityProvider,
+        IERC20[] tokens,
+        int256[] deltas,
+        uint256[] protocolFeeAmounts)
+```
 
 ## Single Swaps
 
@@ -195,7 +231,16 @@ batchSwap(
 returns (int256[] assetDeltas)
 ```
 
-Implemented in `Swaps.`
+Implemented in `Swaps.`Both single and batch swaps emit a `Swap` event for each swap.
+
+```text
+event Swap(
+        bytes32 indexed poolId,
+        IERC20 indexed tokenIn,
+        IERC20 indexed tokenOut,
+        uint256 amountIn,
+        uint256 amountOut)
+```
 
 ### `queryBatchSwap`
 
@@ -235,6 +280,13 @@ This can only be called by the asset manager of a token in a pool.
 ```text
 managePoolBalance(
     PoolBalanceOp[] ops)
+    
+emits PoolBalanceManaged(
+        bytes32 indexed poolId,
+        address indexed assetManager,
+        IERC20 indexed token,
+        int256 cashDelta,
+        int256 managedDelta)
 ```
 
  Deposit or withdraw funds from the pool \(i.e., move funds between _cash_ and _managed_ balances\), or update the total balance \(i.e., reporting a gain or loss from management activities\). Implemented in `PoolAssets`. Each `PoolBalanceOp` describes the type of operation \(deposit/withdraw/update\), the pool ID, the token, and the amount.
@@ -253,7 +305,9 @@ The external contract authorized to collect protocol fees. Implemented by `Fees`
 ### **`setPaused`** 
 
 ```text
-setPaused(bool paused)  
+setPaused(bool paused)
+
+emits PausedStateChanged(bool paused)
 ```
 
 Safety mechanism to halt most Vault operations in the event of an emergency. The only functions allowed involve withdrawing funds \(e.g., from internal balances, or proportional pool exits\). Implemented by `Vault`.

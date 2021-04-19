@@ -29,7 +29,7 @@ exitPool(bytes32 poolId,
          ExitPoolRequest request)
 ```
 
-Pools are token contracts, with the base class `BalancerPoolToken`. New pools do not necessarily need to do tokenization this way \(or at all\).
+Pools are token contracts, with the base class `BalancerPoolToken`. New pools do not necessarily need to do tokenization this way \(or at all\). `BasePoolFactory` emits a `PoolCreated` event, while the Vault emits a `PoolRegistered` event.
 
 The class hierarchy for pools is designed to allow for extension at multiple levels, and handle a lot of the housekeeping duties to keep the most derived pool classes short and readable.
 

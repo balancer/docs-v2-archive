@@ -19,6 +19,7 @@ Error codes are defined in the [`BalancerErrors`](https://github.com/balancer-la
 | 6 | X\_OUT\_OF\_BOUNDS |
 | 7 | Y\_OUT\_OF\_BOUNDS |
 | 8 | PRODUCT\_OUT\_OF\_BOUNDS |
+| 9 | INVALID\_EXPONENT |
 | 100 | OUT\_OF\_BOUNDS |
 | 101 | UNSORTED\_ARRAY |
 | 102 | UNSORTED\_TOKENS |
@@ -26,13 +27,14 @@ Error codes are defined in the [`BalancerErrors`](https://github.com/balancer-la
 | 104 | ZERO\_TOKEN |
 | 200 | MIN\_TOKENS |
 | 201 | MAX\_TOKENS |
-| 202 | MAX\_SWAP\_FEE |
-| 203 | MIN\_SWAP\_FEE |
+| 202 | MAX\_SWAP\_FEE\_PERCENTAGE |
+| 203 | MIN\_SWAP\_FEE\_PERCENTAGE |
 | 204 | MINIMUM\_BPT |
 | 205 | CALLER\_NOT\_VAULT |
 | 206 | UNINITIALIZED |
 | 207 | BPT\_IN\_MAX\_AMOUNT |
 | 208 | BPT\_OUT\_MIN\_AMOUNT |
+| 209 | EXPIRED\_PERMIT |
 | 300 | MIN\_AMP |
 | 301 | MAX\_AMP |
 | 302 | MIN\_WEIGHT |
@@ -48,8 +50,8 @@ Error codes are defined in the [`BalancerErrors`](https://github.com/balancer-la
 | 400 | REENTRANCY |
 | 401 | SENDER\_NOT\_ALLOWED |
 | 402 | PAUSED |
-| 403 | RESPONSE\_WINDOW\_EXPIRED |
-| 404 | MAX\_RESPONSE\_WINDOW\_DURATION |
+| 403 | PAUSE\_WINDOW\_EXPIRED |
+| 404 | MAX\_PAUSE\_WINDOW\_DURATION |
 | 405 | MAX\_BUFFER\_PERIOD\_DURATION |
 | 406 | INSUFFICIENT\_BALANCE |
 | 407 | INSUFFICIENT\_ALLOWANCE |
@@ -98,7 +100,7 @@ Error codes are defined in the [`BalancerErrors`](https://github.com/balancer-la
 | 524 | TOKENS\_LENGTH\_MUST\_BE\_2 |
 | 525 | NONZERO\_TOKEN\_BALANCE |
 | 526 | BALANCE\_TOTAL\_OVERFLOW |
-| 600 | SWAP\_FEE\_TOO\_HIGH |
-| 601 | FLASH\_LOAN\_FEE\_TOO\_HIGH |
-| 602 | INSUFFICIENT\_COLLECTED\_FEES |
+| 600 | SWAP\_FEE\_PERCENTAGE\_TOO\_HIGH |
+| 601 | FLASH\_LOAN\_FEE\_PERCENTAGE\_TOO\_HIGH |
+| 602 | INSUFFICIENT\_FLASH\_LOAN\_FEES |
 

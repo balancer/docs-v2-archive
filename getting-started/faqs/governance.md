@@ -2,11 +2,9 @@
 
 ## How do I vote?
 
-Voting takes place on [Snapshot](https://snapshot.org/#/balancer), an off-chain, gasless voting system. \(TODO: shill that it's a Balancer spinoff?\)
+Voting takes place on [Snapshot](https://snapshot.org/#/balancer), an off-chain, gasless voting system. Snapshot was created by Balancer Labs, and has become a very successful multi-protocol voting system trusted by over 600 teams.
 
 ## What do I need to be eligible to vote?
-
-**TODO: is this going to remain the same as V1 or is staking going to be required for some eligibility?**
 
 The three current sources of voting power are
 

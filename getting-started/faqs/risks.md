@@ -1,5 +1,7 @@
 # Risks
 
+Coming Soon!
+
 * Investment risk
 * Impermanent loss
 * Pools are only as strong as their weakest token
@@ -17,6 +19,6 @@
   * Make sure you're using official balancer websites
   * general self-custody security
     * hardware wallet
-    * shill Gnosis?
+    * Gnosis!
   * There is no Tron token, it's a scam
 

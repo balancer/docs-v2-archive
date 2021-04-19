@@ -2,7 +2,7 @@
 
 ## How do I make my first swap?
 
-First time here? Check out \(TODO: this tutorial\) for a walkthrough on how to make your first trade. 
+First time here? Check out this tutorial for a walkthrough on how to make your first trade. 
 
 In a nutshell though, you'll need:
 
@@ -26,19 +26,15 @@ Internal Balances are tokens that you have **inside the Balancer Vault**. You ca
 
 To start using and trading with Internal Balances, click \(TODO: here\).
 
-\(NOTE: are internal balances just going to be self-evident on the trading page?\)
+## What is Slippage?
 
-## What is Slippage \(TODO: ~~Slippage~~ Price Impact \(?\) \) 
-
-**TODO: Make sure everything in this section changes Slippage to Price Impact if that's the word we're going with.**
-
-Slippage is how much the price of an asset changes during a trade. To make sure you get within the price range you expect, trades have Slippage Tolerances. You can override this tolerance by \(TODO: explain how to change tolerance in UI\)
+Slippage is how much the price of an asset changes during a trade. To make sure you get within the price range you expect, trades have Slippage Tolerances. You can override this tolerance by changing slippage settings.
 
 ## Is it cheaper to trade with ETH or WETH?
 
-WETH is slightly cheaper. When making a trade with ETH, it will be wrapped into WETH first, which has a small gas fee associated with it.
+V1: WETH is slightly cheaper. When making a trade with ETH, it will be wrapped into WETH first, which has a small gas fee associated with it.
 
-
+V2: Native ETH pools are now supported and are cheaper since they are not ERC20s.
 
 
 

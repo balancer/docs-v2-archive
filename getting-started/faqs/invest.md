@@ -10,7 +10,6 @@
 * What is impermanent loss?
 * How do I decrease my impermanent loss?
 * Where can I find APYs for different pools?
-* TODO: Should we talk about risks here or just have a link to the risks page?
 
 
 

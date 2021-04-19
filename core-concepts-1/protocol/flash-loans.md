@@ -16,15 +16,16 @@ Borrow X amount of DAI, up to the total amount of DAI available in the Vault.
 
 Two common flash loan use cases are arbitrage and collateral swap
 
-* Arbitrage Trade
+**Arbitrage Trade**
 
-  * Trade DAI for TokenA on one DEX
-  * Trade TokenA for DAI on another DEX
+* Trade DAI for TokenA on one DEX
+* Trade TokenA for DAI on another DEX
 
-* Collateral Swap
-  * Pay off DAI loan for collateral
-  * Trade collateral for TokenA
-  * Take out another DAI loan with TokenA as collateral
+**Collateral Swap**
+
+* Pay off DAI loan for collateral
+* Trade collateral for TokenA
+* Take out another DAI loan with TokenA as collateral
 
 ### Repay the loan
 

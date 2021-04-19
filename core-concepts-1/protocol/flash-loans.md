@@ -14,7 +14,7 @@ Borrow X amount of DAI, up to the total amount of DAI available in the Vault.
 
 ### Do something
 
-Two common flash loan use cases are arbitrage and collateral swap
+Two common flash loan use cases are **arbitrage** and **collateral swap**
 
 **Arbitrage Trade**
 

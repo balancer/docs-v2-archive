@@ -32,9 +32,7 @@ Slippage is how much the price of an asset changes during a trade. To make sure 
 
 ## Is it cheaper to trade with ETH or WETH?
 
-V1: WETH is slightly cheaper. When making a trade with ETH, it will be wrapped into WETH first, which has a small gas fee associated with it.
-
-V2: Native ETH pools are now supported and are cheaper since they are not ERC20s.
+WETH is slightly cheaper. When making a trade with ETH, it will be wrapped into WETH first, which has a small gas fee associated with it.
 
 
 

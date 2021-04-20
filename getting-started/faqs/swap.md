@@ -15,16 +15,14 @@ In a nutshell though, you'll need:
   * Portis
   * Fortmatic
 
-For both of the steps below, you'll need to pay a gas fee and wait for your transaction to be approved. You can check transaction status on [etherscan.io](https://etherscan.io/) 
+For each of the steps below, you'll need to pay a gas fee and wait for your transaction to be approved. You can check transaction status on [etherscan.io](https://etherscan.io/) 
 
 1. Unlock your **input** token to allow the Balancer Vault to make a swap. 
-2. Once unlocked, you can trade that token for any other token in a Balancer pool
+2. Once unlocked, you can trade that token for any other token in a Balancer pool.
 
 ## What are Internal Balances?
 
 Internal Balances are tokens that you have **inside the Balancer Vault**. You can supply the Vault with tokens, and once they're inside, you'll be able to trade without needing to move ERC20 tokens, saving you a lot of money on gas fees. The only token ERC20 transfers you need to perform are when you're initially putting your tokens in the Vault and withdrawing them later.
-
-To start using and trading with Internal Balances, click \(TODO: here\).
 
 ## What is Slippage?
 
@@ -32,7 +30,7 @@ Slippage is how much the price of an asset changes during a trade. To make sure 
 
 ## Is it cheaper to trade with ETH or WETH?
 
-WETH is slightly cheaper. When making a trade with ETH, it will be wrapped into WETH first, which has a small gas fee associated with it.
+WETH is slightly cheaper. If you happen to have WETH on hand, you should use it directly. When making a trade with ETH, it will be wrapped into WETH first, which has a small gas fee associated with it.
 
 
 

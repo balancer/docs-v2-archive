@@ -1,6 +1,6 @@
 # Subgraph
 
-The Balancer Subgraph indexes data on the Balancer smart contracts with a graphql interface.  It updates data in response to function calls and contract events to maintain data on the `Vault`, `Pools`,  `AssetManagers` etc, to power frontend apps and integrations.
+The Balancer Subgraph indexes data on the Balancer smart contracts with a GraphQL interface.  It updates data in response to function calls and contract events to maintain data on the `Vault`, `Pools`,  `AssetManagers` etc, to power front-end apps and integrations.
 
 ### Explore our data
 
@@ -16,7 +16,7 @@ Github repository: [https://github.com/balancer-labs/balancer-subgraph-v2](https
 
 The schema of GraphQL elements available is defined in [`/schema.graphql` ](https://github.com/balancer-labs/balancer-subgraph-v2/blob/master/schema.graphql)
 
-The data included in this subgraph data layer is the data that is most applicable to our pool management frontend.  It aims at the very least to keep track of all the resources in the  `Vault` contract, and keep track of basic pool data.
+The data included in this subgraph data layer is the data that is most applicable to our pool management front-end.  It aims at the very least to keep track of all the resources in the  `Vault` contract, and keep track of basic pool data.
 
 ### Example queries
 

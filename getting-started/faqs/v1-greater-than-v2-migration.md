@@ -2,9 +2,9 @@
 
 ## How do I migrate from V1 to V2?
 
-For two asset pools, you can automatically migrate your liquidity from comparable pools. See more \(TODO: here.\)
+For two-asset pools, you can automatically migrate your liquidity from comparable pools. More details about the migration process will be released closer to the official UI launch.
 
-For pools with more than two assets, we recommend manually removing liquidity from V1 and and re-adding your liquidity to V2. \(TODO: is this what we are advising? what about identical pools?\)
+For pools with more than two assets, we recommend manually removing liquidity from V1 and re-adding your liquidity to V2.
 
 ## Do I have to migrate? What happens if I don't?
 

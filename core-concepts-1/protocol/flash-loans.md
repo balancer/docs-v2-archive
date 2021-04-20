@@ -8,13 +8,13 @@ As discussed in the Vault section, the consolidated liquidity in the Vault does 
 
 What does a sample Flash Loan transaction look like?
 
-### Take out a loan
+### 1. Take out a loan
 
 Borrow X amount of DAI, up to the total amount of DAI available in the Vault.
 
-### Do something
+### 2. Do something
 
-Two common flash loan use cases are **arbitrage** and **collateral swap**
+Any maneuver that can be profitable within the span of a single transaction is worth performing with a flash loan. Two of the most common flash loan use cases are **arbitrage** and **collateral swap**:
 
 **Arbitrage Trade**
 
@@ -27,7 +27,7 @@ Two common flash loan use cases are **arbitrage** and **collateral swap**
 * Trade collateral for TokenA
 * Take out another DAI loan with TokenA as collateral
 
-### Repay the loan
+### 3. Repay the loan
 
 Check if `final_amount >= X * (1 + interest_rate)`
 

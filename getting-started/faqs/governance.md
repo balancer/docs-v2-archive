@@ -6,7 +6,7 @@ Voting takes place on [Snapshot](https://snapshot.org/#/balancer), an off-chain,
 
 ## What do I need to be eligible to vote?
 
-The three current sources of voting power are
+The three current sources of voting power are:
 
 * Holding BAL in your wallet
 * Holding BPT in your wallet for a Liquidity Pool with BAL in it
@@ -16,7 +16,7 @@ It is worth noting that Balancer Governors have the ability to vote on adding/re
 
 ## When are votes?
 
-Votes happen when there is a proposal to vote on; they are not regularly scheduled. When they are active, votes typically occur over the weekend. They are announced on the forums, on Discord and on Twitter. \(TODO: other places votes are announced?\)
+Votes happen when there is a proposal to vote on; they are not regularly scheduled. When they are active, votes typically occur over the weekend. They are announced on the forums, on Discord and on Twitter.
 
 ## Is BAL on Tron?
 

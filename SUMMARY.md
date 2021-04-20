@@ -7,15 +7,7 @@
 * [FAQs](getting-started/faqs/README.md)
   * [V1 -&gt; V2 Migration](getting-started/faqs/v1-greater-than-v2-migration.md)
   * [Swap](getting-started/faqs/swap.md)
-  * [Invest](getting-started/faqs/invest.md)
   * [Governance](getting-started/faqs/governance.md)
-  * [Staking](getting-started/faqs/staking.md)
-  * [Troubleshooting](getting-started/faqs/troubleshooting.md)
-  * [Risks](getting-started/faqs/risks.md)
-* [Tutorials](getting-started/tutorials/README.md)
-  * [Swapping](getting-started/tutorials/swapping.md)
-  * [Providing Liquidity](getting-started/tutorials/providing-liquidity.md)
-  * [Governance Distributions](getting-started/tutorials/governance-distributions.md)
 
 ## Core Concepts <a id="core-concepts-1"></a>
 

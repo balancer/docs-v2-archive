@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 The bug bounties on this page apply only to the Balancer **smart contracts** which secure protocol funds on the Ethereum mainnet. Bug reports pertaining to Balancer's web interfaces, both in terms of UI/UX or servers/infrastructure, are not eligible. Only the first reporter of a given contract vulnerability will be rewarded, and findings already discovered as part of a formal audit are ineligible.  
   
-Vulnerabilities involving non-standard ERC-20 tokens are also ineligible, as it would be trivial to insert an exploit into a token for the sake of applying to this bug bounty. A standard, Balancer-compatible ERC-20 token is one that conforms to all [EIP-20 interfaces](https://eips.ethereum.org/EIPS/eip-20) _and_ exhibits expected behavior in implementation; i.e., transfers move exactly N tokens from sender to recipient, and balances do not change by any means other than transfers. Notably, tokens with transfer fees, rebasing supplies, or streaming mechanics are not compatible with Balancer, but that list is not exhaustive.
+Vulnerabilities involving non-standard ERC20 tokens are also ineligible, as it would be trivial to insert an exploit into a token for the sake of applying to this bug bounty. A standard, Balancer-compatible ERC20 token is one that conforms to all [EIP-20 interfaces](https://eips.ethereum.org/EIPS/eip-20) _and_ exhibits expected behavior in implementation; i.e., transfers move exactly N tokens from sender to recipient, and balances do not change by any means other than transfers. Notably, tokens with transfer fees, rebasing supplies, or streaming mechanics are not compatible with Balancer, but that list is not exhaustive.
 {% endhint %}
 
 ## Overview
@@ -12,11 +12,11 @@ Balancer has completed smart contract audits with Trail of Bits, Open Zeppelin, 
 
 ## Scope
 
-The bug bounty covers any of the core smart contracts deployed on Ethereum mainnet. The code can be found at: [https://github.com/balancer-labs/balancer-core-v2](https://github.com/balancer-labs/balancer-core-v2) TODO: update this
+The bug bounty covers any of the core smart contracts deployed on Ethereum mainnet. The code can be found at: [https://github.com/balancer-labs/balancer-core-v2](https://github.com/balancer-labs/balancer-core-v2)
 
-Submissions should be based off commit hash: [https://github.com/balancer-labs/balancer-core-v2/tree/2d88257fb27ad3c84b5166304a342e66055a81b3](https://github.com/balancer-labs/balancer-core-v2/tree/2d88257fb27ad3c84b5166304a342e66055a81b3) TODO: update this
+Submissions should be based off commit hash: [https://github.com/balancer-labs/balancer-core-v2/tree/v1.0.0](https://github.com/balancer-labs/balancer-core-v2/tree/v1.0.0)
 
-Mainnet Vault can be found at: [https://etherscan.io/address/0x9424b1412450d0f8fc2255faf6046b98213b76bd](https://etherscan.io/address/0x9424b1412450d0f8fc2255faf6046b98213b76bd) TODO: update this
+Mainnet Vault can be found at: [https://etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8)
 
 ## Rewards
 

@@ -6,7 +6,7 @@ description: 'Contract Address: 0xba100000625a3754423978a60c9317c58a424e3d'
 
 ## Overview
 
-As Balancer Protocol moves to decentralize and diversify its governance, it will use the Balancer Protocol Governance Token \(BAL\) to grant voting power. Alignment between governance token holders and protocol stakeholders is crucial for successful decentralized governance, and BAL tokens are the vehicle to drive this alignment. BAL tokens are not an investment; BAL token holders should be people who interact with the protocol in some way, are committed to its future development, and want a seat at the governance table.
+As Balancer Protocol moves to decentralize and diversify its governance, it will use the Balancer Governance Token \(BAL\) to grant voting power. Alignment between governance token holders and protocol stakeholders is crucial for successful decentralized governance, and BAL tokens are the vehicle to drive this alignment. BAL tokens are not an investment; BAL token holders should be people who interact with the protocol in some way, are committed to its future development, and want a seat at the governance table.
 
 ## Liquidity Providers
 
@@ -14,9 +14,9 @@ Liquidity Providers \(LPs\) are the cornerstone of the Balancer Protocol. Liquid
 
 Early LPs take on more risk and opportunity cost, including contract risk and low initial pool profitability. We believe that these protocol users should get to participate early on in deciding how the protocol evolves. To this end, Balancer Labs proposed and implemented the Liquidity Mining program, in which Balancer governance tokens are distributed to LPs.
 
-#### Claiming
-
-!! TODO !! : claiming system for v2 rewards
+{% hint style="info" %}
+The details of V2 liquidity mining are still being hashed out by the Balancer Community and developers. At present, liquidity mining applies to Balancer V1 liquidity only, and over the next ~8 weeks the program will gradually transition to V2.
+{% endhint %}
 
 ## BAL Token Supply and Distribution
 

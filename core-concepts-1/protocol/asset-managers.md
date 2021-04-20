@@ -1,8 +1,8 @@
----
-description: Coming Soon!
----
-
 # Asset Managers
+
+{% hint style="info" %}
+Coming soon! The first Asset Managers will arrive in the months following the Balancer V2 mainnet launch.
+{% endhint %}
 
 ## Overview
 

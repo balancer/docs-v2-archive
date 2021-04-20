@@ -12,7 +12,11 @@ Balancer V2 separates the Automated Market Maker \(AMM\) logic from the token ma
 
 Because pools are contracts external to the vault, they can implement any arbitrary, customized AMM logic.
 
-### What are Internal Token Balances?
+## What are Internal Balances?
+
+{% hint style="warning" %}
+Important: **Do not** blindly transfer tokens to the Vault expecting to get an Internal Balance. They must be added through the UserBalance smart contract.
+{% endhint %}
 
 Internal token balances are tokens that belong to you that are kept inside the Vault. They are extremely useful for high-frequency trading since they require no external token transfers. The only token ERC20 transfers you need to perform are when you're initially putting your tokens in the Vault and withdrawing them later.
 

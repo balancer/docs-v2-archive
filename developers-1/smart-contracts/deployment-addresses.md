@@ -10,7 +10,7 @@
 | Vault | 0xBA12222222228d8Ba445958a75a0704d566BF2C8 |
 | WeightedPoolFactory |  |
 
-The following are **Kovan** faucets for the Balancer versions of common tokens
+The following are **Kovan** addresses for the Balancer versions of common tokens
 
 | **Token** | **Address** |
 | :--- | :--- |

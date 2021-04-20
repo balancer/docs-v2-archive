@@ -20,13 +20,11 @@ For each of the steps below, you'll need to pay a gas fee and wait for your tran
 1. Unlock your **input** token to allow the Balancer Vault to make a swap. 
 2. Once unlocked, you can trade that token for any other token in a Balancer pool.
 
-## What are Internal Balances?
-
-{% hint style="warning" %}
-Important: **Do not** just transfer tokens to the Vault expecting to get an Internal Balance. They must be added through the UserBalance smart contract.
-{% endhint %}
+## How do I use Internal Token Balances?
 
 Internal Balances are tokens that you have inside the Balancer Vault. You can supply the Vault with tokens, and once they're inside, you'll be able to trade without needing to move ERC20 tokens, saving you a lot of money on gas fees. The only token ERC20 transfers you need to perform are when you're initially putting your tokens in the Vault and withdrawing them later.
+
+Balancer V2 allows users to hold internal token balances inside the vault. For example, if you are trading ETH for DAI but know that you’ll trade DAI back to ETH in a few hours, you can keep both tokens in the vault and use them for your next trade without the need for an intermediate useless ERC20 transaction.
 
 ## What is Slippage?
 

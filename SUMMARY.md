@@ -5,9 +5,17 @@
 ## Getting Started
 
 * [FAQs](getting-started/faqs/README.md)
+  * [V2 in a nutshell](getting-started/faqs/v2-in-a-nutshell.md)
   * [V1 -&gt; V2 Migration](getting-started/faqs/v1-greater-than-v2-migration.md)
+  * [The Vault](getting-started/faqs/the-vault.md)
+  * [Asset Managers](getting-started/faqs/asset-managers.md)
+  * [Pools and LBPs](getting-started/faqs/pools-and-lbps.md)
+  * [Trading](getting-started/faqs/trading.md)
   * [Swap](getting-started/faqs/swap.md)
+  * [Liquidity](getting-started/faqs/liquidity.md)
+  * [Fees](getting-started/faqs/fees.md)
   * [Governance](getting-started/faqs/governance.md)
+  * [About Balancer Protocol and Labs](getting-started/faqs/about-balancer-protocol-and-labs.md)
 
 ## Core Concepts <a id="core-concepts-1"></a>
 

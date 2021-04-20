@@ -8,7 +8,7 @@ Vulnerabilities involving non-standard ERC20 tokens are also ineligible, as it w
 
 ## Overview
 
-Balancer has completed smart contract audits with Trail of Bits, Open Zeppelin, and Certora. We also will run a continuous bug bounty program for the V2 release of the Balancer core contracts.
+Balancer has completed smart contract audits with Trail of Bits, OpenZeppelin, and Certora. We also will run a continuous bug bounty program for the V2 release of the Balancer core contracts.
 
 ## Scope
 

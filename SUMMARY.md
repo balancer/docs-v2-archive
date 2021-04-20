@@ -41,6 +41,7 @@
     * [Asset Managers](developers-1/smart-contracts/apis/asset-managers.md)
   * [Events](developers-1/smart-contracts/events.md)
   * [Deployment Addresses](developers-1/smart-contracts/deployment-addresses.md)
+  * [UML Diagrams](developers-1/smart-contracts/uml-diagrams.md)
 * [Guides](developers-1/guides/README.md)
   * [Single Swaps](developers-1/guides/single-swaps.md)
   * [Batch Swaps](developers-1/guides/batch-swaps.md)

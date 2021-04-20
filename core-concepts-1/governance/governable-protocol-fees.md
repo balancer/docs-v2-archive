@@ -26,7 +26,7 @@ Protocol Fees are to be used according to proposals and votes by the Balancer Go
 
 We invite you to join our Discord and Forums to take part in the discussion over how to use these fees.
 
-#### Possible Uses of Balancer Protocol Fees
+#### Possible uses of Balancer Protocol Fees
 
 * Put them into a Balancer Pool
 * Fund Gitcoin Grants for protocol improvements

@@ -22,7 +22,11 @@ For each of the steps below, you'll need to pay a gas fee and wait for your tran
 
 ## What are Internal Balances?
 
-Internal Balances are tokens that you have **inside the Balancer Vault**. You can supply the Vault with tokens, and once they're inside, you'll be able to trade without needing to move ERC20 tokens, saving you a lot of money on gas fees. The only token ERC20 transfers you need to perform are when you're initially putting your tokens in the Vault and withdrawing them later.
+{% hint style="warning" %}
+Important: **Do not** just transfer tokens to the Vault expecting to get an Internal Balance. They must be added through the UserBalance smart contract.
+{% endhint %}
+
+Internal Balances are tokens that you have inside the Balancer Vault. You can supply the Vault with tokens, and once they're inside, you'll be able to trade without needing to move ERC20 tokens, saving you a lot of money on gas fees. The only token ERC20 transfers you need to perform are when you're initially putting your tokens in the Vault and withdrawing them later.
 
 ## What is Slippage?
 

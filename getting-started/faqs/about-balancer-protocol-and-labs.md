@@ -6,9 +6,9 @@ Balancer is an automated market maker \(AMM\) protocol built on Ethereum. Balanc
 
 ## Does Balancer have a token?
 
-Balancer has a own governance token
+Balancer's governance token is BAL, which gives holders decision making power over the protocol and a share of any protocol fees collected.
 
-BAL \(0xba100000625a3754423978a60c9317c58a424e3d\)
+The BAL token is deployed at [0xba100000625a3754423978a60c9317c58a424e3d](https://etherscan.io/address/0xba100000625a3754423978a60c9317c58a424e3d)
 
 ## How does the self-balancing index fund work?
 

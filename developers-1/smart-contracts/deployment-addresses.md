@@ -1,21 +1,16 @@
 # Deployment Addresses
 
-## Kovan
+## v1.0.0
 
-This is a preliminary release \(front end is [here](https://pm2.on.fleek.co)\). At launch we will drop all the "RC" versions and show only the final addresses.
-
-
-
-### RC1
+#### Addresses are for Kovan and Mainnet
 
 | **Contract** | **Address** |
 | :--- | :--- |
-| Authorizer | 0x9dF05a75cf0cD41E26262F072bDbE9A9B2178834 |
-| TokenFactory | 0xEaa391544B268018C0FA848204E984Bd7FF7f20c |
-| Multicall | 0x3b2A02F22fCbc872AF77674ceD303eb269a46ce3 |
-| Vault | 0xba1c01474A7598c2B49015FdaFc67DdF06ce15f7 |
-| WeightedPoolFactory | 0x3b5dBD2bFbE5eFA86dD51Af24436A9B3c25caE40 |
-| StablePoolFactory | 0x360E616ef7A487558982C0005C7B8E60ef252a78 |
+| Authorizer | 0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9 \(temporary\) |
+| Vault | 0xBA12222222228d8Ba445958a75a0704d566BF2C8 |
+| WeightedPoolFactory |  |
+
+The following are **Kovan** faucets for the Balancer versions of common tokens
 
 | **Token** | **Address** |
 | :--- | :--- |

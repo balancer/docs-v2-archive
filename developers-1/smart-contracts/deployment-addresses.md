@@ -6,9 +6,9 @@
 
 | **Contract** | **Address** |
 | :--- | :--- |
-| Authorizer | 0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9 \(temporary\) |
+| Authorizer | 0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6 \(temporary\) |
 | Vault | 0xBA12222222228d8Ba445958a75a0704d566BF2C8 |
-| WeightedPoolFactory |  |
+| WeightedPoolFactory | 0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9 |
 
 The following are **Kovan** addresses for the Balancer versions of common tokens
 

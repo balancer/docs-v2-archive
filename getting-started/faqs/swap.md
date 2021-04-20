@@ -30,11 +30,11 @@ Internal Balances are tokens that you have inside the Balancer Vault. You can su
 
 ## What is Slippage?
 
-Slippage is how much the price of an asset changes during a trade. To make sure you get within the price range you expect, trades have Slippage Tolerances. You can override this tolerance by changing slippage settings.
+Slippage is how much the price of an asset changes during a trade. To make sure you get within the price range you expect, trades have Slippage Tolerances. You can change this tolerance by in the slippage settings.
 
-## Is it cheaper to trade with ETH or WETH?
+## Is it cheaper in gas fees to trade with ETH or WETH?
 
-WETH is slightly cheaper. If you happen to have WETH on hand, you should use it directly. When making a trade with ETH, it will be wrapped into WETH first, which has a small gas fee associated with it.
+WETH is slightly cheaper. If you happen to have WETH on hand, you'll save a bit of gas by using it directly. When making a trade with ETH, it will be wrapped into WETH first, which has a small gas fee associated with it.
 
 
 

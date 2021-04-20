@@ -13,10 +13,10 @@ returns (IAuthorizer)
 
 Returns the Vault's Authorizer \(Balancer governance contract\). Implemented in `VaultAuthorization`
 
-### `changeAuthorizer`
+### `setAuthorizer`
 
 ```
-getAuthorizer(IAuthorizer newAuthorizer)
+setAuthorizer(IAuthorizer newAuthorizer)
 
 emits AuthorizerSet(IAuthorizer indexed newAuthorizer)
 ```
@@ -96,7 +96,7 @@ emits PoolRegistered(bytes32 indexed poolId,
                      PoolSpecialization specialization)
 ```
 
-Called from the pool contract to generate a  Pool ID, and enter it in the Vault's pool data structures. Implemented in `PoolAssets`.
+Called from the pool contract to generate a  Pool ID, and enter it in the Vault's pool data structures. Implemented in `PoolRegistry`.
 
 ### **`getPool`**
 
@@ -106,7 +106,7 @@ returns (address,
     PoolSpecialization)
 ```
 
-Returns a Pool's contract address and specialization setting. Implemented in `PoolAssets`.
+Returns a Pool's contract address and specialization setting. Implemented in `PoolRegistry`.
 
 ### **`registerTokens`**
 
@@ -121,7 +121,7 @@ emits TokensRegistered(indexed bytes32 poolId,
                        address[] assetManagers)
 ```
 
-Called from the pool contract to tell the Vault which tokens are valid for this pool \(i.e., which can be used to swap, join, or exit\). An asset manager can also be assigned to each token at this step, which is thereafter immutable \(unless you deregister and register again\). Implemented in `PoolAssets`.
+Called from the pool contract to tell the Vault which tokens are valid for this pool \(i.e., which can be used to swap, join, or exit\). An asset manager can also be assigned to each token at this step, which is thereafter immutable \(unless you deregister and register again\). Implemented in `PoolTokens`.
 
 ### **`deregisterTokens`**
 
@@ -133,7 +133,7 @@ deregisterTokens(
 emits TokensDeregistered(indexed bytes32 poolId, IERC20[] tokens)
 ```
 
-Remove tokens from the pool \(must have zero balance\). Implemented in `PoolAssets`.
+Remove tokens from the pool \(must have zero balance\). Implemented in `PoolTokens`.
 
 ### **`getPoolTokenInfo`**
 
@@ -146,7 +146,7 @@ returns (uint256 cash,
     address assetManager)
 ```
 
-Return details of a particular token. While `getPoolTokens` gives the total balance, `getPoolTokenInfo` returns each component of the balance, as well as the time \(block\) it was last modified, and the asset manager. Implemented in `PoolAssets`.
+Return details of a particular token. While `getPoolTokens` gives the total balance, `getPoolTokenInfo` returns each component of the balance, as well as the time \(block\) it was last modified, and the asset manager. Implemented in `PoolTokens`.
 
 ### `getPoolTokens`
 
@@ -157,7 +157,7 @@ returns (IERC20[] tokens,
     uint256 lastChangeBlock)
 ```
 
-Returns a Pool's registered tokens, the total balance for each, and the most recent block in which any of the tokens were updated. Implemented by PoolAssets. Implemented in `PoolAssets`.
+Returns a Pool's registered tokens, the total balance for each, and the most recent block in which any of the tokens were updated. Implemented by PoolAssets. Implemented in `PoolTokens`.
 
 ## Joins and Exits
 
@@ -173,7 +173,7 @@ joinPool(
     JoinPoolRequest request)
 ```
 
-JoinPoolRequest takes a userData argument, which specifies exactly how the pool should be joined \(e.g., the token addresses and balances transferred to the Vault, and expected number of pool tokens to be minted\). Implemented by `PoolAssets`.
+JoinPoolRequest takes a userData argument, which specifies exactly how the pool should be joined \(e.g., the token addresses and balances transferred to the Vault, and expected number of pool tokens to be minted\). Implemented by `PoolBalances`.
 
 ### `exitPool`
 
@@ -185,7 +185,7 @@ exitPool(
     ExitPoolRequest request)
 ```
 
-ExitPoolRequest takes a userData argument, which specifies exactly how the pool should be exited \(e.g., the token addresses and balances transferred from the Vault, and expected number of pool tokens to be burned\). Implemented by `PoolAssets`.
+ExitPoolRequest takes a userData argument, which specifies exactly how the pool should be exited \(e.g., the token addresses and balances transferred from the Vault, and expected number of pool tokens to be burned\). Implemented by `PoolBalances`.
 
 Both joins and exits emit the `PoolBalanceChanged` event.
 
@@ -264,10 +264,10 @@ Implemented in `Swaps.`
 
 ```text
 flashLoan(
-    IFlashLoanReceiver receiver, 
+    IFlashLoanRecipient recipient, 
     IERC20[] tokens, 
     uint256[] amounts, 
-    bytes receiverData)
+    bytes userData)
     
 emits FlashLoan(IFlashLoanRecipient indexed recipient,
                 IERC20 indexed token,
@@ -275,7 +275,7 @@ emits FlashLoan(IFlashLoanRecipient indexed recipient,
                 uint256 feeAmount)
 ```
 
-Execute a flash loan. This sends the given token amounts to the flash loan receiver contract; all borrowed funds - plus the protocol flash loan fee - must be returned to the vault in the same transaction, or it will revert. Implemented by a `FlashLoanProvider` subclass.
+Execute a flash loan. This sends the given token amounts to the flash loan receiver contract; all borrowed funds - plus the protocol flash loan fee - must be returned to the vault in the same transaction, or it will revert. Implemented by a `FlashLoans` subclass. Implemented in `FlashLoans`.
 
 ## Asset Management
 
@@ -295,7 +295,7 @@ emits PoolBalanceManaged(
         int256 managedDelta)
 ```
 
- Deposit or withdraw funds from the pool \(i.e., move funds between _cash_ and _managed_ balances\), or update the total balance \(i.e., reporting a gain or loss from management activities\). Implemented in `PoolAssets`. Each `PoolBalanceOp` describes the type of operation \(deposit/withdraw/update\), the pool ID, the token, and the amount.
+ Deposit or withdraw funds from the pool \(i.e., move funds between _cash_ and _managed_ balances\), or update the total balance \(i.e., reporting a gain or loss from management activities\). Implemented in `AssetManagers`. Each `PoolBalanceOp` describes the type of operation \(deposit/withdraw/update\), the pool ID, the token, and the amount.
 
 ## Miscellaneous
 

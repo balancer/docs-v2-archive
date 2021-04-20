@@ -48,6 +48,5 @@
 * [Subgraph](developers-1/subgraph.md)
 * [Smart Order Router V2](developers-1/smart-order-router.md)
 * [Error Codes](developers-1/error-codes.md)
-* [Testnet](developers-1/testnet.md)
 * [GitHub](https://github.com/balancer-labs/)
 

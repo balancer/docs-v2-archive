@@ -31,15 +31,15 @@ Experimentation has been running wild in all directions:
 
 While also actively experimenting with governance-related initiatives, the Balancer community has leaned towards the more cautious and thoughtful approach of not trying to rush the path to full decentralization, so each step towards a mature on-chain governance will be taken with due care, having learned from others’ experiences.
 
-Balancer V1 contracts are immutable, so up until now, there have been no core protocol parameters to tweak/change. Instead, our governance has focused on a fair, inclusive BAL token distribution, which is carried out mainly through the protocol’s liquidity mining. BAL holders have tweaked liquidity mining via off-chain voting. And to make that possible, BalancerLabs proudly developed in-house an open-source tool called Snapshot, which became the widely popular gold standard for off-chain voting in blockchain land. Snapshot was so successful that it’s being spun off as its own initiative so that it can keep up with the improvements required by all its users.
+Balancer V1 contracts are immutable, so up until now, there have been no core protocol parameters to tweak/change. Instead, our governance has focused on a fair, inclusive BAL token distribution, which is carried out mainly through the protocol’s liquidity mining. BAL holders have tweaked liquidity mining via off-chain voting. And to make that possible, Balancer Labs proudly developed in-house an open-source tool called Snapshot, which became the widely popular gold standard for off-chain voting in blockchain land. Snapshot was so successful that it’s being spun off as its own initiative so that it can keep up with the improvements required by all its users.
 
-Balancer V2 contracts, on the other hand, do allow for some tweaking of core protocol parameters, for instance, in turning on protocol fees. As a placeholder for a future on-chain DAO, such limited admin powers will be initially granted to a Multisig.
+Balancer V2 contracts, on the other hand, do allow for some tweaking of core protocol parameters, for instance, in turning on protocol fees. As a placeholder for a future on-chain DAO, such limited admin powers has been initially granted to a Multisig.
 
 ## The Multisig
 
 First of all, a very important point: the multisig does NOT have decision making power, as its role is to simply enact on-chain the decisions BAL holders make via off-chain voting.
 
-It will be deployed using [Gnosis Safe](https://gnosis-safe.io/), the most battle-tested multisig contract on Ethereum. Its n-of-m configuration will start as 6-of-11. Both parameters n and m may evolve and are ultimately defined by BAL holders with protocol security in mind.
+It is deployed using [Gnosis Safe](https://gnosis-safe.io/), the most battle-tested multisig contract on Ethereum. Its n-of-m configuration will start as 6-of-11. Both parameters n and m may evolve and are ultimately defined by BAL holders with protocol security in mind.
 
 Balancer’s multisig signers are a diverse set of widely respected community members. These are the initial signers:
 
@@ -78,12 +78,11 @@ These powers are:
 
 * set a share of swap fees to be diverted to the protocol \(hard capped at 50% of the swap fee\)
 * set a flash loan fee
-* set a withdrawal fee to be charged by the protocol when an LP extracts tokens from the vault outside of a swap or when internal balances are withdrawn from the vault \(the maximum withdrawal fee possible is 0.5% or 50 bps\)
 * extract from the vault collected protocol fees and/or excess balances \(e.g. airdrops\), to any destination
 * set the address of the oracle implementation
 * pause/resume swaps on all pools before a 4-month-after-launch deadline, after which Balancer V2 becomes unstoppable
 * set relayer addresses: relayers are \(user opt-in, audited\) contracts that can make calls to the vault \(with the transaction “sender” being any arbitrary address\) and use the sender’s ERC20 vault allowance, internal balance or BPTs on their behalf
 * set dynamic-fee controllers: addresses \(initially assigned to Gauntlet\) that may change the swap fee for pools created by the dynamic-fee pool factory that will be deployed by Balancer Labs
 
-It’s worth highlighting that the multisig will **not** have custody of \(nor control over\) funds from liquidity providers that lie inside Balancer Protocol contracts. Balancer V2 was designed so that even if the multisig goes rogue, all the liquidity is safe and can be withdrawn by their rightful owners.
+It’s worth highlighting that the multisig does **not** have custody of \(nor control over\) funds from liquidity providers that lie inside Balancer Protocol contracts. Balancer V2 was designed so that even if the multisig goes rogue, all the liquidity is safe and can be withdrawn by their rightful owners.
 

@@ -1,6 +1,6 @@
 # Deployment Addresses
 
-## v1.0.0
+## Balancer V2 Release v1.0.0
 
 #### Addresses are for Kovan and Mainnet
 

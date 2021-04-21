@@ -49,7 +49,7 @@ getPoolId() returns (bytes32 poolID)
 getSwapFeePercentage() returns (uint256 swapFeePercentage) 
 
 // Can only be called by an authorized account
-setSwapFee(uint256 swapFee)
+setSwapFeePercentage(uint256 swapFeePercentage)
 
 // Can only be called by an authorized account (emergency stop)
 function setPaused(bool paused)

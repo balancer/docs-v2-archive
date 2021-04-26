@@ -15,7 +15,9 @@ swap(SingleSwap singleSwap,
 
 It's recommended to use this function if not routing through multiple pools as it reduces gas costs by approximately 6000 gas.
 
-## SingleSwap struct
+To simplify the inputs to this function, we have grouped related fields into a number of structs which are explained below.
+
+### SingleSwap struct
 
 The `SingleSwap` struct defines which pool we're trading with and what kind of swap we want to perform. The `SingleSwap` struct is defined as below.
 
@@ -41,7 +43,7 @@ struct SingleSwap {
   * `GIVEN_OUT`: The amount of tokens we want to receive from the pool.
 * `userData`: Any additional data which the pool requires to perform the swap. This allows pools to have more flexible swapping logic in future - for all current Balancer pools this can be left empty.
 
-## FundManagement struct
+### FundManagement struct
 
 The `FundManagement` struct defines where the input tokens for the swap are coming from and where the output tokens should be sent. The `FundManagement` struct is defined as below.
 
@@ -61,7 +63,7 @@ struct FundManagement {
 
 For more information on internal balances see [Core Concepts](../../core-concepts/protocol/vault.md#gas-efficiency).
 
-## Swap function
+### Swap function
 
 Jumping back to the `swap` function we see there are two final arguments
 

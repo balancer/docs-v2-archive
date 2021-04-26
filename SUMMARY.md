@@ -32,6 +32,7 @@
 * [Security](core-concepts/security/README.md)
   * [Audits](core-concepts/security/audits.md)
   * [Bug Bounties](core-concepts/security/bug-bounties.md)
+  * [Emergency Pause](core-concepts/security/emergency-pause.md)
 
 ## Community
 

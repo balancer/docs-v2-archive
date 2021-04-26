@@ -6,7 +6,7 @@
 
 * [FAQs](getting-started/faqs/README.md)
   * [V2 in a nutshell](getting-started/faqs/v2-in-a-nutshell.md)
-  * [V1 -&gt; V2 Migration](getting-started/faqs/v1-greater-than-v2-migration.md)
+  * [V1 ➝ V2 Migration](getting-started/faqs/v1-to-v2-migration.md)
   * [The Vault](getting-started/faqs/the-vault.md)
   * [Asset Managers](getting-started/faqs/asset-managers.md)
   * [Pools and LBPs](getting-started/faqs/pools-and-lbps.md)

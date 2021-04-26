@@ -1,4 +1,4 @@
-# V1 -&gt; V2 Migration
+# V1 ➝ V2 Migration
 
 ## How do I migrate from V1 to V2?
 

@@ -6,7 +6,7 @@ The Balancer Subgraph indexes data on the Balancer smart contracts with a GraphQ
 
 Kovan: [https://thegraph.com/explorer/subgraph/balancer-labs/balancer-kovan-v2](https://thegraph.com/explorer/subgraph/balancer-labs/balancer-kovan-v2)
 
-Mainnet: Coming soon
+Mainnet: [https://thegraph.com/explorer/subgraph/balancer-labs/balancer-v2](https://thegraph.com/explorer/subgraph/balancer-labs/balancer-v2)
 
 For how to use the subgraph, refer to the graph's documentation [https://thegraph.com/docs/introduction](https://thegraph.com/docs/introduction)
 

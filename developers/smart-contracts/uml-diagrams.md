@@ -10,9 +10,10 @@
 | [FlashLoans](https://drive.google.com/file/d/1NsddcFLPyvcdwobDtPXw6frr--ZvN9JU/view?usp=sharing) | Abstract Contract |  |
 | [Interfaces](https://drive.google.com/file/d/19NJL6RE6PAld1s9z7L1QBEyJfx6DezRA/view?usp=sharing) | Directory | [Diagram](https://drive.google.com/file/d/103B8b3sFERF1n6QTHOLkhUJ2WtGR5k-D/view?usp=sharing) |
 | [PoolBalances](https://drive.google.com/file/d/1krHNvCa4d_WqftwLC-wcJZWgSQNMi24G/view?usp=sharing) | Abstract Contract | [Diagram](https://drive.google.com/file/d/1AbWvvy9hS9_Pw4w6x0QT5G1tLHXIY5ky/view?usp=sharing) |
+| [PoolPriceOracle](https://drive.google.com/file/d/1kPyQN-V-4CqqIx-IVLpLc-agYqYMtYiz/view?usp=sharing) | Directory |  |
 | [PoolRegistry](https://drive.google.com/file/d/1U7hc_siZ6_eKU_CJPxVVXXoMB0eOF8vB/view?usp=sharing) | Abstract Contract | [Diagram](https://drive.google.com/file/d/1kLJSPNGqorc6jj8q2KXyV5QsWg8zegy0/view?usp=sharing) |
 | [PoolTokens](https://drive.google.com/file/d/1HFTWdXLez_fbHs5zOOzB9ph9oukDyAnG/view?usp=sharing) | Abstract Contract | [Diagram](https://drive.google.com/file/d/1CNowTDzjUYOt1vW7Ueu-8dyb97GTszZl/view?usp=sharing) |
-| [Pools](https://drive.google.com/file/d/1jJYTKFkJv_My0wm_DC4e7HKPGjqnQpv0/view?usp=sharing) | Directory | [Diagram](https://drive.google.com/file/d/1PNiYEZuIDfFvUPChB9MSnzwIkZ5aeEJS/view?usp=sharing) |
+| [Pools](https://drive.google.com/file/d/1vpu93s3lgu_h4Mm4OSSp2_0axTun828W/view?usp=sharing) | Directory | [Diagram](https://drive.google.com/file/d/1PNiYEZuIDfFvUPChB9MSnzwIkZ5aeEJS/view?usp=sharing) |
 | [ProtocolFeesCollector](https://drive.google.com/file/d/1262iB1iYoO6S9XCMy2pbWw8GYwF3HoN-/view?usp=sharing) | Abstract Contract |  |
 | [Swaps](https://drive.google.com/file/d/1OuW0FE4hEZTbRzvOiQlPX03vwKhNBNfW/view?usp=sharing) | Abstract Contract | [Diagram](https://drive.google.com/file/d/19pMq1LU05aST-CLuweaZVD2oG4-oQp1C/view?usp=sharing) |
 | [UserBalance](https://drive.google.com/file/d/1Yc1LXDAvVm-HfRUYXxdu1sxyU3vM87ua/view?usp=sharing) | Abstract Contract | [Diagram](https://drive.google.com/file/d/1itUdj_E3_8QxxPd4uDjq0AtQAPnMiMKh/view?usp=sharing) |

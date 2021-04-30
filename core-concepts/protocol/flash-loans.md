@@ -38,3 +38,5 @@ Check if `final_amount >= X * (1 + interest_rate)`
 
 Further, anyone who identifies a price discrepancy in two Balancer Pools can execute a **Flash Swap**. ****An arbitrageur who makes a flash swap does not need to hold any of the input tokens that one would normally need to make a trade. Instead, the trader identifies the imbalance, tells the Vault to make the swap, and is rewarded with the profit.
 
+{% page-ref page="../../developers/guides/flash-swaps.md" %}
+

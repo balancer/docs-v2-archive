@@ -54,6 +54,7 @@
 * [Guides](developers/guides/README.md)
   * [Single Swaps](developers/guides/single-swaps.md)
   * [Batch Swaps](developers/guides/batch-swaps.md)
+  * [Flash Swaps](developers/guides/flash-swaps.md)
 * [Subgraph](developers/subgraph.md)
 * [Smart Order Router V2](developers/smart-order-router.md)
 * [Error Codes](developers/error-codes.md)

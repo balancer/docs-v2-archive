@@ -13,10 +13,6 @@ Balancer Pools are extremely customizable. It is up to the pool creator to decid
 
 Protocol trading fees are set by governance, and will be turned on whenever they are voted to be active. The fees can be set from 0 to 50% of the existing pool swap fee.
 
-## Why are Flash Loan fees necessary?
-
-Because we need to ensure there is always a cost of capital to create a flash loan on Balancer. Flash loan fee is max 1%.
-
 ## What happens to the fees?
 
 All protocol fees will be kept in the vault. It is up to Balancer’s governance to decide if and how these fees are used.

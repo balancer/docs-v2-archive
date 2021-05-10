@@ -6,3 +6,5 @@ Balancer turns the concept of an index fund on its head: instead of a paying fee
 
 Balancer is based on an [N-dimensional invariant surface](https://balancer.finance/whitepaper/) which is a generalization of the constant product formula described by Vitalik Buterin and proven viable by the popular Uniswap dapp.
 
+{% file src=".gitbook/assets/whitepaper.pdf" caption="Balancer Whitepaper" %}
+

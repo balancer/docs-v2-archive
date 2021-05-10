@@ -35,8 +35,7 @@ Creating a smart pool requires setting the "rights" the pool will have \(and ass
 * Can change weights - the controller can either change weights arbitrarily \(which transfers tokens to keep the prices constant\), or set a schedule for the weights to change linearly over time - the heart of the [Liquidity Bootstrapping Pool](../smart-contracts/smart-pools/liquidity-bootstrapping-faq.md). Another important parameter is the minimum duration. The controller cannot initiate a gradual weight change that happens faster than this duration. \(Faster weight change = more trust required.\)
 * Can add/remove tokens - the controller can add a new token through a two-stage process that involves a timelock. The minimum "add token timelock" period is also specified on deployment. This is a "dangerous" right, since the controller could add a worthless token and drain the pool. \(Public LPs have the timelock period to withdraw if the controller is malicious.\)
 
-  
-  The controller can also remove an existing token from the pool, which transfers the entire balance of that token to the controller. Note that the controller must burn BPTs \(pool tokens\) to do this, so if public LPs are allowed, the controller might not have enough BPT to actually do this. It is most commonly used to terminate LBPs.
+The controller can also remove an existing token from the pool, which transfers the entire balance of that token to the controller. Note that the controller must burn BPTs \(pool tokens\) to do this, so if public LPs are allowed, the controller might not have enough BPT to actually do this. It is most commonly used to terminate LBPs.
 
 * Must whitelist LPs - no one can add liquidity to the pool after creation, unless their address is added to  whitelist. This is most commonly used for LBPs and Smart Treasuries.
 * Can change cap - this limits the total supply of pool tokens. It is set to the initial supply upon deployment, so no one can add liquidity unless the controller raises the cap. The controller can set the cap to "unlimited," which makes it behave like a shared pool, or 0 \(preventing new LPs altogether\), or any intermediate value.
@@ -51,7 +50,7 @@ Note the "similar pools" information block in the example above. If there are al
 
 #### Amounts entry
 
-By default \(with the padlock "locked"\), the interface uses a CoinGecko price feed to assist in calculating the token amounts given the weights.  
+By default \(with the padlock "locked"\), the interface uses a CoinGecko price feed to assist in calculating the token amounts given the weights.
 
 ![&quot;Unlocked&quot; amounts](../.gitbook/assets/padlock.png)
 

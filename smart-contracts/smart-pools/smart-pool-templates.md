@@ -10,5 +10,3 @@ Updating weights in a regular Configurable Rights Pool transfers tokens \(to kee
 
 To disallow both kinds of updates in the same pool, the Elastic Supply Pool overrides and reverts the existing update functions, and implements the new resync\(\) method.
 
-
-

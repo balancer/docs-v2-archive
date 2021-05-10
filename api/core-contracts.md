@@ -1,6 +1,6 @@
 # Events
 
-### Events
+## Events
 
 `LOG_CALL` is an anonymous event which uses the function signature as the event signature. It is fired by all stateful functions. The following applies to Balancer Core pools. Smart Pools have similar events and modifiers.
 
@@ -12,7 +12,7 @@ event LOG_CALL(
 ) anonymous;
 ```
 
-`LOG_SWAP` is fired \(along with `LOG_CALL`\) for all [swap variants]().
+`LOG_SWAP` is fired \(along with `LOG_CALL`\) for all [swap variants](core-contracts.md).
 
 ```text
 event LOG_SWAP(
@@ -40,7 +40,7 @@ event LOG_EXIT(
 );
 ```
 
-### Mutex
+## Mutex
 
 All stateful functions use either a `lock` or `viewlock` function modifier. A mutex places a lock on contract state and prevents any sort of re-entrancy.
 

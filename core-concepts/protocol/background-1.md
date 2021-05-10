@@ -1,6 +1,6 @@
 # Background
 
-Automated Market Makers \(AMMs\) have been around in some form for as long as trades could be automated, starting in the traditional financial markets. AMMs are essentially automated agents, controlled by algorithms, that define rules for matching buyers and sellers to facilitate trades. Usually AMMs are continuously active in both directions of a trading pair. The liquidity provider's profit comes  from the spread between buy and sell prices.
+Automated Market Makers \(AMMs\) have been around in some form for as long as trades could be automated, starting in the traditional financial markets. AMMs are essentially automated agents, controlled by algorithms, that define rules for matching buyers and sellers to facilitate trades. Usually AMMs are continuously active in both directions of a trading pair. The liquidity provider's profit comes from the spread between buy and sell prices.
 
 Smart contract platforms like Ethereum have brought AMMs to a whole new level. They have, for the first time in history, combined the _trading algorithms_ with _custody_ of the underlying assets. This has led to interesting new features like atomic trading \(sometimes incorporating [flash loans](https://aave.com/flash-loans)\), instant feedback loops for correcting prices offered by an AMM, and more.
 
@@ -8,7 +8,7 @@ Smart contract platforms like Ethereum have brought AMMs to a whole new level. T
 
 Alan Lu from [Gnosis](https://gnosis.io/) was the first in the Ethereum community to propose the simplest version of an AMM: a "pool," containing two tokens \(let's call them A and B\), in which the token prices are derived internally, using only the token balances, according to the simple invariant formula: balance\(A\) \* balance\(B\) = \(constant\) k, most commonly written as x\*y=k.
 
- Martin Köppelmann and Vitalik Buterin also promoted this idea, which Hayden Adams eventually implemented on [Uniswap](https://uniswap.org/).
+Martin Köppelmann and Vitalik Buterin also promoted this idea, which Hayden Adams eventually implemented on [Uniswap](https://uniswap.org/).
 
 ![V. Buterin, &quot;On Path Independence&quot; \(linked below\)](../../.gitbook/assets/xyk.png)
 

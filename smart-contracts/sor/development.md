@@ -29,17 +29,17 @@ Where:
 
 The SOR requires an up to date list of pool data when calculating swap information and retrieves on-chain token balances for each pool. There are two available methods:
 
-####  `await SOR.fetchPools()` <a id="await-sor-fetchpools"></a>
+### `await SOR.fetchPools()` <a id="await-sor-fetchpools"></a>
 
 This will fetch all pools \(using the URL in constructor\) and on-chain balances. Returns `true` on success or `false` if there has been an error.
 
-#### `await SOR.fetchFilteredPairPools(TokenIn, TokenOut)` <a id="await-sor-fetchfilteredpairpools-tokenin-tokenout"></a>
+### `await SOR.fetchFilteredPairPools(TokenIn, TokenOut)` <a id="await-sor-fetchfilteredpairpools-tokenin-tokenout"></a>
 
 A subset of valid pools for token pair, TokenIn/TokenOut, is found and on-chain balances retrieved. Returns `true` on success or `false` if there has been an error. This can be a quicker alternative to using fetchPools but will need to be called for every token pair of interest.
 
 ## Processing Swaps <a id="processing-swaps"></a>
 
-#### `async SOR.getSwaps(...)` <a id="async-sor-getswaps"></a>
+### `async SOR.getSwaps(...)` <a id="async-sor-getswaps"></a>
 
 The `getSwaps` function will use the pool data and the trade parameters to perform an optimization for the best price execution. It returns swap information and the total that can then be used to execute the swaps on-chain.
 
@@ -60,7 +60,7 @@ The `getSwaps` function will use the pool data and the trade parameters to perfo
 
 `swapAmount` - BigNumber: amount to be traded, in Wei
 
-#### `async SOR.setCostOutputToken(tokenOut)` <a id="async-sor-setcostoutputtoken-tokenout"></a>
+### `async SOR.setCostOutputToken(tokenOut)` <a id="async-sor-setcostoutputtoken-tokenout"></a>
 
 The cost of the output token in ETH multiplied by the gas cost to perform the swap. This is used to determine whether the lower price obtained through including an additional pool in the transaction outweigh the gas costs. This function can be called before getSwaps to retrieve and cache the cost which will then be used in any getSwap calls using that token. Defaults to 0 for a token if not previously set.
 

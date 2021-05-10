@@ -78,7 +78,3 @@ The controller function `updateWeight` changes weights directly - but not the pr
 
 Though most LBPs are two-token pools \(e.g., a project token and a single reserve currency, usually a stable coin\), it is possible to have three tokens, or more. For instance, a stable coin and WETH, in addition to the project token. [One project](https://pools.balancer.exchange/#/pool/0x10996ec4f3e7a1b314ebd966fa8b1ad0fe0f8307/) was recently launched that way. There is a [simulator](https://docs.google.com/spreadsheets/d/10434m342Rt0rTarCd2SCtMizT9GrMHrK/edit#gid=1694604160) available for this case.
 
-
-
-
-

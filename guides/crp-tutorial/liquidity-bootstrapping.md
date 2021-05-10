@@ -74,7 +74,7 @@ At this point we have an initialized pool. The admin account has 1,000 LPTs, and
 
 To facilitate the token launch - with low slippage, low initial capital, and stable prices over time, per the paper referenced above - we want to gradually "flip" the weights over time. We start with the project token at a high weight \(32/\(32+8\), or 80%, and collateral DAI at 20%. At the end of the launch, we want XYZ at 20%, and DAI at 80%. We accomplish this by calling updateWeightsGradually; we're allowed to do this because the canChangeWeights permission was set to true.
 
-```
+```text
 // Start changing the weights in 100 blocks
 const block = await web3.eth.getBlock('latest');
 const startBlock = block.number + 100;

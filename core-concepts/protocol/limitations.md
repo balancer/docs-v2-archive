@@ -6,7 +6,7 @@ Balancer is meant to be a flexible and agnostic DeFi primitive. Due to constrain
 
 **ERC20 Tokens**
 
-ERC20 compliance: pool tokens have to be ERC20 compliant. Bronze does not support ERC20 tokens that do not return `bools` for `transfer` and `transferFrom`. ****There are no upgrade mechanisms in the contracts to allow for token upgrades. Any upgrade will need to be manually coordinated and moved into new pools.
+ERC20 compliance: pool tokens have to be ERC20 compliant. Bronze does not support ERC20 tokens that do not return `bools` for `transfer` and `transferFrom`. _\*\*_There are no upgrade mechanisms in the contracts to allow for token upgrades. Any upgrade will need to be manually coordinated and moved into new pools.
 
 Tokens that have internal transfer fees or other non-standard balance updates may create arbitrage opportunities. Ex: DGX has both a demurrage and a transfer fee that will change a pool's balance compared to the internal accounting balance
 
@@ -54,7 +54,7 @@ Tokens that have internal transfer fees or other non-standard balance updates ma
 
 **Minimum Bound Tokens - 2**
 
-Weighted and Stabe pools must contain at least two tokens. 
+Weighted and Stabe pools must contain at least two tokens.
 
 **Maximum Bound Tokens - 16**
 
@@ -80,9 +80,7 @@ This is done differently in the V2 math. Balances can't be zero, but the mechani
 
 The initial supply is computed in the new V2 math, and is not passed in by the user. The protocol also burns an initial amount to prevent rounding/boundary issues.
 
-#### Protocol Fees
+### Protocol Fees
 
 The max protocol swap fee is 50% of the pool's swap fee \(which is in turn capped at 10%\). The max protocol withdrawal fee is 0.5%. The max flash loan fee is 1%.
-
-
 

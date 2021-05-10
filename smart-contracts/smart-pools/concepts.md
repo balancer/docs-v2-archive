@@ -1,6 +1,6 @@
 # Overview
 
-### Smart Contract Owned Controlled Pools \("Smart Pools"\)
+## Smart Contract Owned Controlled Pools \("Smart Pools"\)
 
 One very powerful feature of Balancer is the concept of Smart Pools. A smart contract controlled pool can fully emulate a finalized pool, while also allowing complex logic to readjust balances, weights, and fees. Some examples include:
 
@@ -17,7 +17,7 @@ In a nutshell, Balancer has deployed Factory contracts for creating pools. Users
 
 If you deploy a Core Pool directly, you are the controller of that pool. If you deploy a Smart Pool, you need to pass in the core BFactory address, since two contracts will be deployed. You are the controller of the Smart Pool - and the Smart Pool itself is the controller of the BPool.
 
-#### Conceptual Capabilities
+### Conceptual Capabilities
 
 There are three categories of things you can do with pools.
 

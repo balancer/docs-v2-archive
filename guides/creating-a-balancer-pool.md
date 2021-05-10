@@ -35,7 +35,7 @@ Note the "similar pools" information block in the example above. If there are al
 
 #### Amounts entry
 
-By default \(with the padlock "locked"\), the interface uses a CoinGecko price feed to assist in calculating the token amounts given the weights.  
+By default \(with the padlock "locked"\), the interface uses a CoinGecko price feed to assist in calculating the token amounts given the weights.
 
 ![&quot;Unlocked&quot; amounts](../.gitbook/assets/padlock.png)
 

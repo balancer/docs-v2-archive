@@ -10,13 +10,13 @@ Balancer has completed full audits with Consensys Diligence, Trail of Bits, and 
 
 {% file src="../../.gitbook/assets/trail-of-bits-full-audit.pdf" caption="Trail of Bits Full Audit" %}
 
-*  Consensys Diligence
+* Consensys Diligence
 
-{% embed url="https://diligence.consensys.net/audits/2020/05/balancer-finance/" %}
+{% embed url="https://diligence.consensys.net/audits/2020/05/balancer-finance/" caption="" %}
 
 [Open Zeppelin Full Audit](https://blog.openzeppelin.com/balancer-contracts-audit/)
 
 * OpenZeppelin
 
-{% embed url="https://blog.openzeppelin.com/balancer-contracts-audit" %}
+{% embed url="https://blog.openzeppelin.com/balancer-contracts-audit" caption="" %}
 

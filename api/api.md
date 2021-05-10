@@ -168,7 +168,7 @@ If the balances you are adding are 10% of the current pool balances, then you sh
 
 Exit the pool, paying `poolAmountIn` pool tokens and getting some of each of the currently trading tokens in return. These values are limited by the array of `minAmountsOut` in the order of the pool tokens.
 
-To define `minAmountsOut`, consider the percentage of the pool liquidity you are withdrawing, which is `poolAmountIn/poolSupply` and multiply that percentage by each of the underlying pool token balances. If you expect to receive say 10 units of each of the underlying tokens in the pool, consider setting `minAmountsOut` as 9.9 to allow for variations in the balances proportions that may happen before your transaction gets mined. 
+To define `minAmountsOut`, consider the percentage of the pool liquidity you are withdrawing, which is `poolAmountIn/poolSupply` and multiply that percentage by each of the underlying pool token balances. If you expect to receive say 10 units of each of the underlying tokens in the pool, consider setting `minAmountsOut` as 9.9 to allow for variations in the balances proportions that may happen before your transaction gets mined.
 
 #### `joinswapExternAmountIn`
 

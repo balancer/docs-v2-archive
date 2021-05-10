@@ -30,7 +30,7 @@ Since we know the price will increase after trading, due to slippage, and in ord
 
 ### Prices of interest
 
-Since we linearize the spot price functions of all Balancer pools, we can interpolate prices and amounts to make our optimization solution simpler. 
+Since we linearize the spot price functions of all Balancer pools, we can interpolate prices and amounts to make our optimization solution simpler.
 
 To help visualize what this means, imagine three Balancer pools containing the trade tokens. We define EPs of interest as sets of prices where either of the following conditions apply:
 
@@ -47,15 +47,13 @@ To reduce clutter and simplify the visualization, we consider only pools 1 and 2
 
 ![](../../.gitbook/assets/picture3.png)
 
-Let _A_ be the amount of _token in_  \(Ai\) to be traded on pool 1 such that its price increases from EP1 \(initial spot price of pool 1\) to EP2 \(initial spot price of pool 2\). The SOR's solution for any amount of tokens lower than _A_ is simply: "trade the entire amount with pool 1."
+Let _A_ be the amount of _token in_ \(Ai\) to be traded on pool 1 such that its price increases from EP1 \(initial spot price of pool 1\) to EP2 \(initial spot price of pool 2\). The SOR's solution for any amount of tokens lower than _A_ is simply: "trade the entire amount with pool 1."
 
 When the amount traded is greater than _A,_ SOR will start including pool 2 in the solution, as not doing so would mean the trader is trading some amount \(Ai - _A_\) for a higher price than they could with pool 2.
 
-The solution for trading an amount B + C can be found by interpolating the trades that result in EP2 and EP3. By trading C with pool 1 and B with pool 2, both pools end at the same price \(Final Price\) which means that the best solution was found. 
+The solution for trading an amount B + C can be found by interpolating the trades that result in EP2 and EP3. By trading C with pool 1 and B with pool 2, both pools end at the same price \(Final Price\) which means that the best solution was found.
 
 ## Development
 
 Balancer labs have developed the [SOR npm package](https://www.npmjs.com/package/@balancer-labs/sor), an easy to use implementation of the above concepts. For documentation for working with the package please see this [page](https://docs.balancer.finance/sor/development).
-
-
 

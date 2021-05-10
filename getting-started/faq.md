@@ -156,7 +156,7 @@ We cannot provide tax or accounting advice. Tax regulations are specific to juri
 
 Balancer Protocol smart contracts have been designed with security as a top priority. The core protocol code has been reviewed by Consensys Diligence, and formally audited by both [Trail of Bits](https://github.com/balancer-labs/balancer-core/blob/master/Trail%20of%20Bits%20Full%20Audit.pdf) and [Open Zeppelin](https://blog.openzeppelin.com/balancer-contracts-audit/). \(Of course, we cannot guarantee that bugs won’t be found in the future.\)
 
-Balancer Pools are not [upgradeable](https://medium.com/consensys-diligence/upgradeability-is-a-bug-dba0203152ce) \(though other third-party Smart Pool implementations might be\), and there are no admin keys or backdoors. 
+Balancer Pools are not [upgradeable](https://medium.com/consensys-diligence/upgradeability-is-a-bug-dba0203152ce) \(though other third-party Smart Pool implementations might be\), and there are no admin keys or backdoors.
 
 Remember that the tokens held in Balancer Pools are also smart contracts - not controlled by Balancer - and may have their own risks. Balancer does not support non-ERC20-conforming tokens, but pools may have been created that use them anyway.
 

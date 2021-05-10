@@ -240,6 +240,5 @@ interface ExchangeProxy {
         public view
         returns (Swap[] memory swaps, uint totalOutput)
 }
-
 ```
 

@@ -8,9 +8,10 @@ In V1 there are three types of Pools:
 * private pools — all the parameters are flexible — only the owner can change them but also only the owner can add liquidity \(trusted, unfinalized\)
 * smart pools — anybody can add liquidity to them and the parameters can be fixed or dynamic controlled through smart contracts. \(trustless, flexible\).
 
-Initially in V2 there will be one type of pools:
+Initially in V2 there will be two pool types
 
-* weighted pools - permissionless, 8-token pools like V1 shared pools - but more gas efficient.
+* weighted pools - permissionless, 8-token pools like V1 shared pools - but more gas efficient
+* two-token weighted oracle pools - permissionless weighted pools with two tokens that act as on-chain price oracles
 
 Soon we will be also introducing
 

@@ -20,6 +20,12 @@ This works because market actors are incentivized to rebalance the portfolio so 
 
 Balancer offers value to all parts of the liquidity ecosystem — a self-balancing portfolio for investors, a deep liquidity source for traders, and an efficient bootstrapping tool for issuers.
 
+## What networks does Balancer Protocol run on?
+
+Balancer is deployed on Ethereum, and is compatible only with ERC20 tokens \(native ETH is automatically wrapped\). The protocol exists on mainnet and the Kovan testnet. 
+
+There are no implementations on Tron, or any other networks. Balancer Labs has awarded grants to teams developing on Near and Algorand, however, these are exploratory grants, and does not imply that there are working versions of Balancer Protocol on these systems.
+
 ## Who is behind Balancer Labs?
 
 The team behind Balancer \(Balancer Labs\) has been in the DeFi space for a while, having started Balancer as a research project in early 2018.

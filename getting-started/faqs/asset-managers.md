@@ -6,7 +6,7 @@ Asset Managers are external smart contracts nominated by pools that have full po
 
 ## How can I be sure Asset Manager will not abuse its power?
 
-Short answer: you can't, entirely. They are very powerful, and will need careful auditing and review. Pools with asset managers are by nature less trustless than core pools.
+Short answer: you can't, entirely. They are very powerful, and will need careful auditing and review. Pools with asset managers are therefore less trustless than core pools.
 
 ## What can Asset Managers do?
 

@@ -8,7 +8,7 @@ With the introduction of the Vault, Balancer Pools are now contracts that only n
 
 ## Standard Pools
 
-Balancer V2 will launch with Weighted Pools, which are similar to the pools on Balancer V1:
+Balancer V2 launched with Weighted Pools, which are similar to the pools on Balancer V1:
 
 ### Weighted Pools
 
@@ -54,4 +54,8 @@ There are significant differences in the V2 LBPs:
 * Pool owners can cleanly renounce ownership entirely, which allows public LPs, and effectively creates a WeightedPool \(though slightly less gas-efficient than a "native" WeightedPool\).
 
 Likewise, there are two versions of the general Smart Pool \(for Weighted and Stable Pools\). These have very similar rights to V1 smart pools - except they are individually revocable. In addition, Weighted Pools may support a "circuit breaker", to halt trading for a token if the pool becomes "unbalanced" \(e.g., if a malicious or buggy token contract allows infinite minting, or otherwise breaks the pricing algorithm of the pool\).
+
+## Dynamic Swap Fees
+
+Some pools, including the initial set of Weighted Pools deployed by Balancer Labs, have their swap fees optimized by [Gauntlet](https://gauntlet.network/). The optimal swap fee for a given pool depends on many conflicting market forces which are bound to change over time, and therefore it is not possible for a fixed swap fee to also be the optimal swap fee. This [partnership](https://medium.com/gauntlet-networks/balancer-v2-pools-trading-fee-methodology-7a65df671b8c) seeks to help optimize returns for liquidity providers while removing a degree of freedom from the pool design process, thereby further consolidating liquidity and reducing gas costs across the protocol.
 

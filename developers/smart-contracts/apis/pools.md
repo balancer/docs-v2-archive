@@ -29,9 +29,20 @@ exitPool(bytes32 poolId,
          ExitPoolRequest request)
 ```
 
-Pools are token contracts, with the base class `BalancerPoolToken`. New pools do not necessarily need to do tokenization this way \(or at all\). `BasePoolFactory` emits a `PoolCreated` event, while the Vault emits a `PoolRegistered` event.
+Pools are token contracts, with the base class `BalancerPoolToken`. New pool types do not necessarily need to do tokenization this way \(or at all\). `BasePoolFactory` emits a `PoolCreated` event, while the Vault emits a `PoolRegistered` event.
 
 The class hierarchy for pools is designed to allow for extension at multiple levels, and handle a lot of the housekeeping duties to keep the most derived pool classes short and readable.
+
+The following diagram shows two of the core pools, which use the default tokenization base class. There are two core pools available at launch:
+
+* **WeightedPool** - needed for pools with more than 2 tokens \(no oracle\)
+* **WeightedPool2Tokens** - recommended for 2-token pools. These have oracle functionality \(see "Resilient price oracles" in [this article](https://medium.com/balancer-protocol/balancer-v2-a-one-stop-shop-6af1678003f7) for more information\), which can either be enabled on deployment, or disabled on deployment and enabled later. Once enabled, an oracle can never be disabled - though it can be overridden by governance.
+
+The other decision to make when creating a pool is the "owner." This affects the swap fee handling, and there are three choices:
+
+* Zero address - swap fees are fixed after deployment
+* "Delegate" address \(_0xBA1BA1ba1BA1bA1bA1Ba1BA1ba1BA1bA1ba1ba1B_\) - swap fees are dynamic, controlled by a third party designated by governance: currently [Gauntlet](https://medium.com/balancer-protocol/balancer-partners-with-gauntlet-to-make-dynamic-fee-pools-a-reality-97b3fb1760df).
+* Any other address - swap fees can be changed from that account
 
 ![](../../../.gitbook/assets/v2-pools%20%281%29.png)
 
@@ -39,7 +50,7 @@ The BasePool level defines constants, and contains storage for the Vault, Pool I
 
 This level also contains the callbacks for joining and exiting - and enforces that these can only be called **from** the Vault.
 
-Finally, `setSwapFeePercentage` allows for dynamic fees. If the Authorizer contract approves this function for a relayer \(e.g., Gauntlet\), that relayer is then allowed to set the swap fee for the pool. Otherwise, the swap fee is immutable.
+Finally, `setSwapFeePercentage` allows for dynamic fees. If the Authorizer contract approves this function for a relayer \(e.g., Gauntlet\), that relayer is then allowed to set the swap fee for the pool. Otherwise, the swap fee is immutable unless, as described above, the pool has an owner. In that case, the owner can change the fees at will.
 
 ```text
 getVault() returns (IVault vaultAddress)
@@ -95,4 +106,38 @@ onSwap(SwapRequest swapRequest,
 ```
 
 Each level contains internal callbacks \(e.g., `_initializePool`, `_doJoin`\), that need to be implemented by the most derived pools - in this case, the core pools.
+
+Here's another view, showing all the factories. The FactoryWidePauseWindow starts an "emergency period" from factory deployment. Within that period \(defaults to 3 months\), new pools deployed from that factory can be paused by governance. Afterward, all pools become trustless \(including any deployed after the end of the period\).
+
+![Pool Factory class hierarchy](../../../.gitbook/assets/pools-cd.png)
+
+WeightedPool2Tokens \(oracle\) pools have the following additional interface:
+
+```text
+enableOracle() 
+
+getMiscData() returns (
+        int256 logInvariant,
+        int256 logTotalSupply,
+        uint256 oracleSampleCreationTimestamp,
+        uint256 oracleIndex,
+        bool oracleEnabled,
+        uint256 swapFeePercentage)
+        
+getLargestSafeQueryWindow() external pure override returns (uint256)
+
+enum Variable { PAIR_PRICE, BPT_PRICE, INVARIANT }
+
+getLatest(Variable variable) returns (uint256)
+
+struct OracleAverageQuery {
+    Variable variable;
+    uint256 secs;
+    uint256 ago;
+}
+    
+getTimeWeightedAverage(OracleAverageQuery[] queries) returns (uint256[] results)
+
+getPastAccumulators(OracleAccumulatorQuery[] queries returns (int256[] results)
+```
 

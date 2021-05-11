@@ -88,6 +88,8 @@ onExitPool(
 
 The two core pools \(StablePool coming soon!\), use different math, and also different price calculations. Stable Pools need all the token balances to quote a price during a swap, while Weighted Pools need only the balances of the two tokens being swapped. Weighted Pools can take advantage of this fact to save bytes and gas by using more efficient data structures. Any such pools can inherit from BaseMinimalSwapInfoPool.
 
+As with WeightedPools, there will be both oracle and non-oracle versions of the StablePool. All oracle pools are 2-token pools; non-oracle StablePools can have up to 5 tokens \(in the current design\).
+
 ```text
 // BaseMinimalSwapInfoPool
 onSwap(SwapRequest request,

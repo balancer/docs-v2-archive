@@ -60,7 +60,7 @@ Click swap and approve the transaction in MetaMask.
 
 ![](../../.gitbook/assets/11_approved_now_swap.jpg)
 
-### Wait for your trade to get execute, and get your receipt!
+### Wait for your trade to get executed, and get your receipt!
 
 ![](../../.gitbook/assets/12_swapping%20%281%29.jpg)
 

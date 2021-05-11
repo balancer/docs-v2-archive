@@ -6,7 +6,9 @@ Balancer V2 consolidates each pool’s assets in the Vault, which holds the asse
 
 ## Can I trade if I have no tokens?
 
-Yes, Flash Swaps allow arbitrageurs to find and swap imbalanced pools and claim the difference as profit. Since only final net amounts are transferred, arbitrage trades are also significantly easier. An arber who has no tokens but detects a price asymmetry between Balancer pools could trade DAI for MKR in pool 1, MKR for BAL in pool 2 then BAL for DAI in pool 3 and end up making a profit in DAI.
+Yes**\***, Flash Swaps allow arbitrageurs to find and swap imbalanced pools and claim the difference as profit. Since only final net amounts are transferred, arbitrage trades are also significantly easier. An arber who has no tokens but detects a price asymmetry between Balancer pools could trade DAI for MKR in pool 1, MKR for BAL in pool 2 then BAL for DAI in pool 3 and end up making a profit in DAI.
+
+**\***You'll still need ETH to pay gas fees
 
 ## What is Net Token Transfer?
 

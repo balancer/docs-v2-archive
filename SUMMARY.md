@@ -16,6 +16,9 @@
   * [Fees](getting-started/faqs/fees.md)
   * [Governance](getting-started/faqs/governance.md)
   * [About Balancer Protocol and Labs](getting-started/faqs/about-balancer-protocol-and-labs.md)
+* [Walkthroughs](getting-started/walkthroughs/README.md)
+  * [Trade](getting-started/walkthroughs/trading.md)
+  * [Invest](getting-started/walkthroughs/invest.md)
 
 ## Core Concepts
 

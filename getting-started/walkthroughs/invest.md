@@ -4,9 +4,9 @@
 
 ### Connect Wallet
 
-Click one of the "Connect wallet" buttons
+![](../../.gitbook/assets/export_lp.jpg)
 
-![](../../.gitbook/assets/export%20%281%29.jpg)
+Click one of the "Connect wallet" buttons, click MetaMask, and connect your desired wallet in the extension popup.
 
 ### Pick your pool
 

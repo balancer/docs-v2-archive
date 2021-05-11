@@ -6,7 +6,7 @@
 
 Click one of the "Connect wallet" buttons
 
-![](../../.gitbook/assets/export.jpg)
+![](../../.gitbook/assets/export%20%281%29.jpg)
 
 ### Pick your pool
 

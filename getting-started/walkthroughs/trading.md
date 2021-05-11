@@ -12,15 +12,9 @@ Navigate to [https://app.balancer.fi/\#/trade](https://app.balancer.fi/#/trade)
 
 ### Connect your wallet \(We're using MetaMask in this example\)
 
-Click one of the "Connect wallet" buttons
+![](../../.gitbook/assets/export.jpg)
 
-![](../../.gitbook/assets/00_connect_wallet.jpg)
-
-Click MetaMask, and connect your desired wallet in the extension popup
-
-![](../../.gitbook/assets/01_mm.jpg)
-
-![](../../.gitbook/assets/02_select_account%20%281%29.jpg)
+Click one of the "Connect wallet" buttons, click MetaMask, and connect your desired wallet in the extension popup.
 
 ### Select your input token \(your "pay with" token\)
 

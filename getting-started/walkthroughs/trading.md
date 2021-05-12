@@ -4,37 +4,39 @@
 
 This walkthrough will go over the minimal steps to execute a standard trade. 
 
-## Walkthrough
-
-### Go to the Balancer App
+## Go to the Balancer App
 
 Navigate to [https://app.balancer.fi/\#/trade](https://app.balancer.fi/#/trade)
 
-### Connect your wallet \(We're using MetaMask in this example\)
+## Connect your wallet
+
+\(We're using MetaMask in this example\)
 
 ![](../../.gitbook/assets/export.jpg)
 
 Click one of the "Connect wallet" buttons, click MetaMask, and connect your desired wallet in the extension popup.
 
-### Select your input token \(your "pay with" token\)
+## Select your trade tokens
+
+### Pick your input token
 
 ![](../../.gitbook/assets/06_click_token_in.jpg)
 
 ![](../../.gitbook/assets/07_pick_token_in.jpg)
 
-### Select your output token \(the token you're buying\)
+### Pick your output token
 
 ![](../../.gitbook/assets/08_click_token_out.jpg)
 
 ![](../../.gitbook/assets/09_pick_token_out.jpg)
 
-### Enter the amount you want to trade
+## Enter trade amount
 
-You can specify the input amount or the output amount
+You can specify either an input amount or an output amount
 
 ![](../../.gitbook/assets/10_enter_trade_amount.jpg)
 
-### Approve your Input Token
+## Approve the input token
 
 {% hint style="info" %}
 **Why?** You need to "Approve" tokens on Balancer \(and any other decentralized exchange\) because you need to authorize the exchange to move your input token on your behalf
@@ -48,7 +50,7 @@ Approving your token will issue an Ethereum transaction that will have a gas cos
 
 ![](../../.gitbook/assets/screen-shot-2021-05-10-at-8.48.56-pm.png)
 
-### Make your swap
+## Make your swap
 
 Click swap and approve the transaction in MetaMask.
 

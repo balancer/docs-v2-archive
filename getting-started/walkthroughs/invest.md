@@ -28,7 +28,7 @@ Click on the desired pool to navigate to the pool management page
 
 ![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.12.32-pm.png)
 
-### Approve tokens
+### Approve token\(s\)
 
 ![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.12.52-pm.png)
 

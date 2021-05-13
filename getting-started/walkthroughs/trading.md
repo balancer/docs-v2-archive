@@ -28,7 +28,7 @@ Click one of the "Connect wallet" buttons, click MetaMask, and connect your desi
 
 ## Enter trade amount
 
-You can specify either an input amount or an output amount. In this example, we've entered an input amount
+You can specify either an input amount or an output amount. In this example, we've entered an input amount.
 
 ![](../../.gitbook/assets/10_enter_trade_amount%20%281%29.jpg)
 

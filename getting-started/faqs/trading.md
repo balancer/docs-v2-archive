@@ -41,11 +41,11 @@ Yes**\***, Flash Swaps allow arbitrageurs to find and swap imbalanced pools and 
 
 Unfortunately, if your transaction fails you will lose your gas fees. Miners collect these gas fees when attempting to execute your trade; they are not collected by Balancer.
 
-## How do I use Internal Token Balances?
+## What are Internal Balances?
 
-Internal Balances are tokens that you have inside the Balancer Vault. You can supply the Vault with tokens, and once they're inside, you'll be able to trade without needing to move ERC20 tokens, saving you a lot of money on gas fees. The only token ERC20 transfers you need to perform are when you're initially putting your tokens in the Vault and withdrawing them later.
+Internal Balances are tokens that you have inside the Balancer Vault. You can supply the Vault with tokens, and once they're inside, you'll be able to trade without needing to move ERC20 tokens, saving you a lot of money on gas fees. The only ERC20 token transfers you need to perform are when you're initially putting your tokens in the Vault and withdrawing them later.
 
-## Why should I use Internal Token Balances?
+## Why should I use Internal Balances?
 
 If you are trading ETH for DAI but know that you’ll trade DAI back to ETH in a few hours, you can keep both tokens in the vault and use them for your next trade without the need for a useless intermediate ERC20 transaction.
 

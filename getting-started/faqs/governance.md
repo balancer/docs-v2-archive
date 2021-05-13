@@ -6,6 +6,10 @@ Balancer Governance is the heart and brain of Balancer Protocol. Anyone who hold
 
 The main responsibilities of Balancer Governance are voting on new proposals on changes to the Balancer community and deciding on whether/how the protocol fees will be used.
 
+## Does Balancer have a token?
+
+Yes, the Balancer Governance Token \(BAL\) gives holders decision making power over the protocol. The BAL token address is [0xba100000625a3754423978a60c9317c58a424e3d](https://etherscan.io/address/0xba100000625a3754423978a60c9317c58a424e3d).
+
 ## What do I need to be eligible to vote?
 
 The three current sources of voting power are:

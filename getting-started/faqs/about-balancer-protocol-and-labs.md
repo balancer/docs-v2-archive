@@ -4,10 +4,6 @@
 
 Balancer Protocol is an automated market maker \(AMM\) protocol built on Ethereum. It facilitates trades as a decentralized exchange, and supports liquidity providers by allowing anyone to create and supply trading pools.
 
-## Does Balancer have a token?
-
-Yes, the Balancer Governance Token \(BAL\) gives holders decision making power over the protocol. The BAL token address is [0xba100000625a3754423978a60c9317c58a424e3d](https://etherscan.io/address/0xba100000625a3754423978a60c9317c58a424e3d).
-
 ## Who benefits from Balancer Protocol?
 
 Balancer offers value to all parts of the liquidity ecosystem — a self-balancing portfolio for investors, a deep liquidity source for traders, and an efficient bootstrapping tool for issuers.

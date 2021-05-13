@@ -5,7 +5,7 @@
 ## Getting Started
 
 * [FAQs](getting-started/faqs/README.md)
-  * [V2 in a nutshell](getting-started/faqs/v2-in-a-nutshell.md)
+  * [V2 in a Nutshell](getting-started/faqs/v2-in-a-nutshell.md)
   * [V1 ➝ V2 Migration](getting-started/faqs/v1-to-v2-migration.md)
   * [Trading](getting-started/faqs/trading.md)
   * [Liquidity](getting-started/faqs/liquidity.md)

@@ -1,4 +1,4 @@
-# V2 in a nutshell
+# V2 in a Nutshell
 
 ## What are the highlights of V2 compared to V1?
 

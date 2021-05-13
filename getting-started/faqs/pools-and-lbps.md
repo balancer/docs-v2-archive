@@ -13,17 +13,15 @@ Initially in V2 there will be two pool types
 * weighted pools - permissionless, 8-token pools like V1 shared pools - but more gas efficient
 * two-token weighted oracle pools - permissionless weighted pools with two tokens that act as on-chain price oracles
 
-Soon we will be also introducing
+Balancer Labs is currently developing and testing:
 
 * stable pools -- suitable for tokens that are soft pegged to each other \(building on the great work by the Curve team\).
 * LiquidityBootstrappingPool - these will be used for LBPs in V2 . It is a 2-token pool with pause and weight change rights. You can revoke the rights and transform it into a smart treasury or Weighted Pool equivalent.
 * Smart versions of the Weighted and Stable pools \(with the same rights as V1, and more - and they are revocable, so can become more trustless over time\).
 
-All pools provide trading liquidity thanks to the smart order router.
-
 ## Can I have nested pools?
 
-You can create Balancer pools of Balancer pools. This can fill the need of products that want to aggregate across many different products — imagine a project which tokenizes real estate and has separate Balancer pools for each city — a composed version of that pool could represent a whole state.
+Yes, you can create Balancer pools of Balancer pools. This can fill the need of products that want to aggregate across many different products — imagine a project which tokenizes real estate and has separate Balancer pools for each city — a composed version of that pool could represent a whole state.
 
 ## What is an LBP?
 
@@ -43,7 +41,7 @@ At the creation of an LBP the team should set up a price that is significantly h
 
 ## Should I join an LBP as soon as it launches?
 
-No; this is not the point. Prices are _supposed_ to start intentionally high and then come down. If you join early may end up paying way more than if you wait for the price to stabilize.
+No, this is not the point. Prices are _supposed_ to start intentionally high and then come down. If you join early may end up paying way more than if you wait for the price to stabilize.
 
 ## Why do teams decide to launch an LBP?
 

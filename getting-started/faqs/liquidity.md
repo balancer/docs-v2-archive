@@ -24,7 +24,7 @@ Balancer LPs can earn yield in a few ways:
 
 In addition, some pools in V2 are eligible for Governance Distributions through the Liquidity Mining program.
 
-To read more about fees, click 
+To read more about fees, click [here](fees.md).
 
 ## How does a pool determine the price of tokens?
 

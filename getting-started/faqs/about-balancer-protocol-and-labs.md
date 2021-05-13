@@ -12,7 +12,7 @@ Balancer offers value to all parts of the liquidity ecosystem — a self-balanci
 
 Balancer is deployed on Ethereum, and is compatible only with ERC20 tokens \(native ETH is automatically wrapped\). The protocol exists on mainnet and the Kovan testnet. 
 
-There are no implementations on Tron, or any other networks. Balancer Labs has awarded grants to teams developing on Near and Algorand, however, these are exploratory grants, and does not imply that there are working versions of Balancer Protocol on these systems.
+There are no implementations on Tron, or any other networks. Balancer Labs has awarded grants to teams developing on Near and Algorand; however, these are exploratory grants, and does not imply that there are working versions of Balancer Protocol on these systems.
 
 ## Who is behind Balancer Labs?
 

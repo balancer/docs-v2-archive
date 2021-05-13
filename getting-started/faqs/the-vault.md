@@ -2,9 +2,7 @@
 
 ### What is the Vault?
 
-It is a single contract that holds and manages all the assets added by all Balancer pools. The benefit is that what would have been multiple token transfers before, each with gas fees, now is a single transfer pair. This allows Balancer to take full advantage of its multi-pool trading routing so as to offer the greatest possible liquidity with the lowest possible slippage.
-
-![Changes in the architecture of the Balancer Pools](../../.gitbook/assets/image%20%284%29.png)
+It is a single contract that holds and manages all the assets added by all Balancer pools. This allows Balancer to take full advantage of its multi-pool trading routing so as to offer the greatest possible liquidity with the lowest possible slippage.
 
 ### How does the Vault work?
 

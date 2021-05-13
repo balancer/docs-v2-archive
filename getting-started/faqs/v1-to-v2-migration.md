@@ -2,9 +2,26 @@
 
 ## How do I migrate from V1 to V2?
 
-For two-asset pools, you can automatically migrate your liquidity from comparable pools. More details about the migration process will be released closer to the official UI launch.
+For supported two-asset pools, you can use the migration system to move your liquidity from a V1 pool to a comparable, if not identical, V2 pool.
 
-For pools with more than two assets, we recommend manually removing liquidity from V1 and re-adding your liquidity to V2.
+### 1. Go to [https://pools.balancer.exchange/\#/](https://pools.balancer.exchange/#/) and click "Connect Wallet" in the top right
+
+![](../../.gitbook/assets/screen-shot-2021-05-13-at-9.30.41-am.png)
+
+### 2. Click on "Dashboard" on the left menu
+
+![](../../.gitbook/assets/screen-shot-2021-05-13-at-9.25.57-am.png)
+
+### 3. Pools with Automatic Migration available will have a "V2 Migrate" button
+
+![](../../.gitbook/assets/migration_dashboard.png)
+
+There are two transactions involved in migrations
+
+* You will need to Approve the migration tool to migrate your BPT
+* The migration itself
+
+For pools that do not have Automatic Migration, you should remove liquidity from V1 and re-adding your liquidity to V2. Pools that do not have automatic migration are multi-asset pools and pools that do not have a similar pool in V2. 
 
 ## Do I have to migrate? What happens if I don't?
 

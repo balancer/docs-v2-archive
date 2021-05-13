@@ -6,27 +6,29 @@ Balancer Governance is the heart and brain of Balancer Protocol. Anyone who hold
 
 The main responsibilities of Balancer Governance are voting on new proposals on changes to the Balancer community and deciding on whether/how the protocol fees will be used.
 
-## Who can make a proposal?
-
-If you have an idea about how to improve Balancer you can make a proposal on our [Forum](https://forum.balancer.finance/) or in \#governance [Discord Channel](https://discord.gg/fuxpBzvad9). The proposal will need to get sufficient traction from the community to be moved to vote. Be sure to explain the problem, the solution, consider any implications, dependencies etc. Don't be upset if you don't get a lot of enthusiasm at first - incorporate the feedback and post an improved proposal. It is a process, so it may take some time, but thanks to it - we can make sure that it's the best version we can create. 
-
 ## What do I need to be eligible to vote?
 
 The three current sources of voting power are:
 
 * Holding BAL in your wallet
-* Holding BPT in your wallet for a Liquidity Pool with BAL in it
+* Holding pool tokens in your wallet for a Balancer Pool with BAL in it
 * Getting voting power delegated to you by another wallet
 
 It is worth noting that Balancer Governors have the ability to vote on adding/removing strategies of how to assign voting power.
 
 ## How do I vote?
 
-Voting takes place on [Snapshot](https://snapshot.org/#/balancer), an off-chain, gasless voting system. Snapshot was created by Balancer Labs, and has become a very successful multi-protocol voting system trusted by over 600 teams.
+Voting takes place on [Snapshot](https://snapshot.org/#/balancer), an off-chain, gasless voting system. Snapshot was created by Balancer Labs, and has become a very successful multi-protocol voting system used by over 800 teams.
 
 ## When are votes?
 
 Votes happen when there is a proposal to vote on; they are not regularly scheduled. When they are active, votes typically occur over the weekend. They are announced on the forums, on Discord and on Twitter.
+
+## How do I make a proposal?
+
+If you have an idea about how to improve Balancer you can make a proposal on our [Forum](https://forum.balancer.finance/) or in \#governance [Discord Channel](https://discord.gg/fuxpBzvad9). As the proposal gets traction in the community, it will be debated and then moved to a vote. 
+
+When proposing, be sure to explain the problem, the solution, consider any implications, dependencies etc. Don't be upset if you don't get a lot of enthusiasm at first - incorporate the feedback and post an improved proposal. It is a process, so it may take some time, but thanks to it - we can make sure that it's the best version we can create. 
 
 ## Is BAL on Tron?
 

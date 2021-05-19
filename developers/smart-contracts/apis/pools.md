@@ -130,6 +130,18 @@ getLargestSafeQueryWindow() external pure override returns (uint256)
 
 enum Variable { PAIR_PRICE, BPT_PRICE, INVARIANT }
 
+// Returns latest sample of `variable`.
+// Prices are represented as 18 decimal fixed point values.
+//
+// Pair Price: the price of the second token in units of the
+//             first token. For example, if token A is worth $2, 
+//             and token B is worth $4, the pair price will be 2.0
+// NB: decimals are accounted for; DAI/USDC ~ 1, though decimals differ
+//
+// BPT Price: the price of the Pool share token (BPT),
+//            in units of the first token. Likewise decimal normalized
+// Invariant: the value of the Pool's invariant,
+//            which serves as a measure of its liquidity     
 getLatest(Variable variable) returns (uint256)
 
 struct OracleAverageQuery {
@@ -137,7 +149,14 @@ struct OracleAverageQuery {
     uint256 secs;
     uint256 ago;
 }
-    
+
+// Returns the time average weighted price corresponding to each of `queries`.
+// Prices are represented as 18 decimal fixed point values.
+//
+// Each query computes the average over a window of duration `secs` seconds
+// that ended `ago` seconds ago. For example, the average over the past 30 
+// minutes is computed by settings secs to 1800 and ago to 0. If secs and ago
+// are both 1800, that returns the average between 60 and 30 minutes ago    
 getTimeWeightedAverage(OracleAverageQuery[] queries) returns (uint256[] results)
 
 getPastAccumulators(OracleAccumulatorQuery[] queries returns (int256[] results)

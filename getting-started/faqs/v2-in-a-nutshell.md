@@ -3,10 +3,10 @@
 ## What are the highlights of V2 compared to V1?
 
 * Protocol Vault for all Balancer pool assets
-* Internal Balances
+* User Balances \(like a personal "wallet" inside the Vault\)
 * Improved gas efficiency
 * Flash Loans
-* Flash Swaps
+* Flash Swaps \(arbitrage trading with no initial investment\)
 * Custom AMM formulas
 * Capital efficiency through Asset Managers
 * Low-gas-cost and resilient oracles

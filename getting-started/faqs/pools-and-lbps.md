@@ -6,7 +6,7 @@ In V1 there are three types of Pools:
 
 * public pools \(also called shared\)— anyone can add liquidity \(and get Balancer Pool Tokens in return\), but all the pool parameters are fixed forever. \(trustless, finalized\)
 * private pools — all the parameters are flexible — only the owner can change them but also only the owner can add liquidity \(trusted, unfinalized\)
-* smart pools — anybody can add liquidity to them and the parameters can be fixed or dynamic controlled through smart contracts. \(trustless, flexible\).
+* smart pools — anybody can add liquidity to them and the parameters can be fixed or dynamic controlled through smart contracts. \(partially trustless, flexible\).
 
 Initially in V2 there will be two pool types
 
@@ -15,7 +15,7 @@ Initially in V2 there will be two pool types
 
 Balancer Labs is currently developing and testing:
 
-* stable pools -- suitable for tokens that are soft pegged to each other \(building on the great work by the Curve team\).
+* Stable pools -- suitable for tokens that are soft pegged to each other \(building on the great work by the Curve team\).
 * LiquidityBootstrappingPool - these will be used for LBPs in V2 . It is a 2-token pool with pause and weight change rights. You can revoke the rights and transform it into a smart treasury or Weighted Pool equivalent.
 * Smart versions of the Weighted and Stable pools \(with the same rights as V1, and more - and they are revocable, so can become more trustless over time\).
 
@@ -29,7 +29,9 @@ Yes, you can create Balancer pools of Balancer pools. This can fill the need of 
 Coming soon on V2
 {% endhint %}
 
-It is a short-lived smart pool which dynamically changes their token weighting \(e.g 1%/99% ETH/$TOKEN to 99%/1% ETH/$TOKEN\), allowing founders to create a liquidity bootstrapping pool with little required capital from their side. The result is that the token price continually experiences downward pressure throughout the sale. When this is mixed with modest buying demand, the price stays stable throughout the sale, as whales/bots are disincentivized to buy it all at once. PrimeDAO is building the IDO Launchpad, which will streamline the process for a smoother experience. 
+For V1 LBPs, see [this FAQ](https://docs.balancer.fi/v/v1/smart-contracts/smart-pools/liquidity-bootstrapping-faq).   
+  
+It is a smart pool that dynamically changes the token weighting \(e.g 1%/99% ETH/$TOKEN to 99%/1% ETH/$TOKEN\), allowing founders to create a liquidity bootstrapping pool with minimal capital requirements. The result is that the token price continually experiences downward pressure throughout the sale. When this is mixed with modest buying demand, the price stays stable throughout the sale, as whales/bots are disincentivized to buy it all at once. PrimeDAO is building the IDO Launchpad, which will streamline the process for a smoother experience. 
 
 ## How long do LBPs last?
 

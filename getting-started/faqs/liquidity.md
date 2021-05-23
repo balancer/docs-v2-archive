@@ -19,10 +19,10 @@ In short, you'll need:
 
 Balancer LPs can earn yield in a few ways:
 
-* Trade Fees
+* Trading Fees
 * Returns from Asset Managers
 
-In addition, some pools in V2 are eligible for Governance Distributions through the Liquidity Mining program.
+In addition, some pools in V2 are eligible for Governance Distributions through the Liquidity Mining program. 
 
 To read more about fees, click [here](fees.md).
 
@@ -32,7 +32,10 @@ In general the AMM logic determines the prices that traders pay. In weighted poo
 
 ## What does the customizable AMM logic mean for me?
 
-Balancer V2 pioneers customizable AMM logic by creating a launchpad for teams to innovate with different AMM strategies without having to worry about low-level token transfers, balance accounting, security checks and smart order routing. With Balancer V2, this all comes out of the box.
+Balancer V2 pioneers customizable AMM logic by creating a launchpad for teams to innovate with different AMM strategies without having to worry about low-level token transfers, balance accounting, security checks and smart order routing. With Balancer V2, this all comes out of the box.  
+
+
+V2 launched with Weighted Pools \(similar to V1 shared pools\), then released a version of Weighted Pools with support for price oracles. Several new pool types - with different AMM logic - are in development, from Balancer and other teams.
 
 ## How does the self-balancing index fund work?
 

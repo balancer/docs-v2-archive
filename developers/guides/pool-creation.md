@@ -1,4 +1,4 @@
-# Pool creation
+# Pool Creation
 
 There will eventually be a pool creation UI, but for now the focus is on [migrating liquidity](../../getting-started/faqs/v1-to-v2-migration.md), and reducing fragmentation by concentrating liquidity in a smaller number of large pools, vs a large number of small pools.
 
@@ -93,14 +93,10 @@ const tx = await factory.create(NAME, SYMBOL, tokens, weights,
                                 swapFeePercentage, ZERO_ADDRESS);
 const receipt = await tx.wait();
 
-// We need to get the new pool address out of the PoolCreated event
+// We need to get the new pool ID out of the PoolRegistered event
 // (Or just grab it from Etherscan)
-const events = receipt.events.filter((e) => e.event === 'PoolCreated');
-const poolAddress = events[0].args.pool;
-
-// We're going to need the PoolID later, so ask the contract for it
-const pool = await ethers.getContractAt('WeightedPool', poolAddress);
-const poolID = await pool.getPoolId();
+const events = receipt.events.filter((e) => e.event === 'PoolRegistered');
+const poolId = events[0].args.poolId;
 ```
 
 At this point you have a new pool contract that is configured, but not initialized/funded. \(It will not show up on the Balancer UI until it's funded.\)
@@ -115,7 +111,7 @@ First, let's figure out the balances. You need to make the "internal" prices mat
 const initialBalances = [16.667e18, 3.5714e18, 7500e6];
 ```
 
-All joins and exits are done on the Vault, using the poolID. The userData specifies the type of join \(in this case, the special "Init" join\).
+All joins and exits are done on the Vault, using the poolId. The userData specifies the type of join \(in this case, the special "Init" join\).
 
 ```text
 const JOIN_KIND_INIT = 0;

@@ -162,3 +162,9 @@ getTimeWeightedAverage(OracleAverageQuery[] queries) returns (uint256[] results)
 getPastAccumulators(OracleAccumulatorQuery[] queries returns (int256[] results)
 ```
 
+{% hint style="info" %}
+Note that you can only call `getWeightedTimeAverage` after the buffer is full, or it will revert with ORACLE\_NOT\_INITIALIZED. If you call `getSample(1023)` and it returns 0's, that means the buffer's not full yet.
+{% endhint %}
+
+
+

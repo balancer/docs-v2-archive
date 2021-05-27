@@ -85,6 +85,7 @@ To deploy the pool, we call `create` on the `WeightedPoolFactory`. \(Make sure y
 ```text
 const factory = await ethers.getContractAt('WeightedPoolFactory',
                                            WEIGHTED_POOL_FACTORY);
+const vault = await ethers.getContractAt('Vault', VAULT);
 
 // ZERO_ADDRESS owner means fixed swap fees
 // DELEGATE_OWNER grants permission to governance for dynamic fee management

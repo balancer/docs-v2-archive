@@ -137,7 +137,7 @@ const joinPoolRequest = {
 // Need to approve the Vault to transfer the tokens!
 // Can do through Etherscan, or programmatically
 const mkr = await ethers.getContractAt('ERC20', MKR);
-await mkr.approve(vault, 17e18);
+await mkr.approve(VAULT, 17e18);
 // ... same for other tokens
 
 // joins and exits are done on the Vault, not the pool

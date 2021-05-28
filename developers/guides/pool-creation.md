@@ -21,7 +21,11 @@ The first question is, which pool? There are two:
 * **WeightedPool -** V1-like pool with up to 8 tokens
 * **WeightedPool2Tokens** - 2-token pool with V1 math, and support for resilient oracles
 
-If you need more than two tokens, WeightedPool is the only option. If you have a two-token pool, we recommend the oracle pool. Pool operations are slightly more expensive with the oracle turned on, so you might deploy it with the oracle off initially, then turn it on later. \(Note that it cannot be turned off again.\)
+If you need more than two tokens, WeightedPool is the only option. If you have a two-token pool, we recommend the oracle pool. Pool operations are slightly more expensive with the oracle turned on \(especially the first 1k swaps, until the oracle is fully initialized\), so you might deploy it with the oracle off initially, then turn it on later. \(Note that it cannot be turned off again.\)
+
+The high liquidity "seed" pools on Balancer all have the oracle enabled: they are intended to serve as the "official" oracles for those pairs. Eventually the plan is to have a registry of oracle pools, controlled by governance. So a newly launched token could create an oracle pool on Balancer \(perhaps paired with WETH or DAI\), with the oracle on. Given high enough liquidity, and volume sufficient to fully initialize the oracle, the pool could then apply to governance to be included in the registry.
+
+Before creating a new pool, make sure there isn't already a similar pool! There's no advantage to fragmenting liquidity - especially on V2, where liquidity mining is per pool, with the pools chosen by governance \(i.e., "duplicate" pools would not be approved for mining incentives\).
 
 The next question is how you want to handle swap fees. As in V1, pool swap fees can range from 0.0001% to 10%. In V2, there are three options:
 

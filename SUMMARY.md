@@ -52,7 +52,7 @@
     * [Pools](developers/smart-contracts/apis/pools.md)
     * [Asset Managers](developers/smart-contracts/apis/asset-managers.md)
   * [Events](developers/smart-contracts/events.md)
-  * [Deployment Addresses](developers/smart-contracts/deployment-addresses.md)
+  * [Deployments](developers/smart-contracts/deployment-addresses.md)
   * [UML Diagrams](developers/smart-contracts/uml-diagrams.md)
 * [Guides](developers/guides/README.md)
   * [Single Swaps](developers/guides/single-swaps.md)

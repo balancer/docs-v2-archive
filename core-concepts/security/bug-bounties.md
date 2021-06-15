@@ -12,11 +12,17 @@ Balancer has completed smart contract audits with Trail of Bits, OpenZeppelin, a
 
 ## Scope
 
-The bug bounty covers any of the core smart contracts deployed on Ethereum mainnet. The code can be found at: [https://github.com/balancer-labs/balancer-core-v2](https://github.com/balancer-labs/balancer-core-v2)
+The bug bounty covers any of the core smart contracts deployed on Ethereum mainnet. The code can be found at: [https://github.com/balancer-labs/balancer-v2-monorepo](https://github.com/balancer-labs/balancer-v2-monorepo)
 
-Submissions should be based off commit hash: [https://github.com/balancer-labs/balancer-core-v2/tree/v1.0.0](https://github.com/balancer-labs/balancer-core-v2/tree/v1.0.0)
+The list of deployed contracts, along with their mainnet addresses and commit hashes, can be found here: 
 
-Mainnet Vault can be found at: [https://etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8)
+{% page-ref page="../../developers/smart-contracts/deployment-addresses.md" %}
+
+{% hint style="info" %}
+Note that Balancer V2 smart contract development occurs within a single repository, so e.g. the commit corresponding to the Vault's deployment might also include source code not only for Weighted Pools, but also for as-yet-unreleased contracts.
+
+Only deployed contracts are in scope of the bounty! Be sure to always use a contract's deployment commit when looking at its source!
+{% endhint %}
 
 ## Rewards
 

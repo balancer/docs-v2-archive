@@ -24,11 +24,9 @@ As the price of each token changes, arbitrageurs rebalance the pool by making tr
 
 ### Stable Pools
 
-{% hint style="info" %}
-Coming soon! The official Stable Pool factories will arrive in the weeks following the Balancer V2 mainnet launch.
-{% endhint %}
-
 For certain assets that are expected to consistently trade at near parity \(e.g. different varieties of stablecoins or synthetics\) a more efficient design is the StableSwap AMM as popularized by Curve. These pools allow for larger trades of these assets before encountering significant price impact.
+
+There will also be support for "metastable" pools - these are stable pools that contain LP tokens of other stable pools.
 
 ## Custom Pools
 

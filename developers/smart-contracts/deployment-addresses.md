@@ -2,7 +2,7 @@
 
 ## Balancer V2 Release v1.0.0
 
-#### Addresses are for Kovan and Mainnet
+#### Addresses are the same on all networks \(Mainnet, Kovan, Polygon, etc.\)
 
 | **Contract** | **Address** | Commit |
 | :--- | :--- | :--- |

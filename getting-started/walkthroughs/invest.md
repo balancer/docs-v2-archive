@@ -26,7 +26,8 @@ Click on the desired pool to navigate to the pool management page
 
 ### Select your amount
 
-You can choose to invest a subset of tokens or all of them. If you decide to put in only some of the tokens \(eg. only BAL\) then some of it will get exchanged to match the pool weights \(so 80% of the value invested will stay in BAL and 20% will get exchanged to WETH\). If you decide to invest according to pool weights, you will not impact the toke prices.
+You can choose to invest a subset of tokens or all of them. If you decide to put in only some of the tokens \(eg. only BAL\) then some of it will get exchanged to match the pool weights \(so 80% of the value invested will stay in BAL and 20% will get exchanged to WETH\). If you decide to invest according to pool weights, you will not impact the toke prices.  
+To invest a single asset, choose "Custom amounts".
 
 ![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.12.32-pm.png)
 
@@ -51,6 +52,8 @@ You can choose to invest a subset of tokens or all of them. If you decide to put
 ![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.24.23-pm.png)
 
 ### Select the amount you wish to withdraw
+
+You can choose to withdraw a subset of tokens or all of them. If you decide to withdraw only one toke you can withdraw up to the whole value of your investment. In that case, the app will automatically swap other tokens to the one you're withdrawing. Eg it will sell the WETH in that pool and buy the BAL you're requesting. To withdraw a single asset, choose "Custom amounts".
 
 ![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.26.26-pm.png)
 

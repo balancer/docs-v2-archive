@@ -26,6 +26,8 @@ Click on the desired pool to navigate to the pool management page
 
 ### Select your amount
 
+You can choose to invest a subset of tokens or all of them. If you decide to put in only some of the tokens \(eg. only BAL\) then some of it will get exchanged to match the pool weights \(so 80% of the value invested will stay in BAL and 20% will get exchanged to WETH\). If you decide to invest according to pool weights, you will not impact the toke prices.
+
 ![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.12.32-pm.png)
 
 ### Approve token\(s\)

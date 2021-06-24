@@ -9,7 +9,7 @@ Nevertheless, we need breadth as well as depth, and core pools still support up 
 {% hint style="warning" %}
 The Vault and core pool factories are currently within the "emergency period," during which they are pausable in the event of a security incident. After this period expires \(in July\), the Vault and WeightedPools will become trustless. Because they were deployed after launch, WeightedPool2Token \(Oracle\) pools will remain pausable for an additional two weeks.
 
-Any new pool types should also follow this pattern. When Stable Pools are released, they will likewise be pausable during the first three months after deployment.
+Any new pool types should also follow this pattern. Stable Pools were deployed June 24th, so they will likewise be pausable during the first three months.
 
 If the Vault or a pool is paused, all operations are blocked except withdrawals.
 {% endhint %}
@@ -18,12 +18,15 @@ If the Vault or a pool is paused, all operations are blocked except withdrawals.
 
 There is a [Python package](https://pypi.org/project/balpy/) that works out of the box, from a config file. That's likely the best option for those who don't have a full dev environment. It's also on GitHub [here](https://github.com/gerrrg/balpy).
 
-If you prefer Typescript and do have an environment \(e.g., with artifacts built\), the first question is, which pool? There are two:
+If you prefer Typescript and do have an environment \(e.g., with artifacts built\), the first question is, which pool? There are three:
 
 * **WeightedPool -** V1-like pool with up to 8 tokens
 * **WeightedPool2Tokens** - 2-token pool with V1 math, and support for resilient oracles
+* **StablePool** - 2-5 token pools with Stable math \(similar to Curve\)
 
-If you need more than two tokens, WeightedPool is the only option. If you have a two-token pool, we recommend the oracle pool. Pool operations are slightly more expensive with the oracle turned on \(especially the first 1k swaps, until the oracle is fully initialized\), so you might deploy it with the oracle off initially, then turn it on later. \(Note that it cannot be turned off again.\)
+Stable pools are intended to hold tokens that have the same value: for instance, DAI/USDC/USDT. They could also be used for WETH/sETH or WBTC/imBTC, etc.
+
+For weighted pools, if you need more than two tokens, the standard WeightedPool is the only option. If you have a two-token pool, we recommend the oracle pool. Pool operations are slightly more expensive with the oracle turned on \(especially the first 1k swaps, until the oracle is fully initialized\), so you might deploy it with the oracle off initially, then turn it on later. \(Note that it cannot be turned off again.\)
 
 The high liquidity "seed" pools on Balancer all have the oracle enabled: they are intended to serve as the "official" oracles for those pairs. Eventually the plan is to have a registry of oracle pools, controlled by governance. So a newly launched token could create an oracle pool on Balancer \(perhaps paired with WETH or DAI\), with the oracle on. Given high enough liquidity, and volume sufficient to fully initialize the oracle, the pool could then apply to governance to be included in the registry.
 
@@ -46,6 +49,7 @@ const VAULT = '0xBA12222222228d8Ba445958a75a0704d566BF2C8';
 
 const WEIGHTED_POOL_FACTORY = '0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9';
 const ORACLE_POOL_FACTORY = '0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0';
+const STABLE_POOL_FACTORY = '0x791F9fD8CFa2Ea408322e172af10186b2D73baBD';
 
 const DELEGATE_OWNER = '0xBA1BA1ba1BA1bA1bA1Ba1BA1ba1BA1bA1ba1ba1B';
 ```

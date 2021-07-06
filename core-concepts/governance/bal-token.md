@@ -8,6 +8,15 @@ description: 'Ethereum Contract Address: 0xba100000625a3754423978a60c9317c58a424
 
 As Balancer Protocol moves to decentralize and diversify its governance, it will use the Balancer Governance Token \(BAL\) to grant voting power. Alignment between governance token holders and protocol stakeholders is crucial for successful decentralized governance, and BAL tokens are the vehicle to drive this alignment. BAL tokens are not an investment; BAL token holders should be people who interact with the protocol in some way, are committed to its future development, and want a seat at the governance table.
 
+## Contract Address
+
+* Ethereum Mainnet
+  * 0xba100000625a3754423978a60c9317c58a424e3d
+* Kovan Testnet
+  * 0x41286Bb1D3E870f3F750eB7E1C25d7E48c8A1Ac7
+* Polygon
+  * 0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3
+
 ## Liquidity Providers
 
 Liquidity Providers \(LPs\) are the cornerstone of the Balancer Protocol. Liquidity attracts traders, trading generates fees, and pool profitability attracts more liquidity. 

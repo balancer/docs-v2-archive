@@ -2,11 +2,17 @@
 
 The Balancer Subgraph indexes data on the Balancer smart contracts with a GraphQL interface.  It updates data in response to function calls and contract events to maintain data on the `Vault`, `Pools`,  `AssetManagers` etc, to power front-end apps and integrations.
 
+{% hint style="warning" %}
+Note that we have not yet migrated to the new Subgraph Studio mainnet. Any Balancer subgraphs there were not deployed by Balancer and should not be indexed.
+{% endhint %}
+
 ### Explore our data
 
-Kovan: [https://thegraph.com/explorer/subgraph/balancer-labs/balancer-kovan-v2](https://thegraph.com/explorer/subgraph/balancer-labs/balancer-kovan-v2)
+Kovan: [https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-kovan-v2](https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-kovan-v2)
 
-Mainnet: [https://thegraph.com/explorer/subgraph/balancer-labs/balancer-v2](https://thegraph.com/explorer/subgraph/balancer-labs/balancer-v2)
+Mainnet: [https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-v2](https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-v2)
+
+Polygon: [https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-polygon-v2](https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-polygon-v2)
 
 For how to use the subgraph, refer to the graph's documentation [https://thegraph.com/docs/introduction](https://thegraph.com/docs/introduction)
 

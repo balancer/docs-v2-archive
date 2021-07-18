@@ -42,16 +42,17 @@ The flexibility introduced doesn't just extend to control over the pricing curve
 
 Balancer V1 introduced smart pools, which give external contracts control over parameters, and in V2 these features are integrated directly into the pools themselves. Thanks to Balancer's modular architecture, any of the smart contracts defining the behavior of a pool can be replaced as long as it maintains the common interface with the Vault.
 
-The first smart pool to launch will be the Liquidity Bootstrapping Pool \(LBP\). It is a specialized 2-token WeightedPool, which restricts liquidity provision to the pool creator, and supports pausing trading, setting the swap fee, and changing weights gradually.
+The first smart pool to launch will be the Liquidity Bootstrapping Pool \(LBP\). It is a specialized 2-5 token WeightedPool, which restricts liquidity provision to the pool creator, and supports pausing trading, setting the swap fee, and changing weights gradually.
 
 There are significant differences in the V2 LBPs:
 
 * Weights change automatically; no triggering \(`pokeWeights()`\) necessary
 * Pools can launch in a paused state
-* Rights are revocable - pool owners can revoke any of the three available rights, making the pool more trustless \(e.g. revoke pausing and weight change to transition from an LBP to a smart treasury\)
-* Pool owners can cleanly renounce ownership entirely, which allows public LPs, and effectively creates a WeightedPool \(though slightly less gas-efficient than a "native" WeightedPool\).
+* LBPs can range over the full 1%-99% WeightedPool math limits
 
-Likewise, there are two versions of the general Smart Pool \(for Weighted and Stable Pools\). These have very similar rights to V1 smart pools - except they are individually revocable. In addition, Weighted Pools may support a "circuit breaker", to halt trading for a token if the pool becomes "unbalanced" \(e.g., if a malicious or buggy token contract allows infinite minting, or otherwise breaks the pricing algorithm of the pool\).
+Given the flexibility and composability of the native architecture, there is likely no need in V2 for a generic "Swiss army knife" like the V1 Configurable Rights Pool. New smart pools can be created by inheriting from the appropriate contract in the hierarchy, and customizing.
+
+The most general smart pool currently under development is the Investment Pool. This will support up to 100 tokens, and contain advanced features like circuit breakers: an automatic mechanism to halt trading for a token if the pool becomes "unbalanced" \(e.g., if a malicious or buggy token contract allows infinite minting, or otherwise breaks the pricing algorithm of the pool\). It will likely also support different kinds of management fees, and the ability to add and remove tokens.
 
 ## Dynamic Swap Fees
 

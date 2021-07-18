@@ -8,16 +8,18 @@ In V1 there are three types of Pools:
 * private pools — all the parameters are flexible — only the owner can change them but also only the owner can add liquidity \(trusted, unfinalized\)
 * smart pools — anybody can add liquidity to them and the parameters can be fixed or dynamic controlled through smart contracts. \(partially trustless, flexible\).
 
-Initially in V2 there will be two pool types
+Initially in V2 there are currently three core pool types
 
 * weighted pools - permissionless, 8-token pools like V1 shared pools - but more gas efficient
 * two-token weighted oracle pools - permissionless weighted pools with two tokens that act as on-chain price oracles
+* stable pools - permissionless pools with 2-5 tokens that use different math \(similar to Curve\), and contain tokens of similar value. For example, DAI/USDC/USDT, and WBTC/renBTC/sBTC.
 
 Balancer Labs is currently developing and testing:
 
-* Stable pools -- suitable for tokens that are soft pegged to each other \(building on the great work by the Curve team\).
-* LiquidityBootstrappingPool - these will be used for LBPs in V2 . It is a 2-token pool with pause and weight change rights. You can revoke the rights and transform it into a smart treasury or Weighted Pool equivalent.
-* Smart versions of the Weighted and Stable pools \(with the same rights as V1, and more - and they are revocable, so can become more trustless over time\).
+* "Heavyweight" pools - WeightedPools that can support up to 20-tokens, but are otherwise identical.
+* Metastable pools -- a generalized stable pool that can hold "proportional" assets \(e.g., DAI/cDA\), or 
+* LiquidityBootstrappingPool - this will be used for LBPs in V2 . It is a 2-5 token pool with the ability to enable and disable trading, and change weights. Only the creator can add liquidity.
+* Investment pools - pools with up to 100 tokens, with LBP-like rights to disable trading and change weights, but which do allow public LPs. They will also have advanced features, such as circuit breakers \(halting trading automatically to limit IL\), different types of management fees, and the ability to add/remove tokens from the pool.
 
 ## Can I have nested pools?
 
@@ -31,7 +33,7 @@ Coming soon on V2
 
 For V1 LBPs, see [this FAQ](https://docs.balancer.fi/v/v1/smart-contracts/smart-pools/liquidity-bootstrapping-faq).   
   
-It is a smart pool that dynamically changes the token weighting \(e.g 1%/99% ETH/$TOKEN to 99%/1% ETH/$TOKEN\), allowing founders to create a liquidity bootstrapping pool with minimal capital requirements. The result is that the token price continually experiences downward pressure throughout the sale. When this is mixed with modest buying demand, the price stays stable throughout the sale, as whales/bots are disincentivized to buy it all at once. PrimeDAO is building the IDO Launchpad, which will streamline the process for a smoother experience. 
+It is a smart pool that dynamically changes the token weighting \(e.g 1%/99% ETH/$TOKEN to 99%/1% ETH/$TOKEN\), allowing founders to create a liquidity bootstrapping pool with minimal capital requirements. The result is that the token price continually experiences downward pressure throughout the sale. When this is mixed with modest buying demand, the price stays stable throughout the sale, as whales/bots are disincentivized to buy it all at once. PrimeDAO is building the IDO Launchpad, which will streamline the process for a smoother experience. Other partners are building UIs as well.
 
 ## How long do LBPs last?
 

@@ -24,7 +24,7 @@ Liquidity Providers \(LPs\) are the cornerstone of the Balancer Protocol. Liquid
 Early LPs take on more risk and opportunity cost, including contract risk and low initial pool profitability. We believe that these protocol users should get to participate early on in deciding how the protocol evolves. To this end, Balancer Labs proposed and implemented the Liquidity Mining program, in which Balancer governance tokens are distributed to LPs.
 
 {% hint style="info" %}
-The details of V2 liquidity mining are still being hashed out by the Balancer Community and developers. At present, liquidity mining applies to Balancer V1 liquidity only, and over the next ~8 weeks the program will gradually transition to V2.
+The details of V2 liquidity mining are still being hashed out by the Balancer Community and developers. At present, liquidity mining has transitioned to V2 entirely, except for the V1 AAVE Safety Module, which is expected to follow.
 {% endhint %}
 
 ## BAL Token Supply and Distribution

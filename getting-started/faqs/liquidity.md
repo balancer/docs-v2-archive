@@ -35,7 +35,7 @@ In general the AMM logic determines the prices that traders pay. In weighted poo
 Balancer V2 pioneers customizable AMM logic by creating a launchpad for teams to innovate with different AMM strategies without having to worry about low-level token transfers, balance accounting, security checks and smart order routing. With Balancer V2, this all comes out of the box.  
 
 
-V2 launched with Weighted Pools \(similar to V1 shared pools\), then released a version of Weighted Pools with support for price oracles. Several new pool types - with different AMM logic - are in development, from Balancer and other teams.
+V2 launched with Weighted Pools \(similar to V1 shared pools\), then released a version of Weighted Pools with support for price oracles. Then came Stable Pools: pools for holding assets with similar value - such as different USD-pegged stablecoins. Several new pool types - with different AMM logic - are in development, from Balancer and other teams.
 
 ## How does the self-balancing index fund work?
 

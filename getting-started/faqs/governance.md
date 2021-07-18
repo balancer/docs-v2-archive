@@ -8,7 +8,7 @@ The main responsibilities of Balancer Governance are voting on new proposals on 
 
 ## Does Balancer have a token?
 
-Yes, the Balancer Governance Token \(BAL\) gives holders decision making power over the protocol. The BAL token address is [0xba100000625a3754423978a60c9317c58a424e3d](https://etherscan.io/address/0xba100000625a3754423978a60c9317c58a424e3d).
+Yes, the [Balancer Governance Token](../../core-concepts/governance/bal-token.md) \(BAL\) gives holders decision making power over the protocol. The BAL token address is [0xba100000625a3754423978a60c9317c58a424e3d](https://etherscan.io/address/0xba100000625a3754423978a60c9317c58a424e3d). \(On Kovan, it is [0x41286Bb1D3E870f3F750eB7E1C25d7E48c8A1Ac7](https://kovan.etherscan.io/address/0x41286Bb1D3E870f3F750eB7E1C25d7E48c8A1Ac7). On Polygon, it is [0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3](https://polygonscan.com/address/0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3).\)
 
 ## What do I need to be eligible to vote?
 

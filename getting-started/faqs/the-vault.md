@@ -13,7 +13,7 @@ Because pools are contracts external to the vault, they can implement any arbitr
 ## What are User Balances?
 
 {% hint style="warning" %}
-Important: **DO NOT** blindly transfer tokens to the Vault expecting to get a User Balance. They must be added through the UserBalance smart contract.
+Important: **DO NOT** blindly transfer tokens to the Vault expecting to get a User Balance. They must be added through the UserBalance smart contract. Any tokens sent directly to the Vault or a pool contract will be irretrievably lost.
 {% endhint %}
 
 User token balances are tokens that belong to you that are kept inside the Vault. They are extremely useful for high-frequency trading since they require no external token transfers. The only ERC20 token transfers you need to perform are when you're initially putting your tokens in the Vault and withdrawing them later. \(This feature is currently only available at the contract level.\)

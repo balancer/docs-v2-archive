@@ -11,6 +11,7 @@
 | WeightedPool2TokensFactory | [0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0](https://etherscan.io/address/0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0) | [f02bc946a10ce713bd2365bb068c8dd8d87b5226](https://github.com/balancer-labs/balancer-v2-monorepo/tree/f02bc946a10ce713bd2365bb068c8dd8d87b5226) |
 | StablePoolFactory | [0xc66Ba2B6595D3613CCab350C886aCE23866EDe24](https://etherscan.io/address/0xc66Ba2B6595D3613CCab350C886aCE23866EDe24) | [ad1442113b26ec22081c2047e2ec95355a7f12ba](https://github.com/balancer-labs/balancer-v2-monorepo/commit/ad1442113b26ec22081c2047e2ec95355a7f12ba) |
 | StablePoolFactory \(Kovan\) | [0x751dfDAcE1AD995fF13c927f6f761C6604532c79](https://kovan.etherscan.io/address/0x751dfDAcE1AD995fF13c927f6f761C6604532c79) |  |
+| LiquidityBootstrappingPoolFactory | [0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE](https://etherscan.io/address/0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE) |  |
 | Authorizer | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6) \(temporary\) | [c5b42e8cd4ffe62a82ba85263eac498df7a913b5](https://github.com/balancer-labs/balancer-v2-monorepo/tree/c5b42e8cd4ffe62a82ba85263eac498df7a913b5) |
 
 The following are **Kovan** addresses for the Balancer versions of common tokens

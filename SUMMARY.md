@@ -32,6 +32,7 @@
   * [Governable Protocol Fees](core-concepts/governance/governable-protocol-fees.md)
   * [Snapshot](core-concepts/governance/snapshot.md)
   * [Multisig](core-concepts/governance/multisig.md)
+* [Liquidity Mining](core-concepts/liquidity-mining.md)
 * [Security](core-concepts/security/README.md)
   * [Audits](core-concepts/security/audits.md)
   * [Bug Bounties](core-concepts/security/bug-bounties.md)

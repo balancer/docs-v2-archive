@@ -20,7 +20,6 @@
   * [BAL for Gas](core-concepts/bal-balancer-governance-token/bal-for-gas.md)
 * [Liquidity Mining](core-concepts/bal-liquidity-mining/README.md)
   * [Exchange and BAL Mining Listing](core-concepts/bal-liquidity-mining/exchange-and-reward-listing.md)
-  * [Liquidity Mining Estimates API](core-concepts/bal-liquidity-mining/liquidity-mining-estimates-api.md)
 * [Security](core-concepts/security/README.md)
   * [Audits](core-concepts/security/audits.md)
   * [Bug Bounty](core-concepts/security/bounty.md)

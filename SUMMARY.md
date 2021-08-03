@@ -37,6 +37,12 @@
   * [Bug Bounties](core-concepts/security/bug-bounties.md)
   * [Emergency Pause](core-concepts/security/emergency-pause.md)
 
+## Governance Initiatives <a id="gov-initiatives"></a>
+
+* [Liquidity Mining](gov-initiatives/liquidity-mining/README.md)
+  * [Liquidity Mining Estimates API](gov-initiatives/liquidity-mining/liquidity-mining-estimates-api.md)
+* [BAL for Gas](gov-initiatives/bal-for-gas.md)
+
 ## Community
 
 * [Discord](https://discord.com/invite/ARJWaeF)

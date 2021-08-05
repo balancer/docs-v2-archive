@@ -9,6 +9,7 @@
   * [V1 ➝ V2 Migration](getting-started/faqs/v1-to-v2-migration.md)
   * [Trading](getting-started/faqs/trading.md)
   * [Liquidity](getting-started/faqs/liquidity.md)
+  * [Liquidity Mining](getting-started/faqs/liquidity-mining.md)
   * [Fees](getting-started/faqs/fees.md)
   * [Governance](getting-started/faqs/governance.md)
   * [The Vault](getting-started/faqs/the-vault.md)

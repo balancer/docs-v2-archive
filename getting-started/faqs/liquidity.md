@@ -28,7 +28,7 @@ To read more about fees, click [here](fees.md).
 
 ## How does a pool determine the price of tokens?
 
-In general the AMM logic determines the prices that traders pay. In Weighted Pools, prices are determined by the constant product formula. In Stable Pools, prices are determined by the StableSwap formula.
+In general the AMM logic determines the prices that traders pay. For example, Weighted Pools, use a constant product formula and Stable Pools, use a StableSwap formula.
 
 ## How does the self-balancing index fund work?
 

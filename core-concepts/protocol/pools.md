@@ -4,11 +4,9 @@
 
 With the introduction of the Vault, Balancer Pools are now contracts that only need to handle the **logic** of swaps and liquidity provision/removal; all token transfers are handled by the Vault. This pool abstraction enables pool creators to design a pool with any arbitrary Automated Market Maker \(AMM\) equation they might want. 
 
-![Each pool can implement its own logic while integrating into Balancer](../../.gitbook/assets/image.png)
+## Pool Types
 
-## Standard Pools
-
-Balancer V2 launched with Weighted Pools, which are similar to the pools on Balancer V1:
+Balancer V2 can leverage any arbitrary pool type. Some examples are below:
 
 ### Weighted Pools
 
@@ -20,13 +18,30 @@ $$
 
 where V is constant, B is an asset's balance, and W is an asset's weight in the pool.
 
-As the price of each token changes, arbitrageurs rebalance the pool by making trades. This maintains the desired weighting of the value held by each token whilst collecting trading fees from the traders.
+As the price of each token changes, traders and arbitrageurs rebalance the pool by making swaps. This maintains the desired weighting of the value held by each token whilst collecting trading fees from the traders.
+
+### Oracle Pools
+
+These are a subset of weighted pools that hold two tokens and provide price oracles for the tokens they hold.
 
 ### Stable Pools
 
 For certain assets that are expected to consistently trade at near parity \(e.g. different varieties of stablecoins or synthetics\) a more efficient design is the StableSwap AMM as popularized by Curve. These pools allow for larger trades of these assets before encountering significant price impact.
 
-There will also be support for "metastable" pools - these are stable pools that contain LP tokens of other stable pools.
+### MetaStable Pools
+
+These are a generalization of stable pools that contain tokens with known exchange rates. They use equations similar to those of stable pools, but can be used to facilitate swaps between tokens that have gradually shifting prices. 
+
+Example use cases:
+
+* DAI/cDAI
+  * cDAI slowly accumulates lending fees and appreciates relative to DAI
+* ArbitraryStableUsdToken/StaBAL3-USD
+  * StaBAL3-USD Pool token collects trade fees relative to other Stable USD tokens
+
+### Liquidity Bootstrapping Pools
+
+These pools are useful for launching tokens and swapping large amounts over time. They feature weight shifting mechanisms that results in high start prices with continuously changing sell pressure. 
 
 ## Custom Pools
 

@@ -10,12 +10,11 @@ As Balancer Protocol moves to decentralize and diversify its governance, it will
 
 ## Contract Address
 
-* Ethereum Mainnet
-  * 0xba100000625a3754423978a60c9317c58a424e3d
-* Kovan Testnet
-  * 0x41286Bb1D3E870f3F750eB7E1C25d7E48c8A1Ac7
-* Polygon
-  * 0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3
+| BAL contract Address | Network |
+| :--- | :--- |
+| Ethereum | [0xba100000625a3754423978a60c9317c58a424e3d](https://etherscan.io/address/0xba100000625a3754423978a60c9317c58a424e3d) |
+| Kovan | [0x41286Bb1D3E870f3F750eB7E1C25d7E48c8A1Ac7](https://kovan.etherscan.io/address/0x41286Bb1D3E870f3F750eB7E1C25d7E48c8A1Ac7) |
+| Polygon | [0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3](https://polygonscan.com/address/0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3) |
 
 ## Liquidity Providers
 

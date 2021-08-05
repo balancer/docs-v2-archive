@@ -1,25 +1,22 @@
 # Pools and LBPs
 
-## I see many types of pools, how are they different?
+## What kind of pools exist of Balancer V2?
 
-In V1 there are three types of Pools:
+Balancer V2 pioneers customizable AMM logic by creating a launchpad for teams to innovate with different AMM strategies. This means if you want to launch a new style of trading pool, you can focus on the high-level concepts without having to worry about low-level token transfers, balance accounting, security checks and order routing. With Balancer V2, this all comes out of the box.
 
-* public pools \(also called shared\)— anyone can add liquidity \(and get Balancer Pool Tokens in return\), but all the pool parameters are fixed forever. \(trustless, finalized\)
-* private pools — all the parameters are flexible — only the owner can change them but also only the owner can add liquidity \(trusted, unfinalized\)
-* smart pools — anybody can add liquidity to them and the parameters can be fixed or dynamic controlled through smart contracts. \(partially trustless, flexible\).
+Some existing pool types are:
 
-Initially in V2 there are currently three core pool types
-
-* weighted pools - permissionless, 8-token pools like V1 shared pools - but more gas efficient
-* two-token weighted oracle pools - permissionless weighted pools with two tokens that act as on-chain price oracles
-* stable pools - permissionless pools with 2-5 tokens that use different math \(similar to Curve\), and contain tokens of similar value. For example, DAI/USDC/USDT, and WBTC/renBTC/sBTC.
+* **Weighted Pools** - 8-token pools with custom weighting
+* **Two-Token Weighted Oracle Pools** - Weighted Pools with two tokens that act as on-chain price oracles
+* **Stable Pools** - Pools with 2-5 tokens that use a StableSwap equation, and contain tokens of similar value. For example, DAI/USDC/USDT, and WBTC/renBTC/sBTC
+* **Liquidity Bootstrapping Pool** - A 2-5 token pool with the ability to enable and disable trading, and change weights. Only the creator can add liquidity.
+* **MetaStable Pools** - A generalized Stable Pool that can hold "proportional" assets that are related in price but may slowly drift apart in price. Some example use cases are pools of \(DAI/cDAI\) and \(StablePoolBPT/NewStableCoin\)
+* **Convergent Curve Pools** - A pool designed by Element.fi to support two tokens that converge in price. [Learn more here](https://docs.element.fi/developers/element-smart-contracts/custom-balancer-curve/convergent-curve-pool)!
 
 Balancer Labs is currently developing and testing:
 
-* "Heavyweight" pools - WeightedPools that can support up to 20-tokens, but are otherwise identical.
-* Metastable pools -- a generalized stable pool that can hold "proportional" assets \(e.g., DAI/cDA\), or 
-* LiquidityBootstrappingPool - this will be used for LBPs in V2 . It is a 2-5 token pool with the ability to enable and disable trading, and change weights. Only the creator can add liquidity.
-* Investment pools - pools with up to 100 tokens, with LBP-like rights to disable trading and change weights, but which do allow public LPs. They will also have advanced features, such as circuit breakers \(halting trading automatically to limit IL\), different types of management fees, and the ability to add/remove tokens from the pool.
+* **HeavyWeight Pools** - WeightedPools that can support up to 20-tokens, but are otherwise identical.
+* **Investment Pools** - pools with up to 100 tokens, with LBP-like rights to disable trading and change weights, but which do allow public LPs. They will also have advanced features, such as circuit breakers \(halting trading automatically to limit IL\), different types of management fees, and the ability to add/remove tokens from the pool.
 
 ## Can I have nested pools?
 
@@ -42,8 +39,4 @@ At the creation of an LBP the team should set up a price that is significantly h
 ## Should I join an LBP as soon as it launches?
 
 No, this is not the point. Prices are _supposed_ to start intentionally high and then come down. If you join early may end up paying way more than if you wait for the price to stabilize.
-
-## Why do teams decide to launch an LBP?
-
-Funders create a liquidity bootstrapping pool with little required capital from their side.
 

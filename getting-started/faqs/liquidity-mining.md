@@ -61,5 +61,9 @@ You'll also find network/token specific files for multi-token incentives explain
 | \_\_polygon\_0x580a84c73811e1839f75d86d75d88cca0c241ff4.json | Polygon | QI |
 | \_\_polygon\_0xF501dd45a1198C2E1b5aEF5314A68B9006D842E0.json | Polygon | MTA |
 
-### 
+## Want more details?
+
+Explore the full documentation here:
+
+{% page-ref page="../../gov-initiatives/liquidity-mining/" %}
 

@@ -7,7 +7,7 @@ First time here? Check out [this tutorial](../walkthroughs/invest.md) for a walk
 In short, you'll need:
 
 * ETH to pay for gas fees
-* ERC20 tokens \(or ETH\)
+* ERC20 tokens
 * An Ethereum address you can use with one of the following compatible wallets
   * MetaMask
   * Coinbase Wallet

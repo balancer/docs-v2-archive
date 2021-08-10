@@ -31,6 +31,7 @@
 * [Governance](core-concepts/governance/README.md)
   * [BAL Token](core-concepts/governance/bal-token.md)
   * [Governable Protocol Fees](core-concepts/governance/governable-protocol-fees.md)
+  * [Governance Process](core-concepts/governance/governance-process.md)
   * [Snapshot](core-concepts/governance/snapshot.md)
   * [Multisig](core-concepts/governance/multisig.md)
 * [Security](core-concepts/security/README.md)

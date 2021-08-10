@@ -37,7 +37,7 @@ The allocation of liquidity mining slots from tiers 2 to 4 is discussed weekly t
 
 ## Distribution
 
-BAL earned on Ethereum mainnet is made available to be claimed by liquidity providers at [claim.balancer.finance](https://claim.balancer.finance/) by Wednesday 00:00 UTC.
+BAL earned on Ethereum mainnet is made available to be claimed by liquidity providers at [claim.balancer.fi](https://claim.balancer.fi/#/) by Wednesday 00:00 UTC.
 
 BAL earned on Polygon is airdropped to liquidity providers weekly by Wednesday 00:00 UTC.
 

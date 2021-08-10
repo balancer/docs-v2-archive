@@ -2,7 +2,15 @@
 
 ## Summary
 
-Below is an outline for the Balancer Governance Process from Request for Comment \[RFC\] through executing a result.
+This page outlines the Balancer Governance Process from Request for Comment \[RFC\] through executing a result. 
+
+**tl;dr:**
+
+1. Post a Request for Comment to the forum
+2. Facilitate preliminary discussion
+3. Update and refine RFC to become a Proposal
+4. Snapshot vote
+5. Execute result or try again in 30 days
 
 ## Outline
 

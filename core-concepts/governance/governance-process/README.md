@@ -54,7 +54,7 @@ If the vote fails in an approve/reject vote, the guideline for a re-vote is to w
 
 If the vote succeeds or a result has been chosen, follow through to make sure that it is properly executed. Depending on what the vote is about, it may require an action by the Multisig
 
-{% page-ref page="multisig.md" %}
+{% page-ref page="../multisig.md" %}
 
 
 

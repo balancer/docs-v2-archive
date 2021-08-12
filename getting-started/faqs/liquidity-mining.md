@@ -53,13 +53,13 @@ In each weekly folder, you'll find a few files:
 
 You'll also find network/token specific files for multi-token incentives explained below
 
-| File Name | Network | Token Symbol |
-| :--- | :--- | :--- |
-| \_\_ethereum\_0xba100000625a3754423978a60c9317c58a424e3d.json | Ethereum | BAL |
-| \_\_polygon\_0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3.json | Polygon | BAL |
-| \_\_polygon\_0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270.json | Polygon | MATIC \(or WMATIC\) |
-| \_\_polygon\_0x580a84c73811e1839f75d86d75d88cca0c241ff4.json | Polygon | QI |
-| \_\_polygon\_0xF501dd45a1198C2E1b5aEF5314A68B9006D842E0.json | Polygon | MTA |
+| Network | Token Symbol | File Name |  |
+| :--- | :--- | :--- | :--- |
+| Ethereum | BAL | \_\_ethereum\_0xba100000625a3754423978a60c9317c58a424e3d.json |  |
+| Polygon | BAL | \_\_polygon\_0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3.json |  |
+| Polygon | MATIC \(or WMATIC\) | \_\_polygon\_0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270.json |  |
+| Polygon | QI | \_\_polygon\_0x580a84c73811e1839f75d86d75d88cca0c241ff4.json |  |
+| Polygon | MTA | \_\_polygon\_0xF501dd45a1198C2E1b5aEF5314A68B9006D842E0.json |  |
 
 ## Want more details?
 

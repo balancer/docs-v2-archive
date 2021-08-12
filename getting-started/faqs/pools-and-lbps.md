@@ -9,7 +9,7 @@ Some existing pool types are:
 * **Weighted Pools** - 8-token pools with custom weighting
 * **Two-Token Weighted Oracle Pools** - Weighted Pools with two tokens that act as on-chain price oracles
 * **Stable Pools** - Pools with 2-5 tokens that use a StableSwap equation, and contain tokens of similar value. For example, DAI/USDC/USDT, and WBTC/renBTC/sBTC
-* **Liquidity Bootstrapping Pool** - A 2-5 token pool with the ability to enable and disable trading, and change weights. Only the creator can add liquidity.
+* **Liquidity Bootstrapping Pool** - A 2-4 token pool with the ability to enable and disable trading, and change weights. Only the creator can add liquidity.
 * **MetaStable Pools** - A generalized Stable Pool that can hold "proportional" assets that are related in price but may slowly drift apart in price. Some example use cases are pools of \(DAI/cDAI\) and \(StablePoolBPT/NewStableCoin\)
 * **Convergent Curve Pools** - A pool designed by Element.fi to support two tokens that converge in price. [Learn more here](https://docs.element.fi/developers/element-smart-contracts/custom-balancer-curve/convergent-curve-pool)!
 

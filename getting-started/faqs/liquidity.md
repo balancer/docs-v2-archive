@@ -34,7 +34,7 @@ When there is a trade in a pool, the pool collects a trade fee. The trade fee is
 **Example**: Let's say there is a pool holding BAL and DAI with a 3% trade fee. If Alice trades 100 DAI for BAL, the pool will keep 3 DAI \(3% of 100 DAI\) and give her back an amount of BAL worth 97 DAI.
 {% endhint %}
 
-## How do I get _my_ trade fees though?
+## How do I get _my_ trade fees?
 
 As the pool collects fees, your **Balancer Pool Tokens automatically collect fees** because they represent your **proportional share of the pool.** 
 

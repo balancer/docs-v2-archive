@@ -16,10 +16,6 @@ Balancer V2's Vault architecture abstracts all trading logic to **Pools**, and l
 
 #### Asset Managers
 
-{% hint style="info" %}
-Coming soon! The first Asset Managers will arrive in the months following the Balancer V2 mainnet launch.
-{% endhint %}
-
 Asset Managers improve the capital efficiency of trading pools by reinvesting idle assets. Typical trading pools with deep liquidity benefit only from low slippage, but tokens not involved in trades do not contribute to the fees accrued by the pool. Asset Managers tap into that otherwise idle capital, putting it to work on external protocols. For example, the Aave Asset Manager can take these assets and lend them out to borrowers, earning interest for the Balancer Pool.
 
 {% page-ref page="asset-managers.md" %}

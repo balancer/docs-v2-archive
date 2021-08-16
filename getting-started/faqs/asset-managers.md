@@ -20,7 +20,11 @@ A buffer must always be kept in the vault, or else trades could fail; the vault 
 
 ## What Asset Managers are available today?
 
-Balancer partnered with Aave to create the first Asset Manager \(coming soon!\).
+Balancer partnered with Aave to create the first Asset Manager; the unreleased prototype and infrastructure are available in GitHub.
+
+We are currently developing new pool types that achieve the capital efficiency goals of asset managers in a more automated fashion \(asset managers require active management to ensure solvency\) - and with even better concentration of liquidity. The first capital efficient Aave pools will be launched using this new framework.
+
+The original asset manager architecture can be used for many additional use cases - any time tokens need to be removed from the Vault temporarily: e.g., for voting or staking.
 
 ## Where can I read more about Asset Managers?
 

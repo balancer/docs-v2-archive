@@ -1,7 +1,11 @@
 # Asset Managers
 
 {% hint style="info" %}
-Coming soon! The first Asset Managers will arrive in the months following the Balancer V2 mainnet launch.
+Coming soon! The first Asset Managers will arrive in the months following the Balancer V2 mainnet launch.  
+  
+There are also new pool types in development that achieve the capital efficiency goals of Asset Managers in a manner that concentrates liquidity better, while requiring less maintenance. The first solutions will likely be released in that form.  
+  
+The original asset manager architecture can be used any time tokens need to be removed from a pool \(e.g., for voting, or staking\), or when the pool needs to work with tokens incompatible with the Vault.
 {% endhint %}
 
 ## Overview

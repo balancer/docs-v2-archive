@@ -50,14 +50,14 @@ Due to Balancer's abstracted pool architecture, it's very easy to implement new 
 ## Smart Pools
 
 {% hint style="info" %}
-Coming soon! The first official Smart Pool factories will arrive in the months following the Balancer V2 mainnet launch.
+Coming soon! The first official Smart Pool factories will arrive in the months following the Balancer V2 mainnet launch. \(V2 LBPs are already live.\)
 {% endhint %}
 
 The flexibility introduced doesn't just extend to control over the pricing curve used by the pool but can affect any aspect of the pool.
 
 Balancer V1 introduced smart pools, which give external contracts control over parameters, and in V2 these features are integrated directly into the pools themselves. Thanks to Balancer's modular architecture, any of the smart contracts defining the behavior of a pool can be replaced as long as it maintains the common interface with the Vault.
 
-The first smart pool to launch will be the Liquidity Bootstrapping Pool \(LBP\). It is a specialized 2-5 token WeightedPool, which restricts liquidity provision to the pool creator, and supports pausing trading, setting the swap fee, and changing weights gradually.
+The first smart pool to launch will be the Liquidity Bootstrapping Pool \(LBP\). It is a specialized 2-4 token WeightedPool, which restricts liquidity provision to the pool creator, and supports pausing trading, setting the swap fee, and changing weights gradually.
 
 There are significant differences in the V2 LBPs:
 

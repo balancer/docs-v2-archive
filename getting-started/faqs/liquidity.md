@@ -2,7 +2,7 @@
 
 ## How do I invest/provide liquidity?
 
-First time here? Check out [this tutorial](../walkthroughs/invest.md) for a walkthrough on how to add/withdraw liquidity. 
+First time here? Check out [this tutorial](../walkthroughs/invest.md) for a walk-through on how to add/withdraw liquidity. 
 
 In short, you'll need:
 

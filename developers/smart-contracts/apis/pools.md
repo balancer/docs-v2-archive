@@ -33,10 +33,13 @@ Pools are token contracts, with the base class `BalancerPoolToken`. New pool typ
 
 The class hierarchy for pools is designed to allow for extension at multiple levels, and handle a lot of the housekeeping duties to keep the most derived pool classes short and readable.
 
-The following diagram shows two of the core pools, which use the default tokenization base class. There are two core pools available at launch:
+The following diagram shows the current core pools, which all use the default tokenization base class. There are two core pools available at launch, with Liquidity Bootstrapping, Stable, and Metastable pools added later.
 
-* **WeightedPool** - needed for pools with more than 2 tokens \(no oracle\)
-* **WeightedPool2Tokens** - recommended for 2-token pools. These have oracle functionality \(see "Resilient price oracles" in [this article](https://medium.com/balancer-protocol/balancer-v2-a-one-stop-shop-6af1678003f7) for more information\), which can either be enabled on deployment, or disabled on deployment and enabled later. Once enabled, an oracle can never be disabled - though it can be overridden by governance.
+* **WeightedPool** - needed for pools with 2-8 tokens \(no oracle\)
+* **WeightedPool2Tokens** - recommended for 2-token pools. These have oracle functionality \(see "Resilient price oracles" in [this article](https://medium.com/balancer-protocol/balancer-v2-a-one-stop-shop-6af1678003f7) for more information\), which can either be enabled on deployment, or disabled on deployment and enabled later through governance. Once enabled, an oracle can never be disabled - though it can be overridden by governance.
+* **LiquidityBootstrappingPool** - a WeightedPool with 2-4 tokens, where trading can be halted, and weights can be changed over time. These pools do not allow public LPs.
+* **StablePool** - 2-5 token pool using the Stableswap math library, intended for "pegged" tokens that have the same value \(no oracle\).
+* **MetastablePool** - 2-token stable pool with an oracle, which supports "soft-pegged" tokens through `RateProviders`. Can also contain BPTs of other stable pools.
 
 The other decision to make when creating a pool is the "owner." This affects the swap fee handling, and there are three choices:
 
@@ -166,5 +169,72 @@ getPastAccumulators(OracleAccumulatorQuery[] queries returns (int256[] results)
 Note that you can only call `getWeightedTimeAverage` after the buffer is full, or it will revert with ORACLE\_NOT\_INITIALIZED. If you call `getSample(1023)` and it returns 0's, that means the buffer's not full yet.
 {% endhint %}
 
+Liquidity Bootstrapping pools have the following additional interface:
 
+```text
+function getSwapEnabled() public view returns (bool)
+
+/**
+ * @dev Return start time, end time, and endWeights as an array.
+ * Current weights should be retrieved via `getNormalizedWeights()`.
+ */
+function getGradualWeightUpdateParams() external view 
+    returns (uint256 startTime, uint256 endTime, uint256[] memory endWeights)
+
+// Permissioned functions
+
+function setSwapEnabled(bool swapEnabled) external
+
+/**
+ * @dev Schedule a gradual weight change, from the current weights to the given
+ * endWeights, over startTime to endTime
+ */
+function updateWeightsGradually(uint256 startTime, uint256 endTime,
+                                uint256[] memory endWeights) external
+```
+
+Stable pools have the following additional interface:
+
+```text
+function getAmplificationParameter() external view
+             returns (uint256 value, bool isUpdating, uint256 precision)
+
+// Permissioned functions
+
+/**
+ * @dev Begins changing the amplification parameter to `rawEndValue` over time.
+ * The value will change linearly until `endTime` is reached, when it will be
+ * `rawEndValue`.
+ *
+ * NOTE: Internally, the amplification parameter is represented using higher
+ * precision. The values returned by `getAmplificationParameter` have to be
+ * corrected to account for this when comparing to `rawEndValue`.
+ */
+function startAmplificationParameterUpdate(uint256 rawEndValue,
+                                           uint256 endTime) external
+                                           
+/**
+ * @dev Stops the amplification parameter change process, keeping the
+ * current value.
+ */
+function stopAmplificationParameterUpdate() external
+```
+
+Metastable pools expose the same Oracle and Stable functions, plus:
+
+```text
+function getRateProviders() external view returns (IRateProvider[] memory providers)
+
+/**
+ * @dev Returns the cached value for token's rate
+ */
+function getPriceRateCache(IERC20 token) external view
+    returns (uint256 rate, uint256 duration, uint256 expires)
+
+function updatePriceRateCache(IERC20 token) external
+
+// Permissioned functions
+
+function setPriceRateCacheDuration(IERC20 token, uint256 duration) external
+```
 

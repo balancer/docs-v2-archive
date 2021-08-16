@@ -43,7 +43,13 @@ Unfortunately, if your transaction fails you will lose your gas fees. Miners col
 
 ## What are User Balances?
 
-User Balances are tokens that you have inside the Balancer Vault. You can supply the Vault with tokens, and once they're inside, you'll be able to trade without needing to move ERC20 tokens, saving you a lot of money on gas fees. The only ERC20 token transfers you need to perform are when you're initially putting your tokens in the Vault and withdrawing them later. \(This feature is not yet incorporated into the UI, but available if you interact with the contracts directly.\)
+User Balances are tokens that you have inside the Balancer Vault. You can supply the Vault with tokens, and once they're inside, you'll be able to trade without needing to move ERC20 tokens, saving you a lot of money on gas fees. The only ERC20 token transfers you need to perform are when you're initially putting your tokens in the Vault and withdrawing them later.
+
+For instance, if you want to join five two-token pools, each containing WETH, you could first transfer the total amount of WETH required to your user balance. Then when you joined each pool, it would pull the WETH from your user balance, and the other tokens from your wallet - unless you'd previously deposited those as well.
+
+{% hint style="info" %}
+This feature is not yet incorporated into the UI, but available if you interact with the contracts directly. It will be especially useful for working with upcoming pools with large numbers of tokens \(e.g., 20\).
+{% endhint %}
 
 ## Why should I use User Balances?
 

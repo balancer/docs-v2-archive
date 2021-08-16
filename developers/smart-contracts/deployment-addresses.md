@@ -12,6 +12,9 @@
 | StablePoolFactory | [0xc66Ba2B6595D3613CCab350C886aCE23866EDe24](https://etherscan.io/address/0xc66Ba2B6595D3613CCab350C886aCE23866EDe24) | [ad1442113b26ec22081c2047e2ec95355a7f12ba](https://github.com/balancer-labs/balancer-v2-monorepo/commit/ad1442113b26ec22081c2047e2ec95355a7f12ba) |
 | StablePoolFactory \(Kovan\) | [0x751dfDAcE1AD995fF13c927f6f761C6604532c79](https://kovan.etherscan.io/address/0x751dfDAcE1AD995fF13c927f6f761C6604532c79) |  |
 | LiquidityBootstrappingPoolFactory | [0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE](https://etherscan.io/address/0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE) |  |
+| MetastablePoolFactory | [0x67d27634E44793fE63c467035E31ea8635117cd4](https://etherscan.io/address/0x67d27634E44793fE63c467035E31ea8635117cd4) |  |
+| MetastablePoolFactory \(Kovan\) | [0x590E544e7Ca956Bb878F8C873E82e65550d67D2F](https://kovan.etherscan.io/address/0x590E544e7Ca956Bb878F8C873E82e65550d67D2F) |  |
+| MetastablePoolFactory \(Polygon\) | [0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca](https://polygonscan.com/address/0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca) |  |
 | Authorizer | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6) \(temporary\) | [c5b42e8cd4ffe62a82ba85263eac498df7a913b5](https://github.com/balancer-labs/balancer-v2-monorepo/tree/c5b42e8cd4ffe62a82ba85263eac498df7a913b5) |
 
 The following are **Kovan** addresses for the Balancer versions of common tokens

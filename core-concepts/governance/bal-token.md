@@ -15,6 +15,7 @@ As Balancer Protocol moves to decentralize and diversify its governance, it will
 | Ethereum | [0xba100000625a3754423978a60c9317c58a424e3d](https://etherscan.io/address/0xba100000625a3754423978a60c9317c58a424e3d) |
 | Kovan | [0x41286Bb1D3E870f3F750eB7E1C25d7E48c8A1Ac7](https://kovan.etherscan.io/address/0x41286Bb1D3E870f3F750eB7E1C25d7E48c8A1Ac7) |
 | Polygon | [0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3](https://polygonscan.com/address/0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3) |
+| Arbitrum | [0x040d1EdC9569d4Bab2D15287Dc5A4F10F56a56B8](https://explorer.arbitrum.io/address/0x040d1EdC9569d4Bab2D15287Dc5A4F10F56a56B8) |
 
 ## Liquidity Providers
 

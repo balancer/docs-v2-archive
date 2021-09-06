@@ -41,7 +41,9 @@ Example use cases:
 
 ### Liquidity Bootstrapping Pools
 
-These pools are useful for launching tokens and swapping large amounts over time. They feature weight shifting mechanisms that results in high start prices with continuously changing sell pressure. 
+These pools are useful for launching tokens and swapping large amounts over time. They feature weight shifting mechanisms that results in high start prices with continuously changing sell pressure.
+
+There is a simulator [here](https://docs.google.com/spreadsheets/d/125MgAqv0f81Qp6y9VZHAcwMkVhvdcNKA) for how different weight change settings and project sales rates affect the price curve. 
 
 ## Custom Pools
 

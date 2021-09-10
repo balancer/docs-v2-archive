@@ -8,6 +8,8 @@ description: >-
 
 All error codes for the Balancer V2 core contracts are defined in the [`BalancerErrors`](https://github.com/balancer-labs/balancer-core-v2/blob/master/contracts/lib/helpers/BalancerErrors.sol) contract.
 
+_Note that these text mappings correspond to the latest source code, so some error codes may differ from the deployed versions._
+
 ## Math
 
 | Code | Error | Comment |

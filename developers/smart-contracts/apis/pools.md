@@ -238,3 +238,25 @@ function updatePriceRateCache(IERC20 token) external
 function setPriceRateCacheDuration(IERC20 token, uint256 duration) external
 ```
 
+Investment  pools \(version 1\) have the same weight changing interface as Liquidity Bootstrapping Pools, and the following additional functions:
+
+```text
+/**
+ * @dev Returns the management swap fee percentage as a 18-decimals
+ *      fixed point number.
+ */
+function getManagementSwapFeePercentage() public view returns (uint256)
+
+/**
+ * @dev Returns the mimimum duration of a gradual weight change
+ */
+function getMinimumWeightChangeDuration() external pure returns (uint256)
+
+// Query the amount of management fees collected
+function getCollectedManagementFees() public view
+    returns (IERC20[] memory tokens, uint256[] memory collectedFees)
+       
+// Permissioned function for the owner to withdraw the collected fees
+function withdrawCollectedManagementFees(address recipient) external
+```
+

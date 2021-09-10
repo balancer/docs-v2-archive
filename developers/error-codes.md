@@ -53,46 +53,46 @@ All error codes for the Balancer V2 core contracts are defined in the [`Balancer
 
 | Code | Error | Comment |
 | :--- | :--- | :--- |
-| 300 | MIN\_AMP |  |
+| 300 | MIN\_AMP | Amplification factor out of range \(Stable/Metastable pools\) |
 | 301 | MAX\_AMP |  |
-| 302 | MIN\_WEIGHT |  |
+| 302 | MIN\_WEIGHT | Weighted Pool minimum weight |
 | 303 | MAX\_STABLE\_TOKENS |  |
-| 304 | MAX\_IN\_RATIO |  |
-| 305 | MAX\_OUT\_RATIO |  |
-| 306 | MIN\_BPT\_IN\_FOR\_TOKEN\_OUT |  |
-| 307 | MAX\_OUT\_BPT\_FOR\_TOKEN\_IN |  |
-| 308 | NORMALIZED\_WEIGHT\_INVARIANT |  |
+| 304 | MAX\_IN\_RATIO | Token in unbalanced the pool too much on a swap |
+| 305 | MAX\_OUT\_RATIO | Token out unbalanced the pool too much on a swap |
+| 306 | MIN\_BPT\_IN\_FOR\_TOKEN\_OUT | Disproportionate exit unbalanced the pool too much |
+| 307 | MAX\_OUT\_BPT\_FOR\_TOKEN\_IN | Disproportionate join unbalanced the pool too much |
+| 308 | NORMALIZED\_WEIGHT\_INVARIANT | Weighted Pool normalized weights must add to 1.0 |
 | 309 | INVALID\_TOKEN |  |
-| 310 | UNHANDLED\_JOIN\_KIND |  |
-| 311 | ZERO\_INVARIANT |  |
-| 312 | ORACLE\_INVALID\_SECONDS\_QUERY |  |
-| 313 | ORACLE\_NOT\_INITIALIZED |  |
-| 314 | ORACLE\_QUERY\_TOO\_OLD |  |
-| 315 | ORACLE\_INVALID\_INDEX |  |
-| 316 | ORACLE\_BAD\_SECS |  |
-| 317 | AMP\_END\_TIME\_TOO\_CLOSE |  |
-| 318 | AMP\_ONGOING\_UPDATE |  |
-| 319 | AMP\_RATE\_TOO\_HIGH |  |
-| 320 | AMP\_NO\_ONGOING\_UPDATE |  |
+| 310 | UNHANDLED\_JOIN\_KIND | Some joins are pool type-specific |
+| 311 | ZERO\_INVARIANT | Pool balances must be &gt; 0 |
+| 312 | ORACLE\_INVALID\_SECONDS\_QUERY | The "ago" timestamp when querying the oracle must be in the past |
+| 313 | ORACLE\_NOT\_INITIALIZED | Cannot query an oracle with no data |
+| 314 | ORACLE\_QUERY\_TOO\_OLD | Cannot query before the oracle's earliest data sample |
+| 315 | ORACLE\_INVALID\_INDEX | Cannot query a sample outside the buffer \(1024\) |
+| 316 | ORACLE\_BAD\_SECS | Oracle query window must have non-zero duration |
+| 317 | AMP\_END\_TIME\_TOO\_CLOSE | Amplification parameter change has less than the minimum duration |
+| 318 | AMP\_ONGOING\_UPDATE | Cannot start an amplification parameter update if one is already ongoing |
+| 319 | AMP\_RATE\_TOO\_HIGH | The requested amplification parameter change is too fast \(cannot halve or double over less than a day\) |
+| 320 | AMP\_NO\_ONGOING\_UPDATE | Cannot cancel an update if there isn't one |
 | 321 | STABLE\_INVARIANT\_DIDNT\_CONVERGE |  |
 | 322 | STABLE\_GET\_BALANCE\_DIDNT\_CONVERGE |  |
 | 323 | RELAYER\_NOT\_CONTRACT |  |
 | 324 | BASE\_POOL\_RELAYER\_NOT\_CALLED |  |
 | 325 | REBALANCING\_RELAYER\_REENTERED |  |
-| 326 | GRADUAL\_UPDATE\_TIME\_TRAVEL |  |
+| 326 | GRADUAL\_UPDATE\_TIME\_TRAVEL | start &gt; end time in a gradual weights update |
 | 327 | SWAPS\_DISABLED |  |
 | 328 | CALLER\_IS\_NOT\_LBP\_OWNER |  |
-| 329 | PRICE\_RATE\_OVERFLOW |  |
-| 330 | INVALID\_JOIN\_EXIT\_KIND\_WHILE\_SWAPS\_DISABLED |  |
-| 331 | WEIGHT\_CHANGE\_TOO\_FAST |  |
-| 332 | LOWER\_GREATER\_THAN\_UPPER\_TARGET |  |
-| 333 | UPPER\_TARGET\_TOO\_HIGH |  |
-| 334 | UNHANDLED\_BY\_LINEAR\_POOL |  |
-| 335 | OUT\_OF\_TARGET\_RANGE |  |
-| 336 | UNHANDLED\_EXIT\_KIND |  |
-| 337 | UNAUTHORIZED\_EXIT |  |
+| 329 | PRICE\_RATE\_OVERFLOW | Rate returned from a rateProvider must fit in 128 bits |
+| 330 | INVALID\_JOIN\_EXIT\_KIND\_WHILE\_SWAPS\_DISABLED | Investment pools only allow proportional joins and exits when swaps are disabled \(to prevent unbalancing the pool\) |
+| 331 | WEIGHT\_CHANGE\_TOO\_FAST | Gradual weight update duration too short \(minimum 1 day\) |
+| 332 | LOWER\_GREATER\_THAN\_UPPER\_TARGET | Invalid Linear Pool operating range |
+| 333 | UPPER\_TARGET\_TOO\_HIGH | Linear Pool max balance must fit in 112 bits |
+| 334 | UNHANDLED\_BY\_LINEAR\_POOL | Some joins/exits are pool type-specific |
+| 335 | OUT\_OF\_TARGET\_RANGE | Cannot reset Linear Pool targets if pool is unbalanced |
+| 336 | UNHANDLED\_EXIT\_KIND | Some exits are pool type-specific |
+| 337 | UNAUTHORIZED\_EXIT | Management fees can only be collected by the pool owner |
 | 338 | MAX\_MANAGEMENT\_SWAP\_FEE\_PERCENTAGE |  |
-| 339 | UNHANDLED\_BY\_INVESTMENT\_POOL |  |
+| 339 | UNHANDLED\_BY\_INVESTMENT\_POOL | Some joins/exits are pool type-specific |
 
 ## Lib
 
@@ -135,25 +135,25 @@ All error codes for the Balancer V2 core contracts are defined in the [`Balancer
 | Code | Error | Comment |
 | :--- | :--- | :--- |
 | 500 | INVALID\_POOL\_ID |  |
-| 501 | CALLER\_NOT\_POOL |  |
+| 501 | CALLER\_NOT\_POOL | Some Vault hooks can only be called by the pool \(e.g., register tokens\) |
 | 502 | SENDER\_NOT\_ASSET\_MANAGER |  |
-| 503 | USER\_DOESNT\_ALLOW\_RELAYER |  |
+| 503 | USER\_DOESNT\_ALLOW\_RELAYER | Relayers must be allowed by both governance and the user account |
 | 504 | INVALID\_SIGNATURE |  |
-| 505 | EXIT\_BELOW\_MIN |  |
-| 506 | JOIN\_ABOVE\_MAX |  |
-| 507 | SWAP\_LIMIT |  |
-| 508 | SWAP\_DEADLINE |  |
+| 505 | EXIT\_BELOW\_MIN | Exit would yield fewer than the user-supplied minimum tokens out |
+| 506 | JOIN\_ABOVE\_MAX | Join would cost more than the user-supplied maximum tokens in |
+| 507 | SWAP\_LIMIT | Swap violates user-supplied limits \(min out or max in\) |
+| 508 | SWAP\_DEADLINE | Swap transaction not mined within the specified deadline |
 | 509 | CANNOT\_SWAP\_SAME\_TOKEN |  |
-| 510 | UNKNOWN\_AMOUNT\_IN\_FIRST\_SWAP |  |
+| 510 | UNKNOWN\_AMOUNT\_IN\_FIRST\_SWAP | A batch swap must start with a non-zero amount in |
 | 511 | MALCONSTRUCTED\_MULTIHOP\_SWAP |  |
-| 512 | INTERNAL\_BALANCE\_OVERFLOW |  |
+| 512 | INTERNAL\_BALANCE\_OVERFLOW | Unused in current code |
 | 513 | INSUFFICIENT\_INTERNAL\_BALANCE |  |
-| 514 | INVALID\_ETH\_INTERNAL\_BALANCE |  |
-| 515 | INVALID\_POST\_LOAN\_BALANCE |  |
+| 514 | INVALID\_ETH\_INTERNAL\_BALANCE | Cannot transfer native ETH to/from internal balance |
+| 515 | INVALID\_POST\_LOAN\_BALANCE | Flashloan transactions must repay the loan in the same transaction |
 | 516 | INSUFFICIENT\_ETH |  |
-| 517 | UNALLOCATED\_ETH |  |
-| 518 | ETH\_TRANSFER |  |
-| 519 | CANNOT\_USE\_ETH\_SENTINEL |  |
+| 517 | UNALLOCATED\_ETH | Unused in current code |
+| 518 | ETH\_TRANSFER | Relayers cannot receive ETH directly \(only through the Vault\) |
+| 519 | CANNOT\_USE\_ETH\_SENTINEL | Internal Balance transfers cannot use ETH |
 | 520 | TOKENS\_MISMATCH |  |
 | 521 | TOKEN\_NOT\_REGISTERED |  |
 | 522 | TOKEN\_ALREADY\_REGISTERED |  |

@@ -122,9 +122,9 @@ _Note that these text mappings correspond to the latest source code, so some err
 | 419 | ADDRESS\_INSUFFICIENT\_BALANCE |  |
 | 420 | ADDRESS\_CANNOT\_SEND\_VALUE |  |
 | 421 | SAFE\_CAST\_VALUE\_CANT\_FIT\_INT256 |  |
-| 422 | GRANT\_SENDER\_NOT\_ADMIN |  |
-| 423 | REVOKE\_SENDER\_NOT\_ADMIN |  |
-| 424 | RENOUNCE\_SENDER\_NOT\_ALLOWED |  |
+| 422 | GRANT\_SENDER\_NOT\_ADMIN | In AccessControl, the caller of `grantRole` must be an admin |
+| 423 | REVOKE\_SENDER\_NOT\_ADMIN | In AccessControl, the caller of `revokeRole` must be an admin |
+| 424 | RENOUNCE\_SENDER\_NOT\_ALLOWED | In AccessControl, callers can only`renounceRole` for their own account |
 | 425 | BUFFER\_PERIOD\_EXPIRED |  |
 | 426 | CALLER\_IS\_NOT\_OWNER |  |
 | 427 | NEW\_OWNER\_IS\_ZERO |  |

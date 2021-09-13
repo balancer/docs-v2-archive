@@ -163,6 +163,10 @@ Returns a Pool's registered tokens, the total balance for each, and the most rec
 
 For the join and exit calls, the request structures contain an array of assets \(where the zero address is ETH\), the minimum/maximum token amounts \(to guard against front-running/slippage\), and flags indicating whether the assets should be transferred to/from the Vault, or taken from the corresponding internal balances. Note that using internal balances, it is possible to join and exit pools with zero token transfers.
 
+{% hint style="warning" %}
+Note that any functions that take a token array always expect input "parallel" to the pool tokens. If you are joining a 7-token pool with one token, you must pass an array of 7 amounts, with the rest set to 0.
+{% endhint %}
+
 ### `joinPool`
 
 ```text

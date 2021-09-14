@@ -113,11 +113,11 @@ Now click "View in Debugger":
 
 The code we want  is in the "\[INPUT\]" section. See that giant block of bytecode? We need to find the constructor arguments in all that. Luckily, there's an easy way to do it.
 
-The constructor arguments are preceeded by a special code "0033." We know the first argument to a Balancer factory create is the Vault, and that the constructor arguments are at the end of the input data. So if we find "0033&lt;Vault address&gt;," we know the constructor arguments are everything after the "0033."
+We know the first argument to a Balancer factory create is the Vault, and that the constructor arguments are at the end of the input data. So if we find the last occurrence of "&lt;Vault address&gt;," we know the constructor arguments are everything from that point on.
 
-So, search for this string:
+They are sometimes preceeded by the code "0033," but not always. So, search for this string:
 
-~~`00330000000000000000000000000000000000000000000000000000000000000020000000000000000000000000ba12222222228d8ba445958a75a0704d566bf2c8`~~
+`0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000ba12222222228d8ba445958a75a0704d566bf2c8`
 
 The encoded constructor arguments are then everything from the Vault address on:
 

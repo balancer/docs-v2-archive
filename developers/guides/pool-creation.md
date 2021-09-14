@@ -18,11 +18,14 @@ If the Vault or a pool is paused, all operations are blocked except withdrawals.
 
 There is a [Python package](https://pypi.org/project/balpy/) that works out of the box, from a config file. That's likely the best option for those who don't have a full dev environment. It's also on GitHub [here](https://github.com/gerrrg/balpy).
 
-If you prefer Typescript and do have an environment \(e.g., with artifacts built\), the first question is, which pool? There are three:
+If you prefer Typescript and do have an environment \(e.g., with artifacts built\), the first question is, which pool? There are many:
 
 * **WeightedPool -** V1-like pool with up to 8 tokens
 * **WeightedPool2Tokens** - 2-token pool with V1 math, and support for resilient oracles
+* **LiquidityBootstrappingPool** - 2-4 token pool optimized for token sales \(mutable weights\)
 * **StablePool** - 2-5 token pools with Stable math \(similar to Curve\)
+* **MetastablePool** - 2-token pool with an oracle, and soft-pegged constituents \(not necessarilyl 1-to-1\)
+* **InvestmentPool \(V1\)** - initial release; joinable LBP + management fee
 
 Stable pools are intended to hold tokens that have the same value: for instance, DAI/USDC/USDT. They could also be used for WETH/sETH or WBTC/imBTC, etc.
 

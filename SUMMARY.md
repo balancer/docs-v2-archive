@@ -68,6 +68,7 @@
   * [Batch Swaps](developers/guides/batch-swaps.md)
   * [Flash Swaps](developers/guides/flash-swaps.md)
   * [Pool Creation](developers/guides/pool-creation.md)
+  * [Pool Verification](developers/guides/pool-verification.md)
 * [Subgraph](developers/subgraph.md)
 * [Smart Order Router V2](developers/smart-order-router.md)
 * [Error Codes](developers/error-codes.md)

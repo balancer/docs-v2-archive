@@ -59,7 +59,7 @@ As a concrete example, let's say we're verifying this Mainnet Oracle pool \(clic
 
 If we're verifying an oracle pool, the contract name is WeightedPool2Tokens. This particular pool was deployed at 0xe2469f47ab58cf9cf59f9822e3c5de4950a41c49 \(the first part of the poolId\) on mainnet. That \(plus the Etherscan API key\) takes care of all the "middle" arguments. What about --id and --args? Those need a bit more explanation.
 
-The hardhat deployment plugin is organized around "tasks." Each tasks corresponds to the deployment of one or more contracts. The "id" here is the name of the task where the relevant contract was deployed. Here's the list for the currently deployed Balancer pools:
+The hardhat deployment plugin is organized around "tasks." Each tasks corresponds to the deployment of one or more contracts. The "id" here is the name of the task where the relevant contract was deployed. Here's the list for the currently deployed Balancer pools. \(Note that names are case-sensitive.\)
 
 | Task ID \(--id argument\) | Contract name\(s\) \(--name argument\) |
 | :--- | :--- |

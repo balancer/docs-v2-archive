@@ -47,9 +47,9 @@ The other decision to make when creating a pool is the "owner." This affects the
 * "Delegate" address \(_0xBA1BA1ba1BA1bA1bA1Ba1BA1ba1BA1bA1ba1ba1B_\) - swap fees are dynamic, controlled by a third party designated by governance: currently [Gauntlet](https://medium.com/balancer-protocol/balancer-partners-with-gauntlet-to-make-dynamic-fee-pools-a-reality-97b3fb1760df).
 * Any other address - swap fees can be changed from that account
 
-![](../../../.gitbook/assets/v2-pools%20%281%29.png)
+![](../../../.gitbook/assets/pooldiagram.png)
 
-The BasePool level defines constants, and contains storage for the Vault, Pool ID, swap fee, token addresses, and scaling factors. The Vault does not perform any scaling \(e.g., adjusting for decimals in balances\), so this class calls `decimal` on each token contract and stores the multiplication factor necessary to convert it to 18 decimals for the Vault \(i.e., 1 if it is already 18 decimals\). Generally, all incoming balances are "up scaled" before being sent to the Vault, and "down scaled" before being returned to the caller.
+The BasePool level defines constants, and defines the interface for the Vault, Pool ID, swap fee, token addresses, and scaling factors. The Vault does not perform any scaling \(e.g., adjusting for decimals in balances\), so this class contains utilities for converting native token balances to 18 decimals for the Vault \(i.e., 1 if it is already 18 decimals\). Generally, all incoming balances are "up scaled" before being sent to the Vault, and "down scaled" before being returned to the caller.
 
 This level also contains the callbacks for joining and exiting - and enforces that these can only be called **from** the Vault.
 
@@ -91,7 +91,7 @@ onExitPool(
 
 The two core pools use different math, and also different price calculations. Stable Pools need all the token balances to quote a price during a swap, while Weighted Pools need only the balances of the two tokens being swapped. Weighted Pools can take advantage of this fact to save bytes and gas by using more efficient data structures. Any such pools can inherit from BaseMinimalSwapInfoPool.
 
-As with WeightedPools, there will be both oracle and non-oracle versions of the StablePool. All oracle pools are 2-token pools; non-oracle StablePools can have up to 5 tokens \(in the current design\).
+As with WeightedPools, there will be both oracle and non-oracle versions of the StablePool. \(MetaStable pools have oracles.\) All oracle pools are 2-token pools; non-oracle StablePools can have up to 5 tokens \(in the current design\).
 
 ```text
 // BaseMinimalSwapInfoPool
@@ -112,7 +112,7 @@ onSwap(SwapRequest swapRequest,
 
 Each level contains internal callbacks \(e.g., `_initializePool`, `_doJoin`\), that need to be implemented by the most derived pools - in this case, the core pools.
 
-Here's another view, showing all the factories. The FactoryWidePauseWindow starts an "emergency period" from factory deployment. Within that period \(defaults to 3 months\), new pools deployed from that factory can be paused by governance. Afterward, all pools become trustless \(including any deployed after the end of the period\).
+Here's another view, showing some of the factories. The FactoryWidePauseWindow starts an "emergency period" from factory deployment. Within that period \(defaults to 3 months\), new pools deployed from that factory can be paused by governance. Afterward, all pools become trustless \(including any deployed after the end of the period\).
 
 ![Pool Factory class hierarchy](../../../.gitbook/assets/pools-cd.png)
 

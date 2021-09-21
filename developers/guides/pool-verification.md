@@ -104,7 +104,7 @@ You can use the following subgraph query to extract the creation transaction \("
   }  
 }`
 
-We will now use the Tenderly Debugger to find the encoded constructor arguments. Log into Tenderly and copy the hash into the search bar. \(On Arbitrum, until Tenderly supports it, you will have to get them from the Arbiscan data.\)
+We will now use the Tenderly Debugger to find the encoded constructor arguments. Log into Tenderly and copy the hash into the search bar. \(On Arbitrum, until Tenderly supports it, you will have to get them from the Arbiscan data, or another way, such as a script, or simulating a mainnet transaction.\)
 
 ![Find the transaction in Tenderly](../../.gitbook/assets/1-txhash.png)
 

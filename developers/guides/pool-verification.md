@@ -12,7 +12,9 @@ Hardhat to the rescue - sort of. The hardhat verification plugin works well: but
 
 Theoretically you can compute the arguments from JSON using various tools, but the most reliable method is to read the arguments right off the blockchain. They're immutable, and guaranteed to be correct. To perform this most kludgy portion of the verification process, you will need a [Tenderly](https://tenderly.co) account. You can use the free version, and the easiest way to log in is through [GitHub](https://GitHub.com). Developers likely already have a GitHub account - if you don't, that's also free.
 
-You also need to issue the verification command to Etherscan, over a public network, wherever the contract is deployed: e.g., mainnet, Kovan, Polygon. If you're not running your own node, this is most commonly achieved through [Infura](https://infura.io/docs/gettingStarted/authentication) or [Alchemy](https://docs.alchemy.com/alchemy/introduction/getting-started). You will need to provide an API key from one of these services in your hardhat network configuration. And since you are submitting a request to Etherscan, you also need an [Etherscan API key](https://etherscan.io/apidocs). \(Note that this also works for PolygonScan, but you will need a separate account and [API key ](https://polygonscan.com/myapikey)for Polygon.\)
+You also need to issue the verification command to Etherscan, over a public network, wherever the contract is deployed: e.g., mainnet, Kovan, Polygon, Arbitrum. If you're not running your own node, this is most commonly achieved through [Infura](https://infura.io/docs/gettingStarted/authentication) or [Alchemy](https://docs.alchemy.com/alchemy/introduction/getting-started). You will need to provide an API key from one of these services in your hardhat network configuration. And since you are submitting a request to Etherscan, you also need an [Etherscan API key](https://etherscan.io/apidocs). 
+
+Note that this also works for PolygonScan, but you will need a separate account and [API key ](https://polygonscan.com/myapikey)for Polygon. Arbitrum doesn't need a key \(but the --key argument is still required; just use one of the others\). If you are using Infura, you will need to enter billing information and, in the billing settings, add the networks to your account as "add-ons". Otherwise, you will see an error message like: "ProviderError: project ID does not have access to arbitrum l2"
 
 Verification requires correct build artifacts \(e.g., ABI code\), and other infrastructure we've built into the repository, so you'll need to clone the [monorepo](https://github.com/balancer-labs/balancer-v2-monorepo), and issue the command from there.
 
@@ -91,7 +93,18 @@ To do this, we want to navigate to the "Internal Transactions" tab on Etherscan'
 
 Click on the "Parent Txn Hash" link to find the transaction hash: it is 0x757a0ea8b773405209eb67258504c083b3c11d5a43ea437d77ab17ac982a1c2b.
 
-We will now use the Tenderly Debugger to find the encoded constructor arguments. Log into Tenderly and copy the hash into the search bar.
+On Arbitrum, you will find there is no such tab. Never fear: you can also get the creation transaction from the subgraph. The subgraph url is: [https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-v2](https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-v2) for mainnet. For the other networks, it is "balancer-&lt;network&gt;-v2". For instance, "balancer-polygon-v2".
+
+You can use the following subgraph query to extract the creation transaction \("tx"\):  
+  
+`{  
+  pools(where:{address:"<pool address>"}) {  
+    id  
+    tx  
+  }  
+}`
+
+We will now use the Tenderly Debugger to find the encoded constructor arguments. Log into Tenderly and copy the hash into the search bar. \(On Arbitrum, until Tenderly supports it, you will have to get them from the Arbiscan data.\)
 
 ![Find the transaction in Tenderly](../../.gitbook/assets/1-txhash.png)
 

@@ -20,6 +20,9 @@
 | MetastablePoolFactory \(Kovan\) | [0x590E544e7Ca956Bb878F8C873E82e65550d67D2F](https://kovan.etherscan.io/address/0x590E544e7Ca956Bb878F8C873E82e65550d67D2F) |  |
 | MetastablePoolFactory \(Polygon\) | [0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca](https://polygonscan.com/address/0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca) |  |
 | MetastablePoolFactory \(Arbitrum\) | [0xEBFD5681977E38Af65A7487DC70B8221D089cCAD](https://explorer.offchainlabs.com/address/0xEBFD5681977E38Af65A7487DC70B8221D089cCAD) |  |
+| InvestmentPoolFactory | [0x48767F9F868a4A7b86A90736632F6E44C2df7fa9](https://etherscan.io/address/0x48767F9F868a4A7b86A90736632F6E44C2df7fa9#code) |  |
+| InvestmentPoolFactory \(Polygon\) | [0x0f7bb7ce7b6ed9366F9b6B910AdeFE72dC538193](https://polygonscan.com/address/0x0f7bb7ce7b6ed9366F9b6B910AdeFE72dC538193#code) |  |
+| InvestmentPoolFactory \(Arbitrum\) | [0xaCd615B3705B9c880E4E7293f1030B34e57B4c1c](https://arbiscan.io/address/0xaCd615B3705B9c880E4E7293f1030B34e57B4c1c#code) |  |
 | Authorizer | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6) \(temporary\) | [c5b42e8cd4ffe62a82ba85263eac498df7a913b5](https://github.com/balancer-labs/balancer-v2-monorepo/tree/c5b42e8cd4ffe62a82ba85263eac498df7a913b5) |
 
 The following are **Kovan** addresses for the Balancer versions of common tokens

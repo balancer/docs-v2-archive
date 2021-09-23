@@ -11,12 +11,13 @@ Some existing pool types are:
 * **Stable Pools** - Pools with 2-5 tokens that use a StableSwap equation, and contain tokens of similar value. For example, DAI/USDC/USDT, and WBTC/renBTC/sBTC
 * **Liquidity Bootstrapping Pool** - A 2-4 token pool with the ability to enable and disable trading, and change weights. Only the creator can add liquidity.
 * **MetaStable Pools** - A generalized Stable Pool that can hold "proportional" assets that are related in price but may slowly drift apart in price. Some example use cases are pools of \(DAI/cDAI\) and \(StablePoolBPT/NewStableCoin\)
+* **Investment Pools** - An LBP-like pool with the same rights to disable trading and change weights, but which allows public LPs. It also supports management fees \(as a percentage of swap fees\), and higher token counts.
 * **Convergent Curve Pools** - A pool designed by Element.fi to support two tokens that converge in price. [Learn more here](https://docs.element.fi/developers/element-smart-contracts/custom-balancer-curve/convergent-curve-pool)!
 
 Balancer Labs is currently developing and testing:
 
 * **HeavyWeight Pools** - WeightedPools that can support up to 20-tokens, but are otherwise identical.
-* **Investment Pools** - pools with up to 100 tokens, with LBP-like rights to disable trading and change weights, but which do allow public LPs. They will also have advanced features, such as circuit breakers \(halting trading automatically to limit IL\), different types of management fees, and the ability to add/remove tokens from the pool.
+* **Managed Pools** - \(name TBD - second generation Investment Pools\), with all current Investment Pool features, but better scaling to higher token counts \(e.g., 50\). They will also have advanced features, such as circuit breakers \(restricting trading to price ranges\), different types of management fees, and the ability to add/remove tokens from the pool.  There will be additional flexibility for pool ownership, likely in the form of pool owner template contracts that can be deployed as the immutable pool owners. For instance, there could be a "Gauntlet" template that allows a third party to control swap fees, while reserving all other permissioned functions to a different multi-sig. That way Managed Pool issuers could contract with Gauntlet \(or another provider\) to provide a fee optimization service for investors.
 
 ## Can I have nested pools?
 

@@ -43,7 +43,7 @@ Example use cases:
 
 These pools are useful for launching tokens and swapping large amounts over time. They feature weight shifting mechanisms that results in high start prices with continuously changing sell pressure.
 
-There is a simulator [here](https://docs.google.com/spreadsheets/d/125MgAqv0f81Qp6y9VZHAcwMkVhvdcNKA) for how different weight change settings and project sales rates affect the price curve. 
+There is a simulator [here](https://docs.google.com/spreadsheets/d/125MgAqv0f81Qp6y9VZHAcwMkVhvdcNKA) for how different weight change settings and project sales rates affect the price curve.
 
 ## Custom Pools
 
@@ -65,7 +65,7 @@ There are significant differences in the V2 LBPs:
 
 Given the flexibility and composability of the native architecture, there is likely no need in V2 for a generic "Swiss army knife" like the V1 Configurable Rights Pool. New smart pools can be created by inheriting from the appropriate contract in the hierarchy, and customizing.
 
-The most general smart pool currently under development is the Investment Pool. This will support higher token counts, and contain advanced features like circuit breakers: an automatic mechanism to halt trading for a token if the pool becomes "unbalanced" \(e.g., if a malicious or buggy token contract allows infinite minting, or otherwise breaks the pricing algorithm of the pool\). It will likely also support different kinds of management fees, and the ability to add and remove tokens.
+The most general smart pool currently under development is the Managed \(Investment\) Pool. This will support higher token counts, and contain advanced features like circuit breakers: an automatic mechanism to halt trading for a token if the pool becomes "unbalanced" \(e.g., if a malicious or buggy token contract allows infinite minting, or otherwise breaks the pricing algorithm of the pool\). It will likely also support different kinds of management fees, and the ability to add and remove tokens.
 
 The architecture will also support the creation of "permissioned" pools, which allow external trusted parties to restrict token transfers, to support private pools or institutional use cases.
 

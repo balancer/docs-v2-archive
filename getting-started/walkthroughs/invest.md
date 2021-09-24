@@ -26,7 +26,12 @@ Click on the desired pool to navigate to the pool management page
 
 ### Select your amount
 
-You can choose to invest a subset of tokens or all of them. If you decide to put in only some of the tokens \(eg. only BAL\) then some of it will get exchanged to match the pool weights \(so 80% of the value invested will stay in BAL and 20% will get exchanged to WETH\). If you decide to invest according to pool weights, you will not impact the toke prices.  
+You can choose to invest one token, a subset of tokens, or all of them. The pool will calculate how many pool tokens \(BPTs\) to give you for your input tokens. If you join the pool according to pool weights \("Best price"\), you will not create any price impact. If you join in an unbalanced way \("Custom amounts"\) you may impact the price.
+
+{% hint style="info" %}
+If your "Custom amounts" join has significant price impact, it may be cheaper to swap your tokens to match the "Best price" amounts. If you significantly impact the price in a pool, you can create an arbitrage opportunity that someone else may profit from.
+{% endhint %}
+
 To invest a single asset, choose "Custom amounts".
 
 ![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.12.32-pm.png)

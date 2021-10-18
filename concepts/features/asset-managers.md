@@ -1,11 +1,11 @@
 # Asset Managers
 
 {% hint style="info" %}
-Coming soon! The first Asset Managers will arrive in the months following the Balancer V2 mainnet launch.  
-  
-There are also new pool types in development that achieve the capital efficiency goals of Asset Managers in a manner that concentrates liquidity better, while requiring less maintenance. The first solutions will likely be released in that form.  
-  
-The original asset manager architecture can be used any time tokens need to be removed from a pool \(e.g., for voting, or staking\), or when the pool needs to work with tokens incompatible with the Vault.
+Coming soon! \
+\
+There are also new pool types in development that achieve the capital efficiency goals of Asset Managers in a manner that concentrates liquidity better, while requiring less maintenance. The first solutions will likely be released in that form.\
+\
+The original asset manager architecture can be used for cases where tokens need to be removed from a pool (e.g., for voting, or staking).
 {% endhint %}
 
 ## Overview
@@ -33,4 +33,3 @@ If the balances of pool tokens have shifted due to a price change, the pool will
 #### ...the Asset Manager makes a bad investment?
 
 This is possible. Asset Managers are permissionless, and anyone can create one. It's possible that some have sub-optimal investment strategies, and it's also possible some bad actor could create a malicious Asset Manager. In order to prevent loss of funds, it's important to research any Asset Manager you might consider using and to understand the risks involved. To mitigate this risk, the default pool factories create pools which do not make use of Asset Managers such that this feature is opt-in.
-

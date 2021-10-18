@@ -21,26 +21,40 @@
   * [Trade](getting-started/walkthroughs/trading.md)
   * [Invest](getting-started/walkthroughs/invest.md)
 
-## Core Concepts
+## Products
 
-* [Protocol](core-concepts/protocol/README.md)
-  * [Vault](core-concepts/protocol/vault.md)
-  * [Pools](core-concepts/protocol/pools.md)
-  * [Asset Managers](core-concepts/protocol/asset-managers.md)
-  * [Flash Loans](core-concepts/protocol/flash-loans.md)
-* [Governance](core-concepts/governance/README.md)
-  * [BAL Token](core-concepts/governance/bal-token.md)
-  * [Governable Protocol Fees](core-concepts/governance/governable-protocol-fees.md)
-  * [Governance Process](core-concepts/governance/governance-process/README.md)
-    * [RFC/Proposal Forum Post Template](core-concepts/governance/governance-process/rfc-proposal-forum-post-template.md)
-  * [Snapshot](core-concepts/governance/snapshot.md)
-  * [Multisig](core-concepts/governance/multisig.md)
-* [Security](core-concepts/security/README.md)
-  * [Audits](core-concepts/security/audits.md)
-  * [Bug Bounties](core-concepts/security/bug-bounties.md)
-  * [Emergency Pause](core-concepts/security/emergency-pause.md)
+* [The Vault](products/the-vault.md)
+* [Balancer Pools](products/balancer-pools/README.md)
+  * [Weighted Pools](products/balancer-pools/weighted-pools.md)
+  * [Stable Pools](products/balancer-pools/stable-pools.md)
+  * [MetaStable Pools](products/balancer-pools/metastable-pools.md)
+  * [Liquidity Bootstrapping Pools (LBPs)](products/balancer-pools/liquidity-bootstrapping-pools-lbps.md)
+  * [Managed Pools](products/balancer-pools/managed-pools.md)
+  * [Custom Pools](products/balancer-pools/custom-pools.md)
+* [Merkle Orchard](products/merkle-orchard.md)
 
-## Governance Initiatives <a id="gov-initiatives"></a>
+## Concepts
+
+* [Math](concepts/math/README.md)
+  * [Weighted Math](concepts/math/weighted-math.md)
+  * [Stable Math](concepts/math/stable-math.md)
+* [Features](concepts/features/README.md)
+  * [Fees](concepts/features/fees.md)
+  * [Flash Loans](concepts/features/flash-loans.md)
+  * [Asset Managers](concepts/features/asset-managers.md)
+* [Governance](concepts/governance/README.md)
+  * [BAL Token](concepts/governance/bal-token.md)
+  * [Governable Protocol Fees](concepts/governance/governable-protocol-fees.md)
+  * [Governance Process](concepts/governance/governance-process/README.md)
+    * [RFC/Proposal Forum Post Template](concepts/governance/governance-process/rfc-proposal-forum-post-template.md)
+  * [Snapshot](concepts/governance/snapshot.md)
+  * [Multisig](concepts/governance/multisig.md)
+* [Security](concepts/security/README.md)
+  * [Audits](concepts/security/audits.md)
+  * [Bug Bounties](concepts/security/bug-bounties.md)
+  * [Emergency Pause](concepts/security/emergency-pause.md)
+
+## Governance Initiatives <a href="gov-initiatives" id="gov-initiatives"></a>
 
 * [Liquidity Mining](gov-initiatives/liquidity-mining/README.md)
   * [Liquidity Mining Estimates API](gov-initiatives/liquidity-mining/liquidity-mining-estimates-api.md)
@@ -49,7 +63,7 @@
 ## Community
 
 * [Discord](https://discord.com/invite/ARJWaeF)
-* [Forums](https://forum.balancer.finance/)
+* [Forums](https://forum.balancer.finance)
 * [Medium](https://medium.com/balancer-protocol)
 * [Dune Analytics](https://duneanalytics.com/projects/balancer)
 
@@ -73,4 +87,3 @@
 * [Smart Order Router V2](developers/smart-order-router.md)
 * [Error Codes](developers/error-codes.md)
 * [GitHub](https://github.com/balancer-labs/)
-

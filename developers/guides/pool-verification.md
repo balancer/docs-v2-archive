@@ -10,25 +10,25 @@ Hardhat to the rescue - sort of. The hardhat verification plugin works well: but
 
 ### Prerequisites
 
-Theoretically you can compute the arguments from JSON using various tools, but the most reliable method is to read the arguments right off the blockchain. They're immutable, and guaranteed to be correct. To perform this most kludgy portion of the verification process, you will need a [Tenderly](https://tenderly.co) account. You can use the free version, and the easiest way to log in is through [GitHub](https://GitHub.com). Developers likely already have a GitHub account - if you don't, that's also free.
+Theoretically you can compute the arguments from JSON using various tools, but the most reliable method is to read the arguments right off the blockchain. They're immutable, and guaranteed to be correct. To perform this most kludgy portion of the verification process, you will need a [Tenderly](https://tenderly.co) account. You can use the free version, and the easiest way to log in is through [GitHub](https://github.com). Developers likely already have a GitHub account - if you don't, that's also free.
 
 You also need to issue the verification command to Etherscan, over a public network, wherever the contract is deployed: e.g., mainnet, Kovan, Polygon, Arbitrum. If you're not running your own node, this is most commonly achieved through [Infura](https://infura.io/docs/gettingStarted/authentication) or [Alchemy](https://docs.alchemy.com/alchemy/introduction/getting-started). You will need to provide an API key from one of these services in your hardhat network configuration. And since you are submitting a request to Etherscan, you also need an [Etherscan API key](https://etherscan.io/apidocs). 
 
-Note that this also works for PolygonScan, but you will need a separate account and [API key ](https://polygonscan.com/myapikey)for Polygon. Arbitrum doesn't need a key \(but the --key argument is still required; just use one of the others\). If you are using Infura, you will need to enter billing information and, in the billing settings, add the networks to your account as "add-ons". Otherwise, you will see an error message like: "ProviderError: project ID does not have access to arbitrum l2"
+Note that this also works for PolygonScan, but you will need a separate account and [API key ](https://polygonscan.com/myapikey)for Polygon. Arbitrum doesn't need a key (but the --key argument is still required; just use one of the others). If you are using Infura, you will need to enter billing information and, in the billing settings, add the networks to your account as "add-ons". Otherwise, you will see an error message like: "ProviderError: project ID does not have access to arbitrum l2"
 
-Verification requires correct build artifacts \(e.g., ABI code\), and other infrastructure we've built into the repository, so you'll need to clone the [monorepo](https://github.com/balancer-labs/balancer-v2-monorepo), and issue the command from there.
+Verification requires correct build artifacts (e.g., ABI code), and other infrastructure we've built into the repository, so you'll need to clone the [monorepo](https://github.com/balancer-labs/balancer-v2-monorepo), and issue the command from there.
 
 ### Process
 
-Once you've cloned the monorepo, cd to pkg/deployments \(**not** /deployments\). You will need to add your network configuration to pkg/deployments/hardhat.config.ts.
+Once you've cloned the monorepo, cd to pkg/deployments (**not** /deployments). You will need to add your network configuration to pkg/deployments/hardhat.config.ts.
 
-Here is one way you might do it for mainnet, using Infura, and an account mnemonic. You could also use Alchemy, a private key, etc. See the [hardhat docs](https://hardhat.org/getting-started/) here. In this example, you would set the environment variables INFURA\_KEY and MNEMONIC. 
+Here is one way you might do it for mainnet, using Infura, and an account mnemonic. You could also use Alchemy, a private key, etc. See the [hardhat docs](https://hardhat.org/getting-started/) here. In this example, you would set the environment variables INFURA_KEY and MNEMONIC. 
 
 {% hint style="warning" %}
 Needless to say, never put a real key in a file - even for a free account - especially if it might get committed to source control!
 {% endhint %}
 
-```text
+```
 mocha: {
   timeout: 40000,
 },
@@ -43,7 +43,7 @@ networks: {
 
 Here is the command you will execute in the /pkg/deployments directory:
 
-```text
+```
 npx hardhat verify-contract
   --id <task-id>
   --name <contract-name>
@@ -53,25 +53,25 @@ npx hardhat verify-contract
   --args <abi-encoded-constructor-arguments>  
 ```
 
-As a concrete example, let's say we're verifying this Mainnet Oracle pool \(click to follow the link\):
+As a concrete example, let's say we're verifying this Mainnet Oracle pool (click to follow the link):
 
-{% embed url="https://app.balancer.fi/\#/pool/0xe2469f47ab58cf9cf59f9822e3c5de4950a41c49000200000000000000000089" %}
+{% embed url="https://app.balancer.fi/#/pool/0xe2469f47ab58cf9cf59f9822e3c5de4950a41c49000200000000000000000089" %}
 
-If we're verifying an oracle pool, the contract name is WeightedPool2Tokens. This particular pool was deployed at 0xe2469f47ab58cf9cf59f9822e3c5de4950a41c49 \(the first part of the poolId\) on mainnet. That \(plus the Etherscan API key\) takes care of all the "middle" arguments. What about --id and --args? Those need a bit more explanation.
+If we're verifying an oracle pool, the contract name is WeightedPool2Tokens. This particular pool was deployed at 0xe2469f47ab58cf9cf59f9822e3c5de4950a41c49 (the first part of the poolId) on mainnet. That (plus the Etherscan API key) takes care of all the "middle" arguments. What about --id and --args? Those need a bit more explanation.
 
-The hardhat deployment plugin is organized around "tasks." Each tasks corresponds to the deployment of one or more contracts. The "id" here is the name of the task where the relevant contract was deployed. Here's the list for the currently deployed Balancer pools. \(Note that names are case-sensitive.\)
+The hardhat deployment plugin is organized around "tasks." Each tasks corresponds to the deployment of one or more contracts. The "id" here is the name of the task where the relevant contract was deployed. Here's the list for the currently deployed Balancer pools. (Note that names are case-sensitive.)
 
-| Task ID \(--id argument\) | Contract name\(s\) \(--name argument\) |
-| :--- | :--- |
-| 20210418-weighted-pool | WeightedPool, WeightedPool2Tokens |
-| 20210624-stable-pool | StablePool |
-| 20210721-liquidity-bootstrapping-pool | LiquidityBootstrappingPool |
-| 20210727-meta-stable-pool | MetaStablePool |
-| 20210907-investment-pool | InvestmentPool |
+| Task ID (--id argument)               | Contract name(s) (--name argument) |
+| ------------------------------------- | ---------------------------------- |
+| 20210418-weighted-pool                | WeightedPool, WeightedPool2Tokens  |
+| 20210624-stable-pool                  | StablePool                         |
+| 20210721-liquidity-bootstrapping-pool | LiquidityBootstrappingPool         |
+| 20210727-meta-stable-pool             | MetaStablePool                     |
+| 20210907-investment-pool              | InvestmentPool                     |
 
 So far then, our command is:
 
-```text
+```
 npx hardhat verify-contract
   --id 20210418-weighted-pool
   --name WeightedPool2Tokens
@@ -85,46 +85,46 @@ Your Etherscan API key goes after --key. The tricky part is the last argument, a
 
 We're going to pull them right off the blockchain, so the first thing we need to do is find the transaction where the contract was deployed.
 
-To do this, we want to navigate to the "Internal Transactions" tab on Etherscan's entry for this address. The first \(and likely only\) transaction here will be the one that deployed the pool: [https://etherscan.io/address/0xe2469f47ab58cf9cf59f9822e3c5de4950a41c49\#internaltx](https://etherscan.io/address/0xe2469f47ab58cf9cf59f9822e3c5de4950a41c49#internaltx)
+To do this, we want to navigate to the "Internal Transactions" tab on Etherscan's entry for this address. The first (and likely only) transaction here will be the one that deployed the pool: [https://etherscan.io/address/0xe2469f47ab58cf9cf59f9822e3c5de4950a41c49#internaltx](https://etherscan.io/address/0xe2469f47ab58cf9cf59f9822e3c5de4950a41c49#internaltx)
 
 ![Finding the pool deployment transaction](../../.gitbook/assets/internaltx.png)
 
 Click on the "Parent Txn Hash" link to find the transaction hash: it is 0x757a0ea8b773405209eb67258504c083b3c11d5a43ea437d77ab17ac982a1c2b.
 
-On Arbitrum, you will find there is no such tab. Never fear: you can also get the creation transaction from the subgraph. The subgraph url is: [https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-v2](https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-v2) for mainnet. For the other networks, it is "balancer-&lt;network&gt;-v2". For instance, "balancer-polygon-v2".
+On Arbitrum, you will find there is no such tab. Never fear: you can also get the creation transaction from the subgraph. The subgraph url is: [https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-v2](https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-v2) for mainnet. For the other networks, it is "balancer-\<network>-v2". For instance, "balancer-polygon-v2".
 
-You can use the following subgraph query to extract the creation transaction \("tx"\):  
-  
-`{  
-  pools(where:{address:"<pool address>"}) {  
-    id  
-    tx  
-  }  
-}`
+You can use the following subgraph query to extract the creation transaction ("tx"):\
+\
+`{`\
+`  pools(where:{address:"<pool address>"}) {`\
+`    id`\
+`    tx`\
+`  }`\
+`}`
 
-We will now use the Tenderly Debugger to find the encoded constructor arguments. Log into Tenderly and copy the hash into the search bar. \(On Arbitrum, until Tenderly supports it, you will have to get them from the Arbiscan data, or another way, such as a script, or simulating a mainnet transaction.\)
+We will now use the Tenderly Debugger to find the encoded constructor arguments. Log into Tenderly and copy the hash into the search bar. (On Arbitrum, until Tenderly supports it, you will have to get them from the Arbiscan data, or another way, such as a script, or simulating a mainnet transaction.)
 
 ![Find the transaction in Tenderly](../../.gitbook/assets/1-txhash.png)
 
 You will see the details of the `create()` transaction
 
-![create\(\) transaction detail](../../.gitbook/assets/2-txoverview.png)
+![create() transaction detail](../../.gitbook/assets/2-txoverview.png)
 
 If you like, you can expand the input data tab for a human-readable representation:
 
 ![Human-readable input](../../.gitbook/assets/3-txinputs.png)
 
-However, what we need is the _encoded_ version. To get that, scroll down into the call tree and click on the \[CREATE\] line:
+However, what we need is the _encoded_ version. To get that, scroll down into the call tree and click on the \[CREATE] line:
 
-![Source code for the create\(\) operation](../../.gitbook/assets/4-txsource.png)
+![Source code for the create() operation](../../.gitbook/assets/4-txsource.png)
 
 Now click "View in Debugger":
 
 ![Debugger view](../../.gitbook/assets/5-txinput.png)
 
-The code we want  is in the "\[INPUT\]" section. See that giant block of bytecode? We need to find the constructor arguments in all that. Luckily, there's an easy way to do it.
+The code we want  is in the "\[INPUT]" section. See that giant block of bytecode? We need to find the constructor arguments in all that. Luckily, there's an easy way to do it.
 
-We know the first argument to a Balancer factory create is the Vault, and that the constructor arguments are at the end of the input data. So if we find the last occurrence of "&lt;Vault address&gt;," we know the constructor arguments are everything from that point on.
+We know the first argument to a Balancer factory create is the Vault, and that the constructor arguments are at the end of the input data. So if we find the last occurrence of "\<Vault address>," we know the constructor arguments are everything from that point on.
 
 They are sometimes preceeded by the code "0033," but not always. So, search for this string:
 
@@ -136,7 +136,7 @@ The encoded constructor arguments are then everything from the Vault address on:
 
 So the final command is:
 
-```text
+```
 npx hardhat verify-contract
   --id 20210418-weighted-pool
   --name WeightedPool2Tokens
@@ -145,6 +145,4 @@ npx hardhat verify-contract
   --key <your-etherscan-api-key-here>
   --args <0000...giant string above...0000>  
 ```
-
-
 

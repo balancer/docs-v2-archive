@@ -2,7 +2,7 @@
 
 ## How does Liquidity Mining on Balancer work?
 
-Balancer offers a community driven Liquidity Mining program that is maintained by a Liquidity Mining committee, called “Ballers”. Ballers decide each week on how token distributions are allocated to the pools. Each weekend, they vote for the liquidity mining program for the following week. You can check out their progress on [Discord](https://discord.com/invite/ARJWaeF) in the \#liquidity-committee channel and follow their votes on their [Snapshot voting space](https://snapshot.org/#/ballersvote.eth).
+Balancer offers a community driven Liquidity Mining program that is maintained by a Liquidity Mining committee, called “Ballers”. Ballers decide each week on how token distributions are allocated to the pools. Each weekend, they vote for the liquidity mining program for the following week. You can check out their progress on [Discord](https://discord.com/invite/ARJWaeF) in the #liquidity-committee channel and follow their votes on their [Snapshot voting space](https://snapshot.org/#/ballersvote.eth).
 
 You can see which pools receive liquidity mining incentives by the 3 star icon next to the pool position. Hover over the icon to see the breakdown in “Swap Fees APR” and “Liquidity Mining APR”
 
@@ -16,15 +16,15 @@ Also please note that while the UI displays these as an APR, there is no compoun
 
 ## How are Liquidity Mining incentives distributed?
 
-On Ethereum mainnet, weekly distributions are available through [https://claim.balancer.fi](https://claim.balancer.fi%20)
+On Ethereum mainnet, weekly distributions are available through [https://claim.balancer.fi](https://claim.balancer.fi)
 
-On Polygon, weekly distributions are airdropped directly to eligible wallets. **Only BAL is distributed by Balancer; all other airdrops are coordinated by their respective projects.** See the next question for the airdrop schedules.
+On Polygon, weekly distributions are airdropped directly to eligible wallets. **Only BAL is distributed by Balancer; all other airdrops are coordinated by their respective projects. **See the next question for the airdrop schedules.
 
 ## What is the Liquidity Mining timeline?
 
-A liquidity mining period is set between Monday-Monday 00:00 UTC, with distributions becoming available **after the closing Monday**. If you begin to supply liquidity on Tuesday, you will NOT get distributions the next day \(Wednesday\) as that distribution is for people who provided liquidity the prior week.
+A liquidity mining period is set between Monday-Monday 00:00 UTC, with distributions becoming available **after the closing Monday**. If you begin to supply liquidity on Tuesday, you will NOT get distributions the next day (Wednesday) as that distribution is for people who provided liquidity the prior week.
 
-Please see below for a diagram of the schedule. The below depicts Polygon airdrops, but the schedule for BAL on Ethereum is the same \(just use claim.balancer.fi to claim\).
+Please see below for a diagram of the schedule. The below depicts Polygon airdrops, but the schedule for BAL on Ethereum is the same (just use claim.balancer.fi to claim).
 
 ![](../../.gitbook/assets/bal_lmmechanics_v2.png)
 
@@ -53,17 +53,18 @@ In each weekly folder, you'll find a few files:
 
 You'll also find network/token specific files for multi-token incentives explained below
 
-| Network | Token Symbol | File Name |  |
-| :--- | :--- | :--- | :--- |
-| Ethereum | BAL | \_\_ethereum\_0xba100000625a3754423978a60c9317c58a424e3d.json |  |
-| Polygon | BAL | \_\_polygon\_0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3.json |  |
-| Polygon | MATIC \(or WMATIC\) | \_\_polygon\_0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270.json |  |
-| Polygon | QI | \_\_polygon\_0x580a84c73811e1839f75d86d75d88cca0c241ff4.json |  |
-| Polygon | MTA | \_\_polygon\_0xF501dd45a1198C2E1b5aEF5314A68B9006D842E0.json |  |
+| Network  | Token Symbol      | File Name                                                    |   |
+| -------- | ----------------- | ------------------------------------------------------------ | - |
+| Ethereum | BAL               | \__ethereum\_0xba100000625a3754423978a60c9317c58a424e3d.json |   |
+| Polygon  | BAL               | \__polygon\_0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3.json  |   |
+| Polygon  | MATIC (or WMATIC) | \__polygon\_0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270.json  |   |
+| Polygon  | QI                | \__polygon\_0x580a84c73811e1839f75d86d75d88cca0c241ff4.json  |   |
+| Polygon  | MTA               | \__polygon\_0xF501dd45a1198C2E1b5aEF5314A68B9006D842E0.json  |   |
 
 ## Want more details?
 
 Explore the full documentation here:
 
-{% page-ref page="../../gov-initiatives/liquidity-mining/" %}
-
+{% content-ref url="../../gov-initiatives/liquidity-mining/" %}
+[liquidity-mining](../../gov-initiatives/liquidity-mining/)
+{% endcontent-ref %}

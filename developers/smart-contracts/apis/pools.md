@@ -2,7 +2,7 @@
 
 Most pool operations are conducted through the Vault. See the [Vault API](vault.md) for the following functions.
 
-```text
+```
 registerPool(PoolSpecialization specialization) returns (bytes32 poolID)
 
 getPool(bytes32 poolId) returns (address pool, PoolSpecialization)
@@ -29,33 +29,33 @@ exitPool(bytes32 poolId,
          ExitPoolRequest request)
 ```
 
-Pools are token contracts, with the base class `BalancerPoolToken`. New pool types do not necessarily need to do tokenization this way \(or at all\). `BasePoolFactory` emits a `PoolCreated` event, while the Vault emits a `PoolRegistered` event.
+Pools are token contracts, with the base class `BalancerPoolToken`. New pool types do not necessarily need to do tokenization this way (or at all). `BasePoolFactory` emits a `PoolCreated` event, while the Vault emits a `PoolRegistered` event.
 
 The class hierarchy for pools is designed to allow for extension at multiple levels, and handle a lot of the housekeeping duties to keep the most derived pool classes short and readable.
 
 The following diagram shows the current core pools, which all use the default tokenization base class. There are two core pools available at launch, with Liquidity Bootstrapping, Stable, and Metastable pools added later.
 
-* **WeightedPool** - needed for pools with 2-8 tokens \(no oracle\)
-* **WeightedPool2Tokens** - recommended for 2-token pools. These have oracle functionality \(see "Resilient price oracles" in [this article](https://medium.com/balancer-protocol/balancer-v2-a-one-stop-shop-6af1678003f7) for more information\), which can either be enabled on deployment, or disabled on deployment and enabled later through governance. Once enabled, an oracle can never be disabled - though it can be overridden by governance.
+* **WeightedPool** - needed for pools with 2-8 tokens (no oracle)
+* **WeightedPool2Tokens** - recommended for 2-token pools. These have oracle functionality (see "Resilient price oracles" in [this article](https://medium.com/balancer-protocol/balancer-v2-a-one-stop-shop-6af1678003f7) for more information), which can either be enabled on deployment, or disabled on deployment and enabled later through governance. Once enabled, an oracle can never be disabled - though it can be overridden by governance.
 * **LiquidityBootstrappingPool** - a WeightedPool with 2-4 tokens, where trading can be halted, and weights can be changed over time. These pools do not allow public LPs.
-* **StablePool** - 2-5 token pool using the Stableswap math library, intended for "pegged" tokens that have the same value \(no oracle\).
+* **StablePool **- 2-5 token pool using the Stableswap math library, intended for "pegged" tokens that have the same value (no oracle).
 * **MetastablePool** - 2-token stable pool with an oracle, which supports "soft-pegged" tokens through `RateProviders`. Can also contain BPTs of other stable pools.
 
 The other decision to make when creating a pool is the "owner." This affects the swap fee handling, and there are three choices:
 
 * Zero address - swap fees are fixed after deployment
-* "Delegate" address \(_0xBA1BA1ba1BA1bA1bA1Ba1BA1ba1BA1bA1ba1ba1B_\) - swap fees are dynamic, controlled by a third party designated by governance: currently [Gauntlet](https://medium.com/balancer-protocol/balancer-partners-with-gauntlet-to-make-dynamic-fee-pools-a-reality-97b3fb1760df).
+* "Delegate" address (_0xBA1BA1ba1BA1bA1bA1Ba1BA1ba1BA1bA1ba1ba1B_) - swap fees are dynamic, controlled by a third party designated by governance: currently [Gauntlet](https://medium.com/balancer-protocol/balancer-partners-with-gauntlet-to-make-dynamic-fee-pools-a-reality-97b3fb1760df).
 * Any other address - swap fees can be changed from that account
 
 ![](../../../.gitbook/assets/pooldiagram.png)
 
-The BasePool level defines constants, and defines the interface for the Vault, Pool ID, swap fee, token addresses, and scaling factors. The Vault does not perform any scaling \(e.g., adjusting for decimals in balances\), so this class contains utilities for converting native token balances to 18 decimals for the Vault \(i.e., 1 if it is already 18 decimals\). Generally, all incoming balances are "up scaled" before being sent to the Vault, and "down scaled" before being returned to the caller.
+The BasePool level defines constants, and defines the interface for the Vault, Pool ID, swap fee, token addresses, and scaling factors. The Vault does not perform any scaling (e.g., adjusting for decimals in balances), so this class contains utilities for converting native token balances to 18 decimals for the Vault (i.e., 1 if it is already 18 decimals). Generally, all incoming balances are "up scaled" before being sent to the Vault, and "down scaled" before being returned to the caller.
 
 This level also contains the callbacks for joining and exiting - and enforces that these can only be called **from** the Vault.
 
-Finally, `setSwapFeePercentage` allows for dynamic fees. If the Authorizer contract approves this function for a relayer \(e.g., Gauntlet\), that relayer is then allowed to set the swap fee for the pool. Otherwise, the swap fee is immutable unless, as described above, the pool has an owner. In that case, the owner can change the fees at will.
+Finally, `setSwapFeePercentage` allows for dynamic fees. If the Authorizer contract approves this function for a relayer (e.g., Gauntlet), that relayer is then allowed to set the swap fee for the pool. Otherwise, the swap fee is immutable unless, as described above, the pool has an owner. In that case, the owner can change the fees at will.
 
-```text
+```
 getVault() returns (IVault vaultAddress)
 
 getPoolId() returns (bytes32 poolID)
@@ -91,9 +91,9 @@ onExitPool(
 
 The two core pools use different math, and also different price calculations. Stable Pools need all the token balances to quote a price during a swap, while Weighted Pools need only the balances of the two tokens being swapped. Weighted Pools can take advantage of this fact to save bytes and gas by using more efficient data structures. Any such pools can inherit from BaseMinimalSwapInfoPool.
 
-As with WeightedPools, there will be both oracle and non-oracle versions of the StablePool. \(MetaStable pools have oracles.\) All oracle pools are 2-token pools; non-oracle StablePools can have up to 5 tokens \(in the current design\).
+As with WeightedPools, there will be both oracle and non-oracle versions of the StablePool. (MetaStable pools have oracles.) All oracle pools are 2-token pools; non-oracle StablePools can have up to 5 tokens (in the current design).
 
-```text
+```
 // BaseMinimalSwapInfoPool
 onSwap(SwapRequest request,
        uint256 balanceTokenIn,
@@ -102,7 +102,7 @@ onSwap(SwapRequest request,
 
 Stable Pools inherit from BaseGeneralPool, and have a different swap interface. They take all the balances, along with pointers to the offsets of the two tokens being swapped.
 
-```text
+```
 // BaseGeneralPool
 onSwap(SwapRequest swapRequest,
        uint256[] balances,
@@ -110,15 +110,15 @@ onSwap(SwapRequest swapRequest,
        uint256 indexOut) returns (uint256 amount[In/Out])
 ```
 
-Each level contains internal callbacks \(e.g., `_initializePool`, `_doJoin`\), that need to be implemented by the most derived pools - in this case, the core pools.
+Each level contains internal callbacks (e.g., `_initializePool`, `_doJoin`), that need to be implemented by the most derived pools - in this case, the core pools.
 
-Here's another view, showing some of the factories. The FactoryWidePauseWindow starts an "emergency period" from factory deployment. Within that period \(defaults to 3 months\), new pools deployed from that factory can be paused by governance. Afterward, all pools become trustless \(including any deployed after the end of the period\).
+Here's another view, showing some of the factories. The FactoryWidePauseWindow starts an "emergency period" from factory deployment. Within that period (defaults to 3 months), new pools deployed from that factory can be paused by governance. Afterward, all pools become trustless (including any deployed after the end of the period).
 
 ![Pool Factory class hierarchy](../../../.gitbook/assets/pools-cd.png)
 
-WeightedPool2Tokens \(oracle\) pools have the following additional interface:
+WeightedPool2Tokens (oracle) pools have the following additional interface:
 
-```text
+```
 enableOracle() 
 
 getMiscData() returns (
@@ -166,12 +166,12 @@ getPastAccumulators(OracleAccumulatorQuery[] queries returns (int256[] results)
 ```
 
 {% hint style="info" %}
-Note that you can only call `getWeightedTimeAverage` after the buffer is full, or it will revert with ORACLE\_NOT\_INITIALIZED. If you call `getSample(1023)` and it returns 0's, that means the buffer's not full yet.
+Note that you can only call `getWeightedTimeAverage` after the buffer is full, or it will revert with ORACLE_NOT_INITIALIZED. If you call `getSample(1023)` and it returns 0's, that means the buffer's not full yet.
 {% endhint %}
 
 Liquidity Bootstrapping pools have the following additional interface:
 
-```text
+```
 function getSwapEnabled() public view returns (bool)
 
 /**
@@ -195,7 +195,7 @@ function updateWeightsGradually(uint256 startTime, uint256 endTime,
 
 Stable pools have the following additional interface:
 
-```text
+```
 function getAmplificationParameter() external view
              returns (uint256 value, bool isUpdating, uint256 precision)
 
@@ -222,7 +222,7 @@ function stopAmplificationParameterUpdate() external
 
 Metastable pools expose the same Oracle and Stable functions, plus:
 
-```text
+```
 function getRateProviders() external view returns (IRateProvider[] memory providers)
 
 /**
@@ -238,9 +238,9 @@ function updatePriceRateCache(IERC20 token) external
 function setPriceRateCacheDuration(IERC20 token, uint256 duration) external
 ```
 
-Investment  pools \(version 1\) have the same weight changing interface as Liquidity Bootstrapping Pools, and the following additional functions:
+Investment  pools (version 1) have the same weight changing interface as Liquidity Bootstrapping Pools, and the following additional functions:
 
-```text
+```
 /**
  * @dev Returns the management swap fee percentage as a 18-decimals
  *      fixed point number.
@@ -259,4 +259,3 @@ function getCollectedManagementFees() public view
 // Permissioned function for the owner to withdraw the collected fees
 function withdrawCollectedManagementFees(address recipient) external
 ```
-

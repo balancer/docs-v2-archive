@@ -2,7 +2,10 @@
 
 ## What type of fees are there?
 
-* Trading fees: A small percentage of the trade paid by traders to pool LPs, set by the pool creator or dynamically optimized by Gauntlet. Additionally, Balancer governance can vote to introduce a Protocol Trading Fee, which is a percentage of the Trading Fee.  For instance, if a pool had a 1% fee, and governance introduced a 1% protocol fee - the total swap fee to the trader would remain at 1%, but now 0.99% would accrue to the pool's LPs, and 0.01% would accrue to the protocol fee collector contract. 
+* Trading fees: A small percentage of the trade paid by traders to pool LPs, set by the pool creator or dynamically optimized by Gauntlet. Additionally, Balancer governance can vote to introduce a Protocol Trading Fee, which is a percentage of the Trading Fee.\
+  \
+  For instance, if a pool had a 1% fee, and governance introduced a 1% protocol fee - the total swap fee to the trader would remain at 1%, but now 0.99% would accrue to the pool's LPs, and 0.01% would accrue to the protocol fee collector contract.\
+
 * Flash Loan fees: A small percentage of assets that are used for flash loans from Balancer’s vault. This is the protocol fee - it accrues to the protocol, for allocation by governance.
 
 All protocol fees were set to zero at launch, and can only be changed through governance.
@@ -28,4 +31,3 @@ Today, it’s nearly impossible to choose a correct swap fee at pool creation ti
 For example, a static fee can have diminishing returns after circumstances change, like liquidity moving to another pool. Another example is that during times of wild volatility, liquidity providers risk sustaining greater impermanent losses.
 
 Just like ride-sharing apps have surge pricing during high-traffic times, thanks to a partnership with Gauntlet, Balancer pools can optimize fees for current market conditions.
-

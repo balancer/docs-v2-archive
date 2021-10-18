@@ -10,15 +10,17 @@ Governable Protocol Fees are fees collected by the Balancer Protocol, **not** Li
 
 The obvious source of Protocol Fees is from trading. Balancer traders already pay trade fees to Liquidity Providers in exchange for making their swap possible. Fees are denominated in the Input Token when executing a trade. 
 
-The Protocol Fees for trades will be collected as a percentage of the trade fees already being collected \(a fraction of a fraction\). From the traders' perspective, there will be no price increase. 
+The Protocol Fees for trades can be collected as a percentage of the trade fees already being collected (a fraction of a fraction). From the traders' perspective, there will be no price increase. 
 
-Upon launch, Balancer V2's **Protocol Fees for trades are turned off by default**. They can be turned on only by a vote of the Balancer Governors \(BAL token holders\). The governors will have the power to activate, and determine the amount of, these fees.
+Upon launch, Balancer V2's **Protocol Fees for trades are turned off by default**. They can be turned on only by a vote of the Balancer Governors (BAL token holders). The governors have the power to activate and determine the amount of these fees.
 
 ### Flash Loan Fees
 
-Another source of Protocol Fees is from interest on Flash Loans. For the sake of preventing Flash Loan abuse, **Protocol Fees for Flash Loans will be turned on by default**. Further reading for Flash Loans on Balancer:
+Another source of Protocol Fees is from interest on Flash Loans. Further reading for Flash Loans on Balancer:
 
-{% page-ref page="../protocol/flash-loans.md" %}
+{% content-ref url="../features/flash-loans.md" %}
+[flash-loans.md](../features/flash-loans.md)
+{% endcontent-ref %}
 
 ## Uses
 
@@ -35,4 +37,3 @@ We invite you to join our Discord and Forums to take part in the discussion over
 * Buy a decentralized insurance policy
 * Lend them on an external protocol
 * Pay them directly to Balancer Governors
-

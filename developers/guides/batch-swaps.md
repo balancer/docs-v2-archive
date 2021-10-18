@@ -6,7 +6,7 @@ Balancer V2 allows powerful multi-hop trades, or "batch swaps", which pull the b
 
 The Vault exposes the `batchSwap` function to allow multi-hop trades with the the interface below.
 
-```text
+```
 batchSwap(SwapKind kind,
           BatchSwapStep[] swaps,
           IAsset[] assets,
@@ -19,7 +19,7 @@ To simplify the inputs to this function, we have grouped related fields into a n
 
 ### BatchSwapStep struct
 
-```text
+```
 struct BatchSwapStep {
     bytes32 poolId;
     uint256 assetInIndex;
@@ -47,7 +47,7 @@ For this reason setting `amount` to 0 will be interpreted to use the full output
 
 The `FundManagement` struct defines where the input tokens for the first swap are coming from and where any tokens received from swaps should be sent. The `FundManagement` struct is defined as below.
 
-```text
+```
 struct FundManagement {
     address sender;
     bool fromInternalBalance;
@@ -61,11 +61,11 @@ struct FundManagement {
 * `recipient`: The address to which tokens will be sent to after the trade.
 * `toInternalBalance`: Whether the tokens should be sent to the `recipient` or stored within their internal balance within the Vault.
 
-For more information on internal balances see [Core Concepts](../../core-concepts/protocol/vault.md#gas-efficiency).
+For more information on internal balances see [Core Concepts](broken-reference).
 
 ### BatchSwap function
 
-```text
+```
 batchSwap(SwapKind kind,
           BatchSwapStep[] swaps,
           IAsset[] assets,
@@ -85,7 +85,7 @@ In these examples, we’re trading token A for token C, through the intermediate
 
 "Given In" means the caller knows the exact amount of the incoming token, and is asking the pool to calculate the tokenOut amount. The opposite is true of "Given Out." 
 
-### Example 1 \("Given In"\)
+### Example 1 ("Given In")
 
 The first case is a "Given In" Swap: say we have 10 A and want to know how much C we can get for it. We can accomplish this with a two-step multi-hop swap: A for B, then B for C.
 
@@ -95,29 +95,28 @@ The first swap will produce some amount of B, but we don’t know in advance how
 
 Since we don’t know the amount of B when constructing the multi-hop, we initialize the amount in the second swap to 0, which instructs the multi-hop logic to use the calculated output amount from the first swap as input to the second.
 
-| Parameter | Swap 1 | Swap 2 |
-| :--- | :--- | :--- |
-| Amount | 10 | 0 |
-| Swap Kind | Given In | Given In |
-| Tokens In/Out | A / B | B / C |
+| Parameter     | Swap 1   | Swap 2   |
+| ------------- | -------- | -------- |
+| Amount        | 10       | 0        |
+| Swap Kind     | Given In | Given In |
+| Tokens In/Out | A / B    | B / C    |
 
-Say we get 5 B from the first swap. The amount of the second swap is then set to 5 in the Vault logic, and the second “Given In” swap produces some output amount of C. \(The caller would then validate the overall swap by comparing this value to the minimum amountOut of C.\)
+Say we get 5 B from the first swap. The amount of the second swap is then set to 5 in the Vault logic, and the second “Given In” swap produces some output amount of C. (The caller would then validate the overall swap by comparing this value to the minimum amountOut of C.)
 
-### Example 2 \("Given Out"\)
+### Example 2 ("Given Out")
 
 The second case is a “Given Out” Swap: say we want 20 C, and want to know how much A that will cost. Here we need to do the swaps “backwards,” first trading C for B, then B for A.
 
 The first swap is “Given Out,” and the amount is the desired amount of token C. It will produce some amount of token B, but as before, we don’t know how much in advance. So again we set the amount of the second swap to zero.
 
-After the first swap, the amount of B will be known, and the zero amount in the second swap instructs the multi-hop logic to substitute the calculated amount from the last swap. Since this is “Given In,” the result will be some input amount of token A. \(The caller would then validate the overall swap by comparing this value to the maximum amountIn of A.\)
+After the first swap, the amount of B will be known, and the zero amount in the second swap instructs the multi-hop logic to substitute the calculated amount from the last swap. Since this is “Given In,” the result will be some input amount of token A. (The caller would then validate the overall swap by comparing this value to the maximum amountIn of A.)
 
-| Parameter | Swap 1 | Swap 2 |
-| :--- | :--- | :--- |
-| Amount | 20 | 0 |
-| Swap Kind | Given Out | Given In |
-| Tokens In/Out | B / C | B / A |
+| Parameter     | Swap 1    | Swap 2   |
+| ------------- | --------- | -------- |
+| Amount        | 20        | 0        |
+| Swap Kind     | Given Out | Given In |
+| Tokens In/Out | B / C     | B / A    |
 
-So in both cases, setting the amount of a swap within a batch to zero causes the multi-hop logic to substitute the calculated amount from the previous swap. If the previous swap was “Given In,” the calculated amount will be the “output” \(tokenOut\). If the previous swap was “Given Out,” the calculated amount will be the “input” \(tokenIn\).
+So in both cases, setting the amount of a swap within a batch to zero causes the multi-hop logic to substitute the calculated amount from the previous swap. If the previous swap was “Given In,” the calculated amount will be the “output” (tokenOut). If the previous swap was “Given Out,” the calculated amount will be the “input” (tokenIn).
 
 Of course, the amount of the first swap in a batch cannot be zero.
-

@@ -12,7 +12,7 @@ Click one of the "Connect wallet" buttons, click MetaMask, and connect your desi
 
 ![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.10.57-pm.png)
 
-\*\*\*\*
+****
 
 **Filter pools by desired assets. In this example, we'll use WETH and BAL**
 
@@ -26,7 +26,7 @@ Click on the desired pool to navigate to the pool management page
 
 ### Select your amount
 
-You can choose to invest one token, a subset of tokens, or all of them. The pool will calculate how many pool tokens \(BPTs\) to give you for your input tokens. If you join the pool according to pool weights \("Best price"\), you will not create any price impact. If you join in an unbalanced way \("Custom amounts"\) you may impact the price.
+You can choose to invest one token, a subset of tokens, or all of them. The pool will calculate how many pool tokens (BPTs) to give you for your input tokens. If you join the pool according to pool weights ("Best price"), you will not create any price impact. If you join in an unbalanced way ("Custom amounts") you may impact the price.
 
 {% hint style="info" %}
 If your "Custom amounts" join has significant price impact, it may be cheaper to swap your tokens to match the "Best price" amounts. If you significantly impact the price in a pool, you can create an arbitrage opportunity that someone else may profit from.
@@ -36,7 +36,7 @@ To invest a single asset, choose "Custom amounts".
 
 ![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.12.32-pm.png)
 
-### Approve token\(s\)
+### Approve token(s)
 
 ![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.12.52-pm.png)
 
@@ -63,8 +63,6 @@ You can choose to withdraw a subset of tokens or all of them. If you decide to w
 ![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.26.26-pm.png)
 
 ### Click to withdraw tokens from the pool
-
-
 
 
 

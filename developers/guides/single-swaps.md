@@ -6,7 +6,7 @@ Balancer V2 supports multi-hop "batch" swaps to get the best possible prices - b
 
 For this reason the Vault exposes the `swap` function for simple swaps which just interact with a single pool with the the interface below.
 
-```text
+```
 swap(SingleSwap singleSwap,
      FundManagement funds,
      uint256 limit,
@@ -21,7 +21,7 @@ To simplify the inputs to this function, we have grouped related fields into a n
 
 The `SingleSwap` struct defines which pool we're trading with and what kind of swap we want to perform. The `SingleSwap` struct is defined as below.
 
-```text
+```
 enum SwapKind { GIVEN_IN, GIVEN_OUT }
 
 struct SingleSwap {
@@ -47,7 +47,7 @@ struct SingleSwap {
 
 The `FundManagement` struct defines where the input tokens for the swap are coming from and where the output tokens should be sent. The `FundManagement` struct is defined as below.
 
-```text
+```
 struct FundManagement {
     address sender;
     bool fromInternalBalance;
@@ -61,13 +61,13 @@ struct FundManagement {
 * `recipient`: The address to which tokens will be sent to after the trade.
 * `toInternalBalance`: Whether the tokens should be sent to the `recipient` or stored within their internal balance within the Vault.
 
-For more information on internal balances see [Core Concepts](../../core-concepts/protocol/vault.md#gas-efficiency).
+For more information on internal balances see [Core Concepts](broken-reference).
 
 ### Swap function
 
 Jumping back to the `swap` function we see there are two final arguments
 
-```text
+```
 swap(SingleSwap singleSwap,
      FundManagement funds,
      uint256 limit,
@@ -78,6 +78,4 @@ swap(SingleSwap singleSwap,
   * `GIVEN_IN`: The minimum amount of tokens we would accept to receive from the swap.
   * `GIVEN_OUT`: The maximum amount of tokens we would accept having to send for the swap.
 * `deadline`: The UNIX timestamp at which our trade must be completed by - if the transaction is confirmed after this time then the transaction will fail.
-
-
 

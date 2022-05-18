@@ -6,7 +6,7 @@ Balancer offers a community driven Liquidity Mining program that is maintained b
 
 You can see which pools receive liquidity mining incentives by the 3 star icon next to the pool position. Hover over the icon to see the breakdown in “Swap Fees APR” and “Liquidity Mining APR”
 
-![](../../.gitbook/assets/untitled.png)
+![](../../.gitbook/assets/Untitled.png)
 
 ## What does “Swap Fees APR” and “Liquidity Mining APR” mean?
 
@@ -18,7 +18,7 @@ Also please note that while the UI displays these as an APR, there is no compoun
 
 On Ethereum mainnet, weekly distributions are available through [https://claim.balancer.fi](https://claim.balancer.fi)
 
-On Polygon, weekly distributions are airdropped directly to eligible wallets. **Only BAL is distributed by Balancer; all other airdrops are coordinated by their respective projects. **See the next question for the airdrop schedules.
+On Polygon, weekly distributions are airdropped directly to eligible wallets. **Only BAL is distributed by Balancer; all other airdrops are coordinated by their respective projects.** See the next question for the airdrop schedules.
 
 ## What is the Liquidity Mining timeline?
 
@@ -26,7 +26,7 @@ A liquidity mining period is set between Monday-Monday 00:00 UTC, with distribut
 
 Please see below for a diagram of the schedule. The below depicts Polygon airdrops, but the schedule for BAL on Ethereum is the same (just use claim.balancer.fi to claim).
 
-![](../../.gitbook/assets/bal_lmmechanics_v2.png)
+![](../../.gitbook/assets/BAL\_LMMechanics\_v2.png)
 
 ## Does my investment auto-compound?
 
@@ -53,13 +53,13 @@ In each weekly folder, you'll find a few files:
 
 You'll also find network/token specific files for multi-token incentives explained below
 
-| Network  | Token Symbol      | File Name                                                    |   |
-| -------- | ----------------- | ------------------------------------------------------------ | - |
-| Ethereum | BAL               | \__ethereum\_0xba100000625a3754423978a60c9317c58a424e3d.json |   |
-| Polygon  | BAL               | \__polygon\_0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3.json  |   |
-| Polygon  | MATIC (or WMATIC) | \__polygon\_0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270.json  |   |
-| Polygon  | QI                | \__polygon\_0x580a84c73811e1839f75d86d75d88cca0c241ff4.json  |   |
-| Polygon  | MTA               | \__polygon\_0xF501dd45a1198C2E1b5aEF5314A68B9006D842E0.json  |   |
+| Network  | Token Symbol      | File Name                                                     |   |
+| -------- | ----------------- | ------------------------------------------------------------- | - |
+| Ethereum | BAL               | \_\_ethereum\_0xba100000625a3754423978a60c9317c58a424e3d.json |   |
+| Polygon  | BAL               | \_\_polygon\_0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3.json  |   |
+| Polygon  | MATIC (or WMATIC) | \_\_polygon\_0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270.json  |   |
+| Polygon  | QI                | \_\_polygon\_0x580a84c73811e1839f75d86d75d88cca0c241ff4.json  |   |
+| Polygon  | MTA               | \_\_polygon\_0xF501dd45a1198C2E1b5aEF5314A68B9006D842E0.json  |   |
 
 ## Want more details?
 

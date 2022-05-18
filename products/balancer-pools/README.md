@@ -1,3 +1,8 @@
+---
+cover: ../../.gitbook/assets/bannerPools (1).png
+coverY: 0
+---
+
 # Balancer Pools
 
 ## Overview
@@ -6,9 +11,9 @@ Pools are the fundamental building blocks of the Balancer Protocol; they are sma
 
 ## Oracle Functionality
 
-Some pools (WeightedPool2Tokens and MetaStable Pools) have optional Oracle functionality. This means that they can be used as sources of on-chain price data. 
+Some pools (WeightedPool2Tokens and MetaStable Pools) have optional Oracle functionality. This means that they can be used as sources of on-chain price data.&#x20;
 
-## Pools At A Glance...
+## Pools At A Glance
 
 ### [Weighted Pools](weighted-pools.md)
 

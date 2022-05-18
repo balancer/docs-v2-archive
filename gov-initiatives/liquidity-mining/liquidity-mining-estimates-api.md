@@ -1,58 +1,63 @@
 # Liquidity Mining Estimates API
 
-### Liquidity Mining Estimates API <a id="liquidity-mining-estimates-api-1"></a>
+{% hint style="danger" %}
+The liquidity mining estimates covered by this API refer to a program that was terminated in April 2022 after the launch of the veBAL system.
 
-This API provides an estimate amount of tokens earned by a liquidity provider at the current week \(and previous week if tokens weren't sent out yet\). Cumulative estimates for the week in progress are computed every hour, and the velocity with each tokens are being accrued is computed from the difference between two consecutive estimates. Clients can then use the velocity to update in real time the estimates retrieved from the API.
+The API returns data for tokens from joint incentive initiatives that have yet to be paid out, but it will be deprecated soon
+{% endhint %}
 
-### Retrieving Liquidity Provider Data <a id="retrieving-liquidity-provider-data"></a>
+### Liquidity Mining Estimates API <a href="#liquidity-mining-estimates-api-1" id="liquidity-mining-estimates-api-1"></a>
 
-#### HTTP Request <a id="http-request"></a>
+This API provides an estimate amount of tokens earned by a liquidity provider at the current week (and previous week if tokens weren't sent out yet). Cumulative estimates for the week in progress are computed every hour, and the velocity with each tokens are being accrued is computed from the difference between two consecutive estimates. Clients can then use the velocity to update in real time the estimates retrieved from the API.
 
-```text
+### Retrieving Liquidity Provider Data <a href="#retrieving-liquidity-provider-data" id="retrieving-liquidity-provider-data"></a>
+
+#### HTTP Request <a href="#http-request" id="http-request"></a>
+
+```
 GET https://api.balancer.finance/liquidity-mining/v1/liquidity-provider-multitoken/:address
 ```
 
-#### URL Parameters <a id="url-parameters"></a>
+#### URL Parameters <a href="#url-parameters" id="url-parameters"></a>
 
-| Param | Description | Required |
-| :--- | :--- | :--- |
-| address | The address of the liquidity provider | TRUE |
+| Param   | Description                           | Required |
+| ------- | ------------------------------------- | -------- |
+| address | The address of the liquidity provider | TRUE     |
 
-#### Example Request <a id="example-request"></a>
+#### Example Request <a href="#example-request" id="example-request"></a>
 
-```text
+```
 https://api.balancer.finance/liquidity-mining/v1/liquidity-provider-multitoken/0xa9F8E7337eBb7982f9f5497BC5Ae98e69e1a39A7
 ```
 
-#### Example Response <a id="example-response"></a>
+#### Example Response <a href="#example-response" id="example-response"></a>
 
-```text
+```
 {  "success": true,  "result": {    "current_timestamp": "2021-08-02T22:11:58.714Z",    "liquidity-providers": [      {        "snapshot_timestamp": "2021-08-02T12:58:05.000Z",        "address": "0xa9F8E7337eBb7982f9f5497BC5Ae98e69e1a39A7",        "token_address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",        "chain_id": 137,        "current_estimate": "52.852122329992465537",        "velocity": "0.000661201814487363",        "week": 62      },      {        "snapshot_timestamp": "2021-08-02T12:58:05.000Z",        "address": "0xa9F8E7337eBb7982f9f5497BC5Ae98e69e1a39A7",        "token_address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",        "chain_id": 137,        "current_estimate": "3.523474821999491233",        "velocity": "0.000044080120965824",        "week": 62      },      {        "snapshot_timestamp": "2021-08-01T23:58:06.000Z",        "address": "0xa9F8E7337eBb7982f9f5497BC5Ae98e69e1a39A7",        "token_address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",        "chain_id": 137,        "current_estimate": "327.477708233340251809",        "velocity": "0",        "week": 61      },      {        "snapshot_timestamp": "2021-08-01T23:58:06.000Z",        "address": "0xa9F8E7337eBb7982f9f5497BC5Ae98e69e1a39A7",        "token_address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",        "chain_id": 137,        "current_estimate": "21.831847215556017261",        "velocity": "0",        "week": 61      },      {        "snapshot_timestamp": "2021-08-01T23:58:06.000Z",        "address": "0xa9F8E7337eBb7982f9f5497BC5Ae98e69e1a39A7",        "token_address": "0x580a84c73811e1839f75d86d75d88cca0c241ff4",        "chain_id": 137,        "current_estimate": "0",        "velocity": "0",        "week": 61      },      {        "snapshot_timestamp": "2021-08-01T23:58:06.000Z",        "address": "0xa9F8E7337eBb7982f9f5497BC5Ae98e69e1a39A7",        "token_address": "0xF501dd45a1198C2E1b5aEF5314A68B9006D842E0",        "chain_id": 137,        "current_estimate": "0",        "velocity": "0",        "week": 61      },      {        "snapshot_timestamp": "2021-08-02T12:58:05.000Z",        "address": "0xa9F8E7337eBb7982f9f5497BC5Ae98e69e1a39A7",        "token_address": "0x580a84c73811e1839f75d86d75d88cca0c241ff4",        "chain_id": 137,        "current_estimate": "0",        "velocity": "0.000000000000000000",        "week": 62      },      {        "snapshot_timestamp": "2021-08-02T12:58:05.000Z",        "address": "0xa9F8E7337eBb7982f9f5497BC5Ae98e69e1a39A7",        "token_address": "0xF501dd45a1198C2E1b5aEF5314A68B9006D842E0",        "chain_id": 137,        "current_estimate": "0",        "velocity": "0.000000000000000000",        "week": 62      }    ]  }}
 ```
 
-#### Response Definitions <a id="response-definitions"></a>
+#### Response Definitions <a href="#response-definitions" id="response-definitions"></a>
 
-| Parameter | Definition |
-| :--- | :--- |
-| success | `false` if an error occurred, `true` otherwise |
-| current\_timestamp | The timestamp of when the request was received by the server |
-| snapshot\_timestamp | The last time the mining estimator script was executed and velocity was determined |
-| address | The address of the liquidity provider |
-| token\_address | The address of the token received as incentive for liquidity provided |
-| chain\_id | The ID of the chain in which liquidity was provided |
-| velocity | The estimated rate, in`tokens/second`, at which tokens were being mined by the address at the last time the estimator script was run |
-| current\_estimate | The estimated total amount of `token` mined by `address` in the `week` up to time `current_timestamp` |
-| week | The number of the week that the estimates refer to, `1` being the week between `Jun-01-2020 00:00:00` and `Jun-07-2020 23:59:59` |
+| Parameter           | Definition                                                                                                                           |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| success             | `false` if an error occurred, `true` otherwise                                                                                       |
+| current\_timestamp  | The timestamp of when the request was received by the server                                                                         |
+| snapshot\_timestamp | The last time the mining estimator script was executed and velocity was determined                                                   |
+| address             | The address of the liquidity provider                                                                                                |
+| token\_address      | The address of the token received as incentive for liquidity provided                                                                |
+| chain\_id           | The ID of the chain in which liquidity was provided                                                                                  |
+| velocity            | The estimated rate, in`tokens/second`, at which tokens were being mined by the address at the last time the estimator script was run |
+| current\_estimate   | The estimated total amount of `token` mined by `address` in the `week` up to time `current_timestamp`                                |
+| week                | The number of the week that the estimates refer to, `1` being the week between `Jun-01-2020 00:00:00` and `Jun-07-2020 23:59:59`     |
 
-### Client side updates <a id="client-side-updates"></a>
+### Client side updates <a href="#client-side-updates" id="client-side-updates"></a>
 
 Clients can update the real time estimate by increasing the `current_estimate` retrieved from the API by `velocity` every second. The underlying data served by the API is updated every other hour, but it takes about 10 minutes to run the script, so clients should not expect any changes before at least 70 minutes have passed since `snapshot_timestamp`.
 
-### Notes <a id="notes"></a>
+### Notes <a href="#notes" id="notes"></a>
 
 * Estimates are approximate, as they do not account for liquidity added/removed since the last time the script was run.
 * The API only provides estimates for weeks that have not yet been finalized; as soon as the estimator script detects that the previous weeks claims have been [made available](https://ipfs.fleek.co/ipns/balancer-team-bucket.storage.fleek.co/balancer-claim/snapshot), the estimates for that week are removed from the underlying dataset.
 
-[  
+[\
 ](https://balancer.gitbook.io/balancer/core-concepts/bal-liquidity-mining/exchange-and-reward-listing)
-

@@ -1,5 +1,11 @@
 # Liquidity Mining
 
+{% hint style="danger" %}
+The liquidity mining program described here was terminated in April 2022 after the launch of the veBAL system.
+
+This page is kept in the docs to serve as an example of successful governance initiatives
+{% endhint %}
+
 ## Motivation
 
 Crypto moves fast and the AMM space is as competitive as ever. In order to attract liquidity, Balancer has a flexible Liquidity Mining Program which targets high priority pools and can respond quickly to changing market conditions.
@@ -8,12 +14,12 @@ Crypto moves fast and the AMM space is as competitive as ever. In order to attra
 
 Balancer V2 Liquidity mining incentives operates in **four** tiers governed by a combination of BAL governance and the Ballers Committee.
 
-| Tier | Description | Number of slots | Weekly Pool Allocation | Tier Weekly Total | Governance System |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Core liquidity pools key to trading volume | 4 | 15,000 BAL | 60,000 BAL | BAL holders |
-| 2 | Strategic pools | 9 | 5,000 BAL | 45,000 BAL | Ballers Committee |
-| 3 | Promising pools | 12 | 2,500 BAL | 30,000 BAL | Ballers Committee |
-| 4 | Experimental pools | 10 | 1,000 BAL | 10,000 BAL | Ballers Committee |
+| Tier | Description                                | Number of slots | Weekly Pool Allocation | Tier Weekly Total | Governance System |
+| ---- | ------------------------------------------ | --------------- | ---------------------- | ----------------- | ----------------- |
+| 1    | Core liquidity pools key to trading volume | 4               | 15,000 BAL             | 60,000 BAL        | BAL holders       |
+| 2    | Strategic pools                            | 9               | 5,000 BAL              | 45,000 BAL        | Ballers Committee |
+| 3    | Promising pools                            | 12              | 2,500 BAL              | 30,000 BAL        | Ballers Committee |
+| 4    | Experimental pools                         | 10              | 1,000 BAL              | 10,000 BAL        | Ballers Committee |
 
 Tier 1 is voted on by BAL governance while tiers 2 to 4 are voted on by the Ballers Liquidity Mining Committee.
 
@@ -21,7 +27,7 @@ _Ballers are active members of the community that have gone above and beyond by 
 
 **All Balancer community members retain the right to make proposals and signal support for pools to be allocated slots from tiers 2 to 4.** The Ballers Committee act as a liaison between community sentiment and formal changes to the program. Discussions on Liquidity Mining inclusion are open for all community members on both Discord and the Forum.
 
-**The Ballers Liquidity Mining Committee has no control over the Tier 1 slots**. Instead, they are governed by normal BAL governance. Additionally, all decisions made by the Ballers \(_along with voting addresses_\) are made public for everyone to see prior to implementation at the [Ballers Vote snapshot space](https://snapshot.org/#/ballersvote.eth/).
+**The Ballers Liquidity Mining Committee has no control over the Tier 1 slots**. Instead, they are governed by normal BAL governance. Additionally, all decisions made by the Ballers (_along with voting addresses_) are made public for everyone to see prior to implementation at the [Ballers Vote snapshot space](https://snapshot.org/#/ballersvote.eth/).
 
 In order to accommodate for sufficient yield to attract liquidity on certain pools, more than one slot may be allocated to a single pool by consuming additional slots as voted on by the committee.
 
@@ -33,7 +39,7 @@ The Ballers Liquidity Mining Committee [has been empowered by governance](https:
 
 The allocation of tier 1 slots requires a formal proposal, which must then be voted on by BAL holders.
 
-The allocation of liquidity mining slots from tiers 2 to 4 is discussed weekly taking into account community input and signal, and voted on formally by the Ballers Liquidity Mining Committee. Contributions from the community are to be made in the `💭incentives-submissions-and-ideas` channel on Discord. Ballers proposals are made public in the `👁🗨liquidity-committee` channel. Discussions happen asynchronously in that same channel and decisions are formalized in the [Ballers Vote snapshot space](https://snapshot.org/#/ballersvote.eth/). 
+The allocation of liquidity mining slots from tiers 2 to 4 is discussed weekly taking into account community input and signal, and voted on formally by the Ballers Liquidity Mining Committee. Contributions from the community are to be made in the `💭incentives-submissions-and-ideas` channel on Discord. Ballers proposals are made public in the `👁🗨liquidity-committee` channel. Discussions happen asynchronously in that same channel and decisions are formalized in the [Ballers Vote snapshot space](https://snapshot.org/#/ballersvote.eth/).&#x20;
 
 ## Distribution
 
@@ -48,4 +54,3 @@ Other projects might incentivize liquidity provision jointly with their own toke
 1. [Governance forum proposal](https://forum.balancer.finance/t/proposal-governance-mining/554)
 2. [Snapshot vote](https://snapshot.org/#/balancer/proposal/QmeCrSe5xL5YWB17TjxAofYi3QnBMyHCYqufD8t3Zonj4S)
 3. [Introduction of Tier 4](https://snapshot.org/#/balancer/proposal/QmWiYnwdDynSJ66rt949E5nifh3CtYX6zYxTviiFMbXu3R)
-

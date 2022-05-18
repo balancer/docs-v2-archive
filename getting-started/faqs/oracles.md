@@ -11,5 +11,4 @@ Balancer V2 introduces price oracles that are resistant to sandwich attacks by l
 
 Choosing a price type varies depending on each use case. For example, lending protocols will likely use a Resilient Oracle while prediction markets could use the Instant Price Oracle.
 
-You can see the oracle pool API [here](../../developers/smart-contracts/apis/pools.md).
-
+You can see the oracle pool API [here](broken-reference).

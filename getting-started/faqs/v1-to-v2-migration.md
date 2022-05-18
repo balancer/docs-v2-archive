@@ -4,17 +4,17 @@
 
 For supported two-asset pools, you can use the migration system to move your liquidity from a V1 pool to a comparable, if not identical, V2 pool.
 
-### 1. Go to [https://pools.balancer.exchange/\#/](https://pools.balancer.exchange/#/) and click "Connect Wallet" in the top right
+### 1. Go to [https://pools.balancer.exchange/#/](https://pools.balancer.exchange/#/) and click "Connect Wallet" in the top right
 
-![](../../.gitbook/assets/screen-shot-2021-05-13-at-9.30.41-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-13 at 9.30.41 AM.png>)
 
 ### 2. Click on "Dashboard" on the left menu
 
-![](../../.gitbook/assets/screen-shot-2021-05-13-at-9.25.57-am.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-13 at 9.25.57 AM (1).png>)
 
 ### 3. Pools with Automatic Migration available will have a "V2 Migrate" button
 
-![](../../.gitbook/assets/migration_dashboard.png)
+![](../../.gitbook/assets/migration\_dashboard.png)
 
 There are two transactions involved in migrations
 
@@ -25,7 +25,6 @@ For pools that do not have Automatic Migration, you should remove liquidity from
 
 ## Do I have to migrate? What happens if I don't?
 
-Balancer V1 is not being "turned off" \(it can't be\), so if you choose not to migrate, your liquidity will remain in the older trading pools. Trade aggregators will likely still consider V1 pools when looking for the cheapest prices, but as liquidity falls and price slippage increases, it may not be worth the gas fees for them to use those pools.
+Balancer V1 is not being "turned off" (it can't be), so if you choose not to migrate, your liquidity will remain in the older trading pools. Trade aggregators will likely still consider V1 pools when looking for the cheapest prices, but as liquidity falls and price slippage increases, it may not be worth the gas fees for them to use those pools.
 
 Balancer V1 pools will continue earning trade fees, but the BAL governance distributions will transition to V2.
-

@@ -8,7 +8,7 @@
 
 * Flash Loan fees: A small percentage of assets that are used for flash loans from Balancer’s vault. This is the protocol fee - it accrues to the protocol, for allocation by governance.
 
-All protocol fees were set to zero at launch, and can only be changed through governance.
+All protocol fees were set to zero at launch, and in Dec 2021, were set to 10% [by a governance vote](https://vote.balancer.fi/#/proposal/0xf6238d70f45f4dacfc39dd6c2d15d2505339b487bbfe014457eba1d7e4d603e3).
 
 ## What are the fees for a trade?
 
@@ -18,11 +18,19 @@ Some pools have Dynamic Trade Fees that are [algorithmically set by Gauntlet](ht
 
 ## When will the Protocol Trading Fees be turned on?
 
-Protocol trading fees are set by governance, and will be turned on whenever they are voted to be active. The fees can be set from 0 to 50% of the existing pool swap fee.
+While initialized to 0% at deployment, protocol trading fees can be set by governance. They were activated following [a vote that finished Dec 11, 2021](https://vote.balancer.fi/#/proposal/0xf6238d70f45f4dacfc39dd6c2d15d2505339b487bbfe014457eba1d7e4d603e3). The vote set the Protocol Swap fee to 10%. The fees can be set from 0 to 50% of the existing pool swap fee.
 
 ## What happens to the protocol fees?
 
-All protocol fees will be kept in the Protocol Fees Collector contract. It is up to Balancer’s governance to decide whether and how these fees are used.
+All protocol fees are kept in the ProtocolFeesCollector contract. It is up to Balancer’s governance to decide whether and how these fees are used.
+
+The Protocol Fees Collector contracts are deployed at the following:
+
+| Network          | Contract Address                                                                                                         |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Ethereum Mainnet | [0xce88686553686DA562CE7Cea497CE749DA109f9F](https://etherscan.io/address/0xce88686553686da562ce7cea497ce749da109f9f)    |
+| Polygon          | [0xce88686553686da562ce7cea497ce749da109f9f](https://polygonscan.com/address/0xce88686553686da562ce7cea497ce749da109f9f) |
+| Arbitrum         | [0xce88686553686da562ce7cea497ce749da109f9f](https://arbiscan.io/address/0xce88686553686da562ce7cea497ce749da109f9f)     |
 
 ## Why do pools have Dynamic Fees?
 

@@ -12,7 +12,7 @@ Hardhat to the rescue - sort of. The hardhat verification plugin works well: but
 
 Theoretically you can compute the arguments from JSON using various tools, but the most reliable method is to read the arguments right off the blockchain. They're immutable, and guaranteed to be correct. To perform this most kludgy portion of the verification process, you will need a [Tenderly](https://tenderly.co) account. You can use the free version, and the easiest way to log in is through [GitHub](https://github.com). Developers likely already have a GitHub account - if you don't, that's also free.
 
-You also need to issue the verification command to Etherscan, over a public network, wherever the contract is deployed: e.g., mainnet, Kovan, Polygon, Arbitrum. If you're not running your own node, this is most commonly achieved through [Infura](https://infura.io/docs/gettingStarted/authentication) or [Alchemy](https://docs.alchemy.com/alchemy/introduction/getting-started). You will need to provide an API key from one of these services in your hardhat network configuration. And since you are submitting a request to Etherscan, you also need an [Etherscan API key](https://etherscan.io/apidocs). 
+You also need to issue the verification command to Etherscan, over a public network, wherever the contract is deployed: e.g., mainnet, Kovan, Polygon, Arbitrum. If you're not running your own node, this is most commonly achieved through [Infura](https://infura.io/docs/gettingStarted/authentication) or [Alchemy](https://docs.alchemy.com/alchemy/introduction/getting-started). You will need to provide an API key from one of these services in your hardhat network configuration. And since you are submitting a request to Etherscan, you also need an [Etherscan API key](https://etherscan.io/apidocs).&#x20;
 
 Note that this also works for PolygonScan, but you will need a separate account and [API key ](https://polygonscan.com/myapikey)for Polygon. Arbitrum doesn't need a key (but the --key argument is still required; just use one of the others). If you are using Infura, you will need to enter billing information and, in the billing settings, add the networks to your account as "add-ons". Otherwise, you will see an error message like: "ProviderError: project ID does not have access to arbitrum l2"
 
@@ -22,7 +22,7 @@ Verification requires correct build artifacts (e.g., ABI code), and other infras
 
 Once you've cloned the monorepo, cd to pkg/deployments (**not** /deployments). You will need to add your network configuration to pkg/deployments/hardhat.config.ts.
 
-Here is one way you might do it for mainnet, using Infura, and an account mnemonic. You could also use Alchemy, a private key, etc. See the [hardhat docs](https://hardhat.org/getting-started/) here. In this example, you would set the environment variables INFURA_KEY and MNEMONIC. 
+Here is one way you might do it for mainnet, using Infura, and an account mnemonic. You could also use Alchemy, a private key, etc. See the [hardhat docs](https://hardhat.org/getting-started/) here. In this example, you would set the environment variables INFURA\_KEY and MNEMONIC.&#x20;
 
 {% hint style="warning" %}
 Needless to say, never put a real key in a file - even for a free account - especially if it might get committed to source control!
@@ -87,7 +87,7 @@ We're going to pull them right off the blockchain, so the first thing we need to
 
 To do this, we want to navigate to the "Internal Transactions" tab on Etherscan's entry for this address. The first (and likely only) transaction here will be the one that deployed the pool: [https://etherscan.io/address/0xe2469f47ab58cf9cf59f9822e3c5de4950a41c49#internaltx](https://etherscan.io/address/0xe2469f47ab58cf9cf59f9822e3c5de4950a41c49#internaltx)
 
-![Finding the pool deployment transaction](../../.gitbook/assets/internaltx.png)
+![Finding the pool deployment transaction](../../.gitbook/assets/InternalTx.png)
 
 Click on the "Parent Txn Hash" link to find the transaction hash: it is 0x757a0ea8b773405209eb67258504c083b3c11d5a43ea437d77ab17ac982a1c2b.
 
@@ -96,37 +96,37 @@ On Arbitrum, you will find there is no such tab. Never fear: you can also get th
 You can use the following subgraph query to extract the creation transaction ("tx"):\
 \
 `{`\
-`  pools(where:{address:"<pool address>"}) {`\
-`    id`\
-`    tx`\
-`  }`\
+&#x20; `pools(where:{address:"<pool address>"}) {`\
+&#x20;   `id`\
+&#x20;   `tx`\
+&#x20; `}`\
 `}`
 
 We will now use the Tenderly Debugger to find the encoded constructor arguments. Log into Tenderly and copy the hash into the search bar. (On Arbitrum, until Tenderly supports it, you will have to get them from the Arbiscan data, or another way, such as a script, or simulating a mainnet transaction.)
 
-![Find the transaction in Tenderly](../../.gitbook/assets/1-txhash.png)
+![Find the transaction in Tenderly](../../.gitbook/assets/1-TxHash.png)
 
 You will see the details of the `create()` transaction
 
-![create() transaction detail](../../.gitbook/assets/2-txoverview.png)
+![create() transaction detail](../../.gitbook/assets/2-TxOverview.png)
 
 If you like, you can expand the input data tab for a human-readable representation:
 
-![Human-readable input](../../.gitbook/assets/3-txinputs.png)
+![Human-readable input](../../.gitbook/assets/3-TxInputs.png)
 
 However, what we need is the _encoded_ version. To get that, scroll down into the call tree and click on the \[CREATE] line:
 
-![Source code for the create() operation](../../.gitbook/assets/4-txsource.png)
+![Source code for the create() operation](../../.gitbook/assets/4-TxSource.png)
 
 Now click "View in Debugger":
 
-![Debugger view](../../.gitbook/assets/5-txinput.png)
+![Debugger view](../../.gitbook/assets/5-TxInput.png)
 
 The code we want  is in the "\[INPUT]" section. See that giant block of bytecode? We need to find the constructor arguments in all that. Luckily, there's an easy way to do it.
 
 We know the first argument to a Balancer factory create is the Vault, and that the constructor arguments are at the end of the input data. So if we find the last occurrence of "\<Vault address>," we know the constructor arguments are everything from that point on.
 
-They are sometimes preceeded by the code "0033," but not always. So, search for this string:
+They are sometimes preceded by the code "0033," but not always. So, search for this string:
 
 `0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000ba12222222228d8ba445958a75a0704d566bf2c8`
 

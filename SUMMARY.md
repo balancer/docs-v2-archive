@@ -1,25 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
-
-## Getting Started
-
-* [FAQs](getting-started/faqs/README.md)
-  * [V2 in a Nutshell](getting-started/faqs/v2-in-a-nutshell.md)
-  * [V1 ➝ V2 Migration](getting-started/faqs/v1-to-v2-migration.md)
-  * [Trading](getting-started/faqs/trading.md)
-  * [Liquidity](getting-started/faqs/liquidity.md)
-  * [Liquidity Mining](getting-started/faqs/liquidity-mining.md)
-  * [Fees](getting-started/faqs/fees.md)
-  * [Governance](getting-started/faqs/governance.md)
-  * [The Vault](getting-started/faqs/the-vault.md)
-  * [Pools and LBPs](getting-started/faqs/pools-and-lbps.md)
-  * [Asset Managers](getting-started/faqs/asset-managers.md)
-  * [Oracles](getting-started/faqs/oracles.md)
-  * [About Balancer Protocol and Labs](getting-started/faqs/about-balancer-protocol-and-labs.md)
-* [Walkthroughs](getting-started/walkthroughs/README.md)
-  * [Trade](getting-started/walkthroughs/trading.md)
-  * [Invest](getting-started/walkthroughs/invest.md)
+* [Developer Docs](https://dev.balancer.fi/)
 
 ## Products
 
@@ -30,60 +12,88 @@
   * [MetaStable Pools](products/balancer-pools/metastable-pools.md)
   * [Liquidity Bootstrapping Pools (LBPs)](products/balancer-pools/liquidity-bootstrapping-pools-lbps.md)
   * [Managed Pools](products/balancer-pools/managed-pools.md)
+  * [Boosted Pools](products/balancer-pools/boosted-pools.md)
   * [Custom Pools](products/balancer-pools/custom-pools.md)
-* [Merkle Orchard](products/merkle-orchard.md)
+* [Oracles](products/oracles.md)
+* [Smart Order Router](products/smart-order-router.md)
+* [Merkle Orchard](products/merkle-orchard/README.md)
+  * [Claiming Tokens](products/merkle-orchard/claiming-tokens.md)
+  * [Creating Distributions](products/merkle-orchard/creating-distributions.md)
+* [Balancer CoW Protocol](products/balancer-cow-protocol.md)
 
 ## Concepts
 
 * [Math](concepts/math/README.md)
   * [Weighted Math](concepts/math/weighted-math.md)
   * [Stable Math](concepts/math/stable-math.md)
+* [Fees](concepts/fees.md)
 * [Features](concepts/features/README.md)
-  * [Fees](concepts/features/fees.md)
   * [Flash Loans](concepts/features/flash-loans.md)
   * [Asset Managers](concepts/features/asset-managers.md)
-* [Governance](concepts/governance/README.md)
-  * [BAL Token](concepts/governance/bal-token.md)
-  * [Governable Protocol Fees](concepts/governance/governable-protocol-fees.md)
-  * [Governance Process](concepts/governance/governance-process/README.md)
-    * [RFC/Proposal Forum Post Template](concepts/governance/governance-process/rfc-proposal-forum-post-template.md)
-  * [Snapshot](concepts/governance/snapshot.md)
-  * [Multisig](concepts/governance/multisig.md)
-* [Security](concepts/security/README.md)
-  * [Audits](concepts/security/audits.md)
-  * [Bug Bounties](concepts/security/bug-bounties.md)
-  * [Emergency Pause](concepts/security/emergency-pause.md)
 
-## Governance Initiatives <a href="gov-initiatives" id="gov-initiatives"></a>
+## Ecosystem
 
+* [Governance](ecosystem/governance/README.md)
+  * [Governance Process](ecosystem/governance/governance-process/README.md)
+    * [RFC/Proposal Forum Post Template](ecosystem/governance/governance-process/rfc-proposal-forum-post-template.md)
+  * [BAL Governance Token](ecosystem/governance/bal-governance-token.md)
+  * [Snapshot](ecosystem/governance/snapshot.md)
+  * [Multisig](ecosystem/governance/multisig/README.md)
+    * [Other DAO Multisigs](ecosystem/governance/multisig/other-dao-multisigs.md)
+  * [Governable Protocol Fees](ecosystem/governance/governable-protocol-fees.md)
+* [Community](ecosystem/community/README.md)
+  * [Ballers](ecosystem/community/ballers.md)
+  * [Grants](ecosystem/community/grants.md)
+* [veBAL and Gauges](ecosystem/vebal-and-gauges/README.md)
+  * [veBAL](ecosystem/vebal-and-gauges/vebal/README.md)
+    * [How veBAL Works](ecosystem/vebal-and-gauges/vebal/how-vebal-works.md)
+    * [How To Use veBAL](ecosystem/vebal-and-gauges/vebal/how-to-use-vebal.md)
+  * [Gauges](ecosystem/vebal-and-gauges/gauges/README.md)
+    * [How Gauges Work](ecosystem/vebal-and-gauges/gauges/how-gauges-work.md)
+    * [How To Use Gauges](ecosystem/vebal-and-gauges/gauges/how-to-use-gauges.md)
+
+## Security
+
+* [Audits](security/audits.md)
+* [Bug Bounties](security/bug-bounties.md)
+* [Emergency Pause](security/emergency-pause.md)
+
+## Governance Initiatives <a href="#gov-initiatives" id="gov-initiatives"></a>
+
+* [BAL for Gas](gov-initiatives/bal-for-gas.md)
 * [Liquidity Mining](gov-initiatives/liquidity-mining/README.md)
   * [Liquidity Mining Estimates API](gov-initiatives/liquidity-mining/liquidity-mining-estimates-api.md)
-* [BAL for Gas](gov-initiatives/bal-for-gas.md)
+
+## Getting Started
+
+* [FAQs](getting-started/faqs/README.md)
+  * [Swapping](getting-started/faqs/swapping.md)
+  * [Liquidity](getting-started/faqs/liquidity.md)
+  * [Liquidity Mining](getting-started/faqs/liquidity-mining.md)
+  * [Fees](getting-started/faqs/fees.md)
+  * [Governance](getting-started/faqs/governance.md)
+  * [The Vault](getting-started/faqs/the-vault.md)
+  * [Pools and LBPs](getting-started/faqs/pools-and-lbps.md)
+  * [Asset Managers](getting-started/faqs/asset-managers.md)
+  * [Oracles](getting-started/faqs/oracles.md)
+  * [About Balancer Protocol and Labs](getting-started/faqs/about-balancer-protocol-and-labs.md)
+  * [V2 in a Nutshell](getting-started/faqs/v2-in-a-nutshell.md)
+  * [V1 ➝ V2 Migration](getting-started/faqs/v1-to-v2-migration.md)
+* [Walkthroughs](getting-started/walkthroughs/README.md)
+  * [Trade](getting-started/walkthroughs/trading.md)
+  * [Invest](getting-started/walkthroughs/invest.md)
 
 ## Community
 
-* [Discord](https://discord.com/invite/ARJWaeF)
-* [Forums](https://forum.balancer.finance)
+* [Discord](https://discord.balancer.fi)
+* [Forums](https://forum.balancer.finance/)
 * [Medium](https://medium.com/balancer-protocol)
 * [Dune Analytics](https://duneanalytics.com/projects/balancer)
 
-## Developers
+## Developers (Deprecated) <a href="#developers" id="developers"></a>
 
-* [Smart Contracts](developers/smart-contracts/README.md)
-  * [APIs](developers/smart-contracts/apis/README.md)
-    * [Vault](developers/smart-contracts/apis/vault.md)
-    * [Pools](developers/smart-contracts/apis/pools.md)
-    * [Asset Managers](developers/smart-contracts/apis/asset-managers.md)
-  * [Events](developers/smart-contracts/events.md)
-  * [Deployments](developers/smart-contracts/deployment-addresses.md)
-  * [UML Diagrams](developers/smart-contracts/uml-diagrams.md)
+* [⛔ !!! DEPRECATED !!! ⛔](developers/deprecated.md)
 * [Guides](developers/guides/README.md)
-  * [Single Swaps](developers/guides/single-swaps.md)
-  * [Batch Swaps](developers/guides/batch-swaps.md)
-  * [Flash Swaps](developers/guides/flash-swaps.md)
-  * [Pool Creation](developers/guides/pool-creation.md)
   * [Pool Verification](developers/guides/pool-verification.md)
-* [Subgraph](developers/subgraph.md)
 * [Smart Order Router V2](developers/smart-order-router.md)
-* [Error Codes](developers/error-codes.md)
 * [GitHub](https://github.com/balancer-labs/)

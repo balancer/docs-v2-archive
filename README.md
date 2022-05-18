@@ -1,10 +1,29 @@
+---
+cover: .gitbook/assets/welcomeBanner.png
+coverY: 0
+---
+
 # Welcome
 
-Balancer is an automated portfolio manager, liquidity provider, and price sensor.
+## Introduction
 
-Balancer turns the concept of an index fund on its head: instead of a paying fees to portfolio managers to rebalance your portfolio, you collect fees from traders, who rebalance your portfolio by following arbitrage opportunities.
+Balancer is a community-driven protocol, automated portfolio manager, liquidity provider, and price sensor that empowers decentralized exchange and the automated portfolio management of tokens on the Ethereum blockchain and other EVM compatible systems.
 
-Balancer is based on an [N-dimensional invariant surface](https://balancer.finance/whitepaper/) which is a generalization of the constant product formula described by Vitalik Buterin and proven viable by the popular Uniswap dapp.
+Balancer Pools contain two or more tokens that traders can swap between. Liquidity Providers put their tokens in the pools in order to collect swap fees.&#x20;
 
-Balancer V2 brings powerful new features to slash gas costs, super-charge capital efficiency, unlock arbitrage with zero-token starting capital, and open the door to custom AMMs.
+Balancer adopts powerful features to slash gas costs, super-charge capital efficiency, unlock arbitrage with zero-token starting capital, and open the door to custom AMMs.
 
+## Index Funds: Revolutionized
+
+Pools with high token-counts are like index funds, allowing users to have access to broad exposure to a variety of tokens. Where Balancer differs from the traditional notion of an index fund, however, is in the fees.&#x20;
+
+**Instead of paying fees** to have a broker rebalance the pool, the **pools collect fees** as they're continuously rebalanced by traders making swaps. Furthermore, high token-count pools have the advantage of having many token pairs, creating additional opportunities to collect trading fees.
+
+Balancer's WeightedPools are based on an [N-dimensional invariant surface](https://balancer.finance/whitepaper/), a generalization of the constant product formula described by Vitalik Buterin.
+
+## Serving Everyone
+
+With this mechanism, needs of both Liquidity Providers and Traders are served:
+
+* Liquidity Providers collect trading fees, while the their portfolio is continuously rebalanced
+* Traders gain access to an open, decentralized exchange that never closes, allowing them to swap what and when they like for low fees

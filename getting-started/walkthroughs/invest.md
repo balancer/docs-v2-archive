@@ -4,25 +4,25 @@
 
 ### Connect Wallet
 
-![](../../.gitbook/assets/export_lp.jpg)
+![](../../.gitbook/assets/export\_lp.jpg)
 
 Click one of the "Connect wallet" buttons, click MetaMask, and connect your desired wallet in the extension popup.
 
 ### Pick your pool
 
-![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.10.57-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-10 at 9.10.57 PM.png>)
 
 ****
 
 **Filter pools by desired assets. In this example, we'll use WETH and BAL**
 
-![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.11.40-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-10 at 9.11.40 PM.png>)
 
-![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.11.54-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-10 at 9.11.54 PM.png>)
 
 Click on the desired pool to navigate to the pool management page
 
-![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.12.13-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-10 at 9.12.13 PM.png>)
 
 ### Select your amount
 
@@ -34,33 +34,33 @@ If your "Custom amounts" join has significant price impact, it may be cheaper to
 
 To invest a single asset, choose "Custom amounts".
 
-![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.12.32-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-10 at 9.12.32 PM.png>)
 
 ### Approve token(s)
 
-![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.12.52-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-10 at 9.12.52 PM.png>)
 
 ### Click "Invest" to add tokens to the pool
 
-![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.13.47-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-10 at 9.13.47 PM.png>)
 
-![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.14.46-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-10 at 9.14.46 PM.png>)
 
 ### **Withdrawing Liquidity**
 
 ### Click on the pool in "My V2 Investments"
 
-![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.25.24-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-10 at 9.25.24 PM.png>)
 
 ### Click on the "Withdraw" Tab
 
-![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.24.23-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-10 at 9.24.23 PM.png>)
 
 ### Select the amount you wish to withdraw
 
 You can choose to withdraw a subset of tokens or all of them. If you decide to withdraw only one toke you can withdraw up to the whole value of your investment. In that case, the app will automatically swap other tokens to the one you're withdrawing. Eg it will sell the WETH in that pool and buy the BAL you're requesting. To withdraw a single asset, choose "Custom amounts".
 
-![](../../.gitbook/assets/screen-shot-2021-05-10-at-9.26.26-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2021-05-10 at 9.26.26 PM.png>)
 
 ### Click to withdraw tokens from the pool
 

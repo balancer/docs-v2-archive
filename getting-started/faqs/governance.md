@@ -2,13 +2,13 @@
 
 ## Who is Balancer Governance and what do they do?
 
-Balancer Governance is the heart and brain of Balancer Protocol. Anyone who holds a BAL token becomes part of the Balancer Governance. The more tokens you have, the stronger your voice is. Governance makes decisions about new features, directions of where the Balancer Protocol should go and looks over the Balancer Community. The Governance is the ultimate decision-body for Balancer Protocol, no one can override the Governance’s vote result. 
+Balancer Governance is the heart and brain of Balancer Protocol. Anyone who holds a BAL token becomes part of the Balancer Governance. The more tokens you have, the stronger your voice is. Governance makes decisions about new features, directions of where the Balancer Protocol should go and looks over the Balancer Community. The Governance is the ultimate decision-body for Balancer Protocol, no one can override the Governance’s vote result.&#x20;
 
 The main responsibilities of Balancer Governance are voting on new proposals on changes to the Balancer community and deciding on whether/how the protocol fees will be used.
 
 ## Does Balancer have a token?
 
-Yes, the [Balancer Governance Token](../../concepts/governance/bal-token.md) (BAL) gives holders decision making power over the protocol. 
+Yes, the [Balancer Governance Token](../../ecosystem/governance/bal-governance-token.md) (BAL) gives holders decision making power over the protocol.&#x20;
 
 | Network  | BAL contract Address                                                                                                        |
 | -------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -36,10 +36,10 @@ Votes happen when there is a proposal to vote on; they are not regularly schedul
 
 ## How do I make a proposal?
 
-If you have an idea about how to improve Balancer you can make a proposal on our [Forum](https://forum.balancer.finance) or in #governance [Discord Channel](https://discord.gg/fuxpBzvad9). As the proposal gets traction in the community, it will be debated and then moved to a vote. 
+If you have an idea about how to improve Balancer you can make a proposal on our [Forum](https://forum.balancer.finance/) or in #governance [Discord Channel](https://discord.gg/fuxpBzvad9). As the proposal gets traction in the community, it will be debated and then moved to a vote.&#x20;
 
-When proposing, be sure to explain the problem, the solution, consider any implications, dependencies etc. Don't be upset if you don't get a lot of enthusiasm at first - incorporate the feedback and post an improved proposal. It is a process, so it may take some time, but thanks to it - we can make sure that it's the best version we can create. 
+When proposing, be sure to explain the problem, the solution, consider any implications, dependencies etc. Don't be upset if you don't get a lot of enthusiasm at first - incorporate the feedback and post an improved proposal. It is a process, so it may take some time, but thanks to it - we can make sure that it's the best version we can create.&#x20;
 
 ## Is BAL on Tron?
 
-No, there is no token on Tron affiliated with the Balancer Protocol. The token in question is affiliated with a phishing site. 
+No, there is no token on Tron affiliated with the Balancer Protocol. The token in question is affiliated with a phishing site.&#x20;

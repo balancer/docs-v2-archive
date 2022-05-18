@@ -18,6 +18,6 @@ Instead of worrying about the accounting groundwork, pool designers only need to
 
 ### **Element.fi**
 
-> _“We use Balancer V2’s custom trading curve functionality to enable an invariant that works really well for assets that converge in value over time. Plugging into the V2 ecosystem lets users be able to purchase and sell fixed yield assets from any other major asset, building on the existing liquidity Balancer has.” — _Will Villanueva, CEO & Co-Founder of [Element Finance](https://element.fi)
+> _“We use Balancer V2’s custom trading curve functionality to enable an invariant that works really well for assets that converge in value over time. Plugging into the V2 ecosystem lets users be able to purchase and sell fixed yield assets from any other major asset, building on the existing liquidity Balancer has.” —_ Will Villanueva, CEO & Co-Founder of [Element Finance](https://element.fi/)
 
 By focusing on the math, the Element team was able to create pools that use their Convergent Curve equation and plug right into Balancer's framework. The Element Pools handle the calculations while the Balancer Vault ensures that all tokens are properly accounted for. To learn more, check out [Element's documentation](https://docs.element.fi/developers/element-smart-contracts/custom-balancer-curve/convergent-curve-pool).

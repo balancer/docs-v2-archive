@@ -1,5 +1,9 @@
 # Oracles
 
+{% hint style="info" %}
+Looking for the Oracle API? Check out [this page](https://dev.balancer.fi/references/contracts/apis/pools/weightedpool2tokens) in our Developer Docs!
+{% endhint %}
+
 ## Overview
 
 Some Balancer pools have oracle functionality, which allows them to be price sensors for their tokens as well as their own Balancer Pool Tokens (BPTs). These oracles can be used in two ways:

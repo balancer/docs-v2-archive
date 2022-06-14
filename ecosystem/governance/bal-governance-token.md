@@ -10,12 +10,13 @@ As Balancer Protocol moves to decentralize and diversify its governance, it will
 
 ## Contract Address
 
-| BAL contract Address | Network                                                                                                                     |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Ethereum             | [0xba100000625a3754423978a60c9317c58a424e3d](https://etherscan.io/address/0xba100000625a3754423978a60c9317c58a424e3d)       |
-| Kovan                | [0x41286Bb1D3E870f3F750eB7E1C25d7E48c8A1Ac7](https://kovan.etherscan.io/address/0x41286Bb1D3E870f3F750eB7E1C25d7E48c8A1Ac7) |
-| Polygon              | [0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3](https://polygonscan.com/address/0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3)    |
-| Arbitrum             | [0x040d1EdC9569d4Bab2D15287Dc5A4F10F56a56B8](https://arbiscan.io/address/0x040d1EdC9569d4Bab2D15287Dc5A4F10F56a56B8)        |
+| BAL contract Address | Network                                                                                                                      |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Ethereum             | [0xba100000625a3754423978a60c9317c58a424e3d](https://etherscan.io/address/0xba100000625a3754423978a60c9317c58a424e3d)        |
+| Goerli               | [0xfa8449189744799ad2ace7e0ebac8bb7575eff47](https://goerli.etherscan.io/address/0xfa8449189744799ad2ace7e0ebac8bb7575eff47) |
+| Kovan                | [0x41286Bb1D3E870f3F750eB7E1C25d7E48c8A1Ac7](https://kovan.etherscan.io/address/0x41286Bb1D3E870f3F750eB7E1C25d7E48c8A1Ac7)  |
+| Polygon              | [0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3](https://polygonscan.com/address/0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3)     |
+| Arbitrum             | [0x040d1EdC9569d4Bab2D15287Dc5A4F10F56a56B8](https://arbiscan.io/address/0x040d1EdC9569d4Bab2D15287Dc5A4F10F56a56B8)         |
 
 ## Supply and Distribution
 

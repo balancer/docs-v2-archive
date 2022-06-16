@@ -78,6 +78,26 @@ It’s worth highlighting that the multisig does **not** have custody of (nor co
 * [Mike B](https://twitter.com/DefiGod5) (Baller)
 * [zekraken](https://twitter.com/The\_Krake) (Baller)
 {% endtab %}
+
+{% tab title="Optimism" %}
+## Address
+
+[0x043f9687842771b3dF8852c1E9801DCAeED3f6bc](https://optimistic.etherscan.io/address/0x043f9687842771b3dF8852c1E9801DCAeED3f6bc)
+
+## Signers
+
+* [Alexander Lange](https://twitter.com/AlexLangeVC) (Inflection)
+* [Ernesto](https://mobile.twitter.com/eboadom) (Bored Ghosts Developing)
+* [Solarcurve](https://twitter.com/0xsolarcurve) (Baller)
+* [Fabien](https://twitter.com/bonustrack87) (Snapshot Labs)
+* [David Garai](https://twitter.com/davgarai) (Tempus)
+* [Kain Warwick](https://twitter.com/kaiynne) (Synthetix)
+* [Evan](https://twitter.com/sausage\_crypto) (Copper Launch)
+* [Mariano Conti](https://twitter.com/nanexcool) (Ethereum)
+* [Stefan](https://twitter.com/StefanDGeorge) (Gnosis)
+* [Trent McConaghy](https://twitter.com/trentmc0) (Ocean Protocol)
+* [0xMaki](https://twitter.com/0xMaki)
+{% endtab %}
 {% endtabs %}
 
 

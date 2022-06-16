@@ -35,12 +35,12 @@ It’s worth highlighting that the multisig does **not** have custody of (nor co
 ## Signers
 
 * [Alexander Lange](https://twitter.com/AlexLangeVC) (Inflection)
-* [Ash Egan](https://twitter.com/AshAEgan) (Accomplice)
+* [Ernesto](https://mobile.twitter.com/eboadom) (Bored Ghosts Developing)
 * [Solarcurve](https://twitter.com/0xsolarcurve) (Baller)
 * [Fabien](https://twitter.com/bonustrack87) (Snapshot Labs)
 * [David Garai](https://twitter.com/davgarai) (Tempus)
 * [Kain Warwick](https://twitter.com/kaiynne) (Synthetix)
-* [Kevin Owocki](https://twitter.com/owocki) (Gitcoin)
+* [Evan](https://twitter.com/sausage\_crypto) (Copper Launch)
 * [Mariano Conti](https://twitter.com/nanexcool) (Ethereum)
 * [Stefan](https://twitter.com/StefanDGeorge) (Gnosis)
 * [Trent McConaghy](https://twitter.com/trentmc0) (Ocean Protocol)

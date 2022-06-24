@@ -22,7 +22,11 @@ As Balancer Protocol moves to decentralize and diversify its governance, it will
 
 ### Supply
 
-The maximum total supply of BAL tokens is capped at 100M; however, this does NOT necessarily mean that this cap will ever be reached. BAL token holders have the authority to decide if the distribution should end before hitting the cap.&#x20;
+When BAL was launched, the inflation started as a constant 145,000 BAL per week. At the launch of the veBAL system, however, a halving schedule was introduced: every 4 years, the inflation should be halved, with gradual steps every year starting one year after the launch of the new tokenomics system. This means the final BAL supply will be about **94,000,000 BAL.** Detailed calculations can be seen on [this public spreadsheet](https://docs.google.com/spreadsheets/d/1FY0gi596YWBOTeu\_mrxhWcdF74SwKMNhmu0qJVgs0KI/).
+
+This new inflation schedule is immutable and follow the below chart:
+
+![](<../../.gitbook/assets/image (7).png>)
 
 ### Distribution
 

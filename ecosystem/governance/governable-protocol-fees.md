@@ -33,3 +33,4 @@ We invite you to join our Discord and Forums to take part in the discussion over
 * Buy a decentralized insurance policy
 * Lend them on an external protocol
 * Pay them directly to Balancer Governors
+* Fund Service Providers (SPs) under the [Operating Framework for Balancer DAO](https://forum.balancer.fi/t/bip-1-operating-framework-for-balancer-dao/3237)

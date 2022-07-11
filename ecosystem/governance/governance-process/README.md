@@ -10,7 +10,7 @@ This page outlines the Balancer Governance Process from Request for Comment \[RF
 2. Facilitate preliminary discussion
 3. Update and refine RFC to become a Proposal
 4. Snapshot vote
-5. Execute result or try again in 30 days
+5. Execute result or try again (no minimal cool-off period defined, guideline is 30 days)
 
 ## Outline
 

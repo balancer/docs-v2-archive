@@ -1,4 +1,11 @@
-# Liquidity Mining
+# Liquidity Mining (Legacy)
+
+
+
+{% hint style="danger" %}
+The liquidity mining initiative as described here was terminated in April 2022 after the launch of the veBAL system.\
+This FAQ is kept in the docs to reference the legacy system.
+{% endhint %}
 
 ## How does Liquidity Mining on Balancer work?
 

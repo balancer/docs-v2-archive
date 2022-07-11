@@ -57,7 +57,7 @@ Clients can update the real time estimate by increasing the `current_estimate` r
 ### Notes <a href="#notes" id="notes"></a>
 
 * Estimates are approximate, as they do not account for liquidity added/removed since the last time the script was run.
-* The API only provides estimates for weeks that have not yet been finalized; as soon as the estimator script detects that the previous weeks claims have been [made available](https://ipfs.fleek.co/ipns/balancer-team-bucket.storage.fleek.co/balancer-claim/snapshot), the estimates for that week are removed from the underlying dataset.
+* The API only provides estimates for weeks that have not yet been finalized; as soon as the estimator script detects that the previous weeks claims have been made available, the estimates for that week are removed from the underlying dataset.
 
 [\
 ](https://balancer.gitbook.io/balancer/core-concepts/bal-liquidity-mining/exchange-and-reward-listing)

@@ -2,7 +2,7 @@
 
 ## Claiming From The App
 
-Users can claim tokens from the button on the top right of [app.balancer.fi](https://app.balancer.fi/#/), [polygon.balancer.fi](https://polygon.balancer.fi/#/), and [arbitrum.balancer.fi](claiming-tokens.md#claiming-from-the-contract-directly).
+Users can claim tokens from the button on the top right of [app.balancer.fi,](https://app.balancer.fi/#/claim) [polygon.balancer.fi](https://polygon.balancer.fi/#/claim), and [arbitrum.balancer.fi](https://arbitrum.balancer.fi/#/claim).
 
 ![](<../../.gitbook/assets/Screen Shot 2021-10-18 at 12.18.26 PM.png>) ![](<../../.gitbook/assets/Screen Shot 2021-10-18 at 12.19.05 PM (1).png>)
 

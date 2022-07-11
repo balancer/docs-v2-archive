@@ -36,7 +36,7 @@ Votes happen when there is a proposal to vote on; they are not regularly schedul
 
 ## How do I make a proposal?
 
-If you have an idea about how to improve Balancer you can make a proposal on our [Forum](https://forum.balancer.finance/) or in #governance [Discord Channel](https://discord.gg/fuxpBzvad9). As the proposal gets traction in the community, it will be debated and then moved to a vote.&#x20;
+If you have an idea about how to improve Balancer you can make a proposal on our [Forum](https://forum.balancer.finance/) or in #governance [Discord Channel](https://discord.balancer.fi/). As the proposal gets traction in the community, it will be debated and then moved to a vote.&#x20;
 
 When proposing, be sure to explain the problem, the solution, consider any implications, dependencies etc. Don't be upset if you don't get a lot of enthusiasm at first - incorporate the feedback and post an improved proposal. It is a process, so it may take some time, but thanks to it - we can make sure that it's the best version we can create.&#x20;
 

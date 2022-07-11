@@ -7,7 +7,7 @@ coverY: 0
 
 ## Overview
 
-The Vault is the core of Balancer; it is a smart contract that holds and manages all  tokens in each Balancer pool. It is also the portal through which most Balancer operations (swaps/joins/exits) take place.&#x20;
+The Vault is the core of Balancer; it is a smart contract that holds and manages all tokens in each Balancer pool. It is also the portal through which most Balancer operations (swaps/joins/exits) take place.&#x20;
 
 ## Separating Token Accounting and Pool Logic
 
@@ -15,7 +15,7 @@ The Vault architecture separates the token accounting and management from the po
 
 This architecture brings different pool designs under the same umbrella; the Vault is agnostic to pool math and can accommodate any system that satisfies a few requirements. Anyone who comes up with a novel idea for a trading system can make a custom pool plugged directly into Balancer's existing liquidity instead of needing to build their own Decentralized Exchange.
 
-![](https://lh4.googleusercontent.com/t8-zDmfLfN8BAdC7QZDpgX8\_ZagAHhfXAMyxP4btWgBTAGg2RyXSDeHDaKyg5i1b6sjDZZYANt6ie5vAIKTIv82xH744ps30vN-q5JE8z-JBxm1ZMoXLzDrKZWBinPJxwl7FzR4I=s0)
+![](<../.gitbook/assets/vault (1).png>)
 
 ## Gas Efficient Batch Swaps
 

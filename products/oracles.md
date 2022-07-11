@@ -16,7 +16,7 @@ Some Balancer pools that have Oracle functionality are:
 * WeightedPool2Tokens
 * MetaStablePool
 
-The relevant contracts for Oracle implementation can be found [here](https://github.com/balancer-labs/balancer-v2-monorepo/tree/master/pkg/pool-utils/contracts/oracle).
+The relevant contracts for Oracle implementation can be found [here](https://github.com/balancer-labs/balancer-v2-monorepo/tree/d2794ef7d8f6d321cde36b7c536e8d51971688bd/pkg/pool-utils/contracts/oracle).
 
 ## Instantaneous Price
 

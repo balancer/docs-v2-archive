@@ -15,7 +15,7 @@ The Vault architecture separates the token accounting and management from the po
 
 This architecture brings different pool designs under the same umbrella; the Vault is agnostic to pool math and can accommodate any system that satisfies a few requirements. Anyone who comes up with a novel idea for a trading system can make a custom pool plugged directly into Balancer's existing liquidity instead of needing to build their own Decentralized Exchange.
 
-![](<../.gitbook/assets/vault (1).png>)
+![](../.gitbook/assets/vault.png)
 
 ## Gas Efficient Batch Swaps
 

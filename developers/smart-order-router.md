@@ -71,7 +71,7 @@ Step 2.3) finds the `swapAmounts` that will maximize the returns given an initia
 
 To help illustrate this, let's start with two paths (1 and 2) and initial `swapAmounts` equal to $$A_i$$ and $$A_2$$ . Remember that always the sum of the individual amounts is `targetAmountSwap`.&#x20;
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (1) (2).png>)
 
 The objective is to find a target spot price (`targetSP`) and $$A'_1$$ and $$A'_2$$ . such that:
 

@@ -43,4 +43,4 @@ The Balancer Grants Committee controls BAL emissions and assesses milestone repo
 
 ### [**Twitter**](https://twitter.com/BalancerGrants)****
 
-### ****[**Notion**](https://www.notion.so/Balancer-Community-Grants-23e562c5bc4347cd8304637bff0058e6)****
+### ****[**Notion**](https://www.notion.so/Balancer-Grants-938f1b979810427f8d903a904315da41)****

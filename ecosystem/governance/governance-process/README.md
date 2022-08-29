@@ -10,7 +10,7 @@ This page outlines the Balancer Governance Process from Request for Comment \[RF
 2. Facilitate preliminary discussion
 3. Update and refine RFC to become a Proposal
 4. Snapshot vote
-5. Execute result or try again (no minimal cool-off period defined, guideline is 30 days)
+5. Execute result
 
 ## Outline
 
@@ -49,8 +49,6 @@ Start a new conversation on the [Governance section of the forum](https://forum.
 Now that we have a proposal, we can move into a [Snapshot](https://vote.balancer.fi) vote. If you are unable to post your Proposal to Snapshot, ask for help in the Discord #governance channel.&#x20;
 
 ### Step 5: Results
-
-If the vote fails in an approve/reject vote, the guideline for a re-vote is to wait at least 30 days.&#x20;
 
 If the vote succeeds or a result has been chosen, follow through to make sure that it is properly executed. Depending on what the vote is about, it may require an action by the [Multisig](../multisig/).
 

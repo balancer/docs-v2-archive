@@ -8,7 +8,7 @@ Snapshot derives its name from taking a "snapshot" of the Ethereum blockchain at
 
 ## Eligibility/How to Vote
 
-In order to be eligible to [vote on Balancer](https://snapshot.org/#/balancer) proposals, you need satisfy at least one of the following:
+In order to be eligible to [vote on Balancer](https://snapshot.org/#/balancer) proposals, you need to satisfy at least one of the following:
 
 * Hold BAL tokens
 * Hold BPT tokens for pools that have BAL in them

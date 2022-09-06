@@ -34,4 +34,6 @@ On Ethereum, a user's claimable BAL also depends on their amount of veBAL. This 
 
 ## How are Gauges Deployed for a Pool?
 
-Governance has the power to authorize accounts for Gauge Deployment.
+Governance has the power to authorize accounts for gauge deployment. Projects interested in proposing pools eligible for voting, please refer to the [instructions on the community forum](https://forum.balancer.fi/t/instructions-overview/2674).&#x20;
+
+Please note that Balancer [governance approved](https://snapshot.org/#/balancer.eth/proposal/0x63fab7ab9ef5b9579dabb82058b8ea309e39c766d435438b55fff8db7c1f69fd) an Emergency subDAO, that empowers a small group to “kill” pools and gauges in the event of malicious activity and/or potential loss of funds. Ultimately, veBAL holders have the collective power over gauges activity, being able to kill gauges at anytime through governance regular voting process.

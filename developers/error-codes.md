@@ -6,7 +6,7 @@ description: >-
 
 # Error Codes
 
-All error codes for the Balancer V2 core contracts are defined in the [`BalancerErrors`](https://github.com/balancer-labs/balancer-core-v2/blob/master/contracts/lib/helpers/BalancerErrors.sol) contract.
+All error codes for the Balancer V2 core contracts are defined in the [`BalancerErrors`](https://github.com/balancer-labs/balancer-v2-monorepo/blob/master/pkg/interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol) contract.
 
 _Note that these text mappings correspond to the latest source code, so some error codes may differ from the deployed versions._
 

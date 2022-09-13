@@ -16,4 +16,4 @@ Examples of incompatible tokens include but are not limited to:
     * Inflationary tokens
     * Tokens that charge transfer fees
 * Proxy tokens with multiple entrypoints
-* Tokens with `transfer` callbacks
+* Tokens with callback behavior in the `transferFrom` function (like with ERC777 tokens)

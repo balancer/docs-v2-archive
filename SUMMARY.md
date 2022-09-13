@@ -62,6 +62,7 @@
 * [Audits](security/audits.md)
 * [Bug Bounties](security/bug-bounties.md)
 * [Emergency Pause](security/emergency-pause.md)
+* [Token Compatibility](security/token-compatibility.md)
 
 ## Governance Initiatives <a href="#gov-initiatives" id="gov-initiatives"></a>
 

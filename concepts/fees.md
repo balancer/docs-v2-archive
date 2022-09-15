@@ -6,7 +6,9 @@ There are a few different types of fees on Balancer, each collected to support a
 
 ## Swap Fees
 
-Traders pay swap fees when they trade with a pool. The fees ultimately go to Liquidity Providers in exchange for them putting their tokens in the pool to facilitate trades. Trade fees are collected at the time of a swap, and it goes directly into the pool, growing the pool's balance. For a trade with a given $$inputToken$$ and $$outputToken$$, the amount collected by the pool as a fee is $$Amount_{fee} = Amount_{inputToken} * swapFee$$. As the pool collects fees, **Balancer Pool Tokens automatically collect fees** because they represent a **proportional share of the pool.**&#x20;
+Traders pay swap fees when they trade with a pool. For pools that inherit from BasePool, these fees can be customized with a minimum value of 0.0001% and a maximum value of 10%.&#x20;
+
+The fees ultimately go to Liquidity Providers in exchange for them putting their tokens in the pool to facilitate trades. Trade fees are collected at the time of a swap, and it goes directly into the pool, growing the pool's balance. For a trade with a given $$inputToken$$ and $$outputToken$$, the amount collected by the pool as a fee is $$Amount_{fee} = Amount_{inputToken} * swapFee$$. As the pool collects fees, **Balancer Pool Tokens automatically collect fees** because they represent a **proportional share of the pool.**&#x20;
 
 ### Example
 

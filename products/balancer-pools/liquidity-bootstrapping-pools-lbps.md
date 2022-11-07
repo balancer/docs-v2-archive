@@ -4,6 +4,12 @@
 
 Liquidity Bootstrapping Pools (LBPs) are pools that can dynamically change token weighting (e.g 1/99 to 99/1 for TokenA/TokenB). LBPs use [Weighted Math ](../../concepts/math/weighted-math.md)with time-dependent weights. The starting and end weights and times are selected by the pool owner, who also has the power to pause swaps.&#x20;
 
+### Mental Model
+
+You can think of the starting price of your LBP as the ceiling you would want to set for the token sale. This may seem counterintuitive, but since LBPs work differently than other token sales, your starting price should be set much higher than what you believe is the fair price.
+
+This does not mean you are trying to sell the token above what it is worth. Setting a high starting price allows the changing pool weights of your LBP to make their full impact, lowering the price progressively until market equilibrium is reached. Unlike older token sale models, such as bonding curves, users are disincentivized to buy early and instead benefit from waiting for the price to decrease until it reaches a level they believe is fair.&#x20;
+
 ## Advantages
 
 ### Sell Pressure

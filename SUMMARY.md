@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [Protocol Overview](README.md)
 * [Developer Docs](https://dev.balancer.fi/)
 
 ## Products
@@ -10,6 +10,7 @@
   * [Weighted Pools](products/balancer-pools/weighted-pools.md)
   * [Stable Pools](products/balancer-pools/stable-pools.md)
   * [MetaStable Pools](products/balancer-pools/metastable-pools.md)
+  * [Composable Stable Pools](products/balancer-pools/composable-stable-pools.md)
   * [Liquidity Bootstrapping Pools (LBPs)](products/balancer-pools/liquidity-bootstrapping-pools-lbps.md)
   * [Managed Pools](products/balancer-pools/managed-pools.md)
   * [Boosted Pools](products/balancer-pools/boosted-pools.md)

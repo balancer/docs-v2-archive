@@ -2,7 +2,7 @@
 
 ## Overview
 
-Composable Stable Pools are designed to optimize swaps for 2 types of tokens and use [Stable Math:](../../../concepts/math/stable-math.md)
+Composable Stable Pools are designed to optimize swaps for 2 types of tokens and use [Stable Math:](../../concepts/math/stable-math.md)
 
 1\) **pegged tokens**- tokens that trade near 1:1, such as two stablecoins of the same currency (eg: DAI, USDC, USDT), or synthetic assets (eg: renBTC, sBTC, WBTC)
 
@@ -29,7 +29,7 @@ Currently, the only flavour in the existence of Stable pools is [`ComposableStab
 
 **Phantom BPT Pools** are pools that mint the BPT tokens at the time of pool creation. This helps with gas reduction because instead of using the mint/burn mechanism to join a pool, it uses a swap (or more likely a batch swap) and saves on gas. By using Phantom BPT, it is possible to nest BPTs inside other pools and swap efficiently through the nested structures.
 
-The combination of nesting with [Balancer's Vault architecture ](../../the-vault.md)allows for a fluid route for swaps. Instead of requiring multiple pools that fractionalize liquidity, trades can flow through an interconnected pathway within pool constructs. This allows capital-efficient Composable Stable Pools, such as stETH/ETH, to slot inside additional pool types.
+The combination of nesting with [Balancer's Vault architecture ](../the-vault.md)allows for a fluid route for swaps. Instead of requiring multiple pools that fractionalize liquidity, trades can flow through an interconnected pathway within pool constructs. This allows capital-efficient Composable Stable Pools, such as stETH/ETH, to slot inside additional pool types.
 
 ### Increased Composability
 
@@ -52,7 +52,7 @@ a) Achieve extremely **efficient swaps** by implementing the **Stable Swap Invar
 
 b) For **rate providers**: by querying/calculating exchange rates, pools can offer swaps for correlated tokens (eg: wETH/wstETH).
 
-c) Take advantage of [Composability](./#increased-composability) and combine different pools based on liquidity needs.
+c) Take advantage of [Composability](composable-stable-pools.md#increased-composability) and combine different pools based on liquidity needs.
 
 
 

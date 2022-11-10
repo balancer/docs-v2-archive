@@ -11,7 +11,6 @@
   * [Stable Pools](products/balancer-pools/stable-pools.md)
   * [MetaStable Pools](products/balancer-pools/metastable-pools.md)
   * [Composable Stable Pools](products/balancer-pools/composable-stable-pools.md)
-    * [Composable Stable Pools Use Cases](products/balancer-pools/composable-stable-pools/composable-stable-pools-use-cases.md)
   * [Liquidity Bootstrapping Pools (LBPs)](products/balancer-pools/liquidity-bootstrapping-pools-lbps.md)
   * [Managed Pools](products/balancer-pools/managed-pools.md)
   * [Boosted Pools](products/balancer-pools/boosted-pools.md)

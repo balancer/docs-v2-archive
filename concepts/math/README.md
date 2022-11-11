@@ -10,4 +10,4 @@ Different pool types utilize different underlying equations relevant to their sp
   * [Managed Pools](../../products/balancer-pools/managed-pools.md)
 * [Stable Math](stable-math.md)
   * [Stable Pools](broken-reference)
-  * [MetaStable Pools](../../products/balancer-pools/metastable-pools.md)
+  * [MetaStable Pools](broken-reference)

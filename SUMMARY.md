@@ -8,7 +8,6 @@
 * [The Vault](products/the-vault.md)
 * [Balancer Pools](products/balancer-pools/README.md)
   * [Weighted Pools](products/balancer-pools/weighted-pools.md)
-  * [MetaStable Pools](products/balancer-pools/metastable-pools.md)
   * [Composable Stable Pools](products/balancer-pools/composable-stable-pools.md)
   * [Liquidity Bootstrapping Pools (LBPs)](products/balancer-pools/liquidity-bootstrapping-pools-lbps.md)
   * [Managed Pools](products/balancer-pools/managed-pools.md)

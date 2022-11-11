@@ -23,7 +23,7 @@ Designed for general cases, including tokens that don't necessarily have price c
 
 Ideal for soft-pegged tokens with strong correlation (ex. DAI/USDC/USDT).
 
-### [MetaStable Pools](metastable-pools.md)
+### [MetaStable Pools](broken-reference)
 
 Built for non-pegged tokens that maintain correlation but may slowly diverge over time, such as derivatives (ex. stETH/WETH).
 

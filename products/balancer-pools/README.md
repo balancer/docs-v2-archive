@@ -19,13 +19,9 @@ Some pools (WeightedPool2Tokens and MetaStable Pools) have optional Oracle funct
 
 Designed for general cases, including tokens that don't necessarily have price correlation (ex. DAI/WETH).
 
-### [Stable Pools](broken-reference)
+### [Composable Stable Pools](composable-stable-pools.md)
 
-Ideal for soft-pegged tokens with strong correlation (ex. DAI/USDC/USDT).
-
-### [MetaStable Pools](broken-reference)
-
-Built for non-pegged tokens that maintain correlation but may slowly diverge over time, such as derivatives (ex. stETH/WETH).
+Ideal for soft-pegged tokens with strong correlation (ex. DAI/USDC/USDT) and/or non-pegged tokens that maintain correlation but may slowly diverge over time, such as derivatives (ex. stETH/WETH).
 
 ### [Liquidity Bootstrapping Pools](liquidity-bootstrapping-pools-lbps.md)
 
@@ -40,7 +36,6 @@ Designed to have extreme flexibility to manage a dynamic fund. Features weight s
 | Pool                        |     Math | Max # Tokens | Uses Oracle | Can _Be_ Oracle | Time-dependent pricing |
 | --------------------------- | -------: | -----------: | ----------: | --------------: | ---------------------: |
 | **Weighted**                | Weighted |            8 |          No |             Yes |                     No |
-| **Stable**                  |   Stable |            5 |          No |              No |                     No |
-| **MetaStable**              |   Stable |            2 |         Yes |             Yes |                     No |
+| **Composable Stable**       |   Stable |            5 |          No |              No |                     No |
 | **Liquidity Bootstrapping** | Weighted |            4 |          No |              No |                    Yes |
 | **Managed**                 | Weighted |           50 |          No |              No |                    Yes |

@@ -19,7 +19,7 @@ Some pools (WeightedPool2Tokens and MetaStable Pools) have optional Oracle funct
 
 Designed for general cases, including tokens that don't necessarily have price correlation (ex. DAI/WETH).
 
-### [Stable Pools](stable-pools.md)
+### [Stable Pools](broken-reference)
 
 Ideal for soft-pegged tokens with strong correlation (ex. DAI/USDC/USDT).
 

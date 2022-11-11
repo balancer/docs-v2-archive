@@ -10,7 +10,7 @@ MetaStable Pools are an extension of Stable Pools that contain tokens with known
 
 #### Pegged vs Correlated but Non-Pegged
 
-**Pegged** tokens such as different stablecoins representing US Dollars or groups of tokens that all track BTC are well suited for[ Stable Pools](stable-pools.md).
+**Pegged** tokens such as different stablecoins representing US Dollars or groups of tokens that all track BTC are well suited for[ Stable Pools](broken-reference).
 
 **Correlated but Non-Pegged** tokens are often (but not always) base tokens and their derivatives. For example, DAI/cDAI have very strong correlation, but cDAI slowly accumulates lending fees by lending DAI to the Compound protocol, and appreciates relative to DAI.&#x20;
 

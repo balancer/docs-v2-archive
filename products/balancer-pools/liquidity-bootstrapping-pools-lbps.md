@@ -30,9 +30,9 @@ and would ultimately result in the team holding far more DAI __ at the end of th
 
 ## Use Cases
 
-### Copper Fair Launch Auctions
+### Fjord Foundry Fair Launch Auctions
 
-[Copper](https://copperlaunch.com/) is a platform for Fair Launch Auctions (FLAs) — a simple crowdfunding mechanism that enables projects and ideas from across the world to raise money from individuals without barriers to entry. Copper makes it easy to create and use LBPs through their intuitive and easy-to-use website.
+[Fjord Foundry](https://fjordfoundry.com/pools) is a platform for Fair Launch Auctions (FLAs) — a simple crowdfunding mechanism that enables projects and ideas from across the world to raise money from individuals without barriers to entry. Fjord makes it easy to create and use LBPs through their intuitive and easy-to-use website. The main concept allows distribution of Tokens and NFTs with transparent, open and fair price discovery mechanism. Fjords long-standing reputation led to a recent [exclusive collaboration agreement](https://snapshot.org/#/balancer.eth/proposal/0xcc065f373e15a264e1647bc794a4a83039fc4d377a69875ec828eb0148faa4ba) between the Balancer DAO and Fjord Foundry.
 
 ### Gitcoin's AKITA/ETH LBP
 

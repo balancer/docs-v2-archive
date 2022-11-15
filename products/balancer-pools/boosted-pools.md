@@ -44,7 +44,7 @@ As explained above, these pools have Phantom BPT (the `bb-a-*` tokens) and maint
 
 #### Put the Linear Pool Tokens into a Stable Pool
 
-By adding the Linear Pool Tokens in to a Stable Pool, we are effective putting the pools inside another pool.
+By adding the Linear Pool Tokens into a Stable Pool, we are effectively putting the pools inside another pool.
 
 ![](<../../.gitbook/assets/Screen Shot 2021-12-15 at 9.41.34 AM.png>)
 
@@ -69,7 +69,7 @@ Why have a WETH/DAI pool with idle DAI when you could have a WETH/bb-a-USD pool?
 
 ![](<../../.gitbook/assets/Screen Shot 2021-12-15 at 9.45.56 AM.png>)
 
-Now this pool can trade between any of the following tokens:
+Now, this pool can trade between any of the following tokens:
 
 * WETH
 * DAI

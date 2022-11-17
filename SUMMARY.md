@@ -88,6 +88,7 @@
 * [Walkthroughs](getting-started/walkthroughs/README.md)
   * [Trade](getting-started/walkthroughs/trading.md)
   * [Invest](getting-started/walkthroughs/invest.md)
+* [Contribution Guide](getting-started/contribution-guide.md)
 
 ## Community
 

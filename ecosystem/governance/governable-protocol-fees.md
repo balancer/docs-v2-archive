@@ -6,17 +6,17 @@ Governable Protocol Fees are fees collected by the Balancer Protocol, **not** Li
 
 ## Sources
 
-### Trade Fees
+### Swap Fees
 
-The obvious source of Protocol Fees is from trading. Balancer traders already pay trade fees to Liquidity Providers in exchange for making their swap possible. Fees are denominated in the Input Token when executing a trade.&#x20;
+The obvious source of Protocol Fees are the swaps. Balancer swappers already pay swap fees to Liquidity Providers in exchange for making their swap possible. Fees are denominated in the Input Token when executing a swap.&#x20;
 
-The Protocol Fees for trades can be collected as a percentage of the trade fees already being collected (a fraction of a fraction). From the traders' perspective, there will be no price increase.&#x20;
+The Protocol Fees for swaps can be collected as a percentage of the swap fees already being collected (a fraction of a fraction). From the swapper's perspective, there will be no price increase.&#x20;
 
 Upon launch, Balancer V2's **Protocol Fees for trades are turned off by default**. They can be turned on only by a vote of the Balancer Governors (BAL token holders). The governors have the power to activate and determine the amount of these fees.
 
-### Flash Loan Fees
+### Flash Loan Fees (currently set to 0)
 
-Another source of Protocol Fees is from interest on [Flash Loans](../../concepts/features/flash-loans.md). The fees are charged as a percentage of the
+Another source of Protocol Fees is represented by interest on [Flash Loans](../../concepts/features/flash-loans.md). Any fees collected as interest on flash loans go to the DAO Treasury. However, at deployment **flash loans fees were set to zero**, and at the time of writing they have still not been activated by the governance
 
 ## Uses
 

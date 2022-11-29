@@ -5,9 +5,11 @@ coverY: 0
 
 # Protocol Overview
 
-## Introduction
+## What is Balancer?
 
-Balancer is a community-driven protocol, automated portfolio manager, liquidity provider, and price sensor that empowers decentralized exchange and the automated portfolio management of tokens on the Ethereum blockchain and other EVM-compatible systems.
+Balancer is a decentralized protocol that provides DeFi liquidity infrastructure.
+
+Balancer’s mission is to accelerate innovation in DeFi by providing access to **secure infrastructure for liquidity applications**. Projects build on Balancer to create new, innovative types of pools and financial dApps.
 
 Balancer Pools contain two or more tokens that traders can swap between. Liquidity Providers put their tokens in the pools in order to collect swap fees.&#x20;
 

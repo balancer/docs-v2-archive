@@ -10,9 +10,10 @@ Snapshot derives its name from taking a "snapshot" of the Ethereum blockchain at
 
 In order to be eligible to [vote on Balancer](https://snapshot.org/#/balancer) proposals, you need satisfy at least one of the following:
 
-* Hold BAL tokens
-* Hold BPT tokens for pools that have BAL in them
-* Have someone delegate their voting power to your address
+* Hold [veBAL](../vebal-and-gauges/)&#x20;
+* Have someone [delegate](../community/delegation.md) their voting power to your address
+
+
 
 When a vote opens, click on the proposal in the Balancer Space, scroll to the voting section, and cast your vote. Your wallet provider will ask you to sign a message (don't worry, you won't be charged any gas).&#x20;
 

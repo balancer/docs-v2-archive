@@ -52,6 +52,7 @@
       * [Working Supply](ecosystem/vebal-and-gauges/vebal/how-vebal-boosting-works/working-supply.md)
       * [Calculating My Boost](ecosystem/vebal-and-gauges/vebal/how-vebal-boosting-works/calculating-my-boost.md)
       * [Minimum veBAL for Max Boost](ecosystem/vebal-and-gauges/vebal/how-vebal-boosting-works/minimum-vebal-for-max-boost.md)
+    * [BIP19 and Yield Bearing Tokens](ecosystem/vebal-and-gauges/vebal/bip19-and-yield-bearing-tokens.md)
   * [Gauges](ecosystem/vebal-and-gauges/gauges/README.md)
     * [How Gauges Work](ecosystem/vebal-and-gauges/gauges/how-gauges-work.md)
     * [How To Use Gauges](ecosystem/vebal-and-gauges/gauges/how-to-use-gauges.md)

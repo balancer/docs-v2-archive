@@ -14,9 +14,6 @@
   * [Boosted Pools](products/balancer-pools/boosted-pools.md)
   * [Custom Pools](products/balancer-pools/custom-pools.md)
 * [Smart Order Router](products/smart-order-router.md)
-* [Merkle Orchard](products/merkle-orchard/README.md)
-  * [Claiming Tokens](products/merkle-orchard/claiming-tokens.md)
-  * [Creating Distributions](products/merkle-orchard/creating-distributions.md)
 * [Balancer CoW Protocol](products/balancer-cow-protocol.md)
 * [Oracles (deprecated)](products/oracles.md)
 

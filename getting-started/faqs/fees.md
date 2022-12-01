@@ -16,9 +16,7 @@ Balancer Pools are extremely customizable, and each pool can have a different fe
 
 Some pools have Dynamic Trade Fees that are [algorithmically set by Gauntlet](https://medium.com/gauntlet-networks/balancer-v2-pools-trading-fee-methodology-7a65df671b8c). The pool detail page on the UI shows you which type of pool it is, and how the fees are managed.
 
-## When will the Protocol Trading Fees be turned on?
 
-While initialized to 0% at deployment, protocol trading fees can be set by governance. They were activated following [a vote that finished Dec 11, 2021](https://vote.balancer.fi/#/proposal/0xf6238d70f45f4dacfc39dd6c2d15d2505339b487bbfe014457eba1d7e4d603e3). The vote set the Protocol Swap fee to 10%. The fees can be set from 0 to 50% of the existing pool swap fee.
 
 ## What happens to the protocol fees?
 

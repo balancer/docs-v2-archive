@@ -20,11 +20,11 @@ Another source of Protocol Fees is represented by interest on [Flash Loans](../.
 
 ## Protocol Fees
 
-Once integrators start paying fees themselves, it is expected that they start paying protocol fees to the Balancer DAO. However, the 50% protocol fee on swaps and yield is not mandatory. There is no need to pay Balancer DAO any fee at all while your project is in its early stages. You decide when to turn fees on, how to charge a fee, and can work with Balancer to determine what split makes sense. \
-Whenever ready, when turning fees on, this comes with some important advantages:
+Once integrators start paying fees themselves, it is expected that they start paying protocol fees to the Balancer DAO. However, the 50% protocol fee on swaps and yield is not mandatory. There is no need to pay Balancer DAO any fee while your project is in its early stages. You decide when to turn fees on, how to charge a fee, and can work with Balancer to determine what split makes sense. \
+The payment of protocol fees comes with some important advantages:
 
 * Active support by the various service providers in the Balancer ecosystem in areas like Software development, Marketing, biz-dev etc.
-* Inclusion in the Balancer SDK, SOR (smart order router) and subgraph, making the integrator’s liquidity visible for all existing consumers of the SDK/SOR/subgraph.
+* Inclusion in the Balancer SDK, SOR (Smart Order Router) and Balancer Subgraph, making the integrator’s liquidity visible to all existing consumers of the SDK/SOR/subgraph.
 * Streamlined integration with leading liquidity aggregators like 1Inch, CowSwap, 0x and ParaSwap.&#x20;
 
 The [ProtocolFeePercentagesProvider](https://github.com/balancer-labs/balancer-v2-monorepo/blob/faff088615a09f0a2fc52b904d58ca4aa5ae0566/pkg/interfaces/contracts/standalone-utils/IProtocolFeePercentagesProvider.sol) should be used as the ground truth to determine the protocol fee percentages to be paid by integrators.

@@ -16,9 +16,20 @@ Upon launch, Balancer V2's **Protocol Fees for trades are turned off by default*
 
 ### Flash Loan Fees (currently set to 0)
 
-Another source of Protocol Fees is represented by interest on [Flash Loans](../../concepts/features/flash-loans.md). Any fees collected as interest on flash loans go to the DAO Treasury. However, at deployment **flash loans fees were set to zero**, and at the time of writing, they have still not been activated by the governance.
+Another source of Protocol Fees is represented by interest on [Flash Loans](../../concepts/features/flash-loans.md). Any fees collected as interest on flash loans go to the DAO Treasury. However, at deployment **flash loans fees were set to zero**, and at the time of writing, **they have still not been activated by the governance.**
 
-## Protocol Fee Percentages Provider
+## Protocol Fees
+
+Once integrators start paying fees themselves, it is expected that they start paying protocol fees to the Balancer DAO. However, the 50% protocol fee on swaps and yield is not mandatory. There is no need to pay Balancer DAO any fee at all while your project is in its early stages. You decide when to turn fees on, how to charge a fee, and can work with Balancer to determine what split makes sense. \
+Whenever ready, when turning fees on, this comes with some important advantages:
+
+* Active support by the various service providers in the Balancer ecosystem in areas like Software development, Marketing, biz-dev etc.
+* Inclusion in the Balancer SDK, SOR (smart order router) and subgraph, making the integrator’s liquidity visible for all existing consumers of the SDK/SOR/subgraph.
+* Streamlined integration with leading liquidity aggregators like 1Inch, CowSwap, 0x and ParaSwap.&#x20;
+
+The [ProtocolFeePercentagesProvider](https://github.com/balancer-labs/balancer-v2-monorepo/blob/faff088615a09f0a2fc52b904d58ca4aa5ae0566/pkg/interfaces/contracts/standalone-utils/IProtocolFeePercentagesProvider.sol) should be used as the ground truth to determine the protocol fee percentages to be paid by integrators.
+
+### Protocol Fee Percentages Provider
 
 The Protocol Fee Percentages Provider contract provides a convenient way to access Protocol Fee percentages (i.e.:how much the protocol charges for performing certain actions).
 
@@ -29,6 +40,8 @@ The Protocol Fee Percentages Provider contract provides a convenient way to acce
 | Arbitrum Mainnet                                                                                                                                                                                                             | [0x5ef4c5352882b10893b70DbcaA0C000965bd23c5](https://arbiscan.io/address/0x5ef4c5352882b10893b70dbcaa0c000965bd23c5#code)             |
 | Ortimism Mainnet                                                                                                                                                                                                             | [0xacAaC3e6D6Df918Bf3c809DFC7d42de0e4a72d4C](https://optimistic.etherscan.io/address/0xacaac3e6d6df918bf3c809dfc7d42de0e4a72d4c#code) |
 | [Protocol Fee Percentage Provider artifact](https://github.com/balancer-labs/balancer-v2-monorepo/blob/master/pkg/deployments/tasks/20220725-protocol-fee-percentages-provider/artifact/ProtocolFeePercentagesProvider.json) |                                                                                                                                       |
+
+##
 
 ## Uses
 

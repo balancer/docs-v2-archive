@@ -27,8 +27,6 @@ The payment of protocol fees comes with some important advantages:
 * Inclusion in the Balancer SDK, SOR (Smart Order Router) and Balancer Subgraph, making the integrator’s liquidity visible to all existing consumers of the SDK/SOR/subgraph.
 * Streamlined integration with leading liquidity aggregators like 1Inch, CowSwap, 0x and ParaSwap.&#x20;
 
-More details about Protocol Fees can be found in [BIP77.](https://forum.balancer.fi/t/bip-77-friendly-balancer-protocol-fees-for-integrators/3732)
-
 The [ProtocolFeePercentagesProvider](https://github.com/balancer-labs/balancer-v2-monorepo/blob/faff088615a09f0a2fc52b904d58ca4aa5ae0566/pkg/interfaces/contracts/standalone-utils/IProtocolFeePercentagesProvider.sol) should be used as the ground truth to determine the protocol fee percentages to be paid by integrators.
 
 ### Protocol Fee Percentages Provider
@@ -43,7 +41,9 @@ The Protocol Fee Percentages Provider contract provides a convenient way to acce
 | Ortimism Mainnet                                                                                                                                                                                                             | [0xacAaC3e6D6Df918Bf3c809DFC7d42de0e4a72d4C](https://optimistic.etherscan.io/address/0xacaac3e6d6df918bf3c809dfc7d42de0e4a72d4c#code) |
 | [Protocol Fee Percentage Provider artifact](https://github.com/balancer-labs/balancer-v2-monorepo/blob/master/pkg/deployments/tasks/20220725-protocol-fee-percentages-provider/artifact/ProtocolFeePercentagesProvider.json) |                                                                                                                                       |
 
-##
+{% hint style="info" %}
+More details about Protocol Fees can be found in [BIP77.](https://forum.balancer.fi/t/bip-77-friendly-balancer-protocol-fees-for-integrators/3732)
+{% endhint %}
 
 ## Uses
 

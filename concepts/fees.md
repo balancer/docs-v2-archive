@@ -29,7 +29,7 @@ At the time of pool creation, the pool creator defines the **fee** and the **own
 
 There are two different ways that a pool can have **Dynamic Fees**, either the pool owner manually sets fees, or the pool creator delegates fees to a governance-approved controller by setting the pool owner to the `delegate` address.
 
-[Governance approved Gauntlet](https://vote.balancer.fi/#/proposal/QmZZycpDWZYAzNho6uVaWL5nFpVzauc89HC9d5QNTSn18J) to have **Delegated Fee Control** on many pool types. They have been updating fees regularly based on models designed to optimize fee volume to Liquidity Providers. To learn more about how they determine fees, check out [their Medium post](https://medium.com/gauntlet-networks/balancer-v2-pools-trading-fee-methodology-7a65df671b8c).
+
 
 ### Protocol Swap Fees
 

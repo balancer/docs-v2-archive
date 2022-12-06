@@ -25,7 +25,6 @@
   * [Weighted Math](concepts/math/weighted-math.md)
   * [Stable Math](concepts/math/stable-math.md)
 * [Fees](concepts/fees.md)
-* [Features](concepts/features/README.md)
 
 ## Ecosystem
 

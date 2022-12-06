@@ -5,7 +5,8 @@
 
 ## Products
 
-* [The Vault](products/the-vault.md)
+* [The Vault](products/the-vault/README.md)
+  * [Flash Loans](products/the-vault/flash-loans.md)
 * [Balancer Pools](products/balancer-pools/README.md)
   * [Weighted Pools](products/balancer-pools/weighted-pools.md)
   * [Composable Stable Pools](products/balancer-pools/composable-stable-pools.md)
@@ -24,8 +25,7 @@
   * [Weighted Math](concepts/math/weighted-math.md)
   * [Stable Math](concepts/math/stable-math.md)
 * [Fees](concepts/fees.md)
-* [Features](concepts/features/README.md)
-  * [Flash Loans](concepts/features/flash-loans.md)
+* [Features](concepts/features.md)
 
 ## Ecosystem
 

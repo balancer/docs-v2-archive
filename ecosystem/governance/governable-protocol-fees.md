@@ -16,7 +16,7 @@ Upon launch, Balancer V2's **Protocol Fees for trades are turned off by default*
 
 ### Flash Loan Fees (currently set to 0)
 
-Another source of Protocol Fees is represented by interest on [Flash Loans](../../products/the-vault/flash-loans.md). Any fees collected as interest on flash loans go to the DAO Treasury. However, at deployment **flash loans fees were set to zero**, and at the time of writing, **they have still not been activated by the governance.**
+Another source of Protocol Fees is represented by interest on [Flash Loans](../../concepts/features/flash-loans.md). Any fees collected as interest on flash loans go to the DAO Treasury. However, at deployment **flash loans fees were set to zero**, and at the time of writing, **they have still not been activated by the governance.**
 
 ## Protocol Fees
 

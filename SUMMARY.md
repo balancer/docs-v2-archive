@@ -10,7 +10,8 @@
   * [Weighted Pools](products/balancer-pools/weighted-pools.md)
   * [Composable Stable Pools](products/balancer-pools/composable-stable-pools.md)
   * [Liquidity Bootstrapping Pools (LBPs)](products/balancer-pools/liquidity-bootstrapping-pools-lbps.md)
-  * [Managed Pools](products/balancer-pools/managed-pools.md)
+  * [Managed Pools](products/balancer-pools/managed-pools/README.md)
+    * [Asset Managers](products/balancer-pools/managed-pools/asset-managers.md)
   * [Boosted Pools](products/balancer-pools/boosted-pools.md)
   * [Custom Pools](products/balancer-pools/custom-pools.md)
 * [Smart Order Router](products/smart-order-router.md)
@@ -25,7 +26,6 @@
 * [Fees](concepts/fees.md)
 * [Features](concepts/features/README.md)
   * [Flash Loans](concepts/features/flash-loans.md)
-  * [Asset Managers](concepts/features/asset-managers.md)
 
 ## Ecosystem
 

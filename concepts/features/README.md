@@ -21,6 +21,6 @@ The original asset manager architecture can be used for cases where tokens need 
 
 Asset Managers improve the capital efficiency of trading pools by reinvesting idle assets. Typical trading pools with deep liquidity benefit only from low slippage, but tokens not involved in trades do not contribute to the fees accrued by the pool. Asset Managers tap into that otherwise idle capital, using it on external protocols.&#x20;
 
-{% content-ref url="asset-managers.md" %}
-[asset-managers.md](asset-managers.md)
+{% content-ref url="../../products/balancer-pools/managed-pools/asset-managers.md" %}
+[asset-managers.md](../../products/balancer-pools/managed-pools/asset-managers.md)
 {% endcontent-ref %}

@@ -10,9 +10,9 @@ The original asset manager architecture can be used for cases where tokens need 
 
 ## Overview
 
-Capital efficiency is very important to liquidity providers, and by leveraging Asset Managers,  portfolios can become much more productive. Normally in trading pools, only a small percentage of assets are actually used to facilitate trades. While deep liquidity results in smaller price impacts on trades, it also needlessly locks vast amounts of capital in pools. That's where Asset Managers come in; instead of holding idle assets, pools can send these tokens to Asset Managers for them to be invested elsewhere while internally maintaining the balances and facilitating trades as if the assets were there. 
+Capital efficiency is very important to liquidity providers, and by leveraging Asset Managers,  portfolios can become much more productive. Normally in trading pools, only a small percentage of assets are actually used to facilitate trades. While deep liquidity results in smaller price impacts on trades, it also needlessly locks vast amounts of capital in pools. That's where Asset Managers come in; instead of holding idle assets, pools can send these tokens to Asset Managers for them to be invested elsewhere while internally maintaining the balances and facilitating trades as if the assets were there.&#x20;
 
-![A pool separated into its Cash Amount and the Invested Amount](../../.gitbook/assets/asset_manager.gif)
+![A pool separated into its Cash Amount and the Invested Amount](../../../.gitbook/assets/asset\_manager.gif)
 
 ## Example Applications
 

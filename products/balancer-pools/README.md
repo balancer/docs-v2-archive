@@ -27,7 +27,7 @@ Ideal for soft-pegged tokens with strong correlation (ex. DAI/USDC/USDT) and/or 
 
 Ideal for shifting liquidity of one token into another (ex. AKITA/ETH).
 
-### [Managed Pools](managed-pools.md)
+### [Managed Pools](managed-pools/)
 
 Designed to have extreme flexibility to manage a dynamic fund. Features weight shifting to rebalance, swap pausing, and management fees. (ex. WSBDapp).
 

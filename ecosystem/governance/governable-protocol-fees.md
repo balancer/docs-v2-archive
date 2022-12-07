@@ -6,7 +6,7 @@ Governable Protocol Fees are fees collected by the Balancer Protocol, **not** Li
 
 ## Sources
 
-### Swap Fees
+## Swap Fees
 
 The obvious source of Protocol Fees are the swaps. Balancer swappers already pay swap fees to Liquidity Providers in exchange for making their swap possible. Fees are denominated in the Input Token when executing a swap.&#x20;
 
@@ -14,11 +14,11 @@ The Protocol Fees for swaps can be collected as a percentage of the swap fees al
 
 Upon launch, Balancer V2's **Protocol Fees for trades are turned off by default**. They can be turned on only by a vote of the Balancer Governors (BAL token holders). The governors have the power to activate and determine the amount of these fees.
 
-### Flash Loan Fees (currently set to 0)
+## Flash Loan Fees (currently set to 0)
 
 Another source of Protocol Fees is represented by interest on [Flash Loans](../../concepts/features/flash-loans.md). Any fees collected as interest on flash loans go to the DAO Treasury. However, at deployment **flash loans fees were set to zero**, and at the time of writing, **they have still not been activated by the governance.**
 
-## Protocol Fees
+## Protocol Swap Fees
 
 Once integrators start paying fees themselves, it is expected that they start paying protocol fees to the Balancer DAO. However, the 50% protocol fee on swaps and yield is not mandatory. There is no need to pay Balancer DAO any fee while your project is in its early stages. You decide when to turn fees on, how to charge a fee, and can work with Balancer to determine what split makes sense. \
 The payment of protocol fees comes with some important advantages:
@@ -28,6 +28,8 @@ The payment of protocol fees comes with some important advantages:
 * Streamlined integration with leading liquidity aggregators like 1Inch, CowSwap, 0x and ParaSwap.&#x20;
 
 The [ProtocolFeePercentagesProvider](https://github.com/balancer-labs/balancer-v2-monorepo/blob/faff088615a09f0a2fc52b904d58ca4aa5ae0566/pkg/interfaces/contracts/standalone-utils/IProtocolFeePercentagesProvider.sol) should be used as the ground truth to determine the protocol fee percentages to be paid by integrators.
+
+The protocol swap fees are a percentage of the already collected swap fees; the traders would see no change in the amount collected. The Liquidity Providers, however, would see a small change. For example, if a pool has a 1% swap fee, and there was a 10% protocol swap fee, 0.9% of each trade would be collected for the LPs, and 0.1% would be collected for the protocol fee collector contract.
 
 ### Protocol Fee Percentages Provider
 

@@ -8,9 +8,13 @@ You can stake BPT you already hold, and you can also stake your BPT when you are
 
 {% embed url="https://youtu.be/vrupc829s9I" %}
 
+{% embed url="https://drive.google.com/file/d/1bLsLarZin-a0nFETXqG6cNg77qlq2GNe/view?usp=share_link" %}
+
 ### Join and Stake BPT
 
 {% embed url="https://www.youtube.com/watch?v=H8UBMxAJFXE" %}
+
+{% embed url="https://drive.google.com/file/d/1SOvQCzah-PjLut0SKAi8coxCOPOXF5Py/view?usp=share_link" %}
 
 ## Voting
 
@@ -19,6 +23,10 @@ You can stake BPT you already hold, and you can also stake your BPT when you are
 
 {% embed url="https://www.youtube.com/watch?v=p_NCLWJ2iqo" %}
 
+{% embed url="https://drive.google.com/file/d/1fqwuDR91cr_ZhA9oOSg94zyjNsbYCbjr/view?usp=share_link" %}
+
 ## Claiming Liquidity Mining Tokens
 
 {% embed url="https://youtu.be/Iu9Hv_MMyjs" %}
+
+{% embed url="https://drive.google.com/file/d/1JCVANJCeh9ts7kcHRWGli_b9yJHnsPY1/view?usp=share_link" %}

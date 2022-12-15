@@ -29,7 +29,9 @@ Yes, you can create Balancer pools of Balancer pools. This can fill the need of 
 
 For V1 LBPs, see [this FAQ](https://docs.balancer.fi/v/v1/smart-contracts/smart-pools/liquidity-bootstrapping-faq). \
 \
-It is a smart pool that dynamically changes the token weighting (e.g 1%/99% ETH/$TOKEN to 99%/1% ETH/$TOKEN), allowing founders to create a liquidity bootstrapping pool with minimal capital requirements. The result is that the token price continually experiences downward pressure throughout the sale. When this is mixed with modest buying demand, the price stays stable throughout the sale, as whales/bots are disincentivized to buy it all at once. PrimeDAO is building the IDO Launchpad, which will streamline the process for a smoother experience. Other partners are building UIs as well.
+It is a smart pool that dynamically changes the token weighting (e.g 1%/99% ETH/$TOKEN to 99%/1% ETH/$TOKEN), allowing founders to create a liquidity bootstrapping pool with minimal capital requirements. The result is that the token price continually experiences downward pressure throughout the sale. When this is mixed with modest buying demand, the price stays stable throughout the sale, as whales/bots are disincentivized to buy it all at once.
+
+[Fjord Foundry](https://fjordfoundry.com/pools) among others is a platform for Fair Launch Auctions (FLAs) — a simple crowdfunding mechanism that enables projects and ideas from across the world to raise money from individuals without barriers to entry. Fjord makes it easy to create and use LBPs through their intuitive and easy-to-use website. The main concept allows distribution of Tokens and NFTs with transparent, open and fair price discovery mechanism. Fjords long-standing reputation led to a recent [exclusive collaboration agreement](https://snapshot.org/#/balancer.eth/proposal/0xcc065f373e15a264e1647bc794a4a83039fc4d377a69875ec828eb0148faa4ba) between the Balancer DAO and Fjord Foundry.
 
 ## How long do LBPs last?
 

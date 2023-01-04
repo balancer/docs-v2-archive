@@ -61,12 +61,6 @@
 * [Token Compatibility](security/token-compatibility.md)
 * [Balancer x Certora Accelerator](security/balancer-x-certora-accelerator.md)
 
-## Governance Initiatives <a href="#gov-initiatives" id="gov-initiatives"></a>
-
-* [BAL for Gas](gov-initiatives/bal-for-gas.md)
-* [Liquidity Mining](gov-initiatives/liquidity-mining/README.md)
-  * [Liquidity Mining Estimates API](gov-initiatives/liquidity-mining/liquidity-mining-estimates-api.md)
-
 ## Getting Started
 
 * [FAQs](getting-started/faqs/README.md)

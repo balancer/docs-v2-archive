@@ -72,6 +72,6 @@ You'll also find network/token specific files for multi-token incentives explain
 
 Explore the full documentation here:
 
-{% content-ref url="../../gov-initiatives/liquidity-mining/" %}
-[liquidity-mining](../../gov-initiatives/liquidity-mining/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}

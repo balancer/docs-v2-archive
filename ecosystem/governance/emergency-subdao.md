@@ -15,3 +15,12 @@ The Emergency subDAO is a 4-of-7 multisig with the following members:
 Gnosis safe address: `0xA29F61256e948F3FB707b4b3B138C5cCb9EF9888`
 
 An additional power of the Emergency subDAO will be to add a token to the deny list on the newly created “[ProtocolFeesWithdrawer](https://forum.balancer.fi/t/introduce-protocolfeeswithdrawer/3188)” contract. In order for a token to be added back to the allow list a veBAL governance vote would be required. A token would only be added to the deny list in the event of an issue along the lines of the recent [Synthetix bug disclosure](https://forum.balancer.fi/t/medium-severity-bug-found/3161).
+
+\
+[The BIP139 ](https://snapshot.org/#/balancer.eth/proposal/0x6e0d7cbcd35f9b3949bf7f4607d71ac66a97561b0f304a1939c400f710ea0cbd)updates the following permissions of the Emergency subDAO:\
+\-`enableRecoveryMode()` for Pools to provide a simple way to exit pools proportionally at the cost of disabling protocol fees (swaps, joins, etc. still work)
+
+\-`denylistToken()` to prevent withdrawing certain tokens from the protocol fee withdrawer
+
+\-`disable()` to shutdown pool factories ( this is to prevent further pools from being created, existing pools remain unaffected)
+

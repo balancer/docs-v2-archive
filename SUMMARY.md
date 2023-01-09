@@ -36,6 +36,7 @@
   * [Multisig](ecosystem/governance/multisig/README.md)
     * [Other DAO Multisigs](ecosystem/governance/multisig/other-dao-multisigs.md)
   * [Governable Protocol Fees](ecosystem/governance/governable-protocol-fees.md)
+  * [Emergency subDAO](ecosystem/governance/emergency-subdao.md)
 * [Community](ecosystem/community/README.md)
   * [Ballers](ecosystem/community/ballers.md)
   * [Delegation](ecosystem/community/delegation.md)

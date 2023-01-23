@@ -92,7 +92,7 @@
 
 ## Developers (Deprecated) <a href="#developers" id="developers"></a>
 
-* [⛔ !!! DEPRECATED !!! ⛔](developers/deprecated.md)
+* [!!! DEPRECATED !!! ⛔](developers/deprecated.md)
 * [Guides](developers/guides/README.md)
   * [Pool Verification](developers/guides/pool-verification.md)
 * [Smart Order Router V2](developers/smart-order-router.md)

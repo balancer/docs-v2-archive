@@ -13,7 +13,7 @@ Balancer offers a community driven Liquidity Mining program that is maintained b
 
 You can see which pools receive liquidity mining incentives by the 3 star icon next to the pool position. Hover over the icon to see the breakdown in “Swap Fees APR” and “Liquidity Mining APR”
 
-![](../../.gitbook/assets/Untitled.png)
+![](../../.gitbook/assets/untitled.png)
 
 ## What does “Swap Fees APR” and “Liquidity Mining APR” mean?
 
@@ -33,7 +33,7 @@ A liquidity mining period is set between Monday-Monday 00:00 UTC, with distribut
 
 Please see below for a diagram of the schedule. The below depicts Polygon airdrops, but the schedule for BAL on Ethereum is the same (just use claim.balancer.fi to claim).
 
-![](../../.gitbook/assets/BAL\_LMMechanics\_v2.png)
+![](../../.gitbook/assets/bal\_lmmechanics\_v2.png)
 
 ## Does my investment auto-compound?
 

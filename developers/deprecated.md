@@ -1,4 +1,4 @@
-# ⛔ !!! DEPRECATED !!! ⛔
+# !!! DEPRECATED !!! ⛔
 
 {% hint style="danger" %}
 The dev docs in this book have been deprecated.&#x20;

@@ -6,11 +6,11 @@ For supported two-asset pools, you can use the migration system to move your liq
 
 ### 1. Go to [https://pools.balancer.exchange/#/](https://pools.balancer.exchange/#/) and click "Connect Wallet" in the top right
 
-![](<../../.gitbook/assets/Screen Shot 2021-05-13 at 9.30.41 AM.png>)
+![](../../.gitbook/assets/screen-shot-2021-05-13-at-9.30.41-am.png)
 
 ### 2. Click on "Dashboard" on the left menu
 
-![](<../../.gitbook/assets/Screen Shot 2021-05-13 at 9.25.57 AM (1).png>)
+![](<../../.gitbook/assets/Screen Shot 2021-05-13 at 9.25.57 AM.png>)
 
 ### 3. Pools with Automatic Migration available will have a "V2 Migrate" button
 

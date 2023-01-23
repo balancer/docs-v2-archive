@@ -1,5 +1,5 @@
 ---
-cover: ../../.gitbook/assets/bannerPools (1).png
+cover: ../../.gitbook/assets/bannerPools.png
 coverY: 0
 ---
 

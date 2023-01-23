@@ -33,4 +33,4 @@ The optimization mechanism finds the path through a set of Balancer Pools with t
 
 In order to get the best price for a trader, the SOR is designed to create an arbitrage-free state between the paths it's using. In order to achieve this, **each path the SOR routes through needs to provide the same spot price after the swap has completed.**&#x20;
 
-![](<../.gitbook/assets/targetSP (1).png>)
+![](<../.gitbook/assets/image (2).png>)

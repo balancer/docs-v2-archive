@@ -87,7 +87,7 @@ We're going to pull them right off the blockchain, so the first thing we need to
 
 To do this, we want to navigate to the "Internal Transactions" tab on Etherscan's entry for this address. The first (and likely only) transaction here will be the one that deployed the pool: [https://etherscan.io/address/0xe2469f47ab58cf9cf59f9822e3c5de4950a41c49#internaltx](https://etherscan.io/address/0xe2469f47ab58cf9cf59f9822e3c5de4950a41c49#internaltx)
 
-![Finding the pool deployment transaction](../../.gitbook/assets/InternalTx.png)
+![Finding the pool deployment transaction](../../.gitbook/assets/internaltx.png)
 
 Click on the "Parent Txn Hash" link to find the transaction hash: it is 0x757a0ea8b773405209eb67258504c083b3c11d5a43ea437d77ab17ac982a1c2b.
 
@@ -104,23 +104,23 @@ You can use the following subgraph query to extract the creation transaction ("t
 
 We will now use the Tenderly Debugger to find the encoded constructor arguments. Log into Tenderly and copy the hash into the search bar. (On Arbitrum, until Tenderly supports it, you will have to get them from the Arbiscan data, or another way, such as a script, or simulating a mainnet transaction.)
 
-![Find the transaction in Tenderly](../../.gitbook/assets/1-TxHash.png)
+![Find the transaction in Tenderly](../../.gitbook/assets/1-txhash.png)
 
 You will see the details of the `create()` transaction
 
-![create() transaction detail](../../.gitbook/assets/2-TxOverview.png)
+![create() transaction detail](../../.gitbook/assets/2-txoverview.png)
 
 If you like, you can expand the input data tab for a human-readable representation:
 
-![Human-readable input](../../.gitbook/assets/3-TxInputs.png)
+![Human-readable input](../../.gitbook/assets/3-txinputs.png)
 
 However, what we need is the _encoded_ version. To get that, scroll down into the call tree and click on the \[CREATE] line:
 
-![Source code for the create() operation](../../.gitbook/assets/4-TxSource.png)
+![Source code for the create() operation](../../.gitbook/assets/4-txsource.png)
 
 Now click "View in Debugger":
 
-![Debugger view](../../.gitbook/assets/5-TxInput.png)
+![Debugger view](../../.gitbook/assets/5-txinput.png)
 
 The code we want  is in the "\[INPUT]" section. See that giant block of bytecode? We need to find the constructor arguments in all that. Luckily, there's an easy way to do it.
 

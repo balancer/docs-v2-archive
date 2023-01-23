@@ -42,7 +42,7 @@ Let's say Alice, Bob, Chuck, and Diana all provide liquidity in the same pool st
 | Chuck  | 12.5%               | $12.50        | $25                 |
 | Diana  | 12.5%               | $12.50        | $25                 |
 
-![](<../../.gitbook/assets/Screen Shot 2021-08-12 at 10.10.06 AM.png>)
+![](../../.gitbook/assets/screen-shot-2021-08-12-at-10.10.06-am.png)
 
 ## How does a pool determine the price of tokens?
 

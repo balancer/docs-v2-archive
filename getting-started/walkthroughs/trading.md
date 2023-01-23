@@ -4,7 +4,7 @@ Navigate to [https://app.balancer.fi/#/](https://app.balancer.fi/#/trade) and cl
 
 ## Connect your wallet
 
-![](<../../.gitbook/assets/export (1).jpg>)
+![](../../.gitbook/assets/export.jpg)
 
 
 

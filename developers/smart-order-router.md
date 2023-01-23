@@ -82,7 +82,7 @@ $$
 
 To help the visualization, this is what we are looking to achieve:
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/targetSP (1).png>)
 
 To calculate a candidate for `targetSP` we need to use the derivatives of $$SPaS_1$$ and $$SPaS_2$$ at $$A_1$$ and $$A_2$$ respectively.
 

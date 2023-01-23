@@ -10,7 +10,7 @@ Since most cases are neither ideal nor disasters, the Stable Math curve combines
 
 For more stable math formulas, [check out the Developer Docs](https://dev.balancer.fi/resources/pools/math/stable-math).
 
-![StableSwap approaches Constant Product as A->0 and Constant Sum as A->∞](<../../.gitbook/assets/output (1).gif>)
+![StableSwap approaches Constant Product as A->0 and Constant Sum as A->∞](<../../.gitbook/assets/output (5).gif>)
 
 ## Invariant
 

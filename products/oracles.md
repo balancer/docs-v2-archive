@@ -8,6 +8,7 @@
 1. **Limitations**
    * Oracles only exist in two-token pools, while many of the primary pools (like bb-a-USD) on Balancer have 3 or more tokens. Supporting multi-token pools requires tracking all possible pairs, which scales combinatorially `O(nC2)`.
 2. **Security/Manipulation**
+   * [ChainSecurity wrote a good article](https://chainsecurity.com/oracle-manipulation-after-merge/) explaining the security risks.
    * Though there have been no known manipulations, TWAP oracles can be more manipulable than alternatives that uses a median filter, which are too complex to readily implement on chain.
    * Manipulation can only get worse after the Merge because two-block attacks will become commonplace. A cornerstone of what made these oracles "safe enough" pre-Merge is that an oracle could only be updated once per block. This means that anyone who would seek to manipulate it atomically only has one chance to force it out of alignment, and it's usually not enough. But in Proof of Stake, block validators are known several minutes ahead of time, and occasionally a validator is going to get two blocks in a row. This offers a much better chance at manipulation, and we don't know what will happen to TWAP oracles under these conditions because they have never been possible before.
 3. **Maintenance Burden**
